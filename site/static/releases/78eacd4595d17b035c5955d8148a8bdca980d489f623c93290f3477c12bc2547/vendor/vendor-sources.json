@@ -1,0 +1,18 @@
+[
+  "node_modules/property-graph",
+  "node_modules/@gltf-transform/core",
+  "node_modules/ktx-parse",
+  "node_modules/@gltf-transform/extensions",
+  "node_modules/iota-array",
+  "node_modules/is-buffer",
+  "node_modules/ndarray",
+  "node_modules/ndarray-lanczos",
+  "node_modules/@gltf-transform/functions",
+  "node_modules/meshoptimizer",
+  "../../node_modules/fflate",
+  "../../node_modules/onnxruntime-web",
+  "../../node_modules/onnxruntime-common",
+  "../../node_modules/fast-png",
+  "../../node_modules/iobuffer",
+  "../../node_modules/pako"
+]

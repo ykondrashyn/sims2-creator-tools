@@ -1,0 +1,1 @@
+import{a,b,c,d,e}from"./package-runtime/chunk-ZR2UFUQ7.js";import"./package-runtime/chunk-FZ6PF44G.js";import"./package-runtime/chunk-NRHFGDLD.js";export{a as disposeScene,e as frameScaleCamera,b as scaleLighting,d as scaleMannequins,c as scaleRoom};

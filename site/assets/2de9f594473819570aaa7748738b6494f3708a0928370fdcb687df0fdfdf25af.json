@@ -1,0 +1,2386 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "urn",
+      "label": "Ancient Transport Urn Sculpture",
+      "kind": "floor-decor",
+      "group": "7f372fac",
+      "model": "sculptureUrn",
+      "sha256": "d320d4ec9037d16fb88a65797fa3419c902c6f39745a3e8725e977699bf9fded",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7f372fac-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "400a51a65d6ce20dcdce159deaa971a9e9a0430a85447a3c6789dcd92a94bba1"
+        },
+        {
+          "key": "474c4f42-7f372fac-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d96a5ca7e48bcba88bdaac78082330a3e0e28624fe36a28958ae7875484d12f2"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "86baeda8c50f54b095bbe1f07f6241efb37afdaaba8f664911dd13801306c13d"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "42c3361a20ef11a8bb278f3e105e010b18703f9faec0a6e4349cbea6ff9594fd"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5f8d9c2c029fb4591e395135bbdbaaa70bf27736a1a694b25810082f77f48b3c"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3403af45dbc3204a6aedd59b84356a675a3c56c5bf91fae1542950ecc042158b"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "9ffd18c64b69ea2c5b9a4aa073af7c48de2a287c7634323582a5dbe896cb824e"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000007",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3feb2fa45018d447bc33735add09f9acf456b64ab69a555c1a79e4560b775456"
+        },
+        {
+          "key": "46574156-7f372fac-0000000000000008",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "63bddc46a0c353e1b8c3961fa5396eb16b558974fa0d694ff30d0ab1b538f862"
+        },
+        {
+          "key": "534c4f54-7f372fac-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000082",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83"
+        },
+        {
+          "key": "54544142-7f372fac-0000000000000083",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "4dd67609130c01cfc6c891122bf0ad9c7276ea92af4e495a66811d2ce0bd26ca"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "4c8c701d06665568a6b77d2fa50f18b9f2637912e77e59dd873da5efaaa270b6"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000087",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000088",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb"
+        },
+        {
+          "key": "53545223-7f372fac-0000000000000102",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+        },
+        {
+          "key": "43545353-7f372fac-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b9206011b696b1ed99a586bee40b58c843dae640fe0d8f7a621398a41a50f5c2"
+        },
+        {
+          "key": "42434f4e-7f372fac-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b"
+        },
+        {
+          "key": "42484156-7f372fac-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0"
+        },
+        {
+          "key": "42484156-7f372fac-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f"
+        },
+        {
+          "key": "42434f4e-7f372fac-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54"
+        },
+        {
+          "key": "42484156-7f372fac-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c31c98da80a8546e305b119f58c9f462b1d84c24fcf6602edee7dd540817b489"
+        },
+        {
+          "key": "42434f4e-7f372fac-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e"
+        },
+        {
+          "key": "4f424a66-7f372fac-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7f372fac-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b4f809652e6e0336366b24d9d1f9d3c12c2ab724b1056d203a3c59ab506a5f72"
+        },
+        {
+          "key": "4e524546-7f372fac-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "387b67716f842593ddbdec3a55fba7a18d5268d1e9403b75d83eba15afcc6879"
+        },
+        {
+          "key": "49596978-1c0532fa-19abcbf3ff073733",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "a204037dc64afc6ad0c314e0b9ba9a7abefe551b8c4118f16229f364463acfaf"
+        },
+        {
+          "key": "49596978-1c0532fa-68d08b32ff3afc18",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "724959fd8685997bcd9dd46aa8317d12eb16c5cc1ed806bb136686bfda259930"
+        },
+        {
+          "key": "49596978-1c0532fa-6a2cf8a0ff3475f8",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "23ab0a49f3b1fb1f9789a55f1677dcef08eaf1e2081d97d820494ff1e211665e"
+        },
+        {
+          "key": "49596978-1c0532fa-733fe0eeff33ec3a",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "4d38399ab17ce88d4fa409c0c8781ae84cd313afbe0dcab6dab46aaf7e8f206c"
+        },
+        {
+          "key": "49596978-1c0532fa-bb6453b3ff47fd00",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "35e5cc260f1c2e149db0333072d46b352822d9e5f1f9a0d54ebbf77bbca73bb5"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-d7b02a85ff9d1031",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "9b08d5f52cd958c10d76c0f6fb8786bd07526dbc9b21b87eb845e098fc6740f1"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-e34da7ddfff79200",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "cf5fad66ef67915ebaa812dfc870b5ddd57157b9931a021c54c2224a9d0b1dd8"
+        },
+        {
+          "key": "e519c933-1c0532fa-f64862f5ff1aaa5f",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "d471661b5438b6b49224ab1c7b92eeaca5aeb29bd78f1e1132735fd792874a7a"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-f3000cb8ffbd1da4",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "91cdcef166fc127b616276489bb1cec2e3f56606cd2a8c6700efac28caeb4dbd"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-57a0971bff79145c",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "f004ae13fbb41d245aa5dba148bfd7cd60d0953e91183c26b93bde2ca7d9de3c"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-c15283ddffea081d",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "527f2c52bb8f566aaafd60791e496aa45967566294ef6c253caf2856886b2e73"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-102480d9ffe67978",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "285a90407863de3aa904389cfdec839ac5f70ecdc66a62067b4044523726e4b1"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-538aeacbffb7412e",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "89f759c83413d837b7e21405dc29d491720189cf47a8352ac0d7fec170985a8c"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-a498dc84ffda2284",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "2224326a2ca351cee2b05c0ab6102b46384e36c8255893b52af6889679ba3c87"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a4f44",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "1639504032aa7c300623818a97714107a031dc94b937e8676eb3d9d836d5855f"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a4f45",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "ef8182f0ab4464019038ff0600074f3a262bafdfec0949f5a7a9aa25dd8a5dda"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a4f46",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "53fb6338e567ac225072fff05feb68bd14de5955fe3893e46378dff8ae70a037"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000008e1a4f47",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "b09d9267b20721abbad78ad99818c44925496441c0859596f0d3bd62793ed088"
+        }
+      ],
+      "extracted_from_sha256": "46bda6d3f9d87dc073147d21688849713063419a4a2d99969054d763d49da4fa",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 1,
+        "tiles": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "1001:f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f",
+        "1002:c31c98da80a8546e305b119f58c9f462b1d84c24fcf6602edee7dd540817b489"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b",
+        "42434f4e:0000000000001001:b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54",
+        "42434f4e:0000000000001002:b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e",
+        "42484156:0000000000001000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "42484156:0000000000001001:f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f",
+        "42484156:0000000000001002:c31c98da80a8546e305b119f58c9f462b1d84c24fcf6602edee7dd540817b489",
+        "474c4f42:0000000000000001:49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8",
+        "4f424a44:00000000000041a7:53e9f7fbd2e1f2136d2f903980267ca50b4ce685a15d0adb388b2bb1e5c33650",
+        "4f424a66:00000000000041a7:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "534c4f54:0000000000000080:6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8",
+        "53545223:0000000000000081:472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a",
+        "53545223:0000000000000082:b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83",
+        "53545223:0000000000000087:229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935",
+        "53545223:0000000000000088:41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359",
+        "53545223:0000000000000100:636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb",
+        "53545223:0000000000000102:de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b",
+        "54544142:0000000000000083:4dd67609130c01cfc6c891122bf0ad9c7276ea92af4e495a66811d2ce0bd26ca"
+      ],
+      "globals": [
+        "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+      ],
+      "object_count": 1,
+      "dimensions": {
+        "depth": 0.4386213421821594,
+        "height": 1.477109670639038,
+        "width": 0.5782248973846436
+      }
+    },
+    {
+      "id": "fruit-bowl",
+      "label": "Bowl of Plastic Fruit",
+      "kind": "tabletop-decor",
+      "group": "7f6146db",
+      "model": "foodFruitBowl",
+      "sha256": "e84ad535c5ab460e9578b4982d4651d482e4198f7a9b1abbccaa62c627ec44c9",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7f6146db-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "400a51a65d6ce20dcdce159deaa971a9e9a0430a85447a3c6789dcd92a94bba1"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d96a5ca7e48bcba88bdaac78082330a3e0e28624fe36a28958ae7875484d12f2"
+        },
+        {
+          "key": "474c4f42-7f6146db-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "86baeda8c50f54b095bbe1f07f6241efb37afdaaba8f664911dd13801306c13d"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "42c3361a20ef11a8bb278f3e105e010b18703f9faec0a6e4349cbea6ff9594fd"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5f8d9c2c029fb4591e395135bbdbaaa70bf27736a1a694b25810082f77f48b3c"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3403af45dbc3204a6aedd59b84356a675a3c56c5bf91fae1542950ecc042158b"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "9ffd18c64b69ea2c5b9a4aa073af7c48de2a287c7634323582a5dbe896cb824e"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000007",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3feb2fa45018d447bc33735add09f9acf456b64ab69a555c1a79e4560b775456"
+        },
+        {
+          "key": "46574156-7f6146db-0000000000000008",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "63bddc46a0c353e1b8c3961fa5396eb16b558974fa0d694ff30d0ab1b538f862"
+        },
+        {
+          "key": "534c4f54-7f6146db-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000082",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83"
+        },
+        {
+          "key": "54544142-7f6146db-0000000000000083",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "4dd67609130c01cfc6c891122bf0ad9c7276ea92af4e495a66811d2ce0bd26ca"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8d2b36b1929cb9380697600619ed269434c37c4c42ea0ce461afeb2ab808758f"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000087",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000088",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb"
+        },
+        {
+          "key": "53545223-7f6146db-0000000000000102",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+        },
+        {
+          "key": "43545353-7f6146db-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "0814bd17ba14c742d5966ff5853933f6267b5bce6efad9dc8b25e8a2e506f42a"
+        },
+        {
+          "key": "42434f4e-7f6146db-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b"
+        },
+        {
+          "key": "42484156-7f6146db-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0"
+        },
+        {
+          "key": "42484156-7f6146db-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f"
+        },
+        {
+          "key": "42434f4e-7f6146db-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54"
+        },
+        {
+          "key": "42434f4e-7f6146db-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e"
+        },
+        {
+          "key": "42484156-7f6146db-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8370376fb2c6b692b5089ec7bb7e300cb281da6f5fad28a045d4cee319b78682"
+        },
+        {
+          "key": "4f424a44-7f6146db-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6cb3f0e122786ac7372df1eb48dbfc64889ac1e101c51f2fc2a28a0b0b9468f2"
+        },
+        {
+          "key": "4e524546-7f6146db-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e3813749f3d4894db1381ff79b70cdfe7b95775f36a621199928ba35a1593455"
+        },
+        {
+          "key": "4f424a66-7f6146db-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "49596978-1c0532fa-14ef8f1fff173a90",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "d6bb7c0fc9d10507603c132168fbdb1a20224a4b1bd764c74b395399893e5af1"
+        },
+        {
+          "key": "49596978-1c0532fa-4702caa1ff9bd519",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "4660c5b048e1531aa15ff4f98cd0bee5a7d5c13dd0d47885730a8177db9c3a7e"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-fe3e4637ff0621ee",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "642d43297b98e6677d267ce59b797993ec032ca818dee16b9438258840c1180b"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-cac3cb6fff6ca3df",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "b384fa4c120c0eab1594b092fa9a1599f4a905af7b3c81b36a19f201cb37ec22"
+        },
+        {
+          "key": "e519c933-1c0532fa-97771f50ff22a53c",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "349ad81105363ba121d7760dce540fdf037938dabe9175f8c2aaf8ef64588347"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-82c8e2afff484a49",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "69b271cb281afa51ac7bbd69a4c91d06e5145366a5729f91ec19e3e66a0fbb5e"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-0b0c9033ff185e74",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "5515dd50dd27a9dc8acfdf549bc6f68e794b37eaa7ee4c7837c137356030d75b"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-cf84bd4cff20d159",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "baf81d41ba4546af37ba37464f4bec9e1cf9238541bfc0d00ae8bca57f163d88"
+        }
+      ],
+      "extracted_from_sha256": "2cb929670222b7eb93aeba286c0714660ac331beb6fd00fd6d72864363bab40b",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "tabletop",
+        "tile_count": 1,
+        "tiles": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "1001:f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f",
+        "1002:8370376fb2c6b692b5089ec7bb7e300cb281da6f5fad28a045d4cee319b78682"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b",
+        "42434f4e:0000000000001001:b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54",
+        "42434f4e:0000000000001002:b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e",
+        "42484156:0000000000001000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "42484156:0000000000001001:f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f",
+        "42484156:0000000000001002:8370376fb2c6b692b5089ec7bb7e300cb281da6f5fad28a045d4cee319b78682",
+        "474c4f42:0000000000000001:49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8",
+        "4f424a44:00000000000041a7:f5be6a520bf1d81e899444816604f14a17ae5b58424bc68b2d5fe145fdd68b6b",
+        "4f424a66:00000000000041a7:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "534c4f54:0000000000000080:6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8",
+        "53545223:0000000000000081:472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a",
+        "53545223:0000000000000082:b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83",
+        "53545223:0000000000000087:229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935",
+        "53545223:0000000000000088:41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359",
+        "53545223:0000000000000100:636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb",
+        "53545223:0000000000000102:de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b",
+        "54544142:0000000000000083:4dd67609130c01cfc6c891122bf0ad9c7276ea92af4e495a66811d2ce0bd26ca"
+      ],
+      "globals": [
+        "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+      ],
+      "object_count": 1,
+      "dimensions": {
+        "depth": 0.5590618252754211,
+        "height": 0.4836044907569885,
+        "width": 0.45256108045578003
+      }
+    },
+    {
+      "id": "venus",
+      "label": "\"On A Pedestal\" by Yucan Byall",
+      "kind": "floor-decor",
+      "group": "7fccb85f",
+      "model": "sculptureVenus",
+      "sha256": "d6e13e134ba8672152ba741bbf90982de8d5bd727754ef9921d0eb7c9b70db9c",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7fccb85f-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "400a51a65d6ce20dcdce159deaa971a9e9a0430a85447a3c6789dcd92a94bba1"
+        },
+        {
+          "key": "474c4f42-7fccb85f-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d96a5ca7e48bcba88bdaac78082330a3e0e28624fe36a28958ae7875484d12f2"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "86baeda8c50f54b095bbe1f07f6241efb37afdaaba8f664911dd13801306c13d"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "42c3361a20ef11a8bb278f3e105e010b18703f9faec0a6e4349cbea6ff9594fd"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5f8d9c2c029fb4591e395135bbdbaaa70bf27736a1a694b25810082f77f48b3c"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3403af45dbc3204a6aedd59b84356a675a3c56c5bf91fae1542950ecc042158b"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "9ffd18c64b69ea2c5b9a4aa073af7c48de2a287c7634323582a5dbe896cb824e"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000007",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3feb2fa45018d447bc33735add09f9acf456b64ab69a555c1a79e4560b775456"
+        },
+        {
+          "key": "46574156-7fccb85f-0000000000000008",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "63bddc46a0c353e1b8c3961fa5396eb16b558974fa0d694ff30d0ab1b538f862"
+        },
+        {
+          "key": "534c4f54-7fccb85f-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8"
+        },
+        {
+          "key": "53545223-7fccb85f-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a"
+        },
+        {
+          "key": "53545223-7fccb85f-0000000000000082",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83"
+        },
+        {
+          "key": "54544142-7fccb85f-0000000000000083",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "4dd67609130c01cfc6c891122bf0ad9c7276ea92af4e495a66811d2ce0bd26ca"
+        },
+        {
+          "key": "53545223-7fccb85f-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3092c2480bd986573a6b5d060d83f0fa317fc0bc6d0be33c4ed2035df28ff92a"
+        },
+        {
+          "key": "53545223-7fccb85f-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb"
+        },
+        {
+          "key": "53545223-7fccb85f-0000000000000102",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+        },
+        {
+          "key": "43545353-7fccb85f-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "2cc0890250044f6e1b555458d8ea083b521efc7df02047aeb3cf98d4151ee942"
+        },
+        {
+          "key": "42434f4e-7fccb85f-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b"
+        },
+        {
+          "key": "42484156-7fccb85f-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0"
+        },
+        {
+          "key": "42484156-7fccb85f-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "802af2bb9ada265ef1ec78eb0b5a4aaa5d7ef9b8ec2efff3d36489cc89751ce5"
+        },
+        {
+          "key": "42434f4e-7fccb85f-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54"
+        },
+        {
+          "key": "42484156-7fccb85f-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c31c98da80a8546e305b119f58c9f462b1d84c24fcf6602edee7dd540817b489"
+        },
+        {
+          "key": "42434f4e-7fccb85f-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e"
+        },
+        {
+          "key": "4f424a66-7fccb85f-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7fccb85f-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "336cc4cee5c076f92091eb8b33e39e6c60ce8ff225612d7f07b3b9f06c11b35f"
+        },
+        {
+          "key": "4e524546-7fccb85f-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8799d5857ca970837d76af5ca3c752d78045212c4f410bb021e9ad4e2f778d91"
+        },
+        {
+          "key": "49596978-1c0532fa-33d10e63ffc52fdf",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "4febb6984fa6c957ad63902dc361703fb0c6caa4584a67c68ca95637e65da7e5"
+        },
+        {
+          "key": "49596978-1c0532fa-c1f5c779ffde2340",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "9189fc021420d18917b02ff5648df4032568361063cc7bc61219917387dc1c8a"
+        },
+        {
+          "key": "49596978-1c0532fa-e690a919ff338203",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "bf1c1c630c7aa711f64a81430c167ba1833e5500900c1784112312ec0bbdc6d3"
+        },
+        {
+          "key": "49596978-1c0532fa-0f5774e2ff0f5224",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "a31eade9eb0c8234036ce878eaba01d842f1aeb1feb0b6713710c4f095482401"
+        },
+        {
+          "key": "49596978-1c0532fa-abfe9ce0ffcd2602",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "89b98f985be1b1d9f11c0dcb96b36132e2b447dc5eed7892e5fa9add1434489b"
+        },
+        {
+          "key": "49596978-1c0532fa-1ad847a5ff231a49",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "23cfa321ad223e93285c1acad688342657e422db5eb419cee3b7aa34f07f9933"
+        },
+        {
+          "key": "49596978-1c0532fa-b2eea3fbff85bcd9",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "62c996c9032046b58c1908dae11a2390c2646c2ed1f1a7be7d59626d577fb588"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-63e93dafff67dab5",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "8024255f9ef1e79d889f1de09c8c00558ae30e9156c1b11b67ef7d229e3ac6d6"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-5714b0f7ff0d5884",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "182432b55ba56b9222c03deccf481cdb65f3e9edc4d9b744ed175c49bfc5f0d0"
+        },
+        {
+          "key": "e519c933-1c0532fa-4ebe8916ff874de6",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "e09d2c4e25c133b855bc806bd059e1937f81fd4d4792a440d5ec72dc7ad347df"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-7a485262ffa1e683",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "e48436f18b5f9ea86ae5e3f5f380053a52980f305c400b594e043d427d1f9022"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-d384a8f4ffd12a01",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "19ef1103449d47625a04fb639319c4856fd71ce9f15707b8ea52dc912c3e3716"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-f972b12bff9c51da",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "d49539f106a80e91322cb2720d58878c712fee58e5081051acf32760971b7b95"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-1055848effa2f1ad",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "50b04276e917d5d967cc1267f616521fe7e3feaf8952bc0c7d57be6989231c49"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-3730eaeeff4f50ee",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "2b2b23628b13653093f3a21a1914a884a7b44656353a0ce9eb9841bf122fd250"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-bb44f940ff3334ce",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "4f8dd524bed2bd57e35a2543f439d69ed0605165be9b3b205d1a8a8e7b80665f"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-47591b92ff47d720",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "4ae09b38cd9f6dc4922dc6953f8787fe7337be10c491234154144601ebd9edd6"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-8b4488f6ff47aa26",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "59db82ac5e2b041cdd5cbbf6198a6148a6d18b11006a1b119c3bb27da04909cd"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-ea1113d4ffd68f8b",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "e13b1fc508a4ca3f8c1ce8c99a71e27a278b40d6957be452883699ba3de607a4"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a4f34",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "1182080413b8de3924aa6806a5f784eec807dbc42b5d4efb55a0b590e7920047"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000ee1a4f35",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "e624d57fcb921d2caceb6ae74417466ba08ae92e371b93f4af61e2caf77d9aa5"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000004e1a4f32",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "75d8df3f08d18d05dff3cc1b0f7690979602ad9298dc076b128f2f56c42f842a"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000004e1a4f37",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "dc2c22e2c611f3d768d59e5764c65734cc2850ba3c6fd41171f45f1b5b952669"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000000e1a4f33",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "eb2cbe28d94ab418bdf09ae5b7a5c60fbf9300d4de66a972503ad113e3777aa1"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000006e1a4f36",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "d1381609a5b2ef09bcc596dfeea625164aa0fdaff39ae749c6b74b3e13bd4e6a"
+        }
+      ],
+      "extracted_from_sha256": "27dacef47f10767c9af3fab83e69cf09f8dea50d7a32fbb93912479682897517",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 1,
+        "tiles": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "1001:802af2bb9ada265ef1ec78eb0b5a4aaa5d7ef9b8ec2efff3d36489cc89751ce5",
+        "1002:c31c98da80a8546e305b119f58c9f462b1d84c24fcf6602edee7dd540817b489"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b",
+        "42434f4e:0000000000001001:b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54",
+        "42434f4e:0000000000001002:b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e",
+        "42484156:0000000000001000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "42484156:0000000000001001:802af2bb9ada265ef1ec78eb0b5a4aaa5d7ef9b8ec2efff3d36489cc89751ce5",
+        "42484156:0000000000001002:c31c98da80a8546e305b119f58c9f462b1d84c24fcf6602edee7dd540817b489",
+        "474c4f42:0000000000000001:49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8",
+        "4f424a44:00000000000041a7:1b436bca7634c7d8e0ba61c52cea5081db913575ac8db90f0065d52ac5548d1c",
+        "4f424a66:00000000000041a7:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "534c4f54:0000000000000080:6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8",
+        "53545223:0000000000000081:472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a",
+        "53545223:0000000000000082:b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83",
+        "53545223:0000000000000100:636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb",
+        "53545223:0000000000000102:de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b",
+        "54544142:0000000000000083:4dd67609130c01cfc6c891122bf0ad9c7276ea92af4e495a66811d2ce0bd26ca"
+      ],
+      "globals": [
+        "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+      ],
+      "object_count": 1,
+      "dimensions": {
+        "depth": 0.6074233651161194,
+        "height": 2.2731895446777344,
+        "width": 0.6074232459068298
+      }
+    },
+    {
+      "id": "chimes",
+      "label": "\"Immobile Chimes\" Mobile in Steel",
+      "kind": "floor-decor",
+      "group": "7faf6c4a",
+      "model": "sculptureChimes",
+      "sha256": "27d04216ee210616d0e1f337d364fcd9288c43c1c2ead2359ab8471ece15d9d3",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7faf6c4a-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "400a51a65d6ce20dcdce159deaa971a9e9a0430a85447a3c6789dcd92a94bba1"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d96a5ca7e48bcba88bdaac78082330a3e0e28624fe36a28958ae7875484d12f2"
+        },
+        {
+          "key": "474c4f42-7faf6c4a-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "86baeda8c50f54b095bbe1f07f6241efb37afdaaba8f664911dd13801306c13d"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "42c3361a20ef11a8bb278f3e105e010b18703f9faec0a6e4349cbea6ff9594fd"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5f8d9c2c029fb4591e395135bbdbaaa70bf27736a1a694b25810082f77f48b3c"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3403af45dbc3204a6aedd59b84356a675a3c56c5bf91fae1542950ecc042158b"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "9ffd18c64b69ea2c5b9a4aa073af7c48de2a287c7634323582a5dbe896cb824e"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000007",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3feb2fa45018d447bc33735add09f9acf456b64ab69a555c1a79e4560b775456"
+        },
+        {
+          "key": "46574156-7faf6c4a-0000000000000008",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "63bddc46a0c353e1b8c3961fa5396eb16b558974fa0d694ff30d0ab1b538f862"
+        },
+        {
+          "key": "534c4f54-7faf6c4a-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c1942f9b56fe07123ec2d5c74acdb7f30b237e8efceff70620809c59555e32eb"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000082",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3061549275bd062981531fe781b746849fbb7507530948c99a59bb97c309c211"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000087",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000088",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb"
+        },
+        {
+          "key": "53545223-7faf6c4a-0000000000000102",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+        },
+        {
+          "key": "43545353-7faf6c4a-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "94f31ee8d761320a897567fc75b83f89617ac2154df1dd959d832cdbf2402b15"
+        },
+        {
+          "key": "42434f4e-7faf6c4a-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b"
+        },
+        {
+          "key": "42484156-7faf6c4a-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0"
+        },
+        {
+          "key": "42484156-7faf6c4a-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f"
+        },
+        {
+          "key": "42434f4e-7faf6c4a-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54"
+        },
+        {
+          "key": "42484156-7faf6c4a-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "776d48bfad7a08d2a9c04a4fc2c2eeeaebf7343c02d3963dc7181722dc1ee023"
+        },
+        {
+          "key": "42434f4e-7faf6c4a-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e"
+        },
+        {
+          "key": "4f424a66-7faf6c4a-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b3dd2dde2c68f28fc99caf8a3922e5439cb804f40dbba0cfed1257703ec3d21e"
+        },
+        {
+          "key": "4f424a44-7faf6c4a-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "7940e24ae560018d4051e9dfc7be4296ab72425e0ade7a6477308b00d3f0e35a"
+        },
+        {
+          "key": "4e524546-7faf6c4a-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "f65bc9009ba9ceb46b992fb4cfb4f018092ac5936d2a447cbae45f2988286936"
+        },
+        {
+          "key": "4f424a66-7faf6c4a-00000000000041a8",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7faf6c4a-00000000000041a8",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c007b0af62a89c256c2391b4ab84bdfbecb674a0d06dc0f701cde410f723a4e7"
+        },
+        {
+          "key": "4e524546-7faf6c4a-00000000000041a8",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "f65bc9009ba9ceb46b992fb4cfb4f018092ac5936d2a447cbae45f2988286936"
+        },
+        {
+          "key": "4f424a66-7faf6c4a-00000000000041a9",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7faf6c4a-00000000000041a9",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "a8e6e5c0e2b25d289e5c240a6c1fa54c4200295971be13d370fdeaf28fd61667"
+        },
+        {
+          "key": "4e524546-7faf6c4a-00000000000041a9",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "f65bc9009ba9ceb46b992fb4cfb4f018092ac5936d2a447cbae45f2988286936"
+        },
+        {
+          "key": "49596978-1c0532fa-dc503e5cff33a953",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "ab027b168e83575891ed2b0008a9d0da83f771cb82d81da419cd3ff126e8af14"
+        },
+        {
+          "key": "49596978-1c0532fa-b94a7bb3ffe742c4",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "33239ccfb8b9eccaa7b4583b78c6be05173ab2bccce2b78992981fd79d79d18d"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-c5dc28faff5adff4",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "7d34d8c7ac35a1acb7e0dfd626a032cab6f66b6b090340d8ba01510b973aad23"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-f121a5a2ff305dc5",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "1f4bbe3311355f1cbaf47c5b59b4c4423462a3a5e9324b770dd128fcaa646ce0"
+        },
+        {
+          "key": "e519c933-1c0532fa-629f23cfffb1e3e5",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "62fe245f4e9828af917418249bb40ddf839730c961b8674a903489264fbb7b81"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-e16c0ec7ff7ad261",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "3e44c6e5eebb2c7763801c9fd18e7c232c795e44fee19d358a3b97e62275d2bc"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-a3af7c7effec4b64",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "2251bd088663fce26249eddcb16a7cc44bc69dc9bc39877cce442631e6bbcac3"
+        }
+      ],
+      "extracted_from_sha256": "8a613f9c62a991bd36abd7423b6181cb265e4124017ed616828b970b528f239d",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 2,
+        "tiles": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "1001:f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f",
+        "1002:776d48bfad7a08d2a9c04a4fc2c2eeeaebf7343c02d3963dc7181722dc1ee023"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b",
+        "42434f4e:0000000000001001:b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54",
+        "42434f4e:0000000000001002:b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e",
+        "42484156:0000000000001000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "42484156:0000000000001001:f664ac8450af838488a5d86174bc22d3ccb8a0cdb962b8c8bd2e72dc9ce2f98f",
+        "42484156:0000000000001002:776d48bfad7a08d2a9c04a4fc2c2eeeaebf7343c02d3963dc7181722dc1ee023",
+        "474c4f42:0000000000000001:49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8",
+        "4f424a44:00000000000041a7:1fd6b49a6726f93204df4dbeab74b08b2579edcb2ce735724144d1d023792e1c",
+        "4f424a44:00000000000041a8:ce112072ccdca7f6e90e946c2d0f76afe919138a8fcddb913b0d7cad541901f2",
+        "4f424a44:00000000000041a9:07856145aee6b61928aad1c37b4f43cce7f5ac26be837d1de11666d8fccc1ea7",
+        "4f424a66:00000000000041a7:b3dd2dde2c68f28fc99caf8a3922e5439cb804f40dbba0cfed1257703ec3d21e",
+        "4f424a66:00000000000041a8:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "4f424a66:00000000000041a9:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "534c4f54:0000000000000080:6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8",
+        "53545223:0000000000000081:c1942f9b56fe07123ec2d5c74acdb7f30b237e8efceff70620809c59555e32eb",
+        "53545223:0000000000000082:b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83",
+        "53545223:0000000000000087:229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935",
+        "53545223:0000000000000088:41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359",
+        "53545223:0000000000000100:636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb",
+        "53545223:0000000000000102:de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+      ],
+      "globals": [
+        "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+      ],
+      "object_count": 3,
+      "dimensions": {
+        "depth": 0.828860878944397,
+        "height": 1.9563109874725342,
+        "width": 1.7474877834320068
+      }
+    },
+    {
+      "id": "chi",
+      "label": "The My-Chi Sculpture Form",
+      "kind": "floor-decor",
+      "group": "7fbbdbbc",
+      "model": "sculptureChi",
+      "sha256": "f324547fe271e68bcc1ba88d4d540a88ffbc4d909103f27a5de571780542299e",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7fbbdbbc-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "400a51a65d6ce20dcdce159deaa971a9e9a0430a85447a3c6789dcd92a94bba1"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d96a5ca7e48bcba88bdaac78082330a3e0e28624fe36a28958ae7875484d12f2"
+        },
+        {
+          "key": "474c4f42-7fbbdbbc-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "86baeda8c50f54b095bbe1f07f6241efb37afdaaba8f664911dd13801306c13d"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "42c3361a20ef11a8bb278f3e105e010b18703f9faec0a6e4349cbea6ff9594fd"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5f8d9c2c029fb4591e395135bbdbaaa70bf27736a1a694b25810082f77f48b3c"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3403af45dbc3204a6aedd59b84356a675a3c56c5bf91fae1542950ecc042158b"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "9ffd18c64b69ea2c5b9a4aa073af7c48de2a287c7634323582a5dbe896cb824e"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000007",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "3feb2fa45018d447bc33735add09f9acf456b64ab69a555c1a79e4560b775456"
+        },
+        {
+          "key": "46574156-7fbbdbbc-0000000000000008",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "63bddc46a0c353e1b8c3961fa5396eb16b558974fa0d694ff30d0ab1b538f862"
+        },
+        {
+          "key": "534c4f54-7fbbdbbc-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000082",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b5ecf9171f45bb5595cc3b79caed190970d77793de77d2a53e48001fe7de59b8"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000087",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000088",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb"
+        },
+        {
+          "key": "53545223-7fbbdbbc-0000000000000102",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+        },
+        {
+          "key": "43545353-7fbbdbbc-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d8a807b37d98761f55b1cbed38ae2986d4d420b2f57f84119b58b314f8ccb05b"
+        },
+        {
+          "key": "42434f4e-7fbbdbbc-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b"
+        },
+        {
+          "key": "42484156-7fbbdbbc-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0"
+        },
+        {
+          "key": "42484156-7fbbdbbc-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "802af2bb9ada265ef1ec78eb0b5a4aaa5d7ef9b8ec2efff3d36489cc89751ce5"
+        },
+        {
+          "key": "42434f4e-7fbbdbbc-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54"
+        },
+        {
+          "key": "42434f4e-7fbbdbbc-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e"
+        },
+        {
+          "key": "42484156-7fbbdbbc-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e58d503c933c53a931b28d7ac46918d17fb06fba6d80d65f8493a6c7c207ee78"
+        },
+        {
+          "key": "4f424a66-7fbbdbbc-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b3dd2dde2c68f28fc99caf8a3922e5439cb804f40dbba0cfed1257703ec3d21e"
+        },
+        {
+          "key": "4f424a44-7fbbdbbc-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e5eb7e7b9108c53dffb7a8c4c5376fbe44cab022f58015f7e041fc625db25646"
+        },
+        {
+          "key": "4e524546-7fbbdbbc-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8f72c4c175be080693cadb25bcc9e727fbbe80d01b3ef13355774d146c0baf58"
+        },
+        {
+          "key": "4f424a66-7fbbdbbc-00000000000041a8",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7fbbdbbc-00000000000041a8",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "65083985ea6411bd160c8b286e7ae348b04677f9bd9d8b1bd90f78ba2fadd31b"
+        },
+        {
+          "key": "4e524546-7fbbdbbc-00000000000041a8",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8f72c4c175be080693cadb25bcc9e727fbbe80d01b3ef13355774d146c0baf58"
+        },
+        {
+          "key": "4f424a66-7fbbdbbc-00000000000041a9",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7fbbdbbc-00000000000041a9",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e38edc7844f8a00529962d808504f1f21ce0753b166097cd21342371ea7a2260"
+        },
+        {
+          "key": "4e524546-7fbbdbbc-00000000000041a9",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8f72c4c175be080693cadb25bcc9e727fbbe80d01b3ef13355774d146c0baf58"
+        },
+        {
+          "key": "4f424a66-7fbbdbbc-00000000000041aa",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7fbbdbbc-00000000000041aa",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "85b98fc9d3b830bf8820e243f6862b52fd10f9f0a663eb8b13b014acbe9e0c7b"
+        },
+        {
+          "key": "4e524546-7fbbdbbc-00000000000041aa",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8f72c4c175be080693cadb25bcc9e727fbbe80d01b3ef13355774d146c0baf58"
+        },
+        {
+          "key": "4f424a66-7fbbdbbc-00000000000041ab",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd"
+        },
+        {
+          "key": "4f424a44-7fbbdbbc-00000000000041ab",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "687273438e35fb55050f5ff3a95aa016e9326eaaff2df6235b5cdf62993f22f1"
+        },
+        {
+          "key": "4e524546-7fbbdbbc-00000000000041ab",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8f72c4c175be080693cadb25bcc9e727fbbe80d01b3ef13355774d146c0baf58"
+        },
+        {
+          "key": "49596978-1c0532fa-2ce55ab0ff73cd53",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "8ce2d899ad3941cffb10c4a3903ed8f689cf58b574140ce8c803204dd22008b3"
+        },
+        {
+          "key": "49596978-1c0532fa-5144e26cffd5e933",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "1516f5ca683e349d56d555a154a9ea7d376a2c695ee91d72ac5077f2f190157e"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-cb1dae19ff0cd4dd",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "de2faad3b892c70b6c39dc8d4af8eeca453b6119fb7a959dd1318d34a591bb94"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-ffe02341ff6656ec",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "f242d0238d8b41d20288b2a7b3b52744da047610755db387fca74d2ea43bdf68"
+        },
+        {
+          "key": "e519c933-1c0532fa-cca86c55ffd8f168",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "70659930d4f40c71720543718d56331cbc2d175a1f23044f6933f5aff23dd93e"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-09454404ff71e4a8",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "0096cba1d874c0fa27e888c1c1b9775976047e44750e28fb433ef14cbc24fc0a"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-efad8824ff2cd948",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "f3671548a36fc7fa5c63ac8e63939476d759a54b24463da2d80720eb1e03289e"
+        }
+      ],
+      "extracted_from_sha256": "b31dbdad376299408cf264b188eeb858230de40c8b108f757868a4d453931c70",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 4,
+        "tiles": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "1001:802af2bb9ada265ef1ec78eb0b5a4aaa5d7ef9b8ec2efff3d36489cc89751ce5",
+        "1002:e58d503c933c53a931b28d7ac46918d17fb06fba6d80d65f8493a6c7c207ee78"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:ce4a1820411fb1de111f79143dc0791ccb809a8456769277f3ae1c0476ec877b",
+        "42434f4e:0000000000001001:b2e96595a951a94c6b92ee7721e85db2f740f5e5af15e3a59a5ce9270fc63b54",
+        "42434f4e:0000000000001002:b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e",
+        "42484156:0000000000001000:1728edbb2ef0e10062cf09aad56daf35b22cadb949ec1fb50551118b539d71d0",
+        "42484156:0000000000001001:802af2bb9ada265ef1ec78eb0b5a4aaa5d7ef9b8ec2efff3d36489cc89751ce5",
+        "42484156:0000000000001002:e58d503c933c53a931b28d7ac46918d17fb06fba6d80d65f8493a6c7c207ee78",
+        "474c4f42:0000000000000001:49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8",
+        "4f424a44:00000000000041a7:dfc9782d394e71524e97182c0cfac4f0c38ab03b3141926744b27c5ef4bea661",
+        "4f424a44:00000000000041a8:de97578ef6c4933c1b3f77b2c6ed9caee7567bf8a1b7e568cc43def51fbcb40b",
+        "4f424a44:00000000000041a9:f7fe081ca7411ad5a7b9cc8a2fce3829b690bd9f0a8a43df9be1da44dd6ce3a5",
+        "4f424a44:00000000000041aa:7677c8c2846da261064cb88f3a58e14b3b98cfd1cc7d22e18c9cb5644ce0674c",
+        "4f424a44:00000000000041ab:e4168c2f3f33911530e968a4d17e4397e56e2ca18b3e75818734a33ffbd56d93",
+        "4f424a66:00000000000041a7:b3dd2dde2c68f28fc99caf8a3922e5439cb804f40dbba0cfed1257703ec3d21e",
+        "4f424a66:00000000000041a8:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "4f424a66:00000000000041a9:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "4f424a66:00000000000041aa:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "4f424a66:00000000000041ab:73877297099944ded7bbe44d5cdc468fcd59b5f0db7d42fa5cf31332ddb56bdd",
+        "534c4f54:0000000000000080:6db113b3e29f0095192d9e7eb41d5ea024ff2c270724afdfd48c32a3b79e90f8",
+        "53545223:0000000000000081:472724aea5e802b654d9d148bf2dc4760574f57c4d125b6dae3b608d17210b3a",
+        "53545223:0000000000000082:b579b2d9e4bf8d73d800f3fb5c6be33cf2420e7ecff6f5c331e0ec9f6fcf9f83",
+        "53545223:0000000000000087:229fd3abb532bdb3f1a381f1a87742b178c8a05da5ac261f31f6dbc467147935",
+        "53545223:0000000000000088:41c0b2dc576c47d246f22a431b63b2ab2f5322c95eea408ee47f1f1b778c4359",
+        "53545223:0000000000000100:636776b79bf3ee99d4abaadcb8c325cdf8d0b03a7c865913c85d8a7fda7b52eb",
+        "53545223:0000000000000102:de639bf3e7dad4daf3335fc18a3c26b61f47da24a8f043cc1011b793a98bce9b"
+      ],
+      "globals": [
+        "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+      ],
+      "object_count": 5,
+      "dimensions": {
+        "depth": 1.2835187911987305,
+        "height": 2.2831478118896484,
+        "width": 1.019152045249939
+      }
+    },
+    {
+      "id": "dining-chair",
+      "label": "Tea Party in Teak",
+      "kind": "chair",
+      "group": "7f02cfd9",
+      "model": "chairDiningValue1",
+      "sha256": "a4a54e8e684fbfe33ea60057cb15ba50d2ab8ce5953b20f13a401af74f93d969",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7f02cfd9-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c5acdc4cb9fce4e9ee6ed451e2e91a73e934db03e0602030619b8d9ff253ba30"
+        },
+        {
+          "key": "534c4f54-7f02cfd9-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "7e8ec09451e5bceff23768727427bdda3c434f0f11a95f9049005cbdda810ea0"
+        },
+        {
+          "key": "46574156-7f02cfd9-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "986c855a1c2f2769255b76ac60d806a954118ebb66e31280442c6b8fd4a1ca11"
+        },
+        {
+          "key": "474c4f42-7f02cfd9-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "81e2adfaf2863f908bfb565ba1810a35a7ac9903a533616a7467637826d295f9"
+        },
+        {
+          "key": "46574156-7f02cfd9-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "992b570a751e446746bf0109d33fbbdc57e9339de8b0da72d31f5651d0a23d3e"
+        },
+        {
+          "key": "46574156-7f02cfd9-0000000000000003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c5acdc4cb9fce4e9ee6ed451e2e91a73e934db03e0602030619b8d9ff253ba30"
+        },
+        {
+          "key": "46574156-7f02cfd9-0000000000000004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "bb5d12b8fa72b6f956b7e6516d3f2a2b7967e12749723dbcf9779492587de609"
+        },
+        {
+          "key": "46574156-7f02cfd9-0000000000000005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "a5749722b9a8a55368672303c064c3be14416436ea8f61f74f026ad6960e1aac"
+        },
+        {
+          "key": "534c4f54-7f02cfd9-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "80824b16eac13bcd5e026ba15927dc0f3e63d7bf92ae34e5010193a84cc08760"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "46b3582a9a01c3a3add2e92b996c7da55970e0bd76122df5b8155d5521e0fcca"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000082",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "0f9488b7a6556d8141e2a558caf0fae820858801200b9982341c8e424aed9dfc"
+        },
+        {
+          "key": "54544173-7f02cfd9-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "2823caafdb2a6c1b3d04b3e098dbe4edca0af49a2b6b561a082ba0088a2f4744"
+        },
+        {
+          "key": "54544142-7f02cfd9-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5787262b4bf367ebf442b8bd6999d527303c68cef62809e4b4bb195960d97539"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "31b4c9f3795670571eb4987823bf94ff119efaafe821452b3ebae6381380ee9a"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000086",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5d86df017239efdf0b056d658efc3d575f94b7ca5802aff9c03ac6c23fdfd9b8"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000090",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "fd1c3abd515a239679e44302ce296a99f460e2a39fc4d0263c04e4f11a989b58"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000094",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1f106172819e9fbad2eabe62d917b81d7158ac3957aeb9d04b0ed33c04c379a3"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "07c91d35b2433c080a986e41685d24cbb56dd78ac452d103c853361fab59ca93"
+        },
+        {
+          "key": "53545223-7f02cfd9-0000000000000192",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "400f48aeeb3f820e2b8cc8d00f48eed38ac36061a1133dd7c041e3608e498e39"
+        },
+        {
+          "key": "43545353-7f02cfd9-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b8075fc9cccac0482ec1aa50d0b56a5f2aa49815575972da1f90e5ce179ec99a"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5ff9a9f3a432b16b2047672294289e7524d9f5f8d78517d316d30fe08a251918"
+        },
+        {
+          "key": "42484156-7f02cfd9-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "4295037ca9fc50b897d39afc63adf1c10936840109ae49c79ea47224617fc4c1"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e30b92df94a5a0295e057a6598e6887467e3a8cba17dae373e0036e66b197af2"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b06c468e754bc80b377da080be75e92c73739f3d4033acf2ec5af3cd76ccc278"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001003",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "4910e7d3fc70010112df666fc881aff481c21b15b69006ad59e979bdd8a224f4"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6882f08f258a507164be58a4f6554165ed2d0d42553400fe0c30d338d3988f56"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "2fa6544a473dc358c33188a40f8c44dc1497bc4ac3d64088e032c5b9ffb7fd37"
+        },
+        {
+          "key": "42434f4e-7f02cfd9-0000000000001006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "75e34bdfbf18216760f9aa95e84e51f4c646473b35a4b8be21397e918adff2ea"
+        },
+        {
+          "key": "42484156-7f02cfd9-000000000000100c",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6a3aeaa9ec444220ca398270794e68a1b0f1091e5223f561719abca38bb748b8"
+        },
+        {
+          "key": "4e524546-7f02cfd9-00000000000041ac",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "33f62bffdfed0ff74da10e78e8a4e07a626a332b093c0919e25f13d9da1fdfc1"
+        },
+        {
+          "key": "4f424a44-7f02cfd9-00000000000041ac",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "bbdc77f04d132f20d669751e99b8397bc788cd06d21e7815c070bead3a9e34bf"
+        },
+        {
+          "key": "4f424a66-7f02cfd9-00000000000041ac",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b88d2a85e6038e3e2cfa036c55083e5f4a74ab497c645e6eb5fb55f4947340df"
+        },
+        {
+          "key": "49596978-1c0532fa-81755fcaff7b73a9",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "174e50c35adb70491b1d14fe80b24bbdfbd7504fcf1b0722be3b7d6fa1713fb1"
+        },
+        {
+          "key": "49596978-1c0532fa-df8e81f4ffba4ade",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "8cbcf6a9003b59ea8ac84efcdfea569d12decad01beb54bd0cb061192b21c017"
+        },
+        {
+          "key": "49596978-1c0532fa-e36a24feff2b13f5",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "8ed09b96db8fb489529e6092ec4115999bf4d5d030e233685f6d1832d9a6f56c"
+        },
+        {
+          "key": "49596978-1c0532fa-c6b4a26dff63970b",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "da7d5e8e57cdef3ee60f5890dbd6052ca0c05ff900e5f6f03fae1b6f4fd0207c"
+        },
+        {
+          "key": "49596978-1c0532fa-e9589f34ffbd0a41",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "2a42a03c7e01d6ec75dd3e93d015b3fe8406c0ad5ee7e9abc1bb7ca862a2cf4d"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-bd35986afff0fa16",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "d5d0724a699b0dbe832e12a8ecdeeda0489f6246804135f0bfd68eda54c5d6f6"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-89c81532ff9a7827",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "e71fb1857ef0e6e203af7ae9231d574a70aa5250a33f7cb6ecdfb7f334fe0aad"
+        },
+        {
+          "key": "e519c933-1c0532fa-4fb1d812ffa1b998",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "df54479e4c89d2850743db1e9a2030bba746c9462b368ee83704b499c292b67f"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-65085dd9ff1c9453",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "dd960211c9fc539312f0aa001083586cbb1b10e839ff1f38cee0c73b5b813b0b"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-f7576a4bff80ece1",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "6975c467b7e779d88a6b95667d78c7ae8d53dca61dac39a48467409ce9f1773c"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-f8c3aa2cffe9c09f",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "738c71ba698b7f9b6e609534993fbd2b619fa9cd5014555a499ea469fac29310"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-bb74987effccf620",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "83b408634a4b55b6e24f5c6d45bb720fd6ddc77d2ddc0bd47c8ce250caebe60c"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-a9acb475ff41d596",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "e99f52ce46e30cc44c812d7343c2aa5149c27075eaee01d6f14b88cf28579d1a"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-7f9d105fff35ad55",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "25088d59a6fb975835b70abdb9966dff724c5409ec06a821afa50f8b67da205b"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000ce1a5108",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "5f03d5cd5ffe9889a9923295268c4a967c334a5a4472a055669e908b8518781d"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a5109",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "566d1dd4eac8d596953af0143fe71ab610f94b0748c772a28b087f78cf891ec2"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000004e1a510a",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "57124c9e289808df4c6aabdf58d8b909a1762044731ed91b54349fe67b7d5ffc"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000ae1a5107",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "ba92803d617714206bc8e3a820f7255568f392ed67b76c5abdf4b44c0f4cc3d4"
+        }
+      ],
+      "extracted_from_sha256": "d4b655accdae42a37ab295b9ca4e3e24efaa9c7835f1c57a0bf87c74b200b281",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 1,
+        "tiles": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:4295037ca9fc50b897d39afc63adf1c10936840109ae49c79ea47224617fc4c1",
+        "100c:6a3aeaa9ec444220ca398270794e68a1b0f1091e5223f561719abca38bb748b8"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:5ff9a9f3a432b16b2047672294289e7524d9f5f8d78517d316d30fe08a251918",
+        "42434f4e:0000000000001001:e30b92df94a5a0295e057a6598e6887467e3a8cba17dae373e0036e66b197af2",
+        "42434f4e:0000000000001002:b06c468e754bc80b377da080be75e92c73739f3d4033acf2ec5af3cd76ccc278",
+        "42434f4e:0000000000001003:4910e7d3fc70010112df666fc881aff481c21b15b69006ad59e979bdd8a224f4",
+        "42434f4e:0000000000001004:6882f08f258a507164be58a4f6554165ed2d0d42553400fe0c30d338d3988f56",
+        "42434f4e:0000000000001005:2fa6544a473dc358c33188a40f8c44dc1497bc4ac3d64088e032c5b9ffb7fd37",
+        "42434f4e:0000000000001006:75e34bdfbf18216760f9aa95e84e51f4c646473b35a4b8be21397e918adff2ea",
+        "42484156:0000000000001000:4295037ca9fc50b897d39afc63adf1c10936840109ae49c79ea47224617fc4c1",
+        "42484156:000000000000100c:6a3aeaa9ec444220ca398270794e68a1b0f1091e5223f561719abca38bb748b8",
+        "474c4f42:0000000000000001:81e2adfaf2863f908bfb565ba1810a35a7ac9903a533616a7467637826d295f9",
+        "4f424a44:00000000000041ac:6da26f60427aaff8ab08be916b40ab0075bcea3ab16d3fde3402e6aac1f0dec4",
+        "4f424a66:00000000000041ac:b88d2a85e6038e3e2cfa036c55083e5f4a74ab497c645e6eb5fb55f4947340df",
+        "534c4f54:0000000000000000:7e8ec09451e5bceff23768727427bdda3c434f0f11a95f9049005cbdda810ea0",
+        "534c4f54:0000000000000080:80824b16eac13bcd5e026ba15927dc0f3e63d7bf92ae34e5010193a84cc08760",
+        "53545223:0000000000000081:46b3582a9a01c3a3add2e92b996c7da55970e0bd76122df5b8155d5521e0fcca",
+        "53545223:0000000000000082:0f9488b7a6556d8141e2a558caf0fae820858801200b9982341c8e424aed9dfc",
+        "53545223:0000000000000086:5d86df017239efdf0b056d658efc3d575f94b7ca5802aff9c03ac6c23fdfd9b8",
+        "53545223:0000000000000090:fd1c3abd515a239679e44302ce296a99f460e2a39fc4d0263c04e4f11a989b58",
+        "53545223:0000000000000094:1f106172819e9fbad2eabe62d917b81d7158ac3957aeb9d04b0ed33c04c379a3",
+        "53545223:0000000000000100:07c91d35b2433c080a986e41685d24cbb56dd78ac452d103c853361fab59ca93",
+        "53545223:0000000000000192:400f48aeeb3f820e2b8cc8d00f48eed38ac36061a1133dd7c041e3608e498e39",
+        "54544142:0000000000000085:5787262b4bf367ebf442b8bd6999d527303c68cef62809e4b4bb195960d97539",
+        "54544173:0000000000000085:2823caafdb2a6c1b3d04b3e098dbe4edca0af49a2b6b561a082ba0088a2f4744"
+      ],
+      "globals": [
+        "81e2adfaf2863f908bfb565ba1810a35a7ac9903a533616a7467637826d295f9"
+      ],
+      "object_count": 1,
+      "dimensions": {
+        "depth": 0.5477943420410156,
+        "height": 1.0047639608383179,
+        "width": 0.4834161400794983
+      }
+    },
+    {
+      "id": "dining-table",
+      "label": "The Talking Table",
+      "kind": "table",
+      "group": "7f4a7676",
+      "model": "tableDiningQuaint",
+      "sha256": "f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "474c4f42-7f4a7676-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d6b71c4eb79de1796147e8e0eac613e686fae947490dabebafe0bce8b9bf0f57"
+        },
+        {
+          "key": "534c4f54-7f4a7676-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "16e374e0e8c51de24548abaca1d7e310850b6d99264075b238e1d36ccfe91b28"
+        },
+        {
+          "key": "534c4f54-7f4a7676-0000000000000081",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "9399d97ae6bb302d3ae80f67750740ceb110b5acc4e9f1f35260fd8c1d625137"
+        },
+        {
+          "key": "53545223-7f4a7676-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "71c9e86976595a9f783d030474ac2201cb8c7f3f278446aab25d8e2edd6d1317"
+        },
+        {
+          "key": "53545223-7f4a7676-0000000000000090",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "105879ac7022b4af06304b38f5f0fb52332f5208f348172dcc547e14ca5557c0"
+        },
+        {
+          "key": "53545223-7f4a7676-0000000000000094",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5e480739a3e4c672981e9e52c4b6a25a12abb43f9ef25934ab61ca456f365754"
+        },
+        {
+          "key": "53545223-7f4a7676-0000000000000100",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "16c9aea5fb8abb9c6ad8d33e61929f0d02471ba13726ad8c6318dd116c8d9863"
+        },
+        {
+          "key": "53545223-7f4a7676-000000000000012f",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8fa7f3db157823971e675bff86dfa7e7cac729472b7d4642e5f7e8ad196f861e"
+        },
+        {
+          "key": "43545353-7f4a7676-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "fa35f5bca9a1186a1fbbaa2fdbe13cf4592cf0064b606c43c5c1ac0cae66bf46"
+        },
+        {
+          "key": "42484156-7f4a7676-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "484130a5062920011a225a97b95096fcb0217056d3479367cfad9e5f2bb96901"
+        },
+        {
+          "key": "42434f4e-7f4a7676-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "69ea197645987ce455216136167079a7824cdd99a2d0ce9441c8bc45698575b4"
+        },
+        {
+          "key": "42484156-7f4a7676-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "03683a47be050d7438a829a62b52fe2783779119b24c5afcbbc2c7b8cc2e9868"
+        },
+        {
+          "key": "53545223-7f4a7676-0000000000004132",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c45022a417c2bc06a73e70659493aafbed72989cc58453f844c07c5d91a2da90"
+        },
+        {
+          "key": "4e524546-7f4a7676-00000000000041ab",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ba63c8dcb37f4cab990432180eaf9e9d3bbde1ef4c3b2e5265a22cb4595b1683"
+        },
+        {
+          "key": "4f424a44-7f4a7676-00000000000041ab",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "8120fc0fe9d02fb7a42334ae7ebe256422679b11a7026be8dd3487c6360f8fc6"
+        },
+        {
+          "key": "4f424a66-7f4a7676-00000000000041ab",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b27e5f214a9805b8a1d5d8a7cc18bcc18324f1ca04317be300892f3407f6eb08"
+        },
+        {
+          "key": "4e524546-7f4a7676-00000000000041af",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ba63c8dcb37f4cab990432180eaf9e9d3bbde1ef4c3b2e5265a22cb4595b1683"
+        },
+        {
+          "key": "4f424a44-7f4a7676-00000000000041af",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "700aa4bc39ddf1f3eacee3e06a9099d99b6fa96ec27ff65244d8ceedbac6e96c"
+        },
+        {
+          "key": "4f424a66-7f4a7676-00000000000041af",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e3cc0a307fb75c4acbe9bd66526dc9144d78c19615dd9f1c20588f65e9259d7a"
+        },
+        {
+          "key": "4e524546-7f4a7676-00000000000041b0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ba63c8dcb37f4cab990432180eaf9e9d3bbde1ef4c3b2e5265a22cb4595b1683"
+        },
+        {
+          "key": "4f424a44-7f4a7676-00000000000041b0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "e761f4f33d150953a7e3e0279ffb949ca56973f8fb5cfaacd9bb5a4413dcb439"
+        },
+        {
+          "key": "4f424a66-7f4a7676-00000000000041b0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b27e5f214a9805b8a1d5d8a7cc18bcc18324f1ca04317be300892f3407f6eb08"
+        },
+        {
+          "key": "49596978-1c0532fa-62d76210ff88f329",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "2b01ade08e2e8dd6d96960c8dd7a1fe097fb13bbed49b47486ef77ad4ab8fab6"
+        },
+        {
+          "key": "49596978-1c0532fa-23d7a194ffa2b1ff",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "72c05bbcb9696ab42b9c90f77b9ecca41813e15e1173cfd7b0884483d05d9ce7"
+        },
+        {
+          "key": "49596978-1c0532fa-d8c5887fff7d69c5",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "838c2c23e48ce54a9292c67cf9ae66792c5e2784eaaa6df36a902e965d9da56a"
+        },
+        {
+          "key": "49596978-1c0532fa-4209e030ff9ab133",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "39f57d6a0d0fbfbe43d849150d2a7743a8a60c7f5260a144adefaff8b0ac4d31"
+        },
+        {
+          "key": "49596978-1c0532fa-5ba28fe9ffa412e1",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "a592995bec54caffe5801c74da2964c89828d16e6b3f884b544ecacff69a2e69"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-4f3add82ff212f88",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "1b87e5b902ba053d97b9376af2bf093521d9579c0c485c553988f6291db4dfe6"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-7bc750daff4badb9",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "09793f6a92786b77ffc91b115ae77c6cb902c5a60a537f223e78eea96e44f7df"
+        },
+        {
+          "key": "e519c933-1c0532fa-c5835dc5ff77d573",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "52f84b3b550eb0c947dd3ec5b4afcabfca58ae43fe7a97482702c093479e03f7"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-8d9255b7ffe478cb",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "cc8e3e73a79adf4cf1d8a04dd2c960731dcec87f6ccf8c8b0404d4b42d8002f7"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-9b422701ff203406",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "60ed15e67ffb2787a0b1617d1cd5180ccc6d4a27e7f7a3fae649bf76c029247c"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-2496057dffbffe63",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "a5cf0a1b3555a73a5a6a175331fbc6c5d6fae63521f9075e393da7c455eb9e84"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-0bbf3f2cff602f87",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "11f85205dedb0acb58748114dcab1a58200237557cb1e82d33ff94a4a7e14720"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-6780152effa022f9",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "ca29e7478991ceb3649484954d1da6c4b0beb0899171e4ba93cec38bd9c32732"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-dd92ff41ff55b815",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "562b590d7cc53cdf687faf749f08f9e429d611e83d1ce20e00ce1821f909ff8c"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000ae1a4a0e",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "88a86400d6f6269886fa8df74b5ca27cb78af8649702394870cb6f710fbddff2"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a4a0b",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "1974f03fa1f28e52a32723a9a1f8d6b8f867851e180f556e20c64764afcde7dd"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000002e1a4a0c",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "0a0738b3feb1f06094aef6a54b2cbba2071fb4e1681c71d2798ebb581c629902"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000008e1a4a0d",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "5b161b0fe40d6dadc920ab30170051b3a2e07a0c99ba1e677ba7179d4f38a3d0"
+        }
+      ],
+      "extracted_from_sha256": "ef9718acefa423e229dff3ce984b3e9b44a93fc2a906cf67243c29db1467e4c3",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 2,
+        "tiles": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:484130a5062920011a225a97b95096fcb0217056d3479367cfad9e5f2bb96901",
+        "1001:03683a47be050d7438a829a62b52fe2783779119b24c5afcbbc2c7b8cc2e9868"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:69ea197645987ce455216136167079a7824cdd99a2d0ce9441c8bc45698575b4",
+        "42484156:0000000000001000:484130a5062920011a225a97b95096fcb0217056d3479367cfad9e5f2bb96901",
+        "42484156:0000000000001001:03683a47be050d7438a829a62b52fe2783779119b24c5afcbbc2c7b8cc2e9868",
+        "474c4f42:0000000000000001:d6b71c4eb79de1796147e8e0eac613e686fae947490dabebafe0bce8b9bf0f57",
+        "4f424a44:00000000000041ab:bb4c50046ab7054f4487c0db4d6fbcb139982b7cb51e25e178ee61d5f403189e",
+        "4f424a44:00000000000041af:f5ac00d29a5ef8f18452906d81925e6a28d3a320ece32285822ae98849a975d3",
+        "4f424a44:00000000000041b0:eda8d973f9f936ba4e4017f3a18f5d2b7632a64b445036e2d063af9eebdcabf6",
+        "4f424a66:00000000000041ab:b27e5f214a9805b8a1d5d8a7cc18bcc18324f1ca04317be300892f3407f6eb08",
+        "4f424a66:00000000000041af:e3cc0a307fb75c4acbe9bd66526dc9144d78c19615dd9f1c20588f65e9259d7a",
+        "4f424a66:00000000000041b0:b27e5f214a9805b8a1d5d8a7cc18bcc18324f1ca04317be300892f3407f6eb08",
+        "534c4f54:0000000000000080:16e374e0e8c51de24548abaca1d7e310850b6d99264075b238e1d36ccfe91b28",
+        "534c4f54:0000000000000081:9399d97ae6bb302d3ae80f67750740ceb110b5acc4e9f1f35260fd8c1d625137",
+        "53545223:0000000000000090:105879ac7022b4af06304b38f5f0fb52332f5208f348172dcc547e14ca5557c0",
+        "53545223:0000000000000094:5e480739a3e4c672981e9e52c4b6a25a12abb43f9ef25934ab61ca456f365754",
+        "53545223:0000000000000100:16c9aea5fb8abb9c6ad8d33e61929f0d02471ba13726ad8c6318dd116c8d9863",
+        "53545223:000000000000012f:8fa7f3db157823971e675bff86dfa7e7cac729472b7d4642e5f7e8ad196f861e",
+        "53545223:0000000000004132:c45022a417c2bc06a73e70659493aafbed72989cc58453f844c07c5d91a2da90"
+      ],
+      "globals": [
+        "d6b71c4eb79de1796147e8e0eac613e686fae947490dabebafe0bce8b9bf0f57"
+      ],
+      "object_count": 3,
+      "dimensions": {
+        "depth": 0.8242828845977783,
+        "height": 0.7963592410087585,
+        "width": 1.8238651752471924
+      }
+    },
+    {
+      "id": "table-lamp",
+      "label": "Pix-Arm Drafting Lamp",
+      "kind": "lamp",
+      "group": "7ffd3a1e",
+      "model": "lightingTableValue1",
+      "sha256": "8f1b80d8c8f69e5ef61631f0005b7166eab14da09b95d664a69a7935be9f30a3",
+      "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+      "resources": [
+        {
+          "key": "46574156-7ffd3a1e-0000000000000000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "5793848b46ca5c431c2e3a115884c56bc2ce49639a4494b48adaba6d86de3661"
+        },
+        {
+          "key": "474c4f42-7ffd3a1e-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "b7417b40e5c8cc48846213397b88a6feca97809e6295b32880fa4ad917150885"
+        },
+        {
+          "key": "46574156-7ffd3a1e-0000000000000001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "dcf60ee653e70517f34e1793843a3c46199ea74454b0cee7d0db5ca511a807f1"
+        },
+        {
+          "key": "46574156-7ffd3a1e-0000000000000002",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "de25b50151f705b7aaaeeef5ef3ee36166d12bc83b2e56233a9e28687e89254b"
+        },
+        {
+          "key": "534c4f54-7ffd3a1e-0000000000000080",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "098f4606544524cc1e8acac68f23f879cae6480983a1d1ffa0dcb545f8963f36"
+        },
+        {
+          "key": "53545223-7ffd3a1e-0000000000000085",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "107baabef6e4c6f2744c52652259c5c0c66704fc714a5b91b37ce8253deabadf"
+        },
+        {
+          "key": "53545223-7ffd3a1e-0000000000000087",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "18473c13b813021ad66502d85390c9689f9ed42708c7ee0b78c656bda205abb5"
+        },
+        {
+          "key": "53545223-7ffd3a1e-0000000000000088",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "732e796a974f207fb0b009861279308cfdcad9e1e1b979382f6309301f5d7cb8"
+        },
+        {
+          "key": "53545223-7ffd3a1e-000000000000008e",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "d3e2b895a979763197bd776778d6f8fa604f49e416ba5ef26d666c1a1b38fcb6"
+        },
+        {
+          "key": "53545223-7ffd3a1e-000000000000012f",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "10f731b87bc5e083e05492d55a974da44d6fcc55a17566214dbfe2661f9d5359"
+        },
+        {
+          "key": "43545353-7ffd3a1e-00000000000007d0",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "db1604134b0917bfca6b4b92c2ebfd20e2bf2ba0872146856589df7a37b94ffb"
+        },
+        {
+          "key": "42434f4e-7ffd3a1e-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "1999fbfa205487ffab521f5fbb33545c4c46fd7884e4d26658aff312027d72af"
+        },
+        {
+          "key": "42484156-7ffd3a1e-0000000000001000",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "894a8d745a235403a9416f51a0a8fe400f1a5919e9585b935c69aacc86bf8185"
+        },
+        {
+          "key": "42484156-7ffd3a1e-0000000000001001",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "c0dc73c757045960189c2c9eba162763e87f53cb1ad5cdefa73975ec2a72963b"
+        },
+        {
+          "key": "42484156-7ffd3a1e-0000000000001004",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6e35e647f751537ca49e610a7befc2947e70a2f0af927467b92767608ff71769"
+        },
+        {
+          "key": "42484156-7ffd3a1e-0000000000001005",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "6f02897161a3f389f194a94d48d78a008808830390bc76d138729f9aebfb9f07"
+        },
+        {
+          "key": "42484156-7ffd3a1e-0000000000001006",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "50bac10c642318a7b3f00a7cbee580d638264821b696ce815647109da8b5ecd0"
+        },
+        {
+          "key": "4f424a66-7ffd3a1e-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "0b0f36626a2a4b61f555de407e356f27502c2f3d48f88851528073726d73b3da"
+        },
+        {
+          "key": "4f424a44-7ffd3a1e-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "ba204892964cc9722a93f08b71cce119e6d65ff764c4d5b1de450faaef41a757"
+        },
+        {
+          "key": "4e524546-7ffd3a1e-00000000000041a7",
+          "source": "EP9/TSData/Res/Objects/objects.package",
+          "sha256": "02563770c2b41a15f8429989c6992549b0894732e6bb513996664dce81506b1a"
+        },
+        {
+          "key": "c9c81ba9-1c0532fa-f2ecd04dff974223",
+          "source": "Base/TSData/Res/Sims3D/Objects01.package",
+          "sha256": "2da9a7111af17f80e7f8d54d614676dbeecc5e493245e263cb5f4f03d4a92243"
+        },
+        {
+          "key": "49596978-1c0532fa-e643eb62ffe7adfc",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "c75734a0dc732cbce2845b56ef69154f5f1d32ebf51a122b2857d3e931f82d51"
+        },
+        {
+          "key": "49596978-1c0532fa-9655ed4aff68ed36",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "777c3538e03b5be90631688a89c15dec59354c8741017694a94db2e5bf4d1189"
+        },
+        {
+          "key": "49596978-1c0532fa-4c41ee5ffffce20c",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "1e4b05a6a29ad09b8d600021980ea8b2a899f9001cad3f093b1dcd88297f8733"
+        },
+        {
+          "key": "49596978-1c0532fa-55e517dcffd1c335",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "2b5ae8cca98fd51d828fa63e0b34e4102a6ea088b2f6d75012a38ff73220ab37"
+        },
+        {
+          "key": "49596978-1c0532fa-6ddd0222ff1ca02f",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "0e92acdbfadf0e95658aa56cc9e5c79bef60073c60aa8bad95dfcaeec516eb59"
+        },
+        {
+          "key": "49596978-1c0532fa-30a114e6ffbfc3fe",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "7af9e54a4f437881daa7152a24f8cb8953946ea0ee9a86629c2ec1cc97c35f70"
+        },
+        {
+          "key": "49596978-1c0532fa-c6888755ffcd76a2",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "120ce88292656a82ae11648694d6cb764f398e8b216e7fd271ea90d32a656da2"
+        },
+        {
+          "key": "49596978-1c0532fa-d7cfe84dffe93ac3",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "88d8906db72fd00f06652e0a37d783183fc1cddb4463ee5ad503bab3ed9b6e0b"
+        },
+        {
+          "key": "49596978-1c0532fa-2057b05aff56fb07",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "ae92363a0e2c0d0e1adc7ad1ac6067dbc3f5a85d6891de616c37e84621564dc8"
+        },
+        {
+          "key": "49596978-1c0532fa-ab930da3ff6a2730",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "4379346a84d3fa733ad02248913543d626c620357bdfd7ab94d619b8215eaa85"
+        },
+        {
+          "key": "49596978-1c0532fa-35aeb76eff126843",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "3d283b3fefa85037a558b0c312f967a82d8494778d3df0a11b730dbf793b651a"
+        },
+        {
+          "key": "49596978-1c0532fa-bd758139ffe88ce3",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "f6d4401809129ec2ce566db06fe18a9423a108b0e00dd11bc2de476ce6ba855b"
+        },
+        {
+          "key": "49596978-1c0532fa-47079a92ff06398c",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "26bd7381dd523a4359a94f9f77c4cb0edcaacd2aee83a5f4dfa9f2a3cb7ba7a2"
+        },
+        {
+          "key": "49596978-1c0532fa-cc5b59e4fff33e91",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "39c371721f01bfdd9d41f9a38f0eded3f4e3f6e2bb916e96a7b854c9aafc4fdc"
+        },
+        {
+          "key": "49596978-1c0532fa-7243778dff2e900e",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "cd73f889ec35127608609fe66a862b6f24f8e464c351c2d67177846ee60afef9"
+        },
+        {
+          "key": "49596978-1c0532fa-09f2e95eff2d10d1",
+          "source": "Base/TSData/Res/Sims3D/Objects02.package",
+          "sha256": "a6e1d8ce4b97dd9e2594d0fbb10170a3b916fd91697c886afe8655253b14646b"
+        },
+        {
+          "key": "ac4f8687-1c0532fa-2e5b6cddff81941e",
+          "source": "Base/TSData/Res/Sims3D/Objects03.package",
+          "sha256": "9db8e25fd099389291186cb76d4afbd28d4e74a64fb0ebaf18cb449ce6631fb2"
+        },
+        {
+          "key": "7ba3838c-1c0532fa-1aa6e185ffeb162f",
+          "source": "Base/TSData/Res/Sims3D/Objects04.package",
+          "sha256": "757249f673b5cada03fc2c6f4d273ea95b75762b377426259c5d79bb6cd8ee9e"
+        },
+        {
+          "key": "e519c933-1c0532fa-6e32cbb3ff73c273",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "f98fb10a05fc8ed6fb819439bff8823bcf56a1c4e8dd1ed2595b260c24074d97"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-94c428fdffb3549a",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "1e15e4b72a4a41b35464a4e076a885dcf2f44a7f2693d67f2ce0ad4da75b99be"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-75bfca6effcdf8e4",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "bed90fe61c9784327fad6edd2f11900ccbfe37c46b5aea5a0fe32b23dd09804e"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-e577b8b1ff22fbab",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "f9358ce0435e60421ab888007da0b9e13b98bb4e5923cc0d8187b511f62bc86e"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-2664aadaffdf73b7",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "b7b3deac004131f42059ac08fa8050031193fc493d692b24135cd24962bbcc50"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-675d4720ff1a025d",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "9b8ecd82ee9625ec1fbd158280ca8bf12277114c08d4826991ed59e21657fb0e"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-773f6731ff8e4b50",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "46d94d581fcb962974487020f27423bbd9a3ed278c7eab3284649a011fc18abd"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-99ab456bffe57e29",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "e1d4375f53336b8ed2221ed4c63219c75552b28c71da3b3c045f85c28e7ece2e"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-fe8f94c2ffad0d98",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "88aa3f2da14f5f964f405baa821a11323d9c5e7ee9c9fad634d37f2365cd86a3"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-24dce206ffe46251",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "fcfb231a76900b34918d2dead399d9695604e76dcc5152c4b42cb4e98d8264b9"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-7d52c081ffd052a8",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "aa8566bd38a2fce663c5469fed5ce7d1f9ff1e18a1976ac0e97352cb145bc540"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-1c9f20f8ffea0438",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "bb51315694dd45f2236978598e15e16d22ef5ae2a12e5b6aeb2fc607d9be9378"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-f5bd7b97ffc429a9",
+          "source": "Base/TSData/Res/Sims3D/Objects06.package",
+          "sha256": "b3962b0af99b1373e5f5d14a7e94bd8b1fdef4be49525ec4f242ea40ca7423bd"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000eddb5b39",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "b1357810813536e1eb5be13c72c67c19035647fcaab6684d0ddd549eb3706ffb"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000eddb5b48",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "58b55ab5cd363d2ca73e65063a6a71368d4c3b8f564294fa7cb7a111304ba628"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000addb5b45",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "dbb21268366ecdb74a4f3bc93a830947231a3b6ba7f0a041f8e93e662d17782d"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000addb5b49",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "29c54f93379c3d37574eeeb51c893ad104c16c70dfc520fa8efedd81f4e97821"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000000ddb5b40",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "3dba31e8835e936adf9d9dce8f97e686face80f93f89438a8f2dcb69043cdc1d"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000000ddb5b43",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "b24a94ca940e49d8c7cbfb786007b2c5a4a6f37b82cec005e428ede819df1445"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000000ddb5b4a",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "665698916f5c4b021500efcebbc543bff77c61eed5adddbd0b11cc356e34d478"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-000000006ddb5b3f",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "b6ab46f2d36a158b22f4e4c1ffe0a7826ee4178271d3e3b4f548ad9656c57e83"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000cddb5b35",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "0f0fdc68cb772195d9f015011d66b538a7615852af1fcc89fbff99216f5b03f8"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000cddb5b37",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "04de77933c848c27186eb7d4609476771b629895a9e8a54d57a4773222d5d125"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000cddb5b3a",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "355b1c4ebc570df1330fc878d8d72d6ed667050f77ed3d58cf7465c5f34028bd"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000cddb5b3e",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "2d16b8efd6c9bd2dee93975b28e627a91f6dcc02cb77a55684b13cb9831fbfce"
+        },
+        {
+          "key": "4c697e5a-8c6965ac-00000000cddb5b41",
+          "source": "Base/TSData/Res/Catalog/Materials/Materials.package",
+          "sha256": "0c96f10c4bc953fb4e4b5c857c82d64ad74d0e38ef2dabec667ae145b0aaa30d"
+        }
+      ],
+      "extracted_from_sha256": "7592f0216e8a62344e610e61c903b5077db4c591cebb955c032c74c3e4654f08",
+      "placement": {
+        "known": true,
+        "routing": "unchanged template behavior",
+        "surface": "floor",
+        "tile_count": 1,
+        "tiles": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "behavior": [
+        "1000:894a8d745a235403a9416f51a0a8fe400f1a5919e9585b935c69aacc86bf8185",
+        "1001:c0dc73c757045960189c2c9eba162763e87f53cb1ad5cdefa73975ec2a72963b",
+        "1004:6e35e647f751537ca49e610a7befc2947e70a2f0af927467b92767608ff71769",
+        "1005:6f02897161a3f389f194a94d48d78a008808830390bc76d138729f9aebfb9f07",
+        "1006:50bac10c642318a7b3f00a7cbee580d638264821b696ce815647109da8b5ecd0"
+      ],
+      "behavior_resources": [
+        "42434f4e:0000000000001000:1999fbfa205487ffab521f5fbb33545c4c46fd7884e4d26658aff312027d72af",
+        "42484156:0000000000001000:894a8d745a235403a9416f51a0a8fe400f1a5919e9585b935c69aacc86bf8185",
+        "42484156:0000000000001001:c0dc73c757045960189c2c9eba162763e87f53cb1ad5cdefa73975ec2a72963b",
+        "42484156:0000000000001004:6e35e647f751537ca49e610a7befc2947e70a2f0af927467b92767608ff71769",
+        "42484156:0000000000001005:6f02897161a3f389f194a94d48d78a008808830390bc76d138729f9aebfb9f07",
+        "42484156:0000000000001006:50bac10c642318a7b3f00a7cbee580d638264821b696ce815647109da8b5ecd0",
+        "474c4f42:0000000000000001:b7417b40e5c8cc48846213397b88a6feca97809e6295b32880fa4ad917150885",
+        "4f424a44:00000000000041a7:e8762587afe849581b49abcd7feb017d0f53e09ea170ee590eacb5c79f84ba7a",
+        "4f424a66:00000000000041a7:0b0f36626a2a4b61f555de407e356f27502c2f3d48f88851528073726d73b3da",
+        "534c4f54:0000000000000080:098f4606544524cc1e8acac68f23f879cae6480983a1d1ffa0dcb545f8963f36",
+        "53545223:0000000000000087:18473c13b813021ad66502d85390c9689f9ed42708c7ee0b78c656bda205abb5",
+        "53545223:000000000000008e:d3e2b895a979763197bd776778d6f8fa604f49e416ba5ef26d666c1a1b38fcb6",
+        "53545223:000000000000012f:10f731b87bc5e083e05492d55a974da44d6fcc55a17566214dbfe2661f9d5359"
+      ],
+      "globals": [
+        "b7417b40e5c8cc48846213397b88a6feca97809e6295b32880fa4ad917150885"
+      ],
+      "object_count": 1,
+      "dimensions": {
+        "depth": 0.49876782298088074,
+        "height": 0.6179486513137817,
+        "width": 0.19976794719696045
+      }
+    }
+  ]
+}

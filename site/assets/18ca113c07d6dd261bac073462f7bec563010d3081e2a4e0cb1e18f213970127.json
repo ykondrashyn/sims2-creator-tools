@@ -1,0 +1,234 @@
+{
+  "version": 1,
+  "id": "lady",
+  "template_sha256": "4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5",
+  "texture": "paintingverticalbella_txtr",
+  "texture_key": "1c4a276c-1c0532fa-b17f92bdffbbdb5b",
+  "subset": "paintingvertical_portraitoil",
+  "width": 256,
+  "height": 512,
+  "format": "DXT1",
+  "aspect": 0.6377210423572328,
+  "dimensions": {
+    "width": 1.0141023397445679,
+    "height": 1.5123661756515503,
+    "depth": 0.10903948545455933
+  },
+  "wall_anchor": [
+    0.050352543592453,
+    -0.34336572885513306,
+    1.6666675209999084
+  ],
+  "triangles": [
+    {
+      "uv": [
+        [
+          0.0,
+          0.6662929654121399
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.6662929654121399
+        ]
+      ],
+      "art": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "uv": [
+        [
+          0.0,
+          0.6662929654121399
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "art": [
+        [
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  ],
+  "geometry_bounds": [
+    [
+      -0.4551255702972412,
+      -0.4101524353027344,
+      0.9100614786148071
+    ],
+    [
+      0.5589767694473267,
+      -0.30111294984817505,
+      2.4224276542663574
+    ]
+  ],
+  "source_hashes": [
+    {
+      "key": "46574156-7f292e88-0000000000000003",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "b8d5d0a191272b55f0fe16baedc3132c8a0d21d3ebf3207fbab9ab48932b1c9e"
+    },
+    {
+      "key": "4f424a66-7f292e88-00000000000041a7",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "aea5171f48aaf62f16942e198f43b44c94d7ab7a0763992d91f545b85ec4b1a3"
+    },
+    {
+      "key": "4e524546-7f292e88-00000000000041a7",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "714ead00a7b2e525545949f187caa7090176616c714a844c677f7ae8d294eb23"
+    },
+    {
+      "key": "4f424a44-7f292e88-00000000000041a7",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "19fafc002818f77d1e396b38e5bbb75c9a1095317b35a3aa6ae9cc39c9248799"
+    },
+    {
+      "key": "49596978-1c0532fa-daa33e77ff0914c6",
+      "source": "Base/TSData/Res/Sims3D/Objects02.package",
+      "sha256": "5eaf83ac6553a99e70d9eef1e8f9d49522a739a012fe83e692d8aa27ca956b7f"
+    },
+    {
+      "key": "42484156-7f292e88-0000000000001000",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "6e8bda9a03c5478052f47ad2e165e44a10c41c3d9278269bb20c61e57e6ed2e1"
+    },
+    {
+      "key": "474c4f42-7f292e88-0000000000000001",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "49c8a708bc314d3266d3418ee00c9026c816451c1c3fb05491355cf9453cc4e8"
+    },
+    {
+      "key": "fc6eb1f7-1c0532fa-f8d2397eff8e11df",
+      "source": "Base/TSData/Res/Sims3D/Objects06.package",
+      "sha256": "aa8137b76d99d922e1bdcaaef447d7da6a48689f348f22ac6e6080b9f1d71ee5"
+    },
+    {
+      "key": "e519c933-1c0532fa-35dad184ff94d1b0",
+      "source": "Base/TSData/Res/Sims3D/Objects05.package",
+      "sha256": "0052fa159f1e85cc5907d4232063e0e9dc961adb45f4d9b731e9180487ff80e7"
+    },
+    {
+      "key": "534c4f54-7f292e88-0000000000000080",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "b75f956a8f6f6d2f4e09be7dd1a81c84c64bd59788f4fbfee828f9135e982936"
+    },
+    {
+      "key": "46574156-7f292e88-0000000000000005",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "7c201315f1383719951cc507ed5069d2c1f1271bcaedbb696490ab9f74bec591"
+    },
+    {
+      "key": "43545353-7f292e88-00000000000007d0",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "f9698efa6cf9e0a1d63a5ebb46c0deacdac36f186b56a71efea1e016ce50a9a8"
+    },
+    {
+      "key": "46574156-7f292e88-0000000000000002",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "abe22f7af17a43aa8996200f86aeacb273400cfdc3fab15e553552d776c9c1b0"
+    },
+    {
+      "key": "42434f4e-7f292e88-0000000000001002",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "b411aabcad9334b55308eb18b3909ba5d2b3ad37dcef6bb7ea9966d5c3366a8e"
+    },
+    {
+      "key": "ed534136-1c0532fa-3b0a4fa9ff411736",
+      "source": "Base/TSData/Res/Sims3D/Objects09.package",
+      "sha256": "d16a31785183a1776571fa62957f1c71e1c7193534116b6b40cfff86365eba38"
+    },
+    {
+      "key": "ac4f8687-1c0532fa-3a73e69eff55a73d",
+      "source": "Base/TSData/Res/Sims3D/Objects03.package",
+      "sha256": "0fc0d52766e319671396eaa317ca882304b5f27a18a451685a0420ee36f91a39"
+    },
+    {
+      "key": "49596978-1c0532fa-1e9080f4ff69862c",
+      "source": "Base/TSData/Res/Sims3D/Objects02.package",
+      "sha256": "b3b73535f397e6026ff70b73614c24f059adea9f6525f97f8203a7798e7c9d92"
+    },
+    {
+      "key": "46574156-7f292e88-0000000000000001",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "4e1e1a5e1c397726b9703ddc8b7915d7c2fafe47d659197688f74941f95bacc8"
+    },
+    {
+      "key": "46574156-7f292e88-0000000000000004",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "06a094ba6ead2c46e8dd1fc76d67f45575b5d22b357fa7c65b73a82e164ac993"
+    },
+    {
+      "key": "ed534136-1c0532fa-202242d1ff77fc0b",
+      "source": "Base/TSData/Res/Sims3D/Objects09.package",
+      "sha256": "e31d171f87ec09b0c8981091481ecf4d0aa9994c0a81efaa80e238bdc6a5ea9b"
+    },
+    {
+      "key": "42434f4e-7f292e88-0000000000001001",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "f675814ebd8cd11a8d4811e1ddc5e91587fb50af0b92b021be49ebdcea632beb"
+    },
+    {
+      "key": "42484156-7f292e88-0000000000001001",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "26319177b9b8e07017df8e5ee503514ef5aff6029b7f21babfbcfd2c9f3a9aa3"
+    },
+    {
+      "key": "49596978-1c0532fa-3732448fffd2f6f7",
+      "source": "Base/TSData/Res/Sims3D/Objects02.package",
+      "sha256": "17c1bec0a77354269dbe387c0c84df1c9905ba65101e4be64ec029bbcd069e6c"
+    },
+    {
+      "key": "1c4a276c-1c0532fa-b17f92bdffbbdb5b",
+      "source": "Base/TSData/Res/Sims3D/Objects06.package",
+      "sha256": "618e0190523f1f15e1d7f73c0c61c677ac206ef7ce3d235f7ddc08a68ae309d7"
+    },
+    {
+      "key": "7ba3838c-1c0532fa-0e8e6bc6ff3f250c",
+      "source": "Base/TSData/Res/Sims3D/Objects04.package",
+      "sha256": "670e94d99bf1ac5126e155e5767738ce78318922e90533e34dfdccde4c87d236"
+    },
+    {
+      "key": "53545223-7f292e88-0000000000000085",
+      "source": "EP9/TSData/Res/Objects/objects.package",
+      "sha256": "3b88eeca11c9cd7fff5bbf67776bf2cd101734b8b509908baf58fae2da9ce433"
+    },
+    {
+      "key": "1c4a276c-1c0532fa-b0541bf2ff4338d4",
+      "source": "Base/TSData/Res/Sims3D/Textures.package",
+      "sha256": "cca148c8ea85db635435c0a9249de4d6954256db70e84b7357e37e429a087798"
+    }
+  ],
+  "verification": "Two largest artwork triangles form the pinned planar quad. Front-facing coordinates preserve source proportions."
+}

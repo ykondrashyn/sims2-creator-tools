@@ -1,0 +1,1 @@
+import{a as r}from"./chunk-CHGUCK5R.js";var t=Promise.resolve();function i(o){let e=t.catch(()=>{}).then(o);return t=e.catch(()=>{}),e}function c(){if(r.active)throw new Error("Finish or cancel the current package build before inspecting or previewing another batch.")}export{i as a,c as b};

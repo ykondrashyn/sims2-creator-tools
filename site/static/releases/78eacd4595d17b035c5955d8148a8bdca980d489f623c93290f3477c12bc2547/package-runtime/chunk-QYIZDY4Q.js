@@ -1,0 +1,1 @@
+function n(e){let t=document.getElementById(e);if(!t)throw new Error(`The page is missing control ${e}. Reload the website.`);return t}function o(e,t){if(e==null)throw new Error(`Missing ${t}. Reopen the saved batch or select its input again. Saved work is kept.`);return e}function r(e){return t=>n(e+t)}export{n as a,o as b,r as c};

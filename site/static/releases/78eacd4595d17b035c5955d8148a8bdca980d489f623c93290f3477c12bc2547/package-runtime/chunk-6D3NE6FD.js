@@ -1,0 +1,1 @@
+function i(e){if(e==="Png")return"png";if(e==="Jpeg")return"jpg";if(e==="WebP")return"webp";throw new Error("The model returned an unsupported image format.")}function p(e,r,n){return`${e.replace(/\.[^.]*$/,"").replace(/[^A-Za-z0-9._-]+/g,"_").replace(/^[._]+|[._]+$/g,"").slice(0,96)||"image"}_${r}_upscaled.${n}`}export{i as a,p as b};

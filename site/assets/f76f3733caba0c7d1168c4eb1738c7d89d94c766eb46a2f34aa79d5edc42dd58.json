@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sizing_version": 2,
+  "units": "Sims 2 game units, one floor tile = 1 unit",
+  "reference_height": 1.8788737058639526,
+  "definition": "Canonical AM source body, floor aligned, plus a neutral proportional head. This is a scale reference, not a complete Sim.",
+  "bodies": {
+    "am": {
+      "asset": "object-reference-am",
+      "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "floor_offset": 0.00022862920013722032,
+      "body_height": 1.6538736678048735,
+      "head": {
+        "radii": [
+          0.092,
+          0.13,
+          0.105
+        ],
+        "center": [
+          0,
+          1.7488736678048735,
+          -0.055
+        ]
+      },
+      "assembled_height": 1.8788736678048736
+    },
+    "af": {
+      "asset": "object-reference-af",
+      "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "floor_offset": 0.000026058188122324115,
+      "body_height": 1.639527253132623,
+      "head": {
+        "radii": [
+          0.092,
+          0.13,
+          0.105
+        ],
+        "center": [
+          0,
+          1.734527253132623,
+          -0.055
+        ]
+      },
+      "assembled_height": 1.8645272531326231
+    }
+  },
+  "table": {
+    "asset": "object-reference-table",
+    "surface_height": 0.7999999523162842,
+    "source_label": "The Talking Table",
+    "source_package_sha256": "f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+    "source_cres": {
+      "key": "e519c933-1c0532fa-c5835dc5ff77d573",
+      "source": "Base/TSData/Res/Sims3D/Objects05.package",
+      "sha256": "52f84b3b550eb0c947dd3ec5b4afcabfca58ae43fe7a97482702c093479e03f7"
+    },
+    "sha256": "f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859"
+  }
+}

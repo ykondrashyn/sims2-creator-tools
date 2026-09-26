@@ -1,0 +1,13 @@
+Real-ESRGAN, copyright Xintao Wang and contributors, BSD-3-Clause.
+BasicSR architecture at the pinned revision, copyright contributors, Apache-2.0.
+Original model weights: https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.1.0
+Architecture: https://github.com/XPixelGroup/BasicSR/tree/8d56e3a045f9fb3e1d8872f92ee4a4f07f886b0a
+The unchanged architecture and its license are in tools/local-upscale/vendor.
+Export adapts training initialization and registry imports only. All learned
+parameters are loaded strictly. FP32 weights are not quantized or retrained.
+Tiled inference follows RealESRGANer at revision a4abfb2979a7bbff3f69f58f58ae324608821e27.
+ONNX Runtime Web 1.22.0, copyright Microsoft, MIT. Bundled notices accompany it.
+The distributed initialization glue caps imported memory at 1 GiB. Its neural
+network operators and model weights are unchanged. web/build.mjs records this
+single checked transformation of the pinned upstream glue.
+fast-png 6.4.0, MIT. Its dependencies and license are pinned by package-lock.json.

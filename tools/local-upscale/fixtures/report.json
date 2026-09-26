@@ -1,0 +1,20 @@
+[
+  {
+    "name": "small",
+    "size": [
+      32,
+      24
+    ],
+    "tiled_vs_full_maximum_byte_error": 0,
+    "tiled_vs_full_mean_byte_error": 0.0
+  },
+  {
+    "name": "seams",
+    "size": [
+      133,
+      37
+    ],
+    "tiled_vs_full_maximum_byte_error": 1,
+    "tiled_vs_full_mean_byte_error": 0.0006180993023098286
+  }
+]

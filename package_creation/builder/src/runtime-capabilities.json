@@ -1,0 +1,260 @@
+{
+  "limits": {
+    "sim": {
+      "files": 1,
+      "file_bytes": 67108864,
+      "input_bytes": 134217728,
+      "output_bytes": 67108864
+    },
+    "storage_bytes": 2147483648,
+    "wasm_heap_bytes": 1073741824,
+    "build_timeout_ms": 600000,
+    "conversion": {
+      "files": 1,
+      "input_bytes": 33554432,
+      "output_bytes": 8388608
+    },
+    "painting": {
+      "files": 1,
+      "input_bytes": 33554432,
+      "pixels": 32000000,
+      "dimension": 8192,
+      "output_bytes": 67108864,
+      "formats": [
+        "png",
+        "jpeg",
+        "webp"
+      ]
+    },
+    "tattoo": {
+      "entries": 20,
+      "files": 40,
+      "file_bytes": 8388608,
+      "input_bytes": 134217728,
+      "output_bytes": 67108864
+    },
+    "hair": {
+      "packages": 64,
+      "package_bytes": 67108864,
+      "input_bytes": 134217728,
+      "texture_slots": 16,
+      "builtin_colors": 43,
+      "custom_colors": 16,
+      "zip_bytes": 536870912
+    },
+    "object": {
+      "packages": 64,
+      "package_bytes": 67108864,
+      "input_bytes": 134217728,
+      "output_bytes": 134217728,
+      "model_groups": 16,
+      "vertices_per_group": 65535,
+      "texture_dimension": 2048
+    }
+  },
+  "texture_encoders": {
+    "version": 2,
+    "default": "directxtex",
+    "items": [
+      "directxtex",
+      "bodyshop"
+    ],
+    "formats": {
+      "directxtex": [
+        "DXT1",
+        "DXT3",
+        "DXT5"
+      ],
+      "bodyshop": [
+        "DXT1",
+        "DXT3",
+        "DXT5"
+      ]
+    },
+    "legacy": {
+      "bodyshop_dxt3": {
+        "DXT1": "directxtex",
+        "DXT3": "bodyshop_dxt3",
+        "DXT5": "directxtex"
+      }
+    },
+    "directxtex_revision": "868198cb4bcbc4e359372e7ba38d7a6dda3a6afa",
+    "bodyshop_algorithm_version": 2,
+    "dithering": false
+  },
+  "package_compression": {
+    "version": 1,
+    "parameter": "refpack_compression",
+    "default": true,
+    "algorithm": "refpack-5.0.4-optimal",
+    "lossless": true,
+    "tools": [
+      "hair",
+      "tattoo",
+      "object",
+      "painting",
+      "sim"
+    ]
+  },
+  "capabilities": {
+    "schema_version": 1,
+    "body_conversion": {
+      "execution": "browser-wasm",
+      "server_fallback": false,
+      "profiles": [
+        "am",
+        "af"
+      ],
+      "input_dimensions": [
+        1024,
+        2048
+      ],
+      "output_dimensions": [
+        1024,
+        1024
+      ],
+      "input_bytes": 33554432,
+      "output_bytes": 8388608,
+      "retention": "until-deleted"
+    },
+    "sim_creation": {
+      "execution": "browser-wasm",
+      "guided_version": 2,
+      "server_fallback": false,
+      "experimental": true,
+      "downloads_enabled": false,
+      "everyday_test": {
+        "version": 1,
+        "downloads_enabled": true,
+        "bodies": [
+          "am"
+        ],
+        "head": "stock",
+        "gameplay": "not_tested"
+      },
+      "bodies": [
+        "am",
+        "af"
+      ],
+      "input_bytes": 67108864,
+      "output_bytes": 67108864
+    },
+    "painting_creation": {
+      "execution": "browser-wasm",
+      "server_fallback": false,
+      "formats": [
+        "png",
+        "jpeg",
+        "webp"
+      ],
+      "maximum_images": 1,
+      "input_bytes": 33554432,
+      "maximum_pixels": 32000000,
+      "maximum_dimension": 8192,
+      "output_bytes": 67108864
+    },
+    "package_creation": {
+      "package_compression": {
+        "version": 1,
+        "parameter": "refpack_compression",
+        "default": true,
+        "algorithm": "refpack-5.0.4-optimal",
+        "lossless": true,
+        "tools": [
+          "hair",
+          "tattoo",
+          "object",
+          "painting",
+          "sim"
+        ]
+      },
+      "texture_encoders": {
+        "version": 2,
+        "default": "directxtex",
+        "items": [
+          "directxtex",
+          "bodyshop"
+        ],
+        "formats": {
+          "directxtex": [
+            "DXT1",
+            "DXT3",
+            "DXT5"
+          ],
+          "bodyshop": [
+            "DXT1",
+            "DXT3",
+            "DXT5"
+          ]
+        },
+        "legacy": {
+          "bodyshop_dxt3": {
+            "DXT1": "directxtex",
+            "DXT3": "bodyshop_dxt3",
+            "DXT5": "directxtex"
+          }
+        },
+        "directxtex_revision": "868198cb4bcbc4e359372e7ba38d7a6dda3a6afa",
+        "bodyshop_algorithm_version": 2,
+        "dithering": false
+      },
+      "execution": "browser-wasm",
+      "server_fallback": false,
+      "manifest_url": "/api/v1/package-runtime/manifest",
+      "storage_bytes": 2147483648,
+      "wasm_heap_bytes": 1073741824,
+      "retention": "until-deleted",
+      "build_timeout_seconds": 600,
+      "maximum_total_input_bytes": 134217728,
+      "hair": {
+        "maximum_packages": 64,
+        "maximum_package_bytes": 67108864,
+        "maximum_textures": 16,
+        "builtin_colors": 43,
+        "custom_colors": 16,
+        "maximum_zip_bytes": 536870912
+      },
+      "object": {
+        "maximum_packages": 64,
+        "maximum_package_bytes": 67108864,
+        "maximum_output_bytes": 134217728,
+        "model_formats": [
+          "glb",
+          "gltf-zip"
+        ],
+        "maximum_model_groups": 16
+      }
+    },
+    "input": {
+      "format": "PNG",
+      "mode": "RGBA8",
+      "width": 1024,
+      "height": 1024
+    },
+    "ages": [
+      "adult",
+      "elder"
+    ],
+    "age_mask": "0x18",
+    "genders": [
+      "am",
+      "af"
+    ],
+    "maximum_tattoos": 20,
+    "maximum_files": 40,
+    "maximum_file_bytes": 8388608,
+    "normal_sims_only": true,
+    "controller_model": {
+      "catalog_name": "Osho Nuff Tablet",
+      "scene_name": "sculptureOshoKoma",
+      "required_product": "Mansion & Garden Stuff or The Sims 2 Legacy Collection",
+      "embedded": false
+    },
+    "output": {
+      "layout": "single-package",
+      "format": "DBPF .package",
+      "maximum_bytes": 67108864
+    },
+    "validation": "Structural validation enabled"
+  }
+}

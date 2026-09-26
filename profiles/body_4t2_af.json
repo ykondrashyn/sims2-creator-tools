@@ -1,0 +1,48 @@
+{
+  "id": "af-body-4t2-1024",
+  "blender_version": [
+    3,
+    4,
+    1
+  ],
+  "template": {
+    "filename": "AF-body-4t2-1024.blend",
+    "sha256": "e87f48a83350623abe97b1d8fe325153131305e40c43027df32a923e489e2958"
+  },
+  "source": {
+    "object": "ts4 body",
+    "mesh": "feet_geom.001",
+    "material": "Material.002",
+    "image_node": "Image Texture",
+    "uv_layer": "UVMap",
+    "width": 1024,
+    "height": 2048,
+    "channels": 4,
+    "alpha_mode": "STRAIGHT",
+    "colorspace": "sRGB"
+  },
+  "target": {
+    "object": "ts2 body",
+    "mesh": "body",
+    "material": "Material",
+    "image_node": "Image Texture",
+    "image": "Baked",
+    "uv_layer": "UVMap",
+    "width": 1024,
+    "height": 1024,
+    "channels": 4,
+    "alpha_mode": "STRAIGHT",
+    "colorspace": "sRGB"
+  },
+  "bake": {
+    "render_engine": "CYCLES",
+    "bake_type": "DIFFUSE",
+    "target": "IMAGE_TEXTURES",
+    "use_selected_to_active": true,
+    "use_clear": true,
+    "use_cage": false,
+    "margin": 4,
+    "cage_extrusion": 0.02,
+    "max_ray_distance": 0.7071067
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "model": "RealESRGAN_x4plus",
+  "path": ".cache/local-upscale/RealESRGAN_x4plus.onnx",
+  "sha256": "bf06d85043d24328457756d61640f07cf1eed61fc8dd046d6534d2e8221e43ed",
+  "size": 67051645,
+  "weights_sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+  "weights_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+  "architecture_revision": "8d56e3a045f9fb3e1d8872f92ee4a4f07f886b0a",
+  "precision": "float32",
+  "scale": 4,
+  "tile": 128,
+  "overlap": 64,
+  "prepad": 10,
+  "runtime": "onnxruntime-web@1.22.0"
+}

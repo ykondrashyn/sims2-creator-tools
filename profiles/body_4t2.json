@@ -1,0 +1,48 @@
+{
+  "id": "am-body-4t2-1024",
+  "blender_version": [
+    3,
+    4,
+    1
+  ],
+  "template": {
+    "filename": "AM-body-4t2-1024.blend",
+    "sha256": "f709db0a1ae34b663805ce7c95da2f363dcb1d67029c197c4ef15098a4a5a108"
+  },
+  "source": {
+    "object": "ts4 body",
+    "mesh": "top_geom.007",
+    "material": "Material.001",
+    "image_node": "Image Texture",
+    "uv_layer": "UVMap",
+    "width": 1024,
+    "height": 2048,
+    "channels": 4,
+    "alpha_mode": "STRAIGHT",
+    "colorspace": "sRGB"
+  },
+  "target": {
+    "object": "ts2 body",
+    "mesh": "body",
+    "material": "Material.002",
+    "image_node": "Image Texture",
+    "image": "Baking1024",
+    "uv_layer": "UVMap",
+    "width": 1024,
+    "height": 1024,
+    "channels": 4,
+    "alpha_mode": "STRAIGHT",
+    "colorspace": "sRGB"
+  },
+  "bake": {
+    "render_engine": "CYCLES",
+    "bake_type": "DIFFUSE",
+    "target": "IMAGE_TEXTURES",
+    "use_selected_to_active": true,
+    "use_clear": true,
+    "use_cage": false,
+    "margin": 4,
+    "cage_extrusion": 0.02,
+    "max_ray_distance": 0.7071067
+  }
+}

@@ -1,0 +1,39 @@
+# SPDX-FileCopyrightText: 2023-2025 Chiel Douwes
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+[package]
+name = "dbpf"
+version = "0.1.0"
+edition = "2021"
+repository = "https://github.com/chieltbest/dbpf"
+license = "GPL-3.0-or-later"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+binrw = "0.15.0"
+refpack = "5.0"
+modular-bitfield = "0.13.0"
+thiserror = "2.0"
+enum-iterator = "2.1"
+itertools = "0.14.0"
+derive_more = { version = "2.0", features = ["try_from", "from", "try_into", "display", "deref", "deref_mut"] }
+texpresso = "2.0.2"
+gltf_kun = "0.4"
+serde_json = { version = "1.0", features = ["raw_value"] }
+ddsfile = "0.6"
+miniz_oxide = { version = "0.9", features = ["simd"] }
+xmltree = "0.12"
+log = "0.4"
+
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.2.16", default-features = false, features = [
+    "js",
+] }
+
+[dev-dependencies]
+proptest = "1"
+test-strategy = "0.4"

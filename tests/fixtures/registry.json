@@ -1,0 +1,1485 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "artifacts/body-conversion/corpus/ash_kiryu.png",
+      "sha256": "df14b347f81c93b2b560501bf99d45b6b90b32212d45f8f338cd74a828565f4e",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/ash_majima.png",
+      "sha256": "a7566de1fa3af0538bbd60b1349330c891b130c3ad1d6eca737cdb54c98bd630",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-ash_kiryu.png",
+      "sha256": "8673ca74810dca375ba3c326bd135d06fc522da8fb76ca59f93ae6fd9ce34761",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-ash_majima.png",
+      "sha256": "c3d61062b5afd121517b50b8250a1794ed2da0643f58e125c9507f971d56e1f3",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-diagnostic.png",
+      "sha256": "44d1cacb964239a5d0a29b3d1999231675e6a4023877d6a792a21589ee092efa",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-gradient.png",
+      "sha256": "7e23b793c112106faa6826b6b30c334430251a8c400691a020d5bbe0c243d80b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-metadata-gamma.png",
+      "sha256": "7e23b793c112106faa6826b6b30c334430251a8c400691a020d5bbe0c243d80b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-metadata-icc.png",
+      "sha256": "7e23b793c112106faa6826b6b30c334430251a8c400691a020d5bbe0c243d80b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-random.png",
+      "sha256": "b80f043a2d93ae904d7db81e921a7511d96a64626b30c5a560396d543a2b029f",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-rgba16.png",
+      "sha256": "fd70aa3a8e6e5b73ac97960b643acbd2248238956a646bcf5f4d4c100b6381c5",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-seams.png",
+      "sha256": "451eebbca771ca159fd12f1cd026ee160cd3945b0df72ce84f16a1d836e71700",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/af-uv-grid.png",
+      "sha256": "2bbbe8a8c636e878d212e2afda83e47cb17be349910bf773f1acc033ce98a4df",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-ash_kiryu.png",
+      "sha256": "b61b82118f77d7225fcd32ada8e70db889cedd6e5a93f723152e36cdbefe2648",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-ash_majima.png",
+      "sha256": "a7136d0d9f5688c22a4fb70cbe7b8ccf7c5383d0365345ce2f43dbf2c9685c24",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-diagnostic.png",
+      "sha256": "1803089aefa54944f117f38ab31813345ea6d0d1b29e18d71b6945689139695f",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-gradient.png",
+      "sha256": "2b59380bf6cc6e3c3848d8d959009f1786970e3539ef64e20554c1bee434f1b9",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-metadata-gamma.png",
+      "sha256": "2b59380bf6cc6e3c3848d8d959009f1786970e3539ef64e20554c1bee434f1b9",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-metadata-icc.png",
+      "sha256": "2b59380bf6cc6e3c3848d8d959009f1786970e3539ef64e20554c1bee434f1b9",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-random.png",
+      "sha256": "8c15899a53fe737005ccd95aa9ef8de9990eceab6762ae6d09a1f34c7cedc353",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-rgba16.png",
+      "sha256": "fa7c493bd617c57ae7bb0457504f932ced73a7316b61fd18b5cfdc36be39cc4d",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-seams.png",
+      "sha256": "3ef7cf0b9e43da0791c2eded5446852852ae2d2dddeb93be5d6568427b9a3d53",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/am-uv-grid.png",
+      "sha256": "336854c26537fd23a4637c0fe316339eea7a804fc7afafe89b5462f6ece18536",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/blender/timings.json",
+      "sha256": "18ad74f79363b4dbfac147d9a3675a8d053ba38201c062be74febd8c17f606f2",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/diagnostic.png",
+      "sha256": "a8e4d9306e55886d119df2900f759522772c84acaa755ed7adf19cea2cc858b2",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/gradient.png",
+      "sha256": "e95a205eae51a2e7a38f761810f0f9b497c0b5bbd654760f7a3e4e4caed2baa8",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/metadata-gamma.png",
+      "sha256": "55c409f29c729a100e0aa526dc0b8e13ddaf1d0b515195c6b3ba0be437de94a8",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/metadata-icc.png",
+      "sha256": "8125af56304ba338a2c10dbd7a03a20898e2e036111c1e653cd65db272c1e6e8",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/random.png",
+      "sha256": "34769183ba53040862c708f9534bc07b122046b360599405b9b39f6b438121ec",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/rgba16.png",
+      "sha256": "101c450974876578f4af4de9a680bf732f36beddca7b6aa06d66760e660c63d7",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/seams.png",
+      "sha256": "eadf2d4bda2ecf724f175c773e1dcda3c02fec17accf1eb3d3803be653ce7643",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/body-conversion/corpus/uv-grid.png",
+      "sha256": "39014b1ddabf09fbd7c44e462ee9ebd209f4e064410b62bd4b610d2f006f62fc",
+      "provenance": "Seeded diagnostic or supplied tattoo input, package_creation/tests/conversion_reference.py"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-0.bodyshop.bc2",
+      "sha256": "40b25d81a9d820cb3f4d976717d76e9c1a678aae20b7bb0a68a653b6398879d3",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-0.rgba",
+      "sha256": "215cddd064bc18271fe8e7fb355c4e8ed97a76d0f26f7b8e9b029434b461c515",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-1.bodyshop.bc2",
+      "sha256": "f4cb4b35d742dbf59bbb6c0fe2570689a236f1a8cfb6b70bd154d16465562785",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-1.rgba",
+      "sha256": "b0480689530c8b66b3bcf3e123587a4b63fdcf0c695ab066b4067de4dd63d40e",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-2.bodyshop.bc2",
+      "sha256": "1e3f8f23d98314e9accb18074c7d8ab75766e14adc3932c288f593cc65356460",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-2.rgba",
+      "sha256": "03a34cda8113175eb83b5f10a47f3f12965745ae739f8df1f58c218baa0f27f6",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-3.bodyshop.bc2",
+      "sha256": "e231051280d0ef87f0a4a838fefc20e9bdb4dc32620484416360b5096bcee984",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-3.rgba",
+      "sha256": "10aa13f1af8cefbd9e33344a39c6c1937ab9f169e9345b1dff09ee04ebeec896",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-4.bodyshop.bc2",
+      "sha256": "fe10abb6dfee11c36a20628c5bf5bf159bd20441f71e181496697148f3534711",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/baseline/texture-4.rgba",
+      "sha256": "bab0d73305bbd99ca08df5115ce7581b6d50194c71178204f41f5a0c6acff236",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-0.bodyshop.bc2",
+      "sha256": "48c511e06a57af18792f338bc1387c04901bbaec20a8718347e76e894238f381",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-0.rgba",
+      "sha256": "0e58cd480a45cbe609895be5565e8ac94b89a2df81bf312a9748124503c7ff2a",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-1.bodyshop.bc2",
+      "sha256": "6709d29976ab6f9d87da94a83740b68c27843f0a7d038bdf46ca3cd640a47164",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-1.rgba",
+      "sha256": "87319574880c32c532404e05cbfb921ef62c843722e16f9a268d88af7f2157ab",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-2.bodyshop.bc2",
+      "sha256": "1847b80c52399bf06641f6527cd3bd7a8253c275dcdc3deb2a77f2554e8600dc",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-2.rgba",
+      "sha256": "19be13f1af83ddd555953da03b10190b25eaf91908660422eb42b78afa83c5dc",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-3.bodyshop.bc2",
+      "sha256": "57bcdaafad4e7a1580c270ab1ecb66f7e971825ab2559efab5f9d3ac4b488c27",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-3.rgba",
+      "sha256": "e9f271fd3d6a5657d60566d3ca59ff508e18763fb764f82e4a34dea456c98eca",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-4.bodyshop.bc2",
+      "sha256": "bee3e8dd5abe69c41ac8bbd1e5b007b0b57f54bf8823a18656ff37656fd708b1",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-controlled/diagnostic/texture-4.rgba",
+      "sha256": "4fc6eebcec4ef4bfa77a108c72c9df9253b3064267706abf851f1e155c1a4bff",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-family/bodyshop-family-DXT1.bin",
+      "sha256": "4f83739553a91d2e5f08d0a51202b97c03deb685b1d96b2b4257a643626c6e7b",
+      "provenance": "Captured Body Shop payload, artifacts/bodyshop-family/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-family/bodyshop-family-DXT3.bin",
+      "sha256": "7c1c72a02750f5bd9ef046ee6e0179b1528197300f6a0320527b60b332e03111",
+      "provenance": "Captured Body Shop payload, artifacts/bodyshop-family/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-family/bodyshop-family-DXT5.bin",
+      "sha256": "74b6e62a4f3dfe6e6cd07da7bbfb49cffc075acd07ef1b6eafb6087e022e9e06",
+      "provenance": "Captured Body Shop payload, artifacts/bodyshop-family/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-family/bodyshop-family.rgba",
+      "sha256": "2b78d77f92906af7bcd0aa5c634bfd2b6c0772c6f5ed345b9172ec26824548cb",
+      "provenance": "Recovered Body Shop captured input, artifacts/bodyshop-family/corpus.json"
+    },
+    {
+      "path": "artifacts/bodyshop-family/corpus.json",
+      "sha256": "2fac8e72541b02d4706190fbd52ae9d68f5be6b08e1113c913b07e1952b6dc5f",
+      "provenance": "Named comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/bodyshop-family/previous-manifest.json",
+      "sha256": "c3c241afc95963c65395661cf93da94a3b498a9a07eea81b49b059f042bafcbf",
+      "provenance": "Named comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/BrowserCheck-validation.json",
+      "sha256": "28fdb532e1f420cba5fa8d71d386587bb5dacad7df5b533e0d4b4850a4503a34",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/FirefoxCheck-validation.json",
+      "sha256": "8454fe4a29ab08e6588c286a54ac6751fb947d77a9478327f095ed8bcf5e39df",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/item.json",
+      "sha256": "16180fd374e9a2b455264a4e8d254c2895c53f80590692b4b38b46205d9053eb",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/meshes/mesh_rosehair_0124.package",
+      "sha256": "8dfe569c368f4685ddcce32f9f73ee489a95081a6b189478d16a91773ae607a8",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/template-textures/1c4a276c-5fe160a6-06d54af6ffdc2d9e.png",
+      "sha256": "271d4d3e09155949a4cdda6b16696a7a27b66870cbaf7439f8dce8e6cec3e7d3",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/template-textures/1c4a276c-5fe160a6-12b1ee72ffb085a5.png",
+      "sha256": "ec3b6946e4fb43f97f14dfd3187c74b39e9b54f0d5318b940f9bf4a02437cad2",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/template-textures/1c4a276c-5fe160a6-370c8154ffe3e501.png",
+      "sha256": "660a88f1bc778cae1464793e4c611d0bfbafb8d4108b62d73c5bdec180fe4f2b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/template-textures/1c4a276c-5fe160a6-49a45ee7ff461942.png",
+      "sha256": "9580c4554c253ff04b49e222880b7a80c08581e3e30d6ab660fa85e3b30342dc",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/template-textures/1c4a276c-5fe160a6-fba99176ffda0ed2.png",
+      "sha256": "6f0f9c8cff72d7c2ecd2d56b3c5164b94301c68b5ea95e0083a20d6b6c551276",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair-library/e74b968306afeb6f9c70f62221c5a8ee35fea03a00b8736b922e5a5140d3c902/template.package",
+      "sha256": "722d79288b7aad81f4ac1e04ba7bc7f7caa82d25fb77f74b52b26b563a67798f",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/job.json",
+      "sha256": "1811996c7fa14e861789b71e3f2a2e2d032f3966384e1a79277c35f1ed62e7eb",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/meshes/mesh_rosehair_0124.package",
+      "sha256": "8dfe569c368f4685ddcce32f9f73ee489a95081a6b189478d16a91773ae607a8",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/progress.json",
+      "sha256": "084fd677b2017187a70fe659bf94dd4c4fe7b85ce3071d3a15dbdac22a8f7759",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/status.json",
+      "sha256": "4517531ace08b8eeb7d14543d0e4d93dad2445cdae8dadff827c7a736332b24a",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/template-textures/1c4a276c-5fe160a6-06d54af6ffdc2d9e.png",
+      "sha256": "271d4d3e09155949a4cdda6b16696a7a27b66870cbaf7439f8dce8e6cec3e7d3",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/template-textures/1c4a276c-5fe160a6-12b1ee72ffb085a5.png",
+      "sha256": "ec3b6946e4fb43f97f14dfd3187c74b39e9b54f0d5318b940f9bf4a02437cad2",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/template-textures/1c4a276c-5fe160a6-370c8154ffe3e501.png",
+      "sha256": "660a88f1bc778cae1464793e4c611d0bfbafb8d4108b62d73c5bdec180fe4f2b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/template-textures/1c4a276c-5fe160a6-49a45ee7ff461942.png",
+      "sha256": "9580c4554c253ff04b49e222880b7a80c08581e3e30d6ab660fa85e3b30342dc",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/template-textures/1c4a276c-5fe160a6-fba99176ffda0ed2.png",
+      "sha256": "6f0f9c8cff72d7c2ecd2d56b3c5164b94301c68b5ea95e0083a20d6b6c551276",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/template.package",
+      "sha256": "722d79288b7aad81f4ac1e04ba7bc7f7caa82d25fb77f74b52b26b563a67798f",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/api-run/hair/40c96200d2934d5cbc8bff410a868980/validation.json",
+      "sha256": "8d01111cc1a4c1e00f28571bf563b5a60e4f702b048393c63c05887ebd5a69a6",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/browser-validation-summary.json",
+      "sha256": "073f54a3caee6aeb65069ee55507a38df27d1c98943b9b4b7555e64f02151f24",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/full-palette-summary.json",
+      "sha256": "c40031f43ab45cc0af98af65f4c627bb65dd1b89edd99c219d64b28c5f462618",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/full-palette-validation.json",
+      "sha256": "8d01111cc1a4c1e00f28571bf563b5a60e4f702b048393c63c05887ebd5a69a6",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/inspection.json",
+      "sha256": "0c8ff5671d1e5f08b8d80e9e9bfacb690f531b71959e0470afa53bb9d9a6a377",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/mesh_rosehair_0124.package",
+      "sha256": "8dfe569c368f4685ddcce32f9f73ee489a95081a6b189478d16a91773ae607a8",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/recolor_3555b7d0_rose72.package",
+      "sha256": "722d79288b7aad81f4ac1e04ba7bc7f7caa82d25fb77f74b52b26b563a67798f",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/source-hashes.json",
+      "sha256": "6c1f6d58ceef7609efdbbc8672495d556d83a91863d46364fef75da83c6bbb20",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/source-inventory.json",
+      "sha256": "1c508083221df69fd7f89d3cbbee3e46dedcb19e263413dfb676fba896f17c1c",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/textures/1c4a276c-5fe160a6-06d54af6ffdc2d9e.png",
+      "sha256": "271d4d3e09155949a4cdda6b16696a7a27b66870cbaf7439f8dce8e6cec3e7d3",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/textures/1c4a276c-5fe160a6-12b1ee72ffb085a5.png",
+      "sha256": "ec3b6946e4fb43f97f14dfd3187c74b39e9b54f0d5318b940f9bf4a02437cad2",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/textures/1c4a276c-5fe160a6-370c8154ffe3e501.png",
+      "sha256": "660a88f1bc778cae1464793e4c611d0bfbafb8d4108b62d73c5bdec180fe4f2b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/textures/1c4a276c-5fe160a6-49a45ee7ff461942.png",
+      "sha256": "9580c4554c253ff04b49e222880b7a80c08581e3e30d6ab660fa85e3b30342dc",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/hair-validation/embedded-bundle/textures/1c4a276c-5fe160a6-fba99176ffda0ed2.png",
+      "sha256": "6f0f9c8cff72d7c2ecd2d56b3c5164b94301c68b5ea95e0083a20d6b6c551276",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/008936b17a69c24204627a509ac8dc4bbef138b7a04150e7944498aa1d88665a",
+      "sha256": "008936b17a69c24204627a509ac8dc4bbef138b7a04150e7944498aa1d88665a",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/0e401a47925a282b5e0c6830fc9e02dd897c52570a88a8f0781f6643a3cea9bb",
+      "sha256": "0e401a47925a282b5e0c6830fc9e02dd897c52570a88a8f0781f6643a3cea9bb",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/10ffec6d0b9e148110b33a48791ad3222d6e4a2df862cc0e98e0ca9ffe1d6488",
+      "sha256": "10ffec6d0b9e148110b33a48791ad3222d6e4a2df862cc0e98e0ca9ffe1d6488",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/15e0b1a2ab4fa2460b90b15cc2aaf4bcdf4473db76c80da98e2bd672e0dabd56",
+      "sha256": "15e0b1a2ab4fa2460b90b15cc2aaf4bcdf4473db76c80da98e2bd672e0dabd56",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/15ec82ff9592c8189b5a1988683880428bb47a5cf541fad99cb9289553fe4fad",
+      "sha256": "15ec82ff9592c8189b5a1988683880428bb47a5cf541fad99cb9289553fe4fad",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/18ca113c07d6dd261bac073462f7bec563010d3081e2a4e0cb1e18f213970127",
+      "sha256": "18ca113c07d6dd261bac073462f7bec563010d3081e2a4e0cb1e18f213970127",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/200e10b11207bbda27a9d2682b06fa8ae5bb79ffaedc5e42ca803e6b6c99b2f7",
+      "sha256": "200e10b11207bbda27a9d2682b06fa8ae5bb79ffaedc5e42ca803e6b6c99b2f7",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/27d04216ee210616d0e1f337d364fcd9288c43c1c2ead2359ab8471ece15d9d3",
+      "sha256": "27d04216ee210616d0e1f337d364fcd9288c43c1c2ead2359ab8471ece15d9d3",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/2de9f594473819570aaa7748738b6494f3708a0928370fdcb687df0fdfdf25af",
+      "sha256": "2de9f594473819570aaa7748738b6494f3708a0928370fdcb687df0fdfdf25af",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/2ea64af9c91cd03bbcd4393a93710542a2f00680a4b0482be407206716cbe32d",
+      "sha256": "2ea64af9c91cd03bbcd4393a93710542a2f00680a4b0482be407206716cbe32d",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/330a974828e8053cba0a0c6b94d5d729243ddf1dfde7576f1660ba301df34d64",
+      "sha256": "330a974828e8053cba0a0c6b94d5d729243ddf1dfde7576f1660ba301df34d64",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/4151c65dd01764c3855da421e4becc377e4304ab89a14c512b24fa41bd47038f",
+      "sha256": "4151c65dd01764c3855da421e4becc377e4304ab89a14c512b24fa41bd47038f",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5",
+      "sha256": "4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/4b90655b5cc2d2269fa9d98dc0cb3207c2df541f536ec608527c32bb829d06a8",
+      "sha256": "4b90655b5cc2d2269fa9d98dc0cb3207c2df541f536ec608527c32bb829d06a8",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/5003ba13fb7e100fe4a0b1a1493ac3306a711145f532f3c241c3e1f311f7d07d",
+      "sha256": "5003ba13fb7e100fe4a0b1a1493ac3306a711145f532f3c241c3e1f311f7d07d",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/51ff3ac91380050ddb9f87fb59bf2a21ffb47de176f2efb8d6259ce6e94fa4e7",
+      "sha256": "51ff3ac91380050ddb9f87fb59bf2a21ffb47de176f2efb8d6259ce6e94fa4e7",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/55813e2170ef2bcf8ce43a2660a77a911d331809ca97c0adf9b2d53712590ced",
+      "sha256": "55813e2170ef2bcf8ce43a2660a77a911d331809ca97c0adf9b2d53712590ced",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/6aa5d8d8725f3472bb90d50c1c9f4621fb28a411948b078c1753f8fcf31f5b37",
+      "sha256": "6aa5d8d8725f3472bb90d50c1c9f4621fb28a411948b078c1753f8fcf31f5b37",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/715064e7a8f60eef9cb1ada891f71eabb79f8349986cfbca1352edc4f023f5ad",
+      "sha256": "715064e7a8f60eef9cb1ada891f71eabb79f8349986cfbca1352edc4f023f5ad",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/77c818df24bf0bbb4c786a23d0e8256aae517d34281449264f3701b1992b8f7b",
+      "sha256": "77c818df24bf0bbb4c786a23d0e8256aae517d34281449264f3701b1992b8f7b",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/7c1562bf525a8184199232ae9680855ccc716f491f4bcf5f0a7214a05451d0a8",
+      "sha256": "7c1562bf525a8184199232ae9680855ccc716f491f4bcf5f0a7214a05451d0a8",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/7c7de3942edf6027a967e8eaa8f34ab20b729839ca1f274d7a46b56ac13ea83d",
+      "sha256": "7c7de3942edf6027a967e8eaa8f34ab20b729839ca1f274d7a46b56ac13ea83d",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/7d7045f44560075000abe332470e5d336c67207a9c60ba1644b1d745f905d42d",
+      "sha256": "7d7045f44560075000abe332470e5d336c67207a9c60ba1644b1d745f905d42d",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd",
+      "sha256": "7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/84409452e64aae9db59ca13989beee5daa2d94ed11fac4a67188692da378ebbb",
+      "sha256": "84409452e64aae9db59ca13989beee5daa2d94ed11fac4a67188692da378ebbb",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/8837205eae451b97f723d3530524bcf83e26ab0fdda1b76df9b6354162c1e81c",
+      "sha256": "8837205eae451b97f723d3530524bcf83e26ab0fdda1b76df9b6354162c1e81c",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/8e809ede23b9d9866beeed5287bf7aa5139395a160354d0d83740039f1addc7b",
+      "sha256": "8e809ede23b9d9866beeed5287bf7aa5139395a160354d0d83740039f1addc7b",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/8f1b80d8c8f69e5ef61631f0005b7166eab14da09b95d664a69a7935be9f30a3",
+      "sha256": "8f1b80d8c8f69e5ef61631f0005b7166eab14da09b95d664a69a7935be9f30a3",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/99420d4db856892c4f8a4332a34c0324744d99df3eaee453fcf05b40798fa482",
+      "sha256": "99420d4db856892c4f8a4332a34c0324744d99df3eaee453fcf05b40798fa482",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/9ecc165a61e6db21de3516b7d3971d7897678dade0eb4ecfb37827b591cbe742",
+      "sha256": "9ecc165a61e6db21de3516b7d3971d7897678dade0eb4ecfb37827b591cbe742",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/a4303c98e504b2fb20274f98ec77be64fcca831b872b78de34d46d95673f00c3",
+      "sha256": "a4303c98e504b2fb20274f98ec77be64fcca831b872b78de34d46d95673f00c3",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/a4a54e8e684fbfe33ea60057cb15ba50d2ab8ce5953b20f13a401af74f93d969",
+      "sha256": "a4a54e8e684fbfe33ea60057cb15ba50d2ab8ce5953b20f13a401af74f93d969",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/a8bff82892277ee1a68538743585fb2f6e510a4fd5817e8826cb2939f926666c",
+      "sha256": "a8bff82892277ee1a68538743585fb2f6e510a4fd5817e8826cb2939f926666c",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/b2a65d9511d02a338c7178b2cc08d8b5c3cf2c7972f37065c9662942e7327aaf",
+      "sha256": "b2a65d9511d02a338c7178b2cc08d8b5c3cf2c7972f37065c9662942e7327aaf",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/bd242f4fe70e142c99eccf4048fce617d859411dbaee9eb0e2443958232a326a",
+      "sha256": "bd242f4fe70e142c99eccf4048fce617d859411dbaee9eb0e2443958232a326a",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/bf600d61214c9dc267af57a15bcc7d92251135308569c3aba7bfc8b69dcec5cb",
+      "sha256": "bf600d61214c9dc267af57a15bcc7d92251135308569c3aba7bfc8b69dcec5cb",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/c55eea764ee0de814781ccd956969c3a70b34ae81e9c574a4a1658f35fbdae1e",
+      "sha256": "c55eea764ee0de814781ccd956969c3a70b34ae81e9c574a4a1658f35fbdae1e",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/c87ee037121c14153162ef5fecf76392a8b12355fac648c4dc2e5b64488ede44",
+      "sha256": "c87ee037121c14153162ef5fecf76392a8b12355fac648c4dc2e5b64488ede44",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/d320d4ec9037d16fb88a65797fa3419c902c6f39745a3e8725e977699bf9fded",
+      "sha256": "d320d4ec9037d16fb88a65797fa3419c902c6f39745a3e8725e977699bf9fded",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/d383d791d9a05e4720d325c74cd95d55a6199a4758fd3483f37ca57c6f5448b2",
+      "sha256": "d383d791d9a05e4720d325c74cd95d55a6199a4758fd3483f37ca57c6f5448b2",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/d6e13e134ba8672152ba741bbf90982de8d5bd727754ef9921d0eb7c9b70db9c",
+      "sha256": "d6e13e134ba8672152ba741bbf90982de8d5bd727754ef9921d0eb7c9b70db9c",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/db5413db87e726eadd349caa9d673281402cbb012b44176c9a013121cbda6951",
+      "sha256": "db5413db87e726eadd349caa9d673281402cbb012b44176c9a013121cbda6951",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/db586324525cbf840b8ffae5b4421b4e2a8fd78aab1fa1eda36853730ec48242",
+      "sha256": "db586324525cbf840b8ffae5b4421b4e2a8fd78aab1fa1eda36853730ec48242",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/e84ad535c5ab460e9578b4982d4651d482e4198f7a9b1abbccaa62c627ec44c9",
+      "sha256": "e84ad535c5ab460e9578b4982d4651d482e4198f7a9b1abbccaa62c627ec44c9",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+      "sha256": "f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859",
+      "sha256": "f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/f324547fe271e68bcc1ba88d4d540a88ffbc4d909103f27a5de571780542299e",
+      "sha256": "f324547fe271e68bcc1ba88d4d540a88ffbc4d909103f27a5de571780542299e",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/f33f3fda374a5b5a6b7a648f8c36afca68fef4df9f831c0bdbc6ede8cac014c5",
+      "sha256": "f33f3fda374a5b5a6b7a648f8c36afca68fef4df9f831c0bdbc6ede8cac014c5",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/f76f3733caba0c7d1168c4eb1738c7d89d94c766eb46a2f34aa79d5edc42dd58",
+      "sha256": "f76f3733caba0c7d1168c4eb1738c7d89d94c766eb46a2f34aa79d5edc42dd58",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/fa56ece98a5914c37e3dc388c8148f7e5f64cea5bddff408756e72353bf8bf04",
+      "sha256": "fa56ece98a5914c37e3dc388c8148f7e5f64cea5bddff408756e72353bf8bf04",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/fbf608db4c420b2acfc3098a931004907a7cd0aa5103032387ee87e1a88e7810",
+      "sha256": "fbf608db4c420b2acfc3098a931004907a7cd0aa5103032387ee87e1a88e7810",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544",
+      "sha256": "fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/painting-creator/runtime/manifest.json",
+      "sha256": "4b7f45ba6fa9f20afc7d36dc2e0d3dc768953e814f53e303cd8d5e876c034ac1",
+      "provenance": "Explicit pre-refactor runtime or registered recovered-codec/painting comparison data, retained locally. See adjacent artifact provenance and feature README."
+    },
+    {
+      "path": "artifacts/refpack-option/previous-manifest.json",
+      "sha256": "0598d301edf27c3bacdd637fb5f1b8e8559ca5f4db9bdd8adc502ce4fa25392e",
+      "provenance": "Named comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/experimental/humanoid-request.json",
+      "sha256": "c5e5f5d632fbe9ff3ac318c53f5f856d9a1b95f4d3694e6ff6783c1c2488532f",
+      "provenance": "Named comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/af/82c7af9d_b1d19ec8-report.json",
+      "sha256": "0846a5a856dca2b53d3bb49c6103e7571731a02852c9e7b504acd84493df8b9e",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/af/82c7af9d_b1d19ec8.package",
+      "sha256": "747f08123e3e2789f1ee6d66aa0438156bd1296bccb2d6b32980d3d7d0b27b29",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/am/82c7af9d_9d2b26a1-report.json",
+      "sha256": "6f1e551ee66b567b37a1998a3e642f21d41152a271fa673b34433b94411038ba",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/am/82c7af9d_9d2b26a1.package",
+      "sha256": "629eae56fb25e55472f31a5e1b2b45e3b6b9208e1e77ebf305a517c5435a8a95",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/game-link-report.json",
+      "sha256": "bf562b452848b83e8489390bc8d5710a3d7880dce40213136360ac9393a3823e",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/manifest.json",
+      "sha256": "e1f5155c45a4b5733f51449c2dbad2a5a16fdd17d139930b9d0a3a68d287fa88",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/saved-sim-link-summary.json",
+      "sha256": "f068f68f51e70e36ea744bebff1284f91ab44f2c473f7bb0dd2c6ccc5d3708e0",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/wolf/0752910E_furry_wolfhead-report.json",
+      "sha256": "5410c511e513ef7cc92445968a5b3828cc6d250f9175d8c4ed19718deb2f97ac",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/wolf/0752910E_furry_wolfhead.package",
+      "sha256": "de37f3dd882ddcb16044dd1256ef92455b7f50bec26515baf48fd62bbff6e98e",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/wolf/37621a32_wolfsuit-report.json",
+      "sha256": "4a0124432310875331ae9bc6d8321fb262845a62e9b3e98b252b3d963e54184b",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/wolf/37621a32_wolfsuit.package",
+      "sha256": "1f6f7e5a725dffa88643da250e95d3cc7d182ae6e6a3f9b6cc01511f7ddc0550",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/wolf/disableeyes-report.json",
+      "sha256": "59999939d1b87b0690dcca324f9df13b904426792d66b91d763b3639542fe5e7",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/fixtures/wolf/disableeyes.package",
+      "sha256": "3a2ca81800726daccdcd01d6564d57cd9a31879e10e232122eb97e1d39ee3b4d",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/sim-creator/guided/humanoid.glb",
+      "sha256": "b9e2c89b10231311ff0ab9fcf10097e3d9dda1e32dbbd03bd7002d42407f0ce3",
+      "provenance": "Named comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-0.bc2",
+      "sha256": "d249b6e5206e557257db3bf85e0e8c75bfdda2da952d2a18dc94719f20fef946",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-0.rgba",
+      "sha256": "8bd77109ce82f3de5a9192c330417bbf5aee5d35c27979bee2ab71042a6f7779",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-1.bc2",
+      "sha256": "ca28c945f2e74089fcd7ba2fbd5033e1ff834484dad08c5e2c5a6d3a35223786",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-1.rgba",
+      "sha256": "c047bfa80c14edebaa96db51a7b4cd27bd35c8829985f6ca095cb76395153b20",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-10.bc2",
+      "sha256": "8cb6678e055f5d44a81a11838c88905da1ac5c61c99810d74183caf8215adf2b",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-10.rgba",
+      "sha256": "05c2e6dd87a69de47131c9dbba3aa93de8bf1079b0015277821b486a5ebf6bd0",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-2.bc2",
+      "sha256": "c7db8af2074c9e840896bb14e76224818f6c9614a6508611da13f469f2938cac",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-2.rgba",
+      "sha256": "4aaea42121277505c6abe79ca01e62a4ad7a3b775c98c87379e501e2244a1a86",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-3.bc2",
+      "sha256": "53192affeb3a270f1dee4f6c78743da1c4d5282d476cb0100c5c9d18f9ccbb91",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-3.rgba",
+      "sha256": "537bebf98046c3e6940e18046b2d648ab22ef97727daf61c7c587710970aee43",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-4.bc2",
+      "sha256": "474e793db21325dee4fdbaf1f2b2ecb7f0204c16b7fc11934ec32c9838c64ebe",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-4.rgba",
+      "sha256": "3c5e2eea2c6c9e3fe6663b5204e918cc6b874b2dec4a5a92425f17a4d1c3e2b6",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-5.bc2",
+      "sha256": "5a42f6bc1b62d1cfe3f6128bb793f56b9fe71d39152e8074e0f431d0fa783850",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-5.rgba",
+      "sha256": "512d7a3a90c8a977e54010bff6937e89855a0d906a2a479d5002adf7ead883ff",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-6.bc2",
+      "sha256": "f01ef56d3171e7c0beb3a9c8c827ce2d1d354de811913bf9917dbf6db63066e9",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-6.rgba",
+      "sha256": "ed1b2e7d9e942d8d1d26bb6a20955dd248b826ed6641f4557a66afc9c0b49bf6",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-7.bc2",
+      "sha256": "ba43d2385be848677d3ac420497f3e254a18fb716af501d342ec55f552d622d1",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-7.rgba",
+      "sha256": "e79ea11e7d09043e2ca6817d20cca10f9a59f92cebb6ece5a810502f4da417c0",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-8.bc2",
+      "sha256": "6c7c6c238906b7c8b235ab57a2517c9b2ae28d79141a3292d288c527c22f92e3",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-8.rgba",
+      "sha256": "3430965c256aadd6666e0b09e31ba36b334e82503f61018abd2208b51875098e",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-9.bc2",
+      "sha256": "d93bcc152b6acbf8940bb5976fe68800080884d23aba7c29b0e0114e25c81115",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/captures/capture-9.rgba",
+      "sha256": "88b0219a743f41d0f13993e6ff4c72dedcaab7b97841ffe94b30e7ae74bc7d06",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/corpus.json",
+      "sha256": "742c4cfe24a09a8f6dc715d9238c9db81c3305b49cae74a7af6f9e366d68ffb2",
+      "provenance": "Named comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/texture-encoders/synthetic.bc2",
+      "sha256": "73ff1f19f2d8d5ba8178f68f4e4b5d0723dc6782b7e77b0da38cba8c15faeda8",
+      "provenance": "Captured Body Shop payload, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/texture-encoders/synthetic.rgba",
+      "sha256": "a59fef88dab88f9d464bf9a3d7047b1d562c3bd0123f5f3771696954f953ee9e",
+      "provenance": "Recovered Body Shop captured input, artifacts/texture-encoders/corpus.json"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/af.png",
+      "sha256": "b2417bdbd74d40d3ed11ac12fd29888a730434ffa98a6e6cd829e85d9f2160ce",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/am.png",
+      "sha256": "6bdc9463c6c275f2cdf8b674e8386731d776f71aafdf9ccd37e9d765c5595ab5",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/color-cases.json",
+      "sha256": "33674ac3d53a1e9fe5841356024ea99a124e106bb03ebdf1c71346b99cc29230",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/mesh-part-0.package",
+      "sha256": "03488b965f1d8fcae5655902cb34e43f285bc97992f3a4340344321743c6fb0d",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/mesh-part-1.package",
+      "sha256": "d9cb3d432d8d0d3c820e5afb2838988db518a4d258d314f338833fa2ca850fa6",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/mesh-part-2.package",
+      "sha256": "9253618cac1f4f07fd972b406d09589f2e73b6503e44fa965b3dc9f24f8a48b5",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/pixels.png",
+      "sha256": "c2eee6aaf4c20db2960478c6428df5968b2dbd39e4a1ecb6b77fe87f8cd98191",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/second-recolor.package",
+      "sha256": "2265ceeaa187d40a0b6da1e7ba355bd97bbeedc0e070eda624707064881b4fa2",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "artifacts/wasm-migration/fixtures/split-mesh.json",
+      "sha256": "06ddad8b99eb135e390e3b3159e0b3249f6c8cb32b3591d3062767a6e53241c7",
+      "provenance": "Local comparison fixture, tests/fixtures/README.md"
+    },
+    {
+      "path": "package_creation/conversion/assets/af.zip",
+      "sha256": "7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd",
+      "provenance": "Pinned Blender 3.4.1 projection export, package_creation/conversion/assets/manifest.json"
+    },
+    {
+      "path": "package_creation/conversion/assets/am.zip",
+      "sha256": "fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544",
+      "provenance": "Pinned Blender 3.4.1 projection export, package_creation/conversion/assets/manifest.json"
+    },
+    {
+      "path": "package_creation/conversion/assets/manifest.json",
+      "sha256": "33021482723f5ee1372ce9a997720ef51d17c093dabd56c905c0b524d903de57",
+      "provenance": "Pinned Blender 3.4.1 projection export, package_creation/conversion/assets/manifest.json"
+    },
+    {
+      "path": "package_creation/hair/assets/Swirl_Volatile_Example.png",
+      "sha256": "4b31b036cce3d29e07317609da45b676f0ae4b9c85a4580fe649032ab6908e25",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/curves/IaKoa-Pooklet Curves/Credits.txt",
+      "sha256": "4146dd2a4f39a3fb0cd3cbdbe2589d26ce55c31ce364c01c98f114445e3923b2",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/curves/IaKoa-Pooklet Curves/How to install.txt",
+      "sha256": "2e399289271f56bcc60436d5ca4df4b90fe7f8fd2ee465c270567a47e630cc7e",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/game-meshes.json",
+      "sha256": "f33f3fda374a5b5a6b7a648f8c36afca68fef4df9f831c0bdbc6ede8cac014c5",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/manifest.json",
+      "sha256": "7f2791b2cd1fc44143ec910752174efbe44f1717af459fa8982836dcfd2dcd4b",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-bun/Example_textures.zip",
+      "sha256": "4f92fe159b050c952bff3050f9ab417889e98abeb99fe4c1517e4cb22039a0e5",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-bun/item.json",
+      "sha256": "be0dc21911657621a3d902053f9b2ca345c96c0c444d47cedaffdf65c84a2f0b",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-bun/template-textures/1c4a276c-53bde13c-17f27e08ffc1525b.png",
+      "sha256": "9d790372339003b9afb28f2d2c00c82ad03a2e8bd64aab0aeb4660c6f73b007b",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-bun/template-textures/1c4a276c-53bde13c-6e4ee831ff6ef47e.png",
+      "sha256": "db53407c06a5809fb3231955b968c236f1962320a7607d2936c1f66a7753a7ae",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-bun/template.package",
+      "sha256": "200e10b11207bbda27a9d2682b06fa8ae5bb79ffaedc5e42ca803e6b6c99b2f7",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-bun/validation.json",
+      "sha256": "220f324a677a91a907672b40662e6f421211f81e648d943341cbb3bc98554695",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-french-braid/Example_textures.zip",
+      "sha256": "41a94d4c8ec2b7ca674b99fe1ed8d3d5689c400376d92333d88a4e565224831c",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-french-braid/item.json",
+      "sha256": "0f415a27ce614cdd79a49402e83988a643a298960df6a6b31b56fd58fb032a80",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-french-braid/template-textures/1c4a276c-531779bd-65bae1f7ffc01120.png",
+      "sha256": "efcf52dba26bea785df29168ced3a8a45c9052f0ecef7f8e7b85805e3cbdab40",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-french-braid/template-textures/1c4a276c-531779bd-d4558af6ff1c44b3.png",
+      "sha256": "03d66aaa20685b9957b41ce01c338911527567f79d60d44a7fe7720719fb37cc",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-french-braid/template.package",
+      "sha256": "bd242f4fe70e142c99eccf4048fce617d859411dbaee9eb0e2443958232a326a",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-french-braid/validation.json",
+      "sha256": "b6d7e06ae012b14b846dd3c2fcceb5b417a51189152b630373bcbcac6f0aa381",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-high-ponytail/Example_textures.zip",
+      "sha256": "af1a518806703b7db68bfcbfb63d99028d9673bea53e7229fa456b21d4f3a370",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-high-ponytail/item.json",
+      "sha256": "41d5b6222a864982449d0935a5697496a63cb5c7836c17941ca31c5fe87c3e08",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-high-ponytail/template-textures/1c4a276c-53fa99fe-c4026d87ff4dd2a8.png",
+      "sha256": "efa8f4b2d68eda5ce27ad0681cf157ed2554f1983685ac96d9d904d911363f09",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-high-ponytail/template-textures/1c4a276c-53fa99fe-f98e58f5ffade4bd.png",
+      "sha256": "eddd0c2d861e3e9bd92174dbdc7a026b79a900f71ba4ad019db0c7a5567fa467",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-high-ponytail/template.package",
+      "sha256": "8837205eae451b97f723d3530524bcf83e26ab0fdda1b76df9b6354162c1e81c",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-high-ponytail/validation.json",
+      "sha256": "45aff6ff9cb0cf5e1d161fd5a35b5d377c42a3252ba2ac5bc4a4269fbe455eb7",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-ponytail/Example_textures.zip",
+      "sha256": "dab1c0b343487af9103c2a9c7455d25cadecf2390bb4f9bcb727c3a54748cb6f",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-ponytail/item.json",
+      "sha256": "3e059d8ba63a603e22e3f0ebfd5d30c0b36daa0e07eddb2d8637fa48e9edaaa9",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-ponytail/template-textures/1c4a276c-5cd919f7-5becaedbff84ec08.png",
+      "sha256": "8305c82efdde6d3d54f0e4433c43eba145d6abccc36e2d31af427a8789d54387",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-ponytail/template-textures/1c4a276c-5cd919f7-d224056dff23fbc1.png",
+      "sha256": "a803dfcf8f783b74a1320ed432189996025d850c7780812081086671316e637a",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-ponytail/template.package",
+      "sha256": "4151c65dd01764c3855da421e4becc377e4304ab89a14c512b24fa41bd47038f",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-ponytail/validation.json",
+      "sha256": "7b952e8f5f138d1c3ce62cbfbff461b3d5ebc4be31ae85745b4d2ed87ada1c85",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-short/Example_textures.zip",
+      "sha256": "bf9db556e15100ea06b69e410546a0060761e237cd8f43c2e13944d221afb362",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-short/item.json",
+      "sha256": "b7233458ac9f384595e9f777a923ec4dea6f28d67a99f23a101294a02c18f1ea",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-short/template-textures/1c4a276c-5cbc77d7-bc355222ff6d1261.png",
+      "sha256": "8dc293ea3a5ec638189e9ef92004ddbc8b4998f9d9e3850df5d14562e646a8d8",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-short/template-textures/1c4a276c-5cbc77d7-efc570c5ff38771c.png",
+      "sha256": "611a7464b140edb287d6e3e833e2a7532c831ed9a163339281318255a656e777",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-short/template.package",
+      "sha256": "55813e2170ef2bcf8ce43a2660a77a911d331809ca97c0adf9b2d53712590ced",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-female-short/validation.json",
+      "sha256": "5b9b6a16c65b4ab5f81b46e07e663001a768436bdb188f1b566de0bc771ee9da",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-cornrows/Example_textures.zip",
+      "sha256": "74926752d9b477c405382644b886de40eef9cb1b82a0d3b788d6c1ea4fa1dd63",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-cornrows/item.json",
+      "sha256": "66be30c81d4fbc635098d99ec9121fe71bcf9e7a7206ace853a1534317117046",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-cornrows/template-textures/1c4a276c-57051116-19284e72ff366646.png",
+      "sha256": "74c76d7290992c171c8c29368adb8584893c87e7275eeaf369475c008d30d252",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-cornrows/template-textures/1c4a276c-57051116-94f7a3bbff0c471c.png",
+      "sha256": "73128071ee676d60e71c609553b17ce2eabeebb712085526fb62ade7a1a4e89a",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-cornrows/template.package",
+      "sha256": "fa56ece98a5914c37e3dc388c8148f7e5f64cea5bddff408756e72353bf8bf04",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-cornrows/validation.json",
+      "sha256": "53b212ac1130acb747e3da24c1537291fd16435b9754380baa1f1e15ff4caa76",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-crew-cut/Example_textures.zip",
+      "sha256": "a6e6de6817c2214e2bf4191f875d94640f0074a2961ce38d94186f97bda95bee",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-crew-cut/item.json",
+      "sha256": "ea7963cefbec0f34b8ce62c3ed829c004643619d3b284c74f45b6626c2e5f937",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-crew-cut/template-textures/1c4a276c-5ae2679b-816e5f11ff559946.png",
+      "sha256": "9320c4a77a12029c3b94eebb5a35bd84a8a6215634e72ffcd2fe5edeff70f23a",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-crew-cut/template-textures/1c4a276c-5ae2679b-bebb1313ff19cd9e.png",
+      "sha256": "4ded7014e0d80584e85dd77c023a9bcf8ae4e315646902f2b279dd6a75457112",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-crew-cut/template.package",
+      "sha256": "a4303c98e504b2fb20274f98ec77be64fcca831b872b78de34d46d95673f00c3",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-crew-cut/validation.json",
+      "sha256": "a50688074329c404d3477f0c1300d3ee4aa5c60390cda825cabff33d47324d70",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-ponytail/Example_textures.zip",
+      "sha256": "e19d9f617233c58520608be9f63b10c0df0546d38176403b87f99aece18a8113",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-ponytail/item.json",
+      "sha256": "88f3e0c5fb3bb71d4239b4e7867587894548d5965f089c279c06214069c4d245",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-ponytail/template-textures/1c4a276c-52427749-2ba5f6bdff014655.png",
+      "sha256": "7987712cdfe790f6ce0f7691c45929ef9d57b7ad53b06e7c13621182d8fb50c7",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-ponytail/template-textures/1c4a276c-52427749-2f6d8966ffe926da.png",
+      "sha256": "4384b77896e6904831da2265911a4550e8293191d08829bcae6e4e15071eae5c",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-ponytail/template.package",
+      "sha256": "715064e7a8f60eef9cb1ada891f71eabb79f8349986cfbca1352edc4f023f5ad",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/standard/standard-base-male-ponytail/validation.json",
+      "sha256": "074455e4df2c0d644465e64d24be964214285c8cf44f450cc0aa9d4a1aa7d8bc",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/swirl.package",
+      "sha256": "330a974828e8053cba0a0c6b94d5d729243ddf1dfde7576f1660ba301df34d64",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/hair/assets/template-textures/1c4a276c-5f093122-e7e2330ffff1ef19.png",
+      "sha256": "7f89d7dcb07cbb6f1c2f3c80f63966d18ac4926fde1b90835ee005d9a9b5bb9e",
+      "provenance": "Pinned Pooklet/IaKoa mappings and offline game extraction, package_creation/hair/README.md"
+    },
+    {
+      "path": "package_creation/objects/assets/catalog.json",
+      "sha256": "2de9f594473819570aaa7748738b6494f3708a0928370fdcb687df0fdfdf25af",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/chi.package",
+      "sha256": "f324547fe271e68bcc1ba88d4d540a88ffbc4d909103f27a5de571780542299e",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/chimes.package",
+      "sha256": "27d04216ee210616d0e1f337d364fcd9288c43c1c2ead2359ab8471ece15d9d3",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/dining-chair.package",
+      "sha256": "a4a54e8e684fbfe33ea60057cb15ba50d2ab8ce5953b20f13a401af74f93d969",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/dining-table.package",
+      "sha256": "f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/fruit-bowl.package",
+      "sha256": "e84ad535c5ab460e9578b4982d4651d482e4198f7a9b1abbccaa62c627ec44c9",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/game.json",
+      "sha256": "51ff3ac91380050ddb9f87fb59bf2a21ffb47de176f2efb8d6259ce6e94fa4e7",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/object-reference.json",
+      "sha256": "f76f3733caba0c7d1168c4eb1738c7d89d94c766eb46a2f34aa79d5edc42dd58",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/reference-af.glb",
+      "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/reference-am.glb",
+      "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/reference-table.glb",
+      "sha256": "f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/table-lamp.package",
+      "sha256": "8f1b80d8c8f69e5ef61631f0005b7166eab14da09b95d664a69a7935be9f30a3",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/urn.package",
+      "sha256": "d320d4ec9037d16fb88a65797fa3419c902c6f39745a3e8725e977699bf9fded",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/objects/assets/venus.package",
+      "sha256": "d6e13e134ba8672152ba741bbf90982de8d5bd727754ef9921d0eb7c9b70db9c",
+      "provenance": "Offline Legacy object extraction, package_creation/objects/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/bella-recipe.json",
+      "sha256": "2ea64af9c91cd03bbcd4393a93710542a2f00680a4b0482be407206716cbe32d",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/bella.package",
+      "sha256": "77c818df24bf0bbb4c786a23d0e8256aae517d34281449264f3701b1992b8f7b",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/bella.png",
+      "sha256": "15e0b1a2ab4fa2460b90b15cc2aaf4bcdf4473db76c80da98e2bd672e0dabd56",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/catalog.json",
+      "sha256": "7c7de3942edf6027a967e8eaa8f34ab20b729839ca1f274d7a46b56ac13ea83d",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/city-recipe.json",
+      "sha256": "9ecc165a61e6db21de3516b7d3971d7897678dade0eb4ecfb37827b591cbe742",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/city.package",
+      "sha256": "008936b17a69c24204627a509ac8dc4bbef138b7a04150e7944498aa1d88665a",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/city.png",
+      "sha256": "d383d791d9a05e4720d325c74cd95d55a6199a4758fd3483f37ca57c6f5448b2",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/hills-recipe.json",
+      "sha256": "bf600d61214c9dc267af57a15bcc7d92251135308569c3aba7bfc8b69dcec5cb",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/hills.package",
+      "sha256": "a8bff82892277ee1a68538743585fb2f6e510a4fd5817e8826cb2939f926666c",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/hills.png",
+      "sha256": "4b90655b5cc2d2269fa9d98dc0cb3207c2df541f536ec608527c32bb829d06a8",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/lady-recipe.json",
+      "sha256": "18ca113c07d6dd261bac073462f7bec563010d3081e2a4e0cb1e18f213970127",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/lady.package",
+      "sha256": "4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/paintings/assets/lady.png",
+      "sha256": "5003ba13fb7e100fe4a0b1a1493ac3306a711145f532f3c241c3e1f311f7d07d",
+      "provenance": "Offline Legacy frame extraction, package_creation/paintings/assets/catalog.json"
+    },
+    {
+      "path": "package_creation/service/preview_assets/af.glb",
+      "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "provenance": "Offline AM/AF mannequin preview export, package_creation/service/PACKAGE_RUNTIME.md"
+    },
+    {
+      "path": "package_creation/service/preview_assets/am.glb",
+      "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "provenance": "Offline AM/AF mannequin preview export, package_creation/service/PACKAGE_RUNTIME.md"
+    },
+    {
+      "path": "package_creation/service/preview_assets/manifest.json",
+      "sha256": "a66276960d355b7a320c6b2d9bb0918eb182bed5cf4fa6422e3ea9fab2127619",
+      "provenance": "Offline AM/AF mannequin preview export, package_creation/service/PACKAGE_RUNTIME.md"
+    },
+    {
+      "path": "package_creation/sims/assets/af-rig.package",
+      "sha256": "db5413db87e726eadd349caa9d673281402cbb012b44176c9a013121cbda6951",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/sims/assets/af-scaffold.package",
+      "sha256": "a738557ec14e4143b6e634cee9fb2d8a9e470c8957b82e661048b4fe418e5fcb",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/sims/assets/am-everyday-test.package",
+      "sha256": "c55eea764ee0de814781ccd956969c3a70b34ae81e9c574a4a1658f35fbdae1e",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/sims/assets/am-rig.package",
+      "sha256": "15ec82ff9592c8189b5a1988683880428bb47a5cf541fad99cb9289553fe4fad",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/sims/assets/am-scaffold.package",
+      "sha256": "f249002a3f1862bdc4968d028346f9bbfe3071991a4b7b19b7e245aa0fa25d7a",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/sims/assets/references.json",
+      "sha256": "e10a67355afc3b19d53e200793a913b8fd59460f50dd494fe6e2c729ffcff304",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/sims/assets/scaffolds.json",
+      "sha256": "455f5d327078e0f94dea4ee744e6a40e56f8aefa059c0b7990290d7604c0eac7",
+      "provenance": "Isolated Legacy scaffolds and rig extraction, package_creation/sims/assets/references.json"
+    },
+    {
+      "path": "package_creation/templates/NoFaceOverlay.package",
+      "sha256": "0e401a47925a282b5e0c6830fc9e02dd897c52570a88a8f0781f6643a3cea9bb",
+      "provenance": "Pinned scripted-overlay templates, package_creation/templates/manifest.json and package_creation/README.md"
+    },
+    {
+      "path": "package_creation/templates/Template_MultiOverlay.package",
+      "sha256": "99420d4db856892c4f8a4332a34c0324744d99df3eaee453fcf05b40798fa482",
+      "provenance": "Pinned scripted-overlay templates, package_creation/templates/manifest.json and package_creation/README.md"
+    },
+    {
+      "path": "package_creation/templates/Template_OverlayBox.package",
+      "sha256": "10ffec6d0b9e148110b33a48791ad3222d6e4a2df862cc0e98e0ca9ffe1d6488",
+      "provenance": "Pinned scripted-overlay templates, package_creation/templates/manifest.json and package_creation/README.md"
+    },
+    {
+      "path": "package_creation/templates/manifest.json",
+      "sha256": "287bacb07b4b01b75a2261bb9d3817ab2164ca80c3d9a508c546d3a5b2579ddd",
+      "provenance": "Pinned scripted-overlay templates, package_creation/templates/manifest.json and package_creation/README.md"
+    }
+  ],
+  "historical_runtime": {
+    "name": "pre-engineering-refactor",
+    "path": "artifacts/painting-creator/runtime",
+    "release": "59c178af7eb5a32accd69a03b3503aa3ec52fab2ad1e2cdce6ce7ed8d19e3898"
+  }
+}

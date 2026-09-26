@@ -1,0 +1,10 @@
+{
+  "name": "@sims2/web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "fast-png": "6.4.0",
+    "onnxruntime-web": "1.22.0"
+  }
+}

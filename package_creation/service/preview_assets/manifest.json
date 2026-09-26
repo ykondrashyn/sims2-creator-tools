@@ -1,0 +1,25 @@
+{
+  "blender": "3.4.1",
+  "bodies": {
+    "am": {
+      "template": "templates/AM-body-4t2-1024.blend",
+      "template_sha256": "f709db0a1ae34b663805ce7c95da2f363dcb1d67029c197c4ef15098a4a5a108",
+      "object": "ts2 body",
+      "uv_layer": "UVMap",
+      "source_vertices": 897,
+      "triangles": 1768,
+      "glb_sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "bytes": 49212
+    },
+    "af": {
+      "template": "templates/AF-body-4t2-1024.blend",
+      "template_sha256": "e87f48a83350623abe97b1d8fe325153131305e40c43027df32a923e489e2958",
+      "object": "ts2 body",
+      "uv_layer": "UVMap",
+      "source_vertices": 993,
+      "triangles": 1930,
+      "glb_sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "bytes": 53172
+    }
+  }
+}

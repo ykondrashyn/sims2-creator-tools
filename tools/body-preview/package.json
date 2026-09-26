@@ -1,0 +1,16 @@
+{
+  "name": "ts2-body-preview-vendor",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node --test tests.mjs",
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "1.0.8",
+    "esbuild": "0.28.2"
+  }
+}

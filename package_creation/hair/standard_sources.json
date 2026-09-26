@@ -1,0 +1,1007 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "standard-base-female-ponytail",
+      "label": "Ponytail",
+      "game_content": "Base game",
+      "gender": "Female",
+      "source_family": "21012ee6-2976-4030-bb21-0bcb110a51cd",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-1365c7fbff2c2d93",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "38f9a72394495f8cc58dae8652f678b599b0bc209f8e0bbdd840bdb9879fbebb"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-42635ed4ff02e3f0",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "b214ada17dd7ffb1037c218c94019d731be7f6449bb14a7c7f5c837ab20ee77a"
+        },
+        {
+          "key": "49596978-1c0532fa-0b99ea97ff44841e",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "6c22c2c4c185d9533946cfa5e7a3fb27154906c7042c71e797bad03944328b1e"
+        },
+        {
+          "key": "49596978-1c0532fa-4a25226fff406051",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "b7769bb86dfafbac7eb4569eccfba10db5365cf12d5d5baf86f033cc6143f8fb"
+        },
+        {
+          "key": "49596978-1c0532fa-5112d2e3ff29d8bb",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "1e314b590cec6173abaf7b1b994dc3dff4beffad47585a83667e6544f9958634"
+        },
+        {
+          "key": "49596978-1c0532fa-5169c587fff2fe90",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "dd03fc1c9121db964d9af9a343343a04d6b6d37f37297d77f16b799a98f02353"
+        },
+        {
+          "key": "49596978-1c0532fa-98252f60ffada5cc",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "b5a099d07306580ee3d1db7b47df027b9868ba5d9729c2b656c27ebbc496e3d9"
+        },
+        {
+          "key": "49596978-1c0532fa-aa4c86e1ffe7ff1e",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "2b05dfccce736fd0285d422f0ef18d1940740f43480815f7c11bc4e89c9ee404"
+        },
+        {
+          "key": "49596978-1c0532fa-b1acb6bcff821f6e",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "9fb020a5adcceab874e51a62f2fc2cbd49a557d568f1e22f1e128a364a52d08b"
+        },
+        {
+          "key": "49596978-1c0532fa-c2d50070ff1bdf42",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "94aff58d867b9afcfff87292a870e79965a5a2eb8114926cdbcb911b763ad286"
+        },
+        {
+          "key": "49596978-1c0532fa-eb5c99acff3465e0",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "382986dd5db81c975345f0cf57b1715a899800b3f427dbe701eaa799e36e56fb"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000008d4f8e35",
+          "sha256": "15d3178f1ef0cc6ef628169d9a1968a26485eaaf69c1aff08a6517c762c54b1f",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cd4f9203",
+          "sha256": "5450ae647978ddea30cc6b1f6ad8657a16b4ff5aa9764c0f8c39503842bdb467",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cd4f92ff",
+          "sha256": "97397261673fa96794003855f6dae2d4070fd92c80f70d7dcdb532934cf26692",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-2a598606ffd1c67d",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "79500a2433d0d99bf0ed709ac1fed1e8f8e42ac54876d43b317fe41d34f876a6"
+        },
+        {
+          "key": "e519c933-1c0532fa-a994aaabffd2c013",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "70b97ded4c4c5ecb4cff478fdcb5e96de5dfa0a4f955be626a3813637455e460"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000008d4f8e35",
+          "sha256": "717ffbb69161b933df5f682a1dd246420ac81b468b56e959d07585078bada006",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cd4f9203",
+          "sha256": "476f90e86771ec450862f79180fe9fbe802e369e1af97154cb55c8773f189532",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cd4f92ff",
+          "sha256": "7f96061a20078018f0525bd6c9331ae84152fbd198c6c566a0d7862dfb7dff72",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-a33dfd79ffa4a930",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "cae22b797484a207269a6d0f45b86abc00f8600b444f2609ce6865d2cd31493b"
+        },
+        {
+          "key": "ed534136-1c0532fa-b815f001ff92420d",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "4cc43bac2c01aa3eddc08c8fa021a5a10f41ee302cc1b7fce3f4667cec8982fe"
+        },
+        {
+          "key": "ed534136-1c0532fa-c2da69b1ffe84231",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "6fe93110916b6fb32aee5c9dc1b21a2b2934daf4a6c56146aa061f2b82009368"
+        },
+        {
+          "key": "ed534136-1c0532fa-d9f264c9ffdea90c",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "d149ad9e84a61d39bc6c468bd59a612008093898e21455d64fe116e38be6602c"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-4673db9eff4a5200",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "53bdbbe65056e6af900f17b6c9e3f0aa1e608ba0141272abc11c30941d6dd6a6"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-a456a137ffd47fc5",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "48ec6d5d4be5bab848c7e90fa0a58ba481b5728beafb7aac2c04dc4846a2b514"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-female-bun",
+      "label": "Bun",
+      "game_content": "Base game",
+      "gender": "Female",
+      "source_family": "23849b4b-db3b-44c8-9083-56eacb4770a5",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-79edcf71ff7d3f98",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "e9c90ceec881a242b03195ec5c33eec1b3130d8c2829968213d467272f41bba3"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-f788e43aff3804e7",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "e1e93219a2ee0a257390a2a94317928ea2c08e68ebe47b85044dab47594b2fd0"
+        },
+        {
+          "key": "49596978-1c0532fa-2146039eff2ce974",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "e101fdd07bf33ec56979c8ce6bdc50252ec205fdb26857cafaed9685c3d32a8f"
+        },
+        {
+          "key": "49596978-1c0532fa-2672c9c3ff782ae3",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "52630cd6e9b1fb862a1f09cddd628c4991c89638ac9e60e275f14a13bdddbb7f"
+        },
+        {
+          "key": "49596978-1c0532fa-7c82e6d3ffce506d",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "23ff12f7744bea78b7a79a3c019c2cc53e4c727b41cb315b86ec11036cf9729e"
+        },
+        {
+          "key": "49596978-1c0532fa-882568a9ff261e82",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "f189fc402433f6285ef387fb1eee1e754c6dbea97185cc750403f3f8dfdf9bf5"
+        },
+        {
+          "key": "49596978-1c0532fa-a4b42db5ffe2c14e",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "d6fc371c61412ab4fbcf7110b95251c8f2a660ce58fb9b9800d2602a7bde1eb5"
+        },
+        {
+          "key": "49596978-1c0532fa-ae895cd4ff83bafd",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "6c90db2e6be431f77a973aab66adb9a588f815ffa04e46252fe14b92b1c8f90c"
+        },
+        {
+          "key": "49596978-1c0532fa-e434dae0ffec5737",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "87a465f69367212f6b6a166672d9de5739e2eac451ee51428618da5709752f55"
+        },
+        {
+          "key": "49596978-1c0532fa-f47973c4ff35c073",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "228c11eb77b3467831b76f1942f2b1255b22415e3688c3fea7ef7be24275fab5"
+        },
+        {
+          "key": "49596978-1c0532fa-fe4402a5ff54bbc0",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "cd131679b4dbf70b618b0968bf45a7ea294b554f3cd2a46c70a2432a69cde1dd"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000004da98dbe",
+          "sha256": "f1a371985843e7e60f5e2e6d95f46cb1b4ec45efc7e00b77c34125b9adbfe649",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cda98e04",
+          "sha256": "09361c61bca96634b27cd86190f036e34d6a3d7c3676070338cd7d756dda2be0",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cda9903a",
+          "sha256": "1e8859ea3e320b1aedd728b61630f5f3d07194a91a40322dcf1c716cf25401d2",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-9598c055ff0fa7e0",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "ce705f71ffac0da98043584a6b27be49d42e9650392b79b3204faf6ace4a280f"
+        },
+        {
+          "key": "e519c933-1c0532fa-a509b2ebff5fa9e5",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "3103c13bb2e84b902e1c45f3aad0b9645c47511e3c152e449180480bbdec29db"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000004da98dbe",
+          "sha256": "ef4a451ac2fb47e96bbc21641334dee33626faff5570d768ee96d1fb7303ccc8",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cda98e04",
+          "sha256": "061d8f2742f30ec83a5c0e26942571d6444e943ffced9297eba59dafc9a6a5b5",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cda9903a",
+          "sha256": "d18652be9a9e709c1c0262ea27211996440ef2b9b1ed776c4b306d684a163650",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-c9fdf3f0ffa0e891",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "2e7eba712061a90a02bffa61be1ffe5a806634e08f9c2b0bf0519180d1620ac7"
+        },
+        {
+          "key": "ed534136-1c0532fa-d2d5fe88ff9603ac",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "26585dc7842cde5bb60fe3a43191226f5455d4d1a285a8e5e5690bfcef570a12"
+        },
+        {
+          "key": "ed534136-1c0532fa-e27cf56cffa17564",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "961ea55e1d31ae829738228fb146fb2ee1eb7d8671e4e92fcfa5717ced1912ca"
+        },
+        {
+          "key": "ed534136-1c0532fa-f954f814ff979e59",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "7a443b303daf2dbea41631fcb4a9a80b6ea5745957580b506c037859787bdce7"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-36a50e1aff5eef85",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "3a83ebbaa11c0b3ab8d7f4f07a742bc7d3989592100ffdb0ec35e19b12a641c1"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-4349489cffe1421b",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "df7de6a9afa8f3d6852cffde1ae0df751631b89190b2cbb06f8b3234e331bff3"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-female-french-braid",
+      "label": "French braid",
+      "game_content": "Base game",
+      "gender": "Female",
+      "source_family": "b3d610a2-e3a5-4f37-a34f-f3615450b99e",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-3966b4ffff35d42d",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "1ef5e5dfecac3528160cbedaf07065408d644c7064721c9379b686d9cc582940"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-f6b93ae2ff19debb",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "8fea2a80c958b3e820c8ec5d5e92f92174cf6fa7768b4e174119bddc9da8f995"
+        },
+        {
+          "key": "49596978-1c0532fa-21a11a30ffb42ac1",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "8680ea23abf72ee4fc36a66dcdb745a859088a0c006d3d3c67295131cc2cc67b"
+        },
+        {
+          "key": "49596978-1c0532fa-32026db7fff33230",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "cd7d1a975a805b2c7c176de9e0967e390399594add4476e4545bf2b45f6f9183"
+        },
+        {
+          "key": "49596978-1c0532fa-8f368e3fffe7c950",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "c3324d605aa654b9018dc51c2b0c732529fa781b982de953f63c46dbbe2cbd6b"
+        },
+        {
+          "key": "49596978-1c0532fa-8f80cbc9ff4b0af7",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "27c1f2552ad1f9dd9b07c0dda82d87a00e31ef3aa01f5b45df1a7906e3784b00"
+        },
+        {
+          "key": "49596978-1c0532fa-9f00c42bff34f675",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "2cb52700299c54de9fff07f2a6cf92d220985017e4445e75e14b93b96d06b7fb"
+        },
+        {
+          "key": "49596978-1c0532fa-9fb681ddff9835d2",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "87bb72ff29aad58a752c09afe8602ed9046781b203d8e59a3e207585acd7499f"
+        },
+        {
+          "key": "49596978-1c0532fa-a70df8afffd2bed9",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "d67638c9121bd4ac896e5a42401d74035945402eb546119dd527dca521140e1f"
+        },
+        {
+          "key": "49596978-1c0532fa-c506fe83ffb0de5e",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "de34770d74b14411a2a0629302857172d0f3b72fb833d197eaddf44a4a7a3b09"
+        },
+        {
+          "key": "49596978-1c0532fa-d96fd589ff04645f",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "9d6f0eb60e20af55860a39213f1604eccd3e12f1c91654c4363d5d2d7e776a8e"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000000c8718e6",
+          "sha256": "55e36093d4cfa0b15ae7d73fd65a8ea3fdd585b1e5be814f2c38e59a1c5360a5",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cc8718e9",
+          "sha256": "4344aa83482c19c42d89d0834aec554e645321b25a35bd893189fb1def08ab49",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000ec8718ed",
+          "sha256": "487b9cee8360a4f75568f10cb87f101e22b69209f65a627539d63632e864d343",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-4167302fffc72130",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "d7095d45bb4d8ce3a9ade7838d358b7ab6b0a700217c6a43e5736111cc9ec04d"
+        },
+        {
+          "key": "e519c933-1c0532fa-71c8bc51ffb8d817",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "e92382151039cbc648b04754b95780a43c596f43da84232b520ea994854d24f8"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000000c8718e6",
+          "sha256": "af522346da87ae9750d837d7031416e21accee1a065bd6c0dc73e62c67f476a5",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cc8718e9",
+          "sha256": "2c34ecd80359e736ebf8f00f5f837fd9e78f104f94e4b5940c741cf3cc1854e8",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000ec8718ed",
+          "sha256": "3b7433f5c88260e00e67326d48b024419de285fc3de9cd6b906feb4560db273a",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-6d2800ffffc59447",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "18316b8a15640986d8dbda1645027908c47de68ed251bfc582a3ecb17fc278ed"
+        },
+        {
+          "key": "ed534136-1c0532fa-76000d87fff37f7a",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "8159b09885e918bce6651f314b915b3b8b414778c8f8d03cc6579dce44aa644e"
+        },
+        {
+          "key": "ed534136-1c0532fa-cc4b3da3ffc75f4b",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "f2d17136a20f6643f50d4a99788c50877425c278a2008982a55e51a046d0bc83"
+        },
+        {
+          "key": "ed534136-1c0532fa-d76330dbfff1b476",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "b672f03cfb2caa4aa310f60d95800e53e4388672bec80ff8bd29a198c776125b"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-176754b6ffd4f9cd",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "1b94e7f3acf21e622c094bae4ff7da4d2193dacb49c9e45d190375d57d7a99a5"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-641ee27aff4d39e1",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "3e1af73c4dbcd95144e742bc6a75cb160e6ac341c52de51f4fcf71dbf8f03ab6"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-female-high-ponytail",
+      "label": "High ponytail",
+      "game_content": "Base game",
+      "gender": "Female",
+      "source_family": "6a9d56bd-4056-4896-b004-041df21303e0",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-526871dbff65d6bc",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "1a86c4fb48af7c32f284e98684f731f928198b30114a8fb4d8a0ed353e832d75"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-7f921314ffc7a2e0",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "dcff1afeaf724ef08a6b0e25fdd64317f991c1c7e94d9d485f951934c52d5db8"
+        },
+        {
+          "key": "49596978-1c0532fa-1a741ad4ff4fe2ac",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "c40d6e5b23c741cb6b4498289a6b0ac859069f6d4b33e4ee9d224ec69dc753f8"
+        },
+        {
+          "key": "49596978-1c0532fa-1c8c3813ff59ac1c",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "bb5543f8061ae049482d668072ee53d815388c1c085394e07e651af0d0ab6d1c"
+        },
+        {
+          "key": "49596978-1c0532fa-2adc22e3ff347a66",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "4e5ff61df9b37ab08991dd6b62945ed0e16417ae4913122f6f23309f44e3b2ac"
+        },
+        {
+          "key": "49596978-1c0532fa-467c1703ffefd692",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "afbe465d192fed27ff8b1cc906d037cac011b6e13d90e5fae5869c5fb7984269"
+        },
+        {
+          "key": "49596978-1c0532fa-99c45e04ffc88d31",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "011cc3acc93eab8b1d5dd4cb6f69f48ff760f04b1be3914bd356e04373956b6f"
+        },
+        {
+          "key": "49596978-1c0532fa-a96c6633ffb315fb",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "cfa342a7d5579e26d463d71edd4944a2f8e718105d47dbd201a2dc3307114f6b"
+        },
+        {
+          "key": "49596978-1c0532fa-af9444f4ffa55b4b",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "72ede48958aac3e7b44e1512800602886491d6dee435534bf7ca050b94de459e"
+        },
+        {
+          "key": "49596978-1c0532fa-cfe67dadff89b412",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "b8db57fe0062436cb28447255d767b218f1535f3553de538e8a4ba074771fea5"
+        },
+        {
+          "key": "49596978-1c0532fa-dad0e329ff22fe11",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "8c973c4538bc63b5b6194e350ee8719d4e4b696f7d759b2b15b6bb7404434122"
+        },
+        {
+          "key": "49596978-1c0532fa-f5646be4ff1321c5",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "410474d36b67bb2dc2981beecdc1ff656c271749024c51b2d76c2dce0673bc7d"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000008d4f6044",
+          "sha256": "2655775b48e86cbd0ac5afaec4e56a83c1d2b499254bcad9addad2fdfacfba0f",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000008d4f6099",
+          "sha256": "cab185232c331a34d918ff1a7e841da5295b7251343c9c353c85fd0996dc0846",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000ed4f86a1",
+          "sha256": "b32ed39cc373ae81b0ca4c8d7a0a4a9b13f4c9970e6e148c9b080ef12ad8a6d8",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-1ee8fb49ff569cb4",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "add672b15e0ad67d854969e4326056964129cb4994e00cc3e770e3edd37e1ed0"
+        },
+        {
+          "key": "e519c933-1c0532fa-6556e8d9ff417928",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "db347bc55c36ed7f1c8243a576128353c59374127089e2c8c27ea1b952711c04"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000008d4f6044",
+          "sha256": "818476d118dd1e2dc1f5fc0173d2b851eaee6c7bde486ebf02552a9fc2caf2d8",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000008d4f6099",
+          "sha256": "f4e6fdbd59707711d791c5dbffac2c9097c15c8dc0e46b2627383e4ad5c6c42c",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000ed4f86a1",
+          "sha256": "d13bb109d4111dd4fa3d7205ab8311a7348c78416420e5032995dbe78577c098",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-aca7db42ffec1c61",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "1dee44fd6a2ac9f6ed04843cfac6431f1d7640b9630e13d18ee639bc2732dd02"
+        },
+        {
+          "key": "ed534136-1c0532fa-b78fd63affdaf75c",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "9c515f29f4c675c4d49e482ee5c3802e04e3b9f1c96524ee0fe6c83eaa1b208c"
+        },
+        {
+          "key": "ed534136-1c0532fa-e4032909ff1be81c",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "290c1fa68cc96d5e6c264db5de52404180ccc8a2df54507feca80bc63cfb4830"
+        },
+        {
+          "key": "ed534136-1c0532fa-ff2b2471ff2d0321",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "9da2002dcadac51b5c9c5228f19a50737c12801ac8334b6050010d7c4a851f65"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-16e54befffb796fd",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "f6dd887f70df654ebc530b62e87fec21fc45f1f8702ef40d4a94d0089e036436"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-82a4bcd1ffa67e12",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "4d409256c80f73193908944f415fea72ae6a5ca409638c5207c94da8ca778e04"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-female-short",
+      "label": "Short cut",
+      "game_content": "Base game",
+      "gender": "Female",
+      "source_family": "bcec51f7-ce59-4260-b661-479a86aff468",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-5ffa8ac4ff9a0aac",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "265e7388b31c3dd2d1ed0a4f2b78fe1731e7b70c854442d995f1d0db3dc49eed"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-dca48ac7ffc637d8",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "d064ea3fb552fdec99dfe1190dce4bb6a7809fad3904ecf927d9dfe057cb19a0"
+        },
+        {
+          "key": "49596978-1c0532fa-010d492bff119876",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "e60c69772f955ca24f5e3900541e456004a7158a66ffa2515066f0cc4588f442"
+        },
+        {
+          "key": "49596978-1c0532fa-0ee08f27ffdd493c",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "9bfe47110356fd45b5de56e377982540e0a69869ed38c271c168b784be759276"
+        },
+        {
+          "key": "49596978-1c0532fa-132bb4d3ff5bed30",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "8a29a8aaf09b56cc44d0419f37ab1d0a579ab4c3348334fd66c5f98e459bc739"
+        },
+        {
+          "key": "49596978-1c0532fa-45ee9227ff6a8ce3",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "1e3635f02635a31fbbe79fd97e5660d90d0e3f96d9aba3d39806de2ad1b7f58c"
+        },
+        {
+          "key": "49596978-1c0532fa-954cbe15ff007099",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "f6bb8538b2d525a2e50b368bb49bd7417304498fa940a1d6bffe3fd84246e6fd"
+        },
+        {
+          "key": "49596978-1c0532fa-9aa17819ffcca1d3",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "86d74c9bd8db8cceaf45c88e9d866a76dd5f2c6ee2aee1ef1f23f8012246b10d"
+        },
+        {
+          "key": "49596978-1c0532fa-a9d79d92fff349a7",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "0854db62bf5af7ccf449c46b00fbf3b66e682e97a138719d03408b23b98c1005"
+        },
+        {
+          "key": "49596978-1c0532fa-b276804cff84deb5",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "6afe47539930f236ec96d93a62899a8b789429a78d8f3bc727ca19e98b5b2c2d"
+        },
+        {
+          "key": "49596978-1c0532fa-f97d0183ff791c5e",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "e5604adf698eaf8d050fbfbb0e85d79ab2432f50dd9ba3e54a6fa64c0ff6c549"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000000dddc2fa",
+          "sha256": "c66863590509ad2d2bc9b43bcbfcf853de8ab61ff1363ffbd8b9b71e7267da26",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000004dddc11f",
+          "sha256": "4600cd301f7b589f9b2333f76465c9cc21107f69231bc0667575d0d246bdf1d3",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cdddc1f9",
+          "sha256": "22e9cbdee23a4f9d609fa4ab5ded0163c7049374a6c83cdfd1a2c5c0c2fe1eda",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-5ae29178ffea5490",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "ff93393c812c6b3bbbfb9d8192f7044952770a631f58594982be0419d0113b4b"
+        },
+        {
+          "key": "e519c933-1c0532fa-f381fa4fffe0a366",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "5212742bb97aeaa31b9eb04cea22180d2acf013cb6b1ec522bc6d993803180bb"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000000dddc2fa",
+          "sha256": "7e00817c3ee401e109055d00e1b9b86705837b1bd7ba04a47fd56b4a5aac118d",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000004dddc11f",
+          "sha256": "24cd40509a6ac1170b7b6e40cc262a1326b57ff87205e9d8c8f4dc91c983573f",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cdddc1f9",
+          "sha256": "9d1a06d0d5d92085222a5f397c1ab5c7d8059a80ce83e15ff600b875a30e7481",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-4735b0daff1a7d24",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "61a90f507a93d3437c9acdac3240354713455413f778fd91d431a21d457d5ff5"
+        },
+        {
+          "key": "ed534136-1c0532fa-5c1dbda2ff2c9619",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "0fc1ac87b8b12845432ae7e7727486138a165cb030de2c78737cb46f790193fe"
+        },
+        {
+          "key": "ed534136-1c0532fa-66527895ffff689a",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "67f109b59d48e4c37e53ba99da93be6250ba4f6f418a438d582905a0d3c9db34"
+        },
+        {
+          "key": "ed534136-1c0532fa-7d7a75edffc983a7",
+          "source": "Base/TSData/Res/Sims3D/Sims10.package",
+          "sha256": "2f03a56ddd78f280d8d2c743593e87aa3bf458847accbd2cef74caa349fa8061"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-51e2a861ff7a8eca",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "4a2a518bc495dd6d6c767cdf49bf991275610d2dac09926e22c1771f257ac21e"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-b8b31c76ff19f032",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "e9da437a54c39e804a5dbbfd2b6858a479b8ac00fd9dae48cf443cfecf4fe988"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-male-ponytail",
+      "label": "Ponytail",
+      "game_content": "Base game",
+      "gender": "Male",
+      "source_family": "b7778fe4-fdb8-4c7c-9988-566dd6e26237",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-0893283fff60ca87",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "a91a28a857c15f88fb839f5964c2eaec3929e843f5399c41cb7d5df61af2f540"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-d3d68ac5ffce33fa",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "cbd760d0efc2a85256fe20cec7889d9ab925508a9eb31d825ede2c3ddc6ebda8"
+        },
+        {
+          "key": "49596978-1c0532fa-0d2b5247ff741440",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "b60985cee1b48b557696616c1f93d8ed8e57b64ec4510f31ff83fdcaea462929"
+        },
+        {
+          "key": "49596978-1c0532fa-161ca2cbff1dacaa",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "f2afff2d51ad05c36848e7c14c8f5dea53a4fd83baa721da723ac7242a8f477e"
+        },
+        {
+          "key": "49596978-1c0532fa-90fd9f0dffdb7b6b",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "c724c102f67340e64f7143a7b924adabc3230c1c5ad5cfa4704f7767b4d7d999"
+        },
+        {
+          "key": "49596978-1c0532fa-92f9b211ff598900",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "b9e900251d9e998bd01173a2b9c3412e065e3a05ed9f134bb9be2ce9fecd276b"
+        },
+        {
+          "key": "49596978-1c0532fa-a8f66a8fff2c5d41",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "df632098efdf85010fef3658b5853a1fbea9fd107c87c5d3e3eaed57a10a0f9a"
+        },
+        {
+          "key": "49596978-1c0532fa-db8fdc43ffb59d6d",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "a08c396106266b8d01dd04f0b59597b52745a85bb4225bcb921633232ccbdaaa"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000000cef7138",
+          "sha256": "c702330d1caf921f3a2ea89104ffcfbe6fb5ae6c48bbc7b8f54d5e7528532787",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000004cef7283",
+          "sha256": "b9cc53a49d830708e01519259fb3c017a083f3c58331435ccac84907af3d2584",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000ccef713d",
+          "sha256": "c592a11a86e9d0cab2777bb9e51328125dde2a47bdb5472adaecfd1f09d303e1",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-36c708f7ff886c12",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "d19695ee92ff8e7c59cca680e16ac2211e90a58656803600ce7bac39d516bdaa"
+        },
+        {
+          "key": "e519c933-1c0532fa-b50a245aff8b6a7c",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "a9d1ac89b6dd2a5f3919d84c5a0bf5e72bfbb90448736131221da27e552e7f45"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000000cef7138",
+          "sha256": "206354910f8192b0f71def8a2e9b0fc0721c79a6180212c575c76cf7b681fad3",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000004cef7283",
+          "sha256": "34f65575293067df554bd01cf5299c1728523cb4fcb885557c56cbafe855ee00",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000ccef713d",
+          "sha256": "029036f2d80027fca62dcc92a7138b746531c3f1187f2095d03f07bf966506c3",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-2c1dc728ff5acba3",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "763b6f25ae1de9e80a4cfe90c0994a22ed2a2135dc1b2268051a9baa0a872f38"
+        },
+        {
+          "key": "ed534136-1c0532fa-3735ca50ff6c209e",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "278cf56896e6ed8fac100dab94b7a57d0d6e81d3da4a14432e71df131526f700"
+        },
+        {
+          "key": "ed534136-1c0532fa-4847b0d8ff127906",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "9b26838b0b2822ed6f3a77172d2210036f70dc77c6cc2fef8e3c3698249bebb0"
+        },
+        {
+          "key": "ed534136-1c0532fa-536fbda0ff24923b",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "f3c8baddd255b617f468b40ab84a575a735c60676c90e732507fa6120cb166de"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-4e6ba0abff4c144e",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "a81b4bf0aa2be495249cd1ae725b34fc3d0ea2ae015448ebf27414b80e0317d5"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-ac4eda02ffd2398b",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "93c8da462c3cab14b35860bf7a6fb55e448f3ea79753a0ccfccb0b2225bc61cf"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-male-crew-cut",
+      "label": "Crew cut",
+      "game_content": "Base game",
+      "gender": "Male",
+      "source_family": "f2518867-5e8d-4d26-b006-24a86f528b99",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-5bf64edcff4145e2",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "9e870737a776e6293469556eb7ce701a8a4e62924e9c972990e41f9580a6c972"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-c364e41bffcbcbe8",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "f78f86da0292c972b5c08724938a4fa9557606d43514f816dac5a61732cf3c77"
+        },
+        {
+          "key": "49596978-1c0532fa-06aecc15ff1854b8",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "568ebb2e08e9d543559a9eefb3f9e32e1fba06a0b2ed6e4248c3c1738252b931"
+        },
+        {
+          "key": "49596978-1c0532fa-73428a93ffa7f926",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "1d86f0a86a710925be076556b16ab8f31bdc07a8563f39a3584fbd4925499a2b"
+        },
+        {
+          "key": "49596978-1c0532fa-c19cd4f2ff780665",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "ecfe46a461cfe6765feee54a4df1c3ae5b7066d076f097556c3bf0efde112b47"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000008c5e3d8d",
+          "sha256": "94c6513a6cdbcb0a2de2699d70726969720edf71dd3ae4063ce120346df56099",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000008d05d024",
+          "sha256": "d0aa2baddb20998aae9f009c06f67bf9b941cdb4a65e2869ae5158c921351678",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000ac5e3d8f",
+          "sha256": "880710aea98a326c04a9d86aa65238bfd852461bc81fb89edf315574bea7d30f",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-63d1cbd3ff110fd1",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "f509e1fb69e0147548648b4870097eee289bc3b233e9e91480e692af7002dcdf"
+        },
+        {
+          "key": "e519c933-1c0532fa-dedef5f4ffbc876a",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "71c6f1c4948df9e1d95666d46312a5019ec3d7c0518d12c1fa1a7a5a855f19f1"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000008c5e3d8d",
+          "sha256": "f23fd9df4114cc77ad6f4cae47c793792f87365e848c982793491dba183724d6",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000008d05d024",
+          "sha256": "fbae667f9467d2041620fbd0d32ba21aef7dc0046e52716e55b70f44a88a84bf",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000ac5e3d8f",
+          "sha256": "59aacbf890142af45f91fd49317810e27a94cc22a50c63cfe66578c8bad586d2",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-43ddd37eff216a29",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "3633a5bee785aa15bfe7846eae716f9d05c4e543b3dcb75c1a057579e9fa5e1c"
+        },
+        {
+          "key": "ed534136-1c0532fa-58f5de06ff178114",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "94e2c99d4040ba7904275d9c638a533bf13917ca369e932be3fb3bb00d5af11c"
+        },
+        {
+          "key": "ed534136-1c0532fa-c94acf20ff819884",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "0a8e497e58131e877329872aa072331cfa794ac40bb9dfc707a055dee0af12e2"
+        },
+        {
+          "key": "ed534136-1c0532fa-d262c258ffb773b9",
+          "source": "Base/TSData/Res/Sims3D/Sims08.package",
+          "sha256": "cfca9bb6f1aa173a5fe798d665f69cc69de19a1328d6d597b78043a238d4892c"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-40caf5ecff3299a0",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "43cfa2e98b456c0db7fb466cf080da48457656f9938da2f7b9bafbe860663a3d"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-5369826bff758151",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "b8578471a627920d9255989ac5d6f53fe6196bd7fd67469ba1d8f8f17da54d37"
+        }
+      ]
+    },
+    {
+      "id": "standard-base-male-cornrows",
+      "label": "Cornrows",
+      "game_content": "Base game",
+      "gender": "Male",
+      "source_family": "51268afd-16d6-4b3b-a4dc-25cb20d8d18e",
+      "resources": [
+        {
+          "key": "1c4a276c-1c0532fa-234834adffe9197b",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "8ad5daa822ba71d09b3929ed31ed4c4a407e5ab237f643e6414084a682131f95"
+        },
+        {
+          "key": "1c4a276c-1c0532fa-bba26544ff09459c",
+          "source": "Base/TSData/Res/Sims3D/Sims07.package",
+          "sha256": "1fc8b4cf872117d2f76b8c769db7a16681963b6942248c560b47dc2299810382"
+        },
+        {
+          "key": "49596978-1c0532fa-9a6175b7ff22cbf6",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "5ae1cf1ff521e6422d06b3030ec8ac6ce2ea39a2542f0fb6f536e29718dbc70e"
+        },
+        {
+          "key": "49596978-1c0532fa-a8d3e973ff227ed7",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "d15be4388628497354106021f4252452a8eff0632b9646907421da1eea84d2b1"
+        },
+        {
+          "key": "49596978-1c0532fa-b3e419ffff4bc63d",
+          "source": "Base/TSData/Res/Sims3D/Sims02.package",
+          "sha256": "3184e9d958ed1b5a55be08039bbf4e6811957085ddc6771bdba6ab3a8d988397"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000006c203d03",
+          "sha256": "61e270fc18111b45d6690f4f9536dcae8a1a3a303072b9fcf960875d19c6831c",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-000000008c203d00",
+          "sha256": "a0281362e04386cfe70746fa06f02236681c796c6fcaacd30867e2e31f224035",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ac506764-2c17b74a-00000000cc203cfe",
+          "sha256": "7f21b9fcf1864b08a93142c77ac5a2f56d26793236b26073b6db2dae7f3274bd",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "e519c933-1c0532fa-35a394beff11fbb7",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "5b5ceecfba451ebd1f46ca7ab4bc955ec83a72a762c1e40a2eb118baadbfd688"
+        },
+        {
+          "key": "e519c933-1c0532fa-b66eb813ff12fdd9",
+          "source": "Base/TSData/Res/Sims3D/Sims06.package",
+          "sha256": "1dc948cae77b4bf2cc3235b8fbe1c05fe889e0e66bf5edcf2c93cb2e5fecadfb"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000006c203d03",
+          "sha256": "866ba0beef481fe8058782b2277c020dbd7c988177a831da8f8e36452f697dba",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-000000008c203d00",
+          "sha256": "08fcc8fad1e176c6930ac86c0159835b375a112174e50e938b7f4cbe068f42fa",
+          "source": "Base/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ebcf3e27-2c17b74a-00000000cc203cfe",
+          "sha256": "69b92f3fb10e175066fbf683c5961e04def03fafacb223f33bb4cb385c52dbb7",
+          "source": "EP1/TSData/Res/Catalog/Skins/Skins.package"
+        },
+        {
+          "key": "ed534136-1c0532fa-20335f59ffd50f60",
+          "source": "Base/TSData/Res/Sims3D/Sims11.package",
+          "sha256": "a14b14cf0d0667f6f857972dc6cfce141808041d4ae371b3f835ac9167258947"
+        },
+        {
+          "key": "ed534136-1c0532fa-3b1b5221ffe3e45d",
+          "source": "Base/TSData/Res/Sims3D/Sims11.package",
+          "sha256": "d845fd0250e167acbc8a2bbecf598d6760c8bfd612e1257190fd52f91d9a9368"
+        },
+        {
+          "key": "ed534136-1c0532fa-c977607fffafddff",
+          "source": "Base/TSData/Res/Sims3D/Sims11.package",
+          "sha256": "76e59812ebcc1869038d0c5a54f4a3397346bb6e238acdfd64df37859e135e15"
+        },
+        {
+          "key": "ed534136-1c0532fa-d25f6d07ff9936c2",
+          "source": "Base/TSData/Res/Sims3D/Sims11.package",
+          "sha256": "0dba3fe07a7ee66980ba6160b261190c56b18f424d22c56c4c32e5ce41f37c04"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-7f155bd4ff19dfa7",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "3137cee58f62e4da6f904ba820cc9f05e6e00955e3801df328b7f84ada60c64c"
+        },
+        {
+          "key": "fc6eb1f7-1c0532fa-9d30217dff87f262",
+          "source": "Base/TSData/Res/Sims3D/Sims05.package",
+          "sha256": "b944decfc390ac11450992e438a5c03df2a5b58cbab5a67aa27206ac9e9f8daf"
+        }
+      ]
+    }
+  ]
+}

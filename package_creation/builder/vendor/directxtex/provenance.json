@@ -1,0 +1,25 @@
+{
+  "DirectXTex": "868198cb4bcbc4e359372e7ba38d7a6dda3a6afa",
+  "DirectXMath": "28929ac6f3c1649a7641741b689ebecccb17aa8d",
+  "BC_sha256": "5e01088ced5241a256c5828b459cb9ebd3d728ff7db031bc52cd9e502e8a6cb3",
+  "sal_url": "https://raw.githubusercontent.com/dotnet/runtime/main/src/coreclr/pal/inc/rt/sal.h",
+  "sal_sha256": "e26ee611231a859b5a800eb2e1606e7ca03b8e3981d7c98cf1ca20c89b658b68",
+  "files": {
+    "BC.cpp": "5e01088ced5241a256c5828b459cb9ebd3d728ff7db031bc52cd9e502e8a6cb3",
+    "LICENSE": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "BC.h": "4307a2dbfd7d256c4d2f61a4373907e4d36d99a55925274a7c203e6bcba21fa5",
+    "DirectXMath/DirectXMathConvert.inl": "8c3e5d3be914c5e05354776920c35741bb75a8d7bd5d35c26cd792b79942f793",
+    "DirectXMath/DirectXCollision.inl": "a67dc6a2ff69f47d5e1e8612df0d79f575c7dd0e115c574c435cb40320a44c57",
+    "DirectXMath/LICENSE": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+    "DirectXMath/DirectXMathMisc.inl": "972d2d34da86f2383bc0426455e06466509fb1f7cb5e77fa8a5e5a436d8c5192",
+    "DirectXMath/DirectXPackedVector.inl": "c6a77d29bc62d782c547c6953c60c972d81f9563a90be08e900b198e7176df48",
+    "DirectXMath/DirectXCollision.h": "57024179c5e050c423c58ad128242f39bb06fc54d4e72c54eedad567bb2719f2",
+    "DirectXMath/DirectXMath.h": "cb3b9cf0c707facdcdcd37262915ea0e9dafbb4d098b28e264a4c88853055b8e",
+    "DirectXMath/DirectXColors.h": "ab3c008ce73863986e0498d412df14ef43be13d2259aaa8bad0f8479f3bc8709",
+    "DirectXMath/sal.h": "e26ee611231a859b5a800eb2e1606e7ca03b8e3981d7c98cf1ca20c89b658b68",
+    "DirectXMath/DirectXMathVector.inl": "8997bff018464d68e27f1efe112e37d59a30943c288d9295968d1533cbaa06c4",
+    "DirectXMath/DirectXPackedVector.h": "97dd0d0f96cfb94ce9e52174585badb2c0586a3a52b03a70cf905af9755f53a0",
+    "DirectXMath/DirectXMathMatrix.inl": "f4efbe5061806bfaabd5f22d4f69cce5f65c0fd42d4221c65cf092bcfaf33439",
+    "DirectXMath/SAL-LICENSE": "cfc21f5e8bd655ae997eec916138b707b1d290b83272c02a95c9f821b8c87310"
+  }
+}

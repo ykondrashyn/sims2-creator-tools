@@ -1,0 +1,7 @@
+Body conversion ports preserve Blender 3.4.1 behavior.
+Cycles sampling, hashing and color routines: Copyright 2011-2022 Blender Foundation, Apache-2.0.
+Blender adjacent-face margin routines: Copyright Blender Foundation, GPL-2.0-or-later.
+OpenColorIO SPI1D interpolation: Copyright Contributors to the OpenColorIO Project, BSD-3-Clause.
+The distributed combined Rust engine is GPL-3.0-or-later.
+Original source routines, license notices and pinned color tables are included in corresponding source under conversion/upstream.
+Projection data is derived from the existing Tattooer AM and AF body templates. Template hashes and unchanged evaluated geometry are recorded in each profile.

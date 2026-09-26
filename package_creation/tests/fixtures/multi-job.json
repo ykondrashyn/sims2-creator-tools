@@ -1,0 +1,53 @@
+{
+  "ages": [
+    "adult",
+    "elder"
+  ],
+  "catalog_description": "Adult and elder structural test collection",
+  "catalog_name": "Fixture Tattoos",
+  "compatibility": {
+    "bigfoot": false,
+    "plantsim": false,
+    "servo": false,
+    "vampire": false,
+    "werewolf": false,
+    "zombie": false
+  },
+  "identity": {
+    "box_guid": "0x12345678"
+  },
+  "schema_version": 2,
+  "slug": "fixture-tattoos",
+  "tattoos": [
+    {
+      "identity": {
+        "family_uuid": "11111111-2222-4333-8444-555555555555",
+        "overlay_group_id": "0x23456789"
+      },
+      "input_pngs": {
+        "af": null,
+        "am": "kiryu.png"
+      },
+      "key": "kiryu",
+      "layer_order": 0,
+      "menu_label": "Kiryu",
+      "menu_order": 1,
+      "priority": 101
+    },
+    {
+      "identity": {
+        "family_uuid": "66666666-7777-4888-8999-AAAAAAAAAAAA",
+        "overlay_group_id": "0x3456789A"
+      },
+      "input_pngs": {
+        "af": "majima-af.png",
+        "am": "majima-am.png"
+      },
+      "key": "majima",
+      "layer_order": 1,
+      "menu_label": "Majima",
+      "menu_order": 0,
+      "priority": 102
+    }
+  ]
+}

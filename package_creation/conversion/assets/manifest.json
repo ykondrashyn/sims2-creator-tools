@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "am": {
+      "asset": "conversion:am",
+      "sha256": "fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544",
+      "size": 14040932,
+      "template_sha256": "f709db0a1ae34b663805ce7c95da2f363dcb1d67029c197c4ef15098a4a5a108",
+      "input_dimensions": [
+        1024,
+        2048
+      ],
+      "output_dimensions": [
+        1024,
+        1024
+      ]
+    },
+    "af": {
+      "asset": "conversion:af",
+      "sha256": "7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd",
+      "size": 14104481,
+      "template_sha256": "e87f48a83350623abe97b1d8fe325153131305e40c43027df32a923e489e2958",
+      "input_dimensions": [
+        1024,
+        2048
+      ],
+      "output_dimensions": [
+        1024,
+        1024
+      ]
+    }
+  }
+}

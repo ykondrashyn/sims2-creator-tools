@@ -1,0 +1,14 @@
+{
+  "archive": {
+    "sha256": "b8f4134d1cf98d45c5a08e6d21a4bd529534f73d96ae6cf673e7a60242865111",
+    "url": "https://www.picknmixmods.com/Sims2/Notes/ScriptedOverlayBoxes/MultiOverlaysWithBox_V1.zip"
+  },
+  "files": {
+    "NoFaceOverlay.package": "0e401a47925a282b5e0c6830fc9e02dd897c52570a88a8f0781f6643a3cea9bb",
+    "Template_MultiOverlay.package": "99420d4db856892c4f8a4332a34c0324744d99df3eaee453fcf05b40798fa482",
+    "Template_OverlayBox.package": "10ffec6d0b9e148110b33a48791ad3222d6e4a2df862cc0e98e0ca9ffe1d6488"
+  },
+  "name": "Pick'N'Mix Multi Overlays With Box V1",
+  "redistribution": "The package files are downloaded locally by prepare and are not committed.",
+  "schema_version": 1
+}

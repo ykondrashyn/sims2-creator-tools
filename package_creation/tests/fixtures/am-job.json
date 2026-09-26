@@ -1,0 +1,17 @@
+{
+  "ages": [
+    "adult"
+  ],
+  "catalog_description": "Adult male body overlay structural fixture",
+  "catalog_name": "Ash Kiryu Tattoo",
+  "identity": {
+    "box_guid": "0x12345678",
+    "family_uuid": "11111111-2222-4333-8444-555555555555",
+    "overlay_group_id": "0x23456789"
+  },
+  "input_png": "../../../output/ash_kiryu.png",
+  "preset": "am",
+  "priority": 102,
+  "schema_version": 1,
+  "slug": "ash-kiryu-am"
+}

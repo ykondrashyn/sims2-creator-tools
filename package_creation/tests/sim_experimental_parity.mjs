@@ -1,0 +1,24 @@
+import {artifact, fixturePath} from "./artifacts.mjs";
+import fs from 'node:fs/promises';
+import assert from 'node:assert/strict';
+import {execFileSync} from 'node:child_process';
+const name=process.argv[2]||'humanoid',dir=artifact("PACKAGE_RUNTIME_ASSET_ROOT"),out=process.env.SIM_PARITY_OUTPUT||'artifacts/sim-creator/experimental';
+const m=JSON.parse(await fs.readFile(dir+'/manifest.json')),asset=n=>fs.readFile(dir+'/'+m.assets[n].sha256);
+const glue=await import('data:text/javascript;base64,'+(await asset('glue')).toString('base64'));
+const wasm=await glue.default({module_or_path:await asset('wasm')}),engine=new glue.BrowserEngine();
+const request=JSON.parse(await fs.readFile(fixturePath(`artifacts/sim-creator/experimental/${name}-request.json`)));
+await fs.mkdir(out,{recursive:true});
+request.assets=Object.fromEntries(Object.entries(request.assets).map(([k,p])=>[k,fixturePath(p)]));
+request.output=`${out}/${name}-native.package`;
+(request.params.job||request.params).texture_encoder=process.env.TEXTURE_ENCODER||"directxtex";
+(request.params.job||request.params).refpack_compression=process.env.REFPACK_COMPRESSION!=="false";
+for(const[n,p]of Object.entries(request.assets))engine.put_asset(n,await fs.readFile(p));
+const started=performance.now();
+const result=JSON.parse(engine.call(JSON.stringify({version:1,op:request.op,params:request.params})));
+const bytes=engine.take_asset('output'),milliseconds=performance.now()-started;
+const native=JSON.parse(execFileSync(artifact("NATIVE_SIM"),{input:JSON.stringify(request),encoding:'utf8',timeout:600000,maxBuffer:1024**2}));
+assert.deepEqual(result,native);assert.deepEqual(Buffer.from(bytes),await fs.readFile(request.output));
+if(name==='humanoid'){assert.deepEqual(JSON.parse(engine.call(JSON.stringify({version:1,op:request.op,params:request.params}))),result);assert.deepEqual(engine.take_asset('output'),bytes);}
+await fs.writeFile(`${out}/${name}-wasm.package`,bytes);
+const report={release:m.release,...result,bytes:bytes.length,milliseconds,heap_bytes:wasm.memory.buffer.byteLength,native_wasm_parity:'exact'};
+await fs.writeFile(`${out}/${name}-parity.json`,JSON.stringify(report,null,2));console.log(JSON.stringify(report));engine.free();

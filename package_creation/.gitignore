@@ -1,0 +1,11 @@
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+templates/*
+!templates/README.md
+!templates/manifest.json
+.tools/
+builder/target/
+__pycache__/
+tests/__pycache__/

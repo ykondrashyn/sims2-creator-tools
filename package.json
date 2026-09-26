@@ -1,0 +1,37 @@
+{
+  "name": "sims2-creator-tools",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "web",
+    "tools/body-preview",
+    "tools/object-optimizer"
+  ],
+  "engines": {
+    "node": "22.18.0",
+    "npm": "10.9.3"
+  },
+  "packageManager": "npm@10.9.3",
+  "scripts": {
+    "build": "node web/build.mjs",
+    "typecheck": "tsc --noEmit -p web/tsconfig.json",
+    "lint": "eslint web/src",
+    "format:check": "prettier --check web/src web/tests web/*.mjs",
+    "test": "node --test web/tests/*.test.mjs",
+    "contracts": "node web/contracts.mjs",
+    "build:static": ".venv/bin/python -m tools.static_release build",
+    "verify:static": "python3 -m tools.static_release verify"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0",
+    "eslint": "10.10.0",
+    "prettier": "3.6.2",
+    "esbuild": "0.28.2",
+    "json-schema-to-typescript": "15.0.4",
+    "ajv": "8.20.0",
+    "@types/three": "0.185.0",
+    "@types/node": "22.18.0",
+    "fake-indexeddb": "6.2.4"
+  }
+}

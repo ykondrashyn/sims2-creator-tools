@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tattooer-auto"
+version = "0.1.0"
+description = "Browser-based Sims 2 creator tools and offline reference converters"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+offline = ["Pillow==12.3.0", "python-multipart==0.0.32"]
+test = ["fastapi==0.141.1", "uvicorn==0.52.4", "httpx==0.28.1", "selenium==4.49.0", "ruff==0.14.2", "uv==0.9.5", "numpy==2.2.6", "Pillow==12.3.0", "python-multipart==0.0.32"]
+
+[project.scripts]
+tattooer-auto = "convert:main"
+
+[tool.setuptools]
+py-modules = ["convert"]
+
+[tool.setuptools.packages.find]
+include = ["package_creation*"]
+
+[tool.setuptools.package-data]
+"package_creation.service" = [
+  "static/*.html", "static/*.css", "static/*.js", "static/*.mjs",
+  "static/package-runtime/*.mjs", "static/vendor/*",
+  "package_assets/*", "preview_assets/*", "*.md",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+extend-exclude = ["artifacts", "package_creation/builder/vendor", "package_creation/.tools", "package_creation/conversion/upstream", "ts2hair"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

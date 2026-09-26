@@ -7,6 +7,7 @@ import hashlib
 import json
 from pathlib import Path
 import time
+from urllib.parse import urlsplit
 
 from PIL import Image, ImageChops
 from selenium.webdriver.common.by import By
@@ -124,7 +125,11 @@ def verify(driver, url, out, backend="wasm"):
     driver.save_screenshot(str(out / "mobile.png"))
     check.check("Narrow layout has no horizontal overflow")
     assert not [r for r in check.requests if r["method"] != "GET"]
-    assert not [r for r in check.requests if not r["url"].startswith(url)]
+    assert not [
+        r
+        for r in check.requests
+        if urlsplit(r["url"]).netloc != urlsplit(url).netloc or "/api/" in r["url"]
+    ]
     assert check.module("package-runtime/store.js", "return (await r.listJobs()).length;") == 0
     check.check("No uploads, external requests, token or saved image records")
     driver.refresh()

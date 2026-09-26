@@ -533,6 +533,7 @@ def main():
                     "tools/archive.py",
                     "tools/project.py",
                     "tools/static_release.py",
+                    "tools/static_browser_check.py",
                     "tools/browser_verification.py",
                     "tools/local_upscale_verification.py",
                     "tools/browser_scenarios.py",

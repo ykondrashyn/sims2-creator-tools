@@ -48,5 +48,5 @@ are distributed with the site. See [third-party notices](package_creation/THIRD_
 and [local upscaler notices](tools/local-upscale/NOTICES.txt).
 
 Package structure and browser checks do not establish gameplay compatibility.
-Experimental Sim restrictions remain in place. Reference scaffolds, private user
+Experimental Sim restrictions remain in place. Downloaded comparison Sims, private user
 inputs, local captures and the LAN service are not deployed by this repository.

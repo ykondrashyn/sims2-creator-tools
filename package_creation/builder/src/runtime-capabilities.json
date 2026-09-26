@@ -200,7 +200,7 @@
       },
       "execution": "browser-wasm",
       "server_fallback": false,
-      "manifest_url": "/api/v1/package-runtime/manifest",
+      "manifest_url": "manifest.json",
       "storage_bytes": 2147483648,
       "wasm_heap_bytes": 1073741824,
       "retention": "until-deleted",

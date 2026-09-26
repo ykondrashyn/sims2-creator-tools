@@ -16,7 +16,6 @@ from urllib.parse import urlsplit
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from tools.browser_verification import BrowserCheck, browser
-from tools.browser_scenarios import exercise
 from tools.local_upscale_verification import verify as upscale
 from tools.project import ROOT
 
@@ -80,6 +79,8 @@ def run_suite(name, suite, url, folder):
             return upscale(driver, url, folder, "webgpu" if suite == "gpu" else "wasm")
         check = BrowserCheck(driver, url, folder)
         if suite == "creators":
+            from tools.browser_scenarios import exercise
+
             exercise(check)
         else:
             check.synthetic()

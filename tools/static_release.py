@@ -171,6 +171,50 @@ def verify(site):
         (site / f"manifests/{index['release']}.json").read_text()
     ):
         raise ValueError("Current static release and versioned manifest disagree.")
+    required = {
+        "wasm",
+        "glue",
+        "worker",
+        "archive",
+        "source",
+        "licenses",
+        "palette",
+        "game-meshes",
+        "tattoo-overlay",
+        "tattoo-controller",
+        "tattoo-face",
+        "preview-body:am",
+        "preview-body:af",
+        "conversion:am",
+        "conversion:af",
+        "sim-rig:am",
+        "sim-rig:af",
+        "sim-everyday-test",
+        "object-catalog",
+        "object-game",
+        "object-reference",
+        "object-reference-am",
+        "object-reference-af",
+        "object-reference-table",
+        "local-upscale-model",
+        "local-upscale-worker",
+        "local-upscale-runtime",
+        "local-upscale-glue",
+        "local-upscale-wasm",
+        "local-upscale-webgpu-runtime",
+        "local-upscale-webgpu-glue",
+        "local-upscale-webgpu-wasm",
+    }
+    if not required.issubset(current["assets"]):
+        raise ValueError("A required creator or inference asset is missing.")
+    for group in ("hair", "objects", "paintings", "sims"):
+        items = current.get(group, {}).get("items", [])
+        if not items or any(item["asset"] not in current["assets"] for item in items):
+            raise ValueError("Missing static creator references: " + group)
+    if len(current["paintings"]["items"]) != 4 or len(current["sims"]["items"]) != 2:
+        raise ValueError("The static edition requires four paintings and both body references.")
+    if "/api/" in json.dumps(current):
+        raise ValueError("A server API URL remains in the static manifest.")
     if current["build"]["source_sha256"] != index["source_sha256"]:
         raise ValueError("Runtime was built from a different source revision.")
     page = (site / "index.html").read_text()

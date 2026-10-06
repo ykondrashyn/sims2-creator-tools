@@ -1,0 +1,6 @@
+{
+  "tile_input_side": 256,
+  "largest_logical_tensor_bytes": 16777216,
+  "required_gpu_buffer_bytes": 16777216,
+  "note": "Logical tensor bound, not total or peak memory"
+}

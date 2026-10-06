@@ -3,7 +3,7 @@ BasicSR architecture at the pinned revision, copyright contributors, Apache-2.0.
 Original model weights: https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.1.0
 Architecture: https://github.com/XPixelGroup/BasicSR/tree/8d56e3a045f9fb3e1d8872f92ee4a4f07f886b0a
 The unchanged architecture and its license are in tools/local-upscale/vendor.
-Export adapts training initialization and registry imports only. All learned
+The original full export adapts training initialization and registry imports only. All learned
 parameters are loaded strictly. FP32 weights are not quantized or retrained.
 Tiled inference follows RealESRGANer at revision a4abfb2979a7bbff3f69f58f58ae324608821e27.
 ONNX Runtime Web 1.22.0, copyright Microsoft, MIT. Bundled notices accompany it.
@@ -11,3 +11,20 @@ The distributed initialization glue caps imported memory at 1 GiB. Its neural
 network operators and model weights are unchanged. web/build.mjs records this
 single checked transformation of the pinned upstream glue.
 fast-png 6.4.0, MIT. Its dependencies and license are pinned by package-lock.json.
+
+Additional official Real-ESRGAN checkpoints: realesr-general-x4v3 and
+realesr-animevideov3, from the v0.2.5.0 release. SRVGG architecture is unchanged
+from 696e1a6741c912db9d566a162cada43763e57756, BSD-3-Clause.
+SPAN architecture, Apache-2.0, pinned to ee5bc38627838afcfe01b51545469613a157186b.
+Source: https://github.com/hongyuanyu/SPAN
+The export freezes upstream Conv3XC evaluation convolutions after loading all
+weights. This removes training-only branches without changing learned values.
+Nomos checkpoint: 2xNomosUni_span_multijpg_ldl, Philip Hofmann, CC BY 4.0.
+Source: https://github.com/Phhofm/models/releases/tag/2xNomosUni_span_multijpg_ldl
+License: https://creativecommons.org/licenses/by/4.0/
+The distributed ONNX is an FP32, inference-fused conversion of that checkpoint.
+Architecture, checkpoint and converted model hashes are in models.json.
+
+Compact and AnimeVideo PRelu nodes are exported as equivalent Less, Mul and
+Where operations for ONNX Runtime WebGPU 1.22 compatibility. Their weights
+and elementwise mappings are preserved. Native parity gates cover this change.

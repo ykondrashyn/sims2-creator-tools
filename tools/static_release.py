@@ -207,6 +207,13 @@ def verify(site):
     }
     if not required.issubset(current["assets"]):
         raise ValueError("A required creator or inference asset is missing.")
+    profiles = json.loads((ROOT / "tools/local-upscale/models.json").read_text())
+    if current["local_upscale"].get("models") != profiles:
+        raise ValueError("Local upscaling profiles do not match this source.")
+    for profile in profiles:
+        a = current["assets"].get(profile["asset"], {})
+        if a.get("sha256") != profile["sha256"] or a.get("size") != profile["size"]:
+            raise ValueError("Local upscaling model asset mismatch: " + profile["id"])
     for group in ("hair", "objects", "paintings", "sims"):
         items = current.get(group, {}).get("items", [])
         if not items or any(item["asset"] not in current["assets"] for item in items):

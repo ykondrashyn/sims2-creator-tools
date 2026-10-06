@@ -1,0 +1,50 @@
+[
+  {
+    "case": "small",
+    "max_float_error": 4.410743713378906e-06,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  },
+  {
+    "case": "seams",
+    "max_float_error": 4.470348358154297e-06,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 1
+  },
+  {
+    "case": "flat",
+    "max_float_error": 1.4901161193847656e-06,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  },
+  {
+    "case": "gradient",
+    "max_float_error": 1.856684684753418e-05,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  },
+  {
+    "case": "edges",
+    "max_float_error": 2.7418136596679688e-06,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  },
+  {
+    "case": "random",
+    "max_float_error": 2.562999725341797e-06,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  },
+  {
+    "case": "tiny",
+    "max_float_error": 2.0302832126617432e-07,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  },
+  {
+    "case": "slim",
+    "max_float_error": 4.023313522338867e-07,
+    "fusion_error": 0.0,
+    "tiled_vs_full_maximum_byte_error": 0
+  }
+]

@@ -179,17 +179,21 @@ def main():
     )
     add("archive", static_root / "vendor/package-archive.js", "text/javascript")
     local_model = json.loads((ROOT / "tools/local-upscale/model.json").read_text())
-    model_path = Path(os.environ.get("PROJECT_FIXTURE_ROOT", ROOT)) / local_model["path"]
-    if not model_path.exists():
-        raise ValueError(
-            "Local Real-ESRGAN model is missing. Follow tools/local-upscale/README.md to export it."
-        )
-    if (
-        model_path.stat().st_size != local_model["size"]
-        or digest(model_path.read_bytes()) != local_model["sha256"]
-    ):
-        raise ValueError("Local Real-ESRGAN model failed integrity verification")
-    add("local-upscale-model", model_path, "application/octet-stream")
+    local_models = json.loads((ROOT / "tools/local-upscale/models.json").read_text())
+    for profile in local_models:
+        model_path = ROOT / profile["path"]
+        if not model_path.exists():
+            model_path = Path(os.environ.get("PROJECT_FIXTURE_ROOT", ROOT)) / profile["path"]
+        if not model_path.exists():
+            raise ValueError(
+                "Missing local model " + profile["id"] + ". Follow tools/local-upscale/README.md."
+            )
+        if (
+            model_path.stat().st_size != profile["size"]
+            or digest(model_path.read_bytes()) != profile["sha256"]
+        ):
+            raise ValueError("Local model failed integrity verification: " + profile["id"])
+        add(profile["asset"], model_path, "application/octet-stream")
     add("local-upscale-worker", static_root / "local-upscale/worker.mjs", "text/javascript")
     for key, name, mime in [
         ("runtime", "ort.wasm.min.mjs", "text/javascript"),
@@ -388,6 +392,8 @@ def main():
         "assets": assets,
         "local_upscale": {
             **local_model,
+            "models": local_models,
+            "default_model": "compact",
             "execution": "browser-wasm",
             "token_required": False,
             "backends": ["wasm", "webgpu"],

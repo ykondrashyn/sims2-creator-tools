@@ -251,6 +251,10 @@ def build(args):
     run(["npm", "run", "typecheck"], env=env)
     run(["npm", "run", "lint"], env=env)
     run(["npm", "test"], env=env)
+    # Removed modules and obsolete hashed chunks must not enter a fresh release.
+    for generated in (stage / "frontend", stage / "runtime" / "ui"):
+        if generated.exists():
+            shutil.rmtree(generated)
     run(["npm", "run", "build", "--", "--out", stage / "frontend"], env=env)
     target = native_build(env, stage)
     run(

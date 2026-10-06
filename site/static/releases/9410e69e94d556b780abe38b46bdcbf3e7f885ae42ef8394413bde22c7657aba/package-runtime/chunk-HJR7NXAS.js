@@ -1,0 +1,1 @@
+function l(){let e,n,o;async function u(){for(;e;){let r=e;e=void 0;try{r.resolve(await r.run())}catch(i){r.reject(i)}}n=void 0}return{enqueue(r){if(e)e.run=r;else{let i,t,s=new Promise((a,d)=>{i=a,t=d});s.catch(()=>{}),e={run:r,promise:s,resolve:i,reject:t}}return o=e.promise,n||=Promise.resolve().then(u),o},async flush(){for(;n;)await n;return o}}}export{l as a};

@@ -2,32 +2,50 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Security-Policy" content="default-src 'self' blob: data:; script-src 'self' blob: 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self'; img-src 'self' blob: data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
-<meta name="runtime-manifest" content="manifests/1a4a30586558995fba8bbf0c3a974ba772a5370c62665dad827e33e28a7defb0.json">
+<meta name="runtime-manifest" content="manifests/9d4fedca55cbb73cadffcb53a3fcb904bd76220f9ee72f6ca43901f21fe9aa9c.json">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sims 2 Creator Tools</title>
-  <link rel="stylesheet" href="static/releases/fd806f8d4c043c62a100f9b67dc1a344f468b4a3c7733f61ba851c0d4c8b83d8/style.css">
+  <link rel="stylesheet" href="static/releases/9410e69e94d556b780abe38b46bdcbf3e7f885ae42ef8394413bde22c7657aba/style.css">
 </head>
 <body>
-  <main class="app-shell">
+  <a class="skip-link" href="#workspace">Skip to content</a>
+  <div class="app-shell">
     <header class="page-header">
-      <h1>Sims 2 Creator Tools</h1>
-      <p class="build-note">Files are processed on this device. Saved batches belong to this site address and browser. Batches saved on the LAN site stay there.</p>
+      <a class="site-title" href="#/home" data-destination="home">Sims 2 Creator Tools</a>
+      <button id="tools-toggle" class="tools-toggle secondary" type="button" aria-expanded="false" aria-controls="tool-drawer" aria-haspopup="dialog">Tools · <span id="current-destination">Home</span><span aria-hidden="true"> ▾</span></button>
     </header>
 
-    <nav class="tool-tabs" aria-label="Creator tools" role="tablist">
-      <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="texture-tool" data-tab="texture">TS4 → TS2 texture</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="build-form" data-tab="package">Tattoo package creator</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="hair-tool" data-tab="hair">Hair recolors</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="object-tool" data-tab="object" hidden>Object creator</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="painting-tool" data-tab="painting" hidden>Painting creator</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="sim-tool" data-tab="sim" hidden>Sim creator</button>
-      <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="upscale-tool" data-tab="upscale">Upscale image</button>
-    </nav>
+    <div class="workspace-layout">
+    <aside id="sidebar-navigation"><nav id="tool-navigation" aria-label="Creator tools"></nav></aside>
+    <main id="workspace" tabindex="-1">
+    <p id="navigation-notice" class="inline-status" role="status" hidden></p>
+    <section id="navigation-feedback" class="panel" aria-labelledby="navigation-heading" hidden>
+      <h2 id="navigation-heading" tabindex="-1"></h2>
+      <p id="navigation-message" role="status"></p>
+      <button id="navigation-retry" type="button" class="secondary" hidden>Retry</button>
+    </section>
+    <section id="home-tool" class="tool-panel" aria-labelledby="home-heading">
+      <div class="welcome-hero">
+        <p class="welcome-eyebrow">Your next Sims 2 project</p>
+        <h1 id="home-heading">Create custom content for The Sims 2</h1>
+        <p>Make tattoos, recolor hair, turn models into decorations, or frame your own pictures. You can also convert body textures and upscale images. Everything is processed in your browser.</p>
+      </div>
+      <div id="home-cards"></div>
+      <details class="welcome-help">
+        <summary>Before you start</summary>
+        <p>Saved creator batches belong to this browser and site address. Work saved on the LAN site stays there. Clearing site data or browser eviction can remove saved work.</p>
+        <p>Upscaling images and results last only for this page session. Download the result before closing or reloading the page.</p>
+        <p>A tool downloads its engine and reference files when needed. Upscaling also downloads the selected AI model on first use. CPU processing is available without a supported GPU. WebGPU needs a compatible browser and GPU, plus HTTPS or localhost.</p>
+        <p>Check each template’s game requirements before installing a package. Some need an expansion or the Legacy Collection. Keep required custom meshes with their recolors.</p>
+        <p>Upscaling can change or invent details. A browser preview shows appearance, but does not establish compatibility in the game. Sim creator is experimental and currently exports only an Adult Male Everyday body for testing, without the custom head.</p>
+      </details>
+      <noscript><p>Enable JavaScript to use the browser tools.</p></noscript>
+    </section>
 
-    <section id="texture-tool" class="tab-panel" role="tabpanel">
+    <section id="texture-tool" class="tool-panel" hidden>
       <form id="converter-form" class="panel converter-panel">
-        <h2>Convert texture</h2>
+        <h2>Body texture converter</h2>
         <p class="panel-intro">Choose a 1024 × 2048 RGBA PNG for the TS4 body.</p>
         <fieldset class="preset-field">
           <legend>Body</legend>
@@ -58,9 +76,9 @@
       </section>
     </section>
 
-    <form id="build-form" class="tab-panel" role="tabpanel" hidden>
+    <form id="build-form" class="tool-panel" hidden>
       <section class="panel">
-        <h2>Collection</h2>
+        <h2>Tattoos</h2>
         <div class="field-grid">
           <label>Name<input id="catalog-name" maxlength="120" required placeholder="Yakuza Tattoos"></label>
           <label><span>Description <span class="optional">optional</span></span><textarea id="catalog-description" maxlength="1000" rows="2" placeholder="Adult and elder body overlays"></textarea></label>
@@ -102,7 +120,7 @@
         </div>
       </section>
     </form>
-    <section id="hair-tool" class="tab-panel" role="tabpanel" hidden>
+    <section id="hair-tool" class="tool-panel" hidden>
       <form id="hair-form" novalidate>
         <div class="hair-intro">
           <h2>Hair recolors</h2>
@@ -224,7 +242,7 @@
         </section>
       </form>
     </section>
-    <section id="object-tool" class="tab-panel" role="tabpanel" hidden>
+    <section id="object-tool" class="tool-panel" hidden>
       <div class="section-heading"><h2>Object creator</h2><p>Turn your 3D model into a Sims 2 decoration. Use an existing object as its template, then download a ready-to-install package. Everything runs in your browser.</p></div>
       <form id="object-form">
         <section class="card">
@@ -296,7 +314,7 @@
       <div id="object-saved"></div>
     </section>
 
-    <section id="painting-tool" class="tab-panel" role="tabpanel" hidden>
+    <section id="painting-tool" class="tool-panel" hidden>
       <div class="painting-heading"><div><h2>Painting creator</h2><p class="panel-intro">Turn your image into a new painting for the game. Created and saved in this browser.</p></div><div id="painting-saved"></div></div>
       <form id="painting-form">
         <section class="panel">
@@ -345,7 +363,7 @@
         </section>
       </form>
     </section>
-    <section id="sim-tool" class="tab-panel" role="tabpanel" hidden>
+    <section id="sim-tool" class="tool-panel" hidden>
       <form id="sim-form">
         <section class="panel">
           <div class="sim-heading"><h2>Sim creator <span class="optional">experimental</span></h2><div id="sim-saved"></div></div>
@@ -384,7 +402,7 @@
         <details class="panel sim-naming" id="sim-naming"><summary>3. Name and save</summary><div class="field-grid"><label>Creator<input id="sim-creator" required pattern="[A-Za-z0-9][A-Za-z0-9 _\-]{0,47}" maxlength="48" placeholder="Your creator name"></label><label>Sim name<input id="sim-name" required pattern="[A-Za-z0-9][A-Za-z0-9 _\-]{0,47}" maxlength="48" placeholder="My Sim"></label></div><label>Description <span class="optional">optional</span><textarea id="sim-description" maxlength="2048" rows="2" placeholder="Original creator and model credits"></textarea></label><p id="sim-filename" class="build-note">Creator_SimName.package</p><label class="checkbox-row"><input id="sim-experimental" type="checkbox"> I understand this exports only the Adult Male Everyday body. The custom head is excluded.</label><div class="status-actions"><button id="sim-build" type="submit" class="primary" disabled>Create test package</button><button id="sim-retry-build" type="button" class="secondary" hidden>Retry test export</button><a id="sim-download" class="download" href="#" hidden>Download .package</a></div><progress id="sim-build-progress" max="100" hidden aria-label="Package creation"></progress><p id="sim-export-note" class="build-note">Use an isolated test profile. This is a deformation test, not a complete replacement Sim. Install in SavedSims.</p><details><summary>Saved work and future downloads</summary><p>Your work belongs to this browser and site address. Clearing site data or browser eviction can remove it. The planned output is one package for SavedSims, with custom Everyday clothing and a rigid head.</p></details></details>
       </form>
     </section>
-    <section id="upscale-tool" class="tab-panel" role="tabpanel" hidden>
+    <section id="upscale-tool" class="tool-panel" hidden>
       <form id="upscale-form">
         <section class="panel">
           <div class="section-heading"><h2>Upscale image</h2><button id="upscale-new" type="button" class="secondary">New image</button></div>
@@ -420,9 +438,15 @@
         <p id="upscale-preview-error" class="inline-status" role="status" hidden></p>
       </section>
     </section>
-  </main>
+    </main>
+    </div>
+  </div>
+  <dialog id="tool-drawer" class="tool-drawer" aria-labelledby="tools-heading">
+    <div class="drawer-heading"><h2 id="tools-heading">Tools</h2><button id="tools-close" type="button" class="secondary" aria-label="Close tools">Close</button></div>
+    <div id="drawer-navigation"></div>
+  </dialog>
 
-  <script type="module" src="static/releases/fd806f8d4c043c62a100f9b67dc1a344f468b4a3c7733f61ba851c0d4c8b83d8/lazy-bootstrap.js"></script>
+  <script type="module" src="static/releases/9410e69e94d556b780abe38b46bdcbf3e7f885ae42ef8394413bde22c7657aba/lazy-bootstrap.js"></script>
 
 </body>
 </html>

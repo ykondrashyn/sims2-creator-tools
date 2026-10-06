@@ -1,0 +1,3240 @@
+{
+  "schema_version": 1,
+  "capabilities": {
+    "age_mask": "0x18",
+    "ages": [
+      "adult",
+      "elder"
+    ],
+    "body_conversion": {
+      "execution": "browser-wasm",
+      "input_bytes": 33554432,
+      "input_dimensions": [
+        1024,
+        2048
+      ],
+      "output_bytes": 8388608,
+      "output_dimensions": [
+        1024,
+        1024
+      ],
+      "profiles": [
+        "am",
+        "af"
+      ],
+      "retention": "until-deleted",
+      "server_fallback": false
+    },
+    "controller_model": {
+      "catalog_name": "Osho Nuff Tablet",
+      "embedded": false,
+      "required_product": "Mansion & Garden Stuff or The Sims 2 Legacy Collection",
+      "scene_name": "sculptureOshoKoma"
+    },
+    "genders": [
+      "am",
+      "af"
+    ],
+    "input": {
+      "format": "PNG",
+      "height": 1024,
+      "mode": "RGBA8",
+      "width": 1024
+    },
+    "maximum_file_bytes": 8388608,
+    "maximum_files": 40,
+    "maximum_tattoos": 20,
+    "normal_sims_only": true,
+    "output": {
+      "format": "DBPF .package",
+      "layout": "single-package",
+      "maximum_bytes": 67108864
+    },
+    "package_creation": {
+      "build_timeout_seconds": 600,
+      "execution": "browser-wasm",
+      "hair": {
+        "builtin_colors": 43,
+        "custom_colors": 16,
+        "maximum_package_bytes": 67108864,
+        "maximum_packages": 64,
+        "maximum_textures": 16,
+        "maximum_zip_bytes": 536870912
+      },
+      "manifest_url": "manifest.json",
+      "maximum_total_input_bytes": 134217728,
+      "object": {
+        "maximum_model_groups": 16,
+        "maximum_output_bytes": 134217728,
+        "maximum_package_bytes": 67108864,
+        "maximum_packages": 64,
+        "model_formats": [
+          "glb",
+          "gltf-zip"
+        ]
+      },
+      "package_compression": {
+        "algorithm": "refpack-5.0.4-optimal",
+        "default": true,
+        "lossless": true,
+        "parameter": "refpack_compression",
+        "tools": [
+          "hair",
+          "tattoo",
+          "object",
+          "painting",
+          "sim"
+        ],
+        "version": 1
+      },
+      "retention": "until-deleted",
+      "server_fallback": false,
+      "storage_bytes": 2147483648,
+      "texture_encoders": {
+        "bodyshop_algorithm_version": 2,
+        "default": "directxtex",
+        "directxtex_revision": "868198cb4bcbc4e359372e7ba38d7a6dda3a6afa",
+        "dithering": false,
+        "formats": {
+          "bodyshop": [
+            "DXT1",
+            "DXT3",
+            "DXT5"
+          ],
+          "directxtex": [
+            "DXT1",
+            "DXT3",
+            "DXT5"
+          ]
+        },
+        "items": [
+          "directxtex",
+          "bodyshop"
+        ],
+        "legacy": {
+          "bodyshop_dxt3": {
+            "DXT1": "directxtex",
+            "DXT3": "bodyshop_dxt3",
+            "DXT5": "directxtex"
+          }
+        },
+        "version": 2
+      },
+      "wasm_heap_bytes": 1073741824
+    },
+    "painting_creation": {
+      "execution": "browser-wasm",
+      "formats": [
+        "png",
+        "jpeg",
+        "webp"
+      ],
+      "input_bytes": 33554432,
+      "maximum_dimension": 8192,
+      "maximum_images": 1,
+      "maximum_pixels": 32000000,
+      "output_bytes": 67108864,
+      "server_fallback": false
+    },
+    "schema_version": 1,
+    "sim_creation": {
+      "bodies": [
+        "am",
+        "af"
+      ],
+      "downloads_enabled": false,
+      "everyday_test": {
+        "bodies": [
+          "am"
+        ],
+        "downloads_enabled": true,
+        "gameplay": "not_tested",
+        "head": "stock",
+        "version": 1
+      },
+      "execution": "browser-wasm",
+      "experimental": true,
+      "guided_version": 2,
+      "input_bytes": 67108864,
+      "output_bytes": 67108864,
+      "server_fallback": false
+    },
+    "validation": "Structural validation enabled"
+  },
+  "package_compression": {
+    "algorithm": "refpack-5.0.4-optimal",
+    "default": true,
+    "lossless": true,
+    "parameter": "refpack_compression",
+    "tools": [
+      "hair",
+      "tattoo",
+      "object",
+      "painting",
+      "sim"
+    ],
+    "version": 1
+  },
+  "texture_encoders": {
+    "bodyshop_algorithm_version": 2,
+    "default": "directxtex",
+    "directxtex_revision": "868198cb4bcbc4e359372e7ba38d7a6dda3a6afa",
+    "dithering": false,
+    "formats": {
+      "bodyshop": [
+        "DXT1",
+        "DXT3",
+        "DXT5"
+      ],
+      "directxtex": [
+        "DXT1",
+        "DXT3",
+        "DXT5"
+      ]
+    },
+    "items": [
+      "directxtex",
+      "bodyshop"
+    ],
+    "legacy": {
+      "bodyshop_dxt3": {
+        "DXT1": "directxtex",
+        "DXT3": "bodyshop_dxt3",
+        "DXT5": "directxtex"
+      }
+    },
+    "version": 2
+  },
+  "protocol_version": 1,
+  "assets": {
+    "wasm": {
+      "sha256": "f028d1a3938f97b5af9fef9918451abddadb903637705c450d276d16a9dc3aae",
+      "size": 5315273,
+      "mime": "application/wasm",
+      "url": "assets/f028d1a3938f97b5af9fef9918451abddadb903637705c450d276d16a9dc3aae.wasm"
+    },
+    "glue": {
+      "sha256": "db586324525cbf840b8ffae5b4421b4e2a8fd78aab1fa1eda36853730ec48242",
+      "size": 10859,
+      "mime": "text/javascript",
+      "url": "assets/db586324525cbf840b8ffae5b4421b4e2a8fd78aab1fa1eda36853730ec48242.mjs"
+    },
+    "worker": {
+      "sha256": "5225d1a2b9331471197a70af13389045e9fbff25f26d05dde20a9921c1f75354",
+      "size": 5463,
+      "mime": "text/javascript",
+      "url": "assets/5225d1a2b9331471197a70af13389045e9fbff25f26d05dde20a9921c1f75354.mjs"
+    },
+    "archive": {
+      "sha256": "850137e3abe9573e733e73c720d9ca6e66b3feaca46a84f2f2b82994c85600ec",
+      "size": 14483,
+      "mime": "text/javascript",
+      "url": "assets/850137e3abe9573e733e73c720d9ca6e66b3feaca46a84f2f2b82994c85600ec.mjs"
+    },
+    "local-upscale-model-compact": {
+      "sha256": "d9a8294596c7c263d09b395ddcf1074ac5844da47f2654a7cdaf8a047b086bdc",
+      "size": 4872961,
+      "mime": "application/octet-stream",
+      "url": "assets/d9a8294596c7c263d09b395ddcf1074ac5844da47f2654a7cdaf8a047b086bdc.bin"
+    },
+    "local-upscale-model-animevideo": {
+      "sha256": "f348d213a8cc9766b0ec1fd4a3204a9278f23895ad85db101b3244afab2525b6",
+      "size": 2496273,
+      "mime": "application/octet-stream",
+      "url": "assets/f348d213a8cc9766b0ec1fd4a3204a9278f23895ad85db101b3244afab2525b6.bin"
+    },
+    "local-upscale-model-nomos": {
+      "sha256": "8f34091aa984421465ea9284b819695de5e0e0a4d2c1a0930d1c0ace1dc5cd45",
+      "size": 1654979,
+      "mime": "application/octet-stream",
+      "url": "assets/8f34091aa984421465ea9284b819695de5e0e0a4d2c1a0930d1c0ace1dc5cd45.bin"
+    },
+    "local-upscale-model": {
+      "sha256": "bf06d85043d24328457756d61640f07cf1eed61fc8dd046d6534d2e8221e43ed",
+      "size": 67051645,
+      "mime": "application/octet-stream",
+      "url": "assets/bf06d85043d24328457756d61640f07cf1eed61fc8dd046d6534d2e8221e43ed.bin"
+    },
+    "local-upscale-worker": {
+      "sha256": "586c9101af2f4c737d3f3e596723c4a54519b7c006313950b76195ca5b8211c6",
+      "size": 78451,
+      "mime": "text/javascript",
+      "url": "assets/586c9101af2f4c737d3f3e596723c4a54519b7c006313950b76195ca5b8211c6.mjs"
+    },
+    "local-upscale-runtime": {
+      "sha256": "6ef726f355b791129f7ddf3f62e7877a16b9b777abe87004b8ab306e6b9cf265",
+      "size": 48259,
+      "mime": "text/javascript",
+      "url": "assets/6ef726f355b791129f7ddf3f62e7877a16b9b777abe87004b8ab306e6b9cf265.mjs"
+    },
+    "local-upscale-webgpu-runtime": {
+      "sha256": "e131e81c9324807e1e6f9103e8f8e936112827dcc9993cde9407a333b1f07ae0",
+      "size": 357582,
+      "mime": "text/javascript",
+      "url": "assets/e131e81c9324807e1e6f9103e8f8e936112827dcc9993cde9407a333b1f07ae0.mjs"
+    },
+    "local-upscale-webgpu-glue": {
+      "sha256": "d140eb641c99f92cfabd68894f5e40c41d9329bc46b864150f34ee938d4d5576",
+      "size": 44677,
+      "mime": "text/javascript",
+      "url": "assets/d140eb641c99f92cfabd68894f5e40c41d9329bc46b864150f34ee938d4d5576.mjs"
+    },
+    "local-upscale-webgpu-wasm": {
+      "sha256": "b45970d0632383a057c27ca5b660b216f8e00c17cf8db9f6207b5e4abc839368",
+      "size": 21872216,
+      "mime": "application/wasm",
+      "url": "assets/b45970d0632383a057c27ca5b660b216f8e00c17cf8db9f6207b5e4abc839368.wasm"
+    },
+    "local-upscale-glue": {
+      "sha256": "4d169e2f2195e6221749f4fe69c2361c883d731430fdc88037106b6fcb56f7c6",
+      "size": 20856,
+      "mime": "text/javascript",
+      "url": "assets/4d169e2f2195e6221749f4fe69c2361c883d731430fdc88037106b6fcb56f7c6.mjs"
+    },
+    "local-upscale-wasm": {
+      "sha256": "71aef04959c5c1b6de461b6538e2058e306610034a85aad2742d0c7fd4533fe4",
+      "size": 11210254,
+      "mime": "application/wasm",
+      "url": "assets/71aef04959c5c1b6de461b6538e2058e306610034a85aad2742d0c7fd4533fe4.wasm"
+    },
+    "object-optimizer": {
+      "sha256": "c87ee037121c14153162ef5fecf76392a8b12355fac648c4dc2e5b64488ede44",
+      "size": 254328,
+      "mime": "text/javascript",
+      "url": "assets/c87ee037121c14153162ef5fecf76392a8b12355fac648c4dc2e5b64488ede44.mjs"
+    },
+    "object-optimizer-licenses": {
+      "sha256": "a04873cccb75e2fbf817be598c72442ee8b04a470604a4b28f1f69dafb0d7770",
+      "size": 12170,
+      "mime": "text/plain",
+      "url": "assets/a04873cccb75e2fbf817be598c72442ee8b04a470604a4b28f1f69dafb0d7770.txt"
+    },
+    "palette": {
+      "sha256": "84409452e64aae9db59ca13989beee5daa2d94ed11fac4a67188692da378ebbb",
+      "size": 121761,
+      "mime": "application/json",
+      "url": "assets/84409452e64aae9db59ca13989beee5daa2d94ed11fac4a67188692da378ebbb.json"
+    },
+    "game-meshes": {
+      "sha256": "f33f3fda374a5b5a6b7a648f8c36afca68fef4df9f831c0bdbc6ede8cac014c5",
+      "size": 8322199,
+      "mime": "application/json",
+      "url": "assets/f33f3fda374a5b5a6b7a648f8c36afca68fef4df9f831c0bdbc6ede8cac014c5.json"
+    },
+    "conversion:am": {
+      "sha256": "fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544",
+      "size": 14040932,
+      "mime": "application/zip",
+      "url": "assets/fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544.zip"
+    },
+    "conversion:af": {
+      "sha256": "7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd",
+      "size": 14104481,
+      "mime": "application/zip",
+      "url": "assets/7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd.zip"
+    },
+    "tattoo-overlay": {
+      "sha256": "99420d4db856892c4f8a4332a34c0324744d99df3eaee453fcf05b40798fa482",
+      "size": 7355510,
+      "mime": "application/octet-stream",
+      "url": "assets/99420d4db856892c4f8a4332a34c0324744d99df3eaee453fcf05b40798fa482.bin"
+    },
+    "tattoo-controller": {
+      "sha256": "10ffec6d0b9e148110b33a48791ad3222d6e4a2df862cc0e98e0ca9ffe1d6488",
+      "size": 99251,
+      "mime": "application/octet-stream",
+      "url": "assets/10ffec6d0b9e148110b33a48791ad3222d6e4a2df862cc0e98e0ca9ffe1d6488.bin"
+    },
+    "tattoo-face": {
+      "sha256": "0e401a47925a282b5e0c6830fc9e02dd897c52570a88a8f0781f6643a3cea9bb",
+      "size": 3614,
+      "mime": "application/octet-stream",
+      "url": "assets/0e401a47925a282b5e0c6830fc9e02dd897c52570a88a8f0781f6643a3cea9bb.bin"
+    },
+    "preview-body:am": {
+      "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "size": 49212,
+      "mime": "model/gltf-binary",
+      "url": "assets/07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0.glb"
+    },
+    "preview-body:af": {
+      "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "size": 53172,
+      "mime": "model/gltf-binary",
+      "url": "assets/0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590.glb"
+    },
+    "hair:standard-base-female-bun": {
+      "sha256": "200e10b11207bbda27a9d2682b06fa8ae5bb79ffaedc5e42ca803e6b6c99b2f7",
+      "size": 273061,
+      "mime": "application/octet-stream",
+      "url": "assets/200e10b11207bbda27a9d2682b06fa8ae5bb79ffaedc5e42ca803e6b6c99b2f7.bin"
+    },
+    "hair:standard-base-female-french-braid": {
+      "sha256": "bd242f4fe70e142c99eccf4048fce617d859411dbaee9eb0e2443958232a326a",
+      "size": 256901,
+      "mime": "application/octet-stream",
+      "url": "assets/bd242f4fe70e142c99eccf4048fce617d859411dbaee9eb0e2443958232a326a.bin"
+    },
+    "hair:standard-base-female-high-ponytail": {
+      "sha256": "8837205eae451b97f723d3530524bcf83e26ab0fdda1b76df9b6354162c1e81c",
+      "size": 274481,
+      "mime": "application/octet-stream",
+      "url": "assets/8837205eae451b97f723d3530524bcf83e26ab0fdda1b76df9b6354162c1e81c.bin"
+    },
+    "hair:standard-base-female-ponytail": {
+      "sha256": "4151c65dd01764c3855da421e4becc377e4304ab89a14c512b24fa41bd47038f",
+      "size": 246966,
+      "mime": "application/octet-stream",
+      "url": "assets/4151c65dd01764c3855da421e4becc377e4304ab89a14c512b24fa41bd47038f.bin"
+    },
+    "hair:standard-base-female-short": {
+      "sha256": "55813e2170ef2bcf8ce43a2660a77a911d331809ca97c0adf9b2d53712590ced",
+      "size": 286503,
+      "mime": "application/octet-stream",
+      "url": "assets/55813e2170ef2bcf8ce43a2660a77a911d331809ca97c0adf9b2d53712590ced.bin"
+    },
+    "hair:standard-base-male-cornrows": {
+      "sha256": "fa56ece98a5914c37e3dc388c8148f7e5f64cea5bddff408756e72353bf8bf04",
+      "size": 326464,
+      "mime": "application/octet-stream",
+      "url": "assets/fa56ece98a5914c37e3dc388c8148f7e5f64cea5bddff408756e72353bf8bf04.bin"
+    },
+    "hair:standard-base-male-crew-cut": {
+      "sha256": "a4303c98e504b2fb20274f98ec77be64fcca831b872b78de34d46d95673f00c3",
+      "size": 403037,
+      "mime": "application/octet-stream",
+      "url": "assets/a4303c98e504b2fb20274f98ec77be64fcca831b872b78de34d46d95673f00c3.bin"
+    },
+    "hair:standard-base-male-ponytail": {
+      "sha256": "715064e7a8f60eef9cb1ada891f71eabb79f8349986cfbca1352edc4f023f5ad",
+      "size": 273101,
+      "mime": "application/octet-stream",
+      "url": "assets/715064e7a8f60eef9cb1ada891f71eabb79f8349986cfbca1352edc4f023f5ad.bin"
+    },
+    "hair:pooklet-mg-swirl": {
+      "sha256": "330a974828e8053cba0a0c6b94d5d729243ddf1dfde7576f1660ba301df34d64",
+      "size": 80940,
+      "mime": "application/octet-stream",
+      "url": "assets/330a974828e8053cba0a0c6b94d5d729243ddf1dfde7576f1660ba301df34d64.bin"
+    },
+    "object-catalog": {
+      "sha256": "2de9f594473819570aaa7748738b6494f3708a0928370fdcb687df0fdfdf25af",
+      "size": 111303,
+      "mime": "application/json",
+      "url": "assets/2de9f594473819570aaa7748738b6494f3708a0928370fdcb687df0fdfdf25af.json"
+    },
+    "object-game": {
+      "sha256": "51ff3ac91380050ddb9f87fb59bf2a21ffb47de176f2efb8d6259ce6e94fa4e7",
+      "size": 3818072,
+      "mime": "application/json",
+      "url": "assets/51ff3ac91380050ddb9f87fb59bf2a21ffb47de176f2efb8d6259ce6e94fa4e7.json"
+    },
+    "object:urn": {
+      "sha256": "d320d4ec9037d16fb88a65797fa3419c902c6f39745a3e8725e977699bf9fded",
+      "size": 4326645,
+      "mime": "application/octet-stream",
+      "url": "assets/d320d4ec9037d16fb88a65797fa3419c902c6f39745a3e8725e977699bf9fded.bin"
+    },
+    "object:fruit-bowl": {
+      "sha256": "e84ad535c5ab460e9578b4982d4651d482e4198f7a9b1abbccaa62c627ec44c9",
+      "size": 117669,
+      "mime": "application/octet-stream",
+      "url": "assets/e84ad535c5ab460e9578b4982d4651d482e4198f7a9b1abbccaa62c627ec44c9.bin"
+    },
+    "object:venus": {
+      "sha256": "d6e13e134ba8672152ba741bbf90982de8d5bd727754ef9921d0eb7c9b70db9c",
+      "size": 1675520,
+      "mime": "application/octet-stream",
+      "url": "assets/d6e13e134ba8672152ba741bbf90982de8d5bd727754ef9921d0eb7c9b70db9c.bin"
+    },
+    "object:chimes": {
+      "sha256": "27d04216ee210616d0e1f337d364fcd9288c43c1c2ead2359ab8471ece15d9d3",
+      "size": 122771,
+      "mime": "application/octet-stream",
+      "url": "assets/27d04216ee210616d0e1f337d364fcd9288c43c1c2ead2359ab8471ece15d9d3.bin"
+    },
+    "object:chi": {
+      "sha256": "f324547fe271e68bcc1ba88d4d540a88ffbc4d909103f27a5de571780542299e",
+      "size": 91459,
+      "mime": "application/octet-stream",
+      "url": "assets/f324547fe271e68bcc1ba88d4d540a88ffbc4d909103f27a5de571780542299e.bin"
+    },
+    "object:dining-chair": {
+      "sha256": "a4a54e8e684fbfe33ea60057cb15ba50d2ab8ce5953b20f13a401af74f93d969",
+      "size": 469635,
+      "mime": "application/octet-stream",
+      "url": "assets/a4a54e8e684fbfe33ea60057cb15ba50d2ab8ce5953b20f13a401af74f93d969.bin"
+    },
+    "object:dining-table": {
+      "sha256": "f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+      "size": 901942,
+      "mime": "application/octet-stream",
+      "url": "assets/f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89.bin"
+    },
+    "object:table-lamp": {
+      "sha256": "8f1b80d8c8f69e5ef61631f0005b7166eab14da09b95d664a69a7935be9f30a3",
+      "size": 252796,
+      "mime": "application/octet-stream",
+      "url": "assets/8f1b80d8c8f69e5ef61631f0005b7166eab14da09b95d664a69a7935be9f30a3.bin"
+    },
+    "painting-catalog": {
+      "sha256": "7c7de3942edf6027a967e8eaa8f34ab20b729839ca1f274d7a46b56ac13ea83d",
+      "size": 50348,
+      "mime": "application/json",
+      "url": "assets/7c7de3942edf6027a967e8eaa8f34ab20b729839ca1f274d7a46b56ac13ea83d.json"
+    },
+    "painting:bella": {
+      "sha256": "77c818df24bf0bbb4c786a23d0e8256aae517d34281449264f3701b1992b8f7b",
+      "size": 104198,
+      "mime": "application/octet-stream",
+      "url": "assets/77c818df24bf0bbb4c786a23d0e8256aae517d34281449264f3701b1992b8f7b.bin"
+    },
+    "painting-recipe:bella": {
+      "sha256": "2ea64af9c91cd03bbcd4393a93710542a2f00680a4b0482be407206716cbe32d",
+      "size": 7965,
+      "mime": "application/json",
+      "url": "assets/2ea64af9c91cd03bbcd4393a93710542a2f00680a4b0482be407206716cbe32d.json"
+    },
+    "painting-thumbnail:bella": {
+      "sha256": "15e0b1a2ab4fa2460b90b15cc2aaf4bcdf4473db76c80da98e2bd672e0dabd56",
+      "size": 64231,
+      "mime": "image/png",
+      "url": "assets/15e0b1a2ab4fa2460b90b15cc2aaf4bcdf4473db76c80da98e2bd672e0dabd56.png"
+    },
+    "painting:lady": {
+      "sha256": "4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5",
+      "size": 120473,
+      "mime": "application/octet-stream",
+      "url": "assets/4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5.bin"
+    },
+    "painting-recipe:lady": {
+      "sha256": "18ca113c07d6dd261bac073462f7bec563010d3081e2a4e0cb1e18f213970127",
+      "size": 7276,
+      "mime": "application/json",
+      "url": "assets/18ca113c07d6dd261bac073462f7bec563010d3081e2a4e0cb1e18f213970127.json"
+    },
+    "painting-thumbnail:lady": {
+      "sha256": "5003ba13fb7e100fe4a0b1a1493ac3306a711145f532f3c241c3e1f311f7d07d",
+      "size": 35804,
+      "mime": "image/png",
+      "url": "assets/5003ba13fb7e100fe4a0b1a1493ac3306a711145f532f3c241c3e1f311f7d07d.png"
+    },
+    "painting:city": {
+      "sha256": "008936b17a69c24204627a509ac8dc4bbef138b7a04150e7944498aa1d88665a",
+      "size": 211005,
+      "mime": "application/octet-stream",
+      "url": "assets/008936b17a69c24204627a509ac8dc4bbef138b7a04150e7944498aa1d88665a.bin"
+    },
+    "painting-recipe:city": {
+      "sha256": "9ecc165a61e6db21de3516b7d3971d7897678dade0eb4ecfb37827b591cbe742",
+      "size": 10689,
+      "mime": "application/json",
+      "url": "assets/9ecc165a61e6db21de3516b7d3971d7897678dade0eb4ecfb37827b591cbe742.json"
+    },
+    "painting-thumbnail:city": {
+      "sha256": "d383d791d9a05e4720d325c74cd95d55a6199a4758fd3483f37ca57c6f5448b2",
+      "size": 78503,
+      "mime": "image/png",
+      "url": "assets/d383d791d9a05e4720d325c74cd95d55a6199a4758fd3483f37ca57c6f5448b2.png"
+    },
+    "painting:hills": {
+      "sha256": "a8bff82892277ee1a68538743585fb2f6e510a4fd5817e8826cb2939f926666c",
+      "size": 88883,
+      "mime": "application/octet-stream",
+      "url": "assets/a8bff82892277ee1a68538743585fb2f6e510a4fd5817e8826cb2939f926666c.bin"
+    },
+    "painting-recipe:hills": {
+      "sha256": "bf600d61214c9dc267af57a15bcc7d92251135308569c3aba7bfc8b69dcec5cb",
+      "size": 10125,
+      "mime": "application/json",
+      "url": "assets/bf600d61214c9dc267af57a15bcc7d92251135308569c3aba7bfc8b69dcec5cb.json"
+    },
+    "painting-thumbnail:hills": {
+      "sha256": "4b90655b5cc2d2269fa9d98dc0cb3207c2df541f536ec608527c32bb829d06a8",
+      "size": 46228,
+      "mime": "image/png",
+      "url": "assets/4b90655b5cc2d2269fa9d98dc0cb3207c2df541f536ec608527c32bb829d06a8.png"
+    },
+    "object-reference": {
+      "sha256": "f76f3733caba0c7d1168c4eb1738c7d89d94c766eb46a2f34aa79d5edc42dd58",
+      "size": 1773,
+      "mime": "application/json",
+      "url": "assets/f76f3733caba0c7d1168c4eb1738c7d89d94c766eb46a2f34aa79d5edc42dd58.json"
+    },
+    "object-reference-am": {
+      "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+      "size": 49212,
+      "mime": "model/gltf-binary",
+      "url": "assets/07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0.glb"
+    },
+    "object-reference-af": {
+      "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+      "size": 53172,
+      "mime": "model/gltf-binary",
+      "url": "assets/0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590.glb"
+    },
+    "object-reference-table": {
+      "sha256": "f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859",
+      "size": 100856,
+      "mime": "model/gltf-binary",
+      "url": "assets/f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859.glb"
+    },
+    "sim-rig:am": {
+      "sha256": "15ec82ff9592c8189b5a1988683880428bb47a5cf541fad99cb9289553fe4fad",
+      "size": 642181,
+      "mime": "application/octet-stream",
+      "url": "assets/15ec82ff9592c8189b5a1988683880428bb47a5cf541fad99cb9289553fe4fad.bin"
+    },
+    "sim-rig:af": {
+      "sha256": "db5413db87e726eadd349caa9d673281402cbb012b44176c9a013121cbda6951",
+      "size": 565227,
+      "mime": "application/octet-stream",
+      "url": "assets/db5413db87e726eadd349caa9d673281402cbb012b44176c9a013121cbda6951.bin"
+    },
+    "sim-everyday-test": {
+      "sha256": "c55eea764ee0de814781ccd956969c3a70b34ae81e9c574a4a1658f35fbdae1e",
+      "size": 1506245,
+      "mime": "application/octet-stream",
+      "url": "assets/c55eea764ee0de814781ccd956969c3a70b34ae81e9c574a4a1658f35fbdae1e.bin"
+    },
+    "source": {
+      "sha256": "1b9389dc36fa1224a52e47f78bc4f1b43b65d75a3cf5f3f28f870c604ed78a33",
+      "size": 93176558,
+      "mime": "application/gzip",
+      "url": "assets/1b9389dc36fa1224a52e47f78bc4f1b43b65d75a3cf5f3f28f870c604ed78a33.tar.gz"
+    },
+    "licenses": {
+      "sha256": "9f7b95cdfde839a8f1171c90f924e344bdfc37e933898f27aed1fba78851663a",
+      "size": 369662,
+      "mime": "text/plain",
+      "url": "assets/9f7b95cdfde839a8f1171c90f924e344bdfc37e933898f27aed1fba78851663a.txt"
+    }
+  },
+  "local_upscale": {
+    "version": 1,
+    "model": "RealESRGAN_x4plus",
+    "path": ".cache/local-upscale/RealESRGAN_x4plus.onnx",
+    "sha256": "bf06d85043d24328457756d61640f07cf1eed61fc8dd046d6534d2e8221e43ed",
+    "size": 67051645,
+    "weights_sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+    "weights_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+    "architecture_revision": "8d56e3a045f9fb3e1d8872f92ee4a4f07f886b0a",
+    "precision": "float32",
+    "scale": 4,
+    "tile": 128,
+    "overlap": 64,
+    "prepad": 10,
+    "runtime": "onnxruntime-web@1.22.0",
+    "models": [
+      {
+        "id": "compact",
+        "name": "Real-ESRGAN Compact",
+        "selection_id": "local-compact",
+        "model": "realesr-general-x4v3",
+        "asset": "local-upscale-model-compact",
+        "path": ".cache/local-upscale/realesr-general-x4v3.onnx",
+        "sha256": "d9a8294596c7c263d09b395ddcf1074ac5844da47f2654a7cdaf8a047b086bdc",
+        "size": 4872961,
+        "weights_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth",
+        "weights_sha256": "8dc7edb9ac80ccdc30c3a5dca6616509367f05fbc184ad95b731f05bece96292",
+        "architecture": "srvgg_arch.py",
+        "architecture_revision": "696e1a6741c912db9d566a162cada43763e57756",
+        "architecture_sha256": "7419a75e789ca09295266563d74a6d7c08d6c24502af6b0a919b1811d0a0be59",
+        "scale": 4,
+        "tile": 128,
+        "overlap": 64,
+        "prepad": 10,
+        "precision": "float32",
+        "normalization": "rgb-0-1",
+        "gpu_buffer_bytes": 16777216,
+        "description": "A lightweight general model for photos and textures.",
+        "docs": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0"
+      },
+      {
+        "id": "animevideo",
+        "name": "AnimeVideo v3",
+        "selection_id": "local-animevideo",
+        "model": "realesr-animevideov3",
+        "asset": "local-upscale-model-animevideo",
+        "path": ".cache/local-upscale/realesr-animevideov3.onnx",
+        "sha256": "f348d213a8cc9766b0ec1fd4a3204a9278f23895ad85db101b3244afab2525b6",
+        "size": 2496273,
+        "weights_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth",
+        "weights_sha256": "b8a8376811077954d82ca3fcf476f1ac3da3e8a68a4f4d71363008000a18b75d",
+        "architecture": "srvgg_arch.py",
+        "architecture_revision": "696e1a6741c912db9d566a162cada43763e57756",
+        "architecture_sha256": "7419a75e789ca09295266563d74a6d7c08d6c24502af6b0a919b1811d0a0be59",
+        "scale": 4,
+        "tile": 128,
+        "overlap": 64,
+        "prepad": 10,
+        "precision": "float32",
+        "normalization": "rgb-0-1",
+        "gpu_buffer_bytes": 16777216,
+        "description": "For illustrations, line art and stylized textures.",
+        "docs": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0"
+      },
+      {
+        "id": "nomos",
+        "name": "Nomos SPAN",
+        "selection_id": "local-nomos",
+        "model": "2xNomosUni_span_multijpg_ldl",
+        "asset": "local-upscale-model-nomos",
+        "path": ".cache/local-upscale/2xNomosUni_span_multijpg_ldl.onnx",
+        "sha256": "8f34091aa984421465ea9284b819695de5e0e0a4d2c1a0930d1c0ace1dc5cd45",
+        "size": 1654979,
+        "weights_url": "https://github.com/Phhofm/models/releases/download/2xNomosUni_span_multijpg_ldl/2xNomosUni_span_multijpg_ldl.pth",
+        "weights_sha256": "59d96e844503a93303cbd780ba083d68049745b5307cb90bb3c05aad8180bb49",
+        "architecture": "span_arch.py",
+        "architecture_revision": "ee5bc38627838afcfe01b51545469613a157186b",
+        "architecture_sha256": "9ff5a8d5b570877a5cdb09e0ca31c9313b2a07177fb63d91d1c02d05c3118cd1",
+        "scale": 2,
+        "tile": 128,
+        "overlap": 64,
+        "prepad": 10,
+        "precision": "float32",
+        "normalization": "rgb-0-1",
+        "gpu_buffer_bytes": 67108864,
+        "description": "General 2\u00d7 enlargement, trained with resizing and JPEG degradation.",
+        "docs": "https://github.com/Phhofm/models/releases/tag/2xNomosUni_span_multijpg_ldl"
+      },
+      {
+        "version": 1,
+        "model": "RealESRGAN_x4plus",
+        "path": ".cache/local-upscale/RealESRGAN_x4plus.onnx",
+        "sha256": "bf06d85043d24328457756d61640f07cf1eed61fc8dd046d6534d2e8221e43ed",
+        "size": 67051645,
+        "weights_sha256": "4fa0d38905f75ac06eb49a7951b426670021be3018265fd191d2125df9d682f1",
+        "weights_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth",
+        "architecture_revision": "8d56e3a045f9fb3e1d8872f92ee4a4f07f886b0a",
+        "precision": "float32",
+        "scale": 4,
+        "tile": 128,
+        "overlap": 64,
+        "prepad": 10,
+        "runtime": "onnxruntime-web@1.22.0",
+        "id": "full",
+        "name": "Real-ESRGAN Full",
+        "selection_id": "local-real-esrgan",
+        "asset": "local-upscale-model",
+        "gpu_buffer_bytes": 268435456,
+        "normalization": "rgb-0-1",
+        "description": "The original full model, retained for comparison. Large images can take several minutes.",
+        "docs": "https://github.com/xinntao/Real-ESRGAN"
+      }
+    ],
+    "default_model": "compact",
+    "execution": "browser-wasm",
+    "token_required": false,
+    "backends": [
+      "wasm",
+      "webgpu"
+    ],
+    "processing_timeout_ms": null
+  },
+  "hair": {
+    "palette": [
+      {
+        "name": "Dynamite",
+        "kind": "natural",
+        "family": 1,
+        "bin": 1,
+        "swatch": "#0b0908"
+      },
+      {
+        "name": "Depth Charge",
+        "kind": "natural",
+        "family": 1,
+        "bin": 2,
+        "swatch": "#251206"
+      },
+      {
+        "name": "Incendiary",
+        "kind": "natural",
+        "family": 1,
+        "bin": 3,
+        "swatch": "#a07b52"
+      },
+      {
+        "name": "Explosive",
+        "kind": "natural",
+        "family": 1,
+        "bin": 4,
+        "swatch": "#3c0c00"
+      },
+      {
+        "name": "Shrapnel",
+        "kind": "natural",
+        "family": 2,
+        "bin": 1,
+        "swatch": "#160d06"
+      },
+      {
+        "name": "Safety Fuse",
+        "kind": "natural",
+        "family": 2,
+        "bin": 2,
+        "swatch": "#59381b"
+      },
+      {
+        "name": "Volatile",
+        "kind": "natural",
+        "family": 2,
+        "bin": 3,
+        "swatch": "#a7886f"
+      },
+      {
+        "name": "Pyrotechnic",
+        "kind": "natural",
+        "family": 2,
+        "bin": 4,
+        "swatch": "#7b3709"
+      },
+      {
+        "name": "Land Mine",
+        "kind": "natural",
+        "family": 3,
+        "bin": 1,
+        "swatch": "#120d09"
+      },
+      {
+        "name": "Fission",
+        "kind": "natural",
+        "family": 3,
+        "bin": 2,
+        "swatch": "#392a1d"
+      },
+      {
+        "name": "Grenade",
+        "kind": "natural",
+        "family": 3,
+        "bin": 3,
+        "swatch": "#7b6c5c"
+      },
+      {
+        "name": "Comburent",
+        "kind": "natural",
+        "family": 3,
+        "bin": 4,
+        "swatch": "#a96b26"
+      },
+      {
+        "name": "Flash Powder",
+        "kind": "natural",
+        "family": 4,
+        "bin": 1,
+        "swatch": "#090909"
+      },
+      {
+        "name": "Brisance",
+        "kind": "natural",
+        "family": 4,
+        "bin": 2,
+        "swatch": "#3d180c"
+      },
+      {
+        "name": "Primer",
+        "kind": "natural",
+        "family": 4,
+        "bin": 3,
+        "swatch": "#a79689"
+      },
+      {
+        "name": "Molotov",
+        "kind": "natural",
+        "family": 4,
+        "bin": 4,
+        "swatch": "#792207"
+      },
+      {
+        "name": "Mail Bomb",
+        "kind": "grey",
+        "family": null,
+        "bin": 5,
+        "swatch": "#858480"
+      },
+      {
+        "name": "Pipe Bomb",
+        "kind": "grey",
+        "family": null,
+        "bin": 5,
+        "swatch": "#494844"
+      },
+      {
+        "name": "Afterburner",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#bc5ed0"
+      },
+      {
+        "name": "Blasting Agent",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#411f95"
+      },
+      {
+        "name": "Cannonball",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#2636a9"
+      },
+      {
+        "name": "Detonator",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#230436"
+      },
+      {
+        "name": "Firework",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#d6734a"
+      },
+      {
+        "name": "Flammable",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#b30000"
+      },
+      {
+        "name": "Fluorophore",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#9967e7"
+      },
+      {
+        "name": "Fulminant",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#012618"
+      },
+      {
+        "name": "Hangfire",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#25bb79"
+      },
+      {
+        "name": "Hazardous",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#0b0841"
+      },
+      {
+        "name": "HMX",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#5346e6"
+      },
+      {
+        "name": "Hydrazine",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#31b3e1"
+      },
+      {
+        "name": "Napalm",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#0066e5"
+      },
+      {
+        "name": "Nitroglycerin",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#77bb01"
+      },
+      {
+        "name": "Nuclear",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#d5a703"
+      },
+      {
+        "name": "Pentolite",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#d63d6c"
+      },
+      {
+        "name": "Powder Cake",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#d87a9a"
+      },
+      {
+        "name": "Pyrodex",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#54b19c"
+      },
+      {
+        "name": "Semtex",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#019e59"
+      },
+      {
+        "name": "Shockwave",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#008089"
+      },
+      {
+        "name": "Tetryl",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#8d0740"
+      },
+      {
+        "name": "Time Bomb",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#c2bdb8"
+      },
+      {
+        "name": "TNT",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#4c020e"
+      },
+      {
+        "name": "Torpedo",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#bdb643"
+      },
+      {
+        "name": "Unstable",
+        "kind": "unnatural",
+        "family": null,
+        "bin": 0,
+        "swatch": "#ba0978"
+      }
+    ],
+    "bases": [
+      "Volatile",
+      "Primer",
+      "Grenade",
+      "Incendiary",
+      "Pooklet Grey",
+      "Arbitrary texture"
+    ],
+    "items": [
+      {
+        "id": "standard-base-female-bun",
+        "label": "Bun",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Female",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 72,
+              "gender": 1,
+              "key": "ebcf3e27-53bde13c-000000004da98dbe",
+              "materials": [
+                "49596978-53bde13c-850cfe11ffc2401b",
+                "49596978-53bde13c-0254e765ff3a1541",
+                "49596978-53bde13c-21d32087ffa08a11"
+              ]
+            },
+            {
+              "age": 16,
+              "gender": 1,
+              "key": "ebcf3e27-53bde13c-00000000cda98e04",
+              "materials": [
+                "49596978-53bde13c-b818ad8fff76d9ca",
+                "49596978-53bde13c-ab7fbc42ff0b66c6",
+                "49596978-53bde13c-90fe7c31ff5bfec0"
+              ]
+            },
+            {
+              "age": 4,
+              "gender": 1,
+              "key": "ebcf3e27-53bde13c-00000000cda9903a",
+              "materials": [
+                "49596978-53bde13c-c97613f5ff0aa8be",
+                "49596978-53bde13c-7850378eff4f99cb",
+                "49596978-53bde13c-752f755dfff76e62"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 72,
+              "key": "0c560f39-53bde13c-000000004da98dbe",
+              "object": "ebcf3e27-53bde13c-000000004da98dbe"
+            },
+            {
+              "age": 16,
+              "key": "0c560f39-53bde13c-00000000cda98e04",
+              "object": "ebcf3e27-53bde13c-00000000cda98e04"
+            },
+            {
+              "age": 4,
+              "key": "0c560f39-53bde13c-00000000cda9903a",
+              "object": "ebcf3e27-53bde13c-00000000cda9903a"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-53bde13c-00000000fffffff0",
+              "object": "8c1580b5-53bde13c-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-9598c055ff0fa7e0",
+            "e519c933-1c0532fa-a509b2ebff5fa9e5",
+            "fc6eb1f7-1c0532fa-36a50e1aff5eef85",
+            "fc6eb1f7-1c0532fa-4349489cffe1421b"
+          ],
+          "resource_count": 24,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-53bde13c-6e4ee831ff6ef47e",
+              "name": "##0x53bde13c!hair-53bde13c-79edcf71ff7d3f98_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-53bde13c-17f27e08ffc1525b",
+              "name": "##0x53bde13c!hair-53bde13c-f788e43aff3804e7_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: Bun (Female)",
+        "template_sha256": "200e10b11207bbda27a9d2682b06fa8ae5bb79ffaedc5e42ca803e6b6c99b2f7",
+        "source_fingerprint": "43bde13c44c28fa4ebdb4758eaf8b91701773822055c9998f26000629a2f3d5c",
+        "source_family": "23849b4b-db3b-44c8-9083-56eacb4770a5",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-female-bun",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-female-french-braid",
+        "label": "French braid",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Female",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 16,
+              "gender": 1,
+              "key": "ebcf3e27-531779bd-000000000c8718e6",
+              "materials": [
+                "49596978-531779bd-b0f93036ffee67c5",
+                "49596978-531779bd-db6972cbff1940ba",
+                "49596978-531779bd-07409290ff5951d4"
+              ]
+            },
+            {
+              "age": 4,
+              "gender": 1,
+              "key": "ebcf3e27-531779bd-00000000cc8718e9",
+              "materials": [
+                "49596978-531779bd-084c60b3ffbb6474",
+                "49596978-531779bd-2c6a8655ff4a7221",
+                "49596978-531779bd-e2114f8cff18c294"
+              ]
+            },
+            {
+              "age": 72,
+              "gender": 1,
+              "key": "ebcf3e27-531779bd-00000000ec8718ed",
+              "materials": [
+                "49596978-531779bd-d2d6661cffa4a94c",
+                "49596978-531779bd-44706c00ff5b4295",
+                "49596978-531779bd-49ab5531ff388278"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 16,
+              "key": "0c560f39-531779bd-000000000c8718e6",
+              "object": "ebcf3e27-531779bd-000000000c8718e6"
+            },
+            {
+              "age": 4,
+              "key": "0c560f39-531779bd-00000000cc8718e9",
+              "object": "ebcf3e27-531779bd-00000000cc8718e9"
+            },
+            {
+              "age": 72,
+              "key": "0c560f39-531779bd-00000000ec8718ed",
+              "object": "ebcf3e27-531779bd-00000000ec8718ed"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-531779bd-00000000fffffff0",
+              "object": "8c1580b5-531779bd-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-4167302fffc72130",
+            "e519c933-1c0532fa-71c8bc51ffb8d817",
+            "fc6eb1f7-1c0532fa-176754b6ffd4f9cd",
+            "fc6eb1f7-1c0532fa-641ee27aff4d39e1"
+          ],
+          "resource_count": 24,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-531779bd-65bae1f7ffc01120",
+              "name": "##0x531779bd!hair-531779bd-3966b4ffff35d42d_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-531779bd-d4558af6ff1c44b3",
+              "name": "##0x531779bd!hair-531779bd-f6b93ae2ff19debb_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: French braid (Female)",
+        "template_sha256": "bd242f4fe70e142c99eccf4048fce617d859411dbaee9eb0e2443958232a326a",
+        "source_fingerprint": "431779bd263105a860570c6e915111d0e8d8118502d368b33afc3ca026512572",
+        "source_family": "b3d610a2-e3a5-4f37-a34f-f3615450b99e",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-female-french-braid",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-female-high-ponytail",
+        "label": "High ponytail",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Female",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 16,
+              "gender": 1,
+              "key": "ebcf3e27-53fa99fe-000000008d4f6044",
+              "materials": [
+                "49596978-53fa99fe-6a67af85ffe9bc44",
+                "49596978-53fa99fe-f7fbcc6bff8e2d9f",
+                "49596978-53fa99fe-15b4f029ff8ca937",
+                "49596978-53fa99fe-21fe9113ff1a064d",
+                "49596978-53fa99fe-125dd78affe32df9"
+              ]
+            },
+            {
+              "age": 72,
+              "gender": 1,
+              "key": "ebcf3e27-53fa99fe-000000008d4f6099",
+              "materials": [
+                "49596978-53fa99fe-56c0911aff027db8",
+                "49596978-53fa99fe-fe38c6eaff1d248b",
+                "49596978-53fa99fe-6d68d4e7ff173102",
+                "49596978-53fa99fe-385c0b2fff3526df",
+                "49596978-53fa99fe-baf55afaffd01642"
+              ]
+            },
+            {
+              "age": 4,
+              "gender": 1,
+              "key": "ebcf3e27-53fa99fe-00000000ed4f86a1",
+              "materials": [
+                "49596978-53fa99fe-56c0911aff027db8",
+                "49596978-53fa99fe-baf55afaffd01642",
+                "49596978-53fa99fe-385c0b2fff3526df",
+                "49596978-53fa99fe-fe38c6eaff1d248b",
+                "49596978-53fa99fe-6d68d4e7ff173102"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 16,
+              "key": "0c560f39-53fa99fe-000000008d4f6044",
+              "object": "ebcf3e27-53fa99fe-000000008d4f6044"
+            },
+            {
+              "age": 72,
+              "key": "0c560f39-53fa99fe-000000008d4f6099",
+              "object": "ebcf3e27-53fa99fe-000000008d4f6099"
+            },
+            {
+              "age": 4,
+              "key": "0c560f39-53fa99fe-00000000ed4f86a1",
+              "object": "ebcf3e27-53fa99fe-00000000ed4f86a1"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-53fa99fe-00000000fffffff0",
+              "object": "8c1580b5-53fa99fe-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-1ee8fb49ff569cb4",
+            "e519c933-1c0532fa-6556e8d9ff417928",
+            "fc6eb1f7-1c0532fa-16e54befffb796fd",
+            "fc6eb1f7-1c0532fa-82a4bcd1ffa67e12"
+          ],
+          "resource_count": 25,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-53fa99fe-c4026d87ff4dd2a8",
+              "name": "##0x53fa99fe!hair-53fa99fe-526871dbff65d6bc_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-53fa99fe-f98e58f5ffade4bd",
+              "name": "##0x53fa99fe!hair-53fa99fe-7f921314ffc7a2e0_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: High ponytail (Female)",
+        "template_sha256": "8837205eae451b97f723d3530524bcf83e26ab0fdda1b76df9b6354162c1e81c",
+        "source_fingerprint": "23fa99febda13669c3fe2862c46fcab6b4201c0d8a6257d6aab0939bdf6ef6b4",
+        "source_family": "6a9d56bd-4056-4896-b004-041df21303e0",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-female-high-ponytail",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-female-ponytail",
+        "label": "Ponytail",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Female",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 4,
+              "gender": 1,
+              "key": "ebcf3e27-5cd919f7-000000008d4f8e35",
+              "materials": [
+                "49596978-5cd919f7-c7ea251dff6cc5ae",
+                "49596978-5cd919f7-54340114ff613886",
+                "49596978-5cd919f7-a2b0a38cff0a0226"
+              ]
+            },
+            {
+              "age": 72,
+              "gender": 1,
+              "key": "ebcf3e27-5cd919f7-00000000cd4f9203",
+              "materials": [
+                "49596978-5cd919f7-98845f33ff1e78c5",
+                "49596978-5cd919f7-b4a1411fffa94118",
+                "49596978-5cd919f7-258d2afdff1f7e7a"
+              ]
+            },
+            {
+              "age": 16,
+              "gender": 1,
+              "key": "ebcf3e27-5cd919f7-00000000cd4f92ff",
+              "materials": [
+                "49596978-5cd919f7-f24f537cff7c415f",
+                "49596978-5cd919f7-73a75201ffe36899",
+                "49596978-5cd919f7-ec9cccb1fffd38b7"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 4,
+              "key": "0c560f39-5cd919f7-000000008d4f8e35",
+              "object": "ebcf3e27-5cd919f7-000000008d4f8e35"
+            },
+            {
+              "age": 72,
+              "key": "0c560f39-5cd919f7-00000000cd4f9203",
+              "object": "ebcf3e27-5cd919f7-00000000cd4f9203"
+            },
+            {
+              "age": 16,
+              "key": "0c560f39-5cd919f7-00000000cd4f92ff",
+              "object": "ebcf3e27-5cd919f7-00000000cd4f92ff"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-5cd919f7-00000000fffffff0",
+              "object": "8c1580b5-5cd919f7-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-2a598606ffd1c67d",
+            "e519c933-1c0532fa-a994aaabffd2c013",
+            "fc6eb1f7-1c0532fa-4673db9eff4a5200",
+            "fc6eb1f7-1c0532fa-a456a137ffd47fc5"
+          ],
+          "resource_count": 24,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-5cd919f7-d224056dff23fbc1",
+              "name": "##0x5cd919f7!hair-5cd919f7-1365c7fbff2c2d93_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-5cd919f7-5becaedbff84ec08",
+              "name": "##0x5cd919f7!hair-5cd919f7-42635ed4ff02e3f0_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: Ponytail (Female)",
+        "template_sha256": "4151c65dd01764c3855da421e4becc377e4304ab89a14c512b24fa41bd47038f",
+        "source_fingerprint": "4cd919f76bfc375fb2ab3f2376d5821e8289188e612b692a8ec47481439df0fd",
+        "source_family": "21012ee6-2976-4030-bb21-0bcb110a51cd",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-female-ponytail",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-female-short",
+        "label": "Short cut",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Female",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 4,
+              "gender": 1,
+              "key": "ebcf3e27-5cbc77d7-000000000dddc2fa",
+              "materials": [
+                "49596978-5cbc77d7-657fb278ffa467c6",
+                "49596978-5cbc77d7-55e7a39dff64b83a",
+                "49596978-5cbc77d7-87d882efffa19a98"
+              ]
+            },
+            {
+              "age": 72,
+              "gender": 1,
+              "key": "ebcf3e27-5cbc77d7-000000004dddc11f",
+              "materials": [
+                "49596978-5cbc77d7-72fb6fafff8571a2",
+                "49596978-5cbc77d7-678b4b4bff436f2a",
+                "49596978-5cbc77d7-3cbbf240ff85da43"
+              ]
+            },
+            {
+              "age": 16,
+              "gender": 1,
+              "key": "ebcf3e27-5cbc77d7-00000000cdddc1f9",
+              "materials": [
+                "49596978-5cbc77d7-bdd3236dff5f8ef3",
+                "49596978-5cbc77d7-348949caff932a8f",
+                "49596978-5cbc77d7-772d8656ffe0fca9"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 4,
+              "key": "0c560f39-5cbc77d7-000000000dddc2fa",
+              "object": "ebcf3e27-5cbc77d7-000000000dddc2fa"
+            },
+            {
+              "age": 72,
+              "key": "0c560f39-5cbc77d7-000000004dddc11f",
+              "object": "ebcf3e27-5cbc77d7-000000004dddc11f"
+            },
+            {
+              "age": 16,
+              "key": "0c560f39-5cbc77d7-00000000cdddc1f9",
+              "object": "ebcf3e27-5cbc77d7-00000000cdddc1f9"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-5cbc77d7-00000000fffffff0",
+              "object": "8c1580b5-5cbc77d7-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-5ae29178ffea5490",
+            "e519c933-1c0532fa-f381fa4fffe0a366",
+            "fc6eb1f7-1c0532fa-51e2a861ff7a8eca",
+            "fc6eb1f7-1c0532fa-b8b31c76ff19f032"
+          ],
+          "resource_count": 24,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-5cbc77d7-efc570c5ff38771c",
+              "name": "##0x5cbc77d7!hair-5cbc77d7-5ffa8ac4ff9a0aac_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-5cbc77d7-bc355222ff6d1261",
+              "name": "##0x5cbc77d7!hair-5cbc77d7-dca48ac7ffc637d8_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: Short cut (Female)",
+        "template_sha256": "55813e2170ef2bcf8ce43a2660a77a911d331809ca97c0adf9b2d53712590ced",
+        "source_fingerprint": "ecbc77d7b548062e4dc4daa1d6aba4cf331b91c3bfef2b14ff904473df1d4132",
+        "source_family": "bcec51f7-ce59-4260-b661-479a86aff468",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-female-short",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-male-cornrows",
+        "label": "Cornrows",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Male",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 4,
+              "gender": 2,
+              "key": "ebcf3e27-57051116-000000006c203d03",
+              "materials": [
+                "49596978-57051116-8830f33ffff0b7c2"
+              ]
+            },
+            {
+              "age": 16,
+              "gender": 2,
+              "key": "ebcf3e27-57051116-000000008c203d00",
+              "materials": [
+                "49596978-57051116-7ecee54dff25d2a0"
+              ]
+            },
+            {
+              "age": 72,
+              "gender": 2,
+              "key": "ebcf3e27-57051116-00000000cc203cfe",
+              "materials": [
+                "49596978-57051116-53bb144aff0684d7"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 4,
+              "key": "0c560f39-57051116-000000006c203d03",
+              "object": "ebcf3e27-57051116-000000006c203d03"
+            },
+            {
+              "age": 16,
+              "key": "0c560f39-57051116-000000008c203d00",
+              "object": "ebcf3e27-57051116-000000008c203d00"
+            },
+            {
+              "age": 72,
+              "key": "0c560f39-57051116-00000000cc203cfe",
+              "object": "ebcf3e27-57051116-00000000cc203cfe"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-57051116-00000000fffffff0",
+              "object": "8c1580b5-57051116-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-35a394beff11fbb7",
+            "e519c933-1c0532fa-b66eb813ff12fdd9",
+            "fc6eb1f7-1c0532fa-7f155bd4ff19dfa7",
+            "fc6eb1f7-1c0532fa-9d30217dff87f262"
+          ],
+          "resource_count": 18,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-57051116-19284e72ff366646",
+              "name": "##0x57051116!hair-57051116-234834adffe9197b_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-57051116-94f7a3bbff0c471c",
+              "name": "##0x57051116!hair-57051116-bba26544ff09459c_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: Cornrows (Male)",
+        "template_sha256": "fa56ece98a5914c37e3dc388c8148f7e5f64cea5bddff408756e72353bf8bf04",
+        "source_fingerprint": "e7051116befb5c14654882a47052b784d832c534c1e71c87d94159a6910acc6f",
+        "source_family": "51268afd-16d6-4b3b-a4dc-25cb20d8d18e",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-male-cornrows",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-male-crew-cut",
+        "label": "Crew cut",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Male",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 72,
+              "gender": 2,
+              "key": "ebcf3e27-5ae2679b-000000008c5e3d8d",
+              "materials": [
+                "49596978-5ae2679b-682bdd28ff39eded"
+              ]
+            },
+            {
+              "age": 4,
+              "gender": 2,
+              "key": "ebcf3e27-5ae2679b-000000008d05d024",
+              "materials": [
+                "49596978-5ae2679b-491d8a34fff3e993"
+              ]
+            },
+            {
+              "age": 16,
+              "gender": 2,
+              "key": "ebcf3e27-5ae2679b-00000000ac5e3d8f",
+              "materials": [
+                "49596978-5ae2679b-4f984470ff564407"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 72,
+              "key": "0c560f39-5ae2679b-000000008c5e3d8d",
+              "object": "ebcf3e27-5ae2679b-000000008c5e3d8d"
+            },
+            {
+              "age": 4,
+              "key": "0c560f39-5ae2679b-000000008d05d024",
+              "object": "ebcf3e27-5ae2679b-000000008d05d024"
+            },
+            {
+              "age": 16,
+              "key": "0c560f39-5ae2679b-00000000ac5e3d8f",
+              "object": "ebcf3e27-5ae2679b-00000000ac5e3d8f"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-5ae2679b-00000000fffffff0",
+              "object": "8c1580b5-5ae2679b-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-63d1cbd3ff110fd1",
+            "e519c933-1c0532fa-dedef5f4ffbc876a",
+            "fc6eb1f7-1c0532fa-40caf5ecff3299a0",
+            "fc6eb1f7-1c0532fa-5369826bff758151"
+          ],
+          "resource_count": 18,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-5ae2679b-bebb1313ff19cd9e",
+              "name": "##0x5ae2679b!hair-5ae2679b-5bf64edcff4145e2_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-5ae2679b-816e5f11ff559946",
+              "name": "##0x5ae2679b!hair-5ae2679b-c364e41bffcbcbe8_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: Crew cut (Male)",
+        "template_sha256": "a4303c98e504b2fb20274f98ec77be64fcca831b872b78de34d46d95673f00c3",
+        "source_fingerprint": "aae2679bf642f010ad10b65c0f57a948edcf02addd06a722a8830125640b3cec",
+        "source_family": "f2518867-5e8d-4d26-b006-24a86f528b99",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-male-crew-cut",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "standard-base-male-ponytail",
+        "label": "Ponytail",
+        "kind": "standard",
+        "game_content": "Base game",
+        "gender": "Male",
+        "ages": [
+          "Teen",
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "inspection": {
+          "ages": [
+            {
+              "age": 72,
+              "gender": 2,
+              "key": "ebcf3e27-52427749-000000000cef7138",
+              "materials": [
+                "49596978-52427749-ae2dad16ff761cce",
+                "49596978-52427749-85aea63aff0335f2"
+              ]
+            },
+            {
+              "age": 4,
+              "gender": 2,
+              "key": "ebcf3e27-52427749-000000004cef7283",
+              "materials": [
+                "49596978-52427749-c8b91d6cff17564b",
+                "49596978-52427749-c44ff4d1ffb3c454"
+              ]
+            },
+            {
+              "age": 16,
+              "gender": 2,
+              "key": "ebcf3e27-52427749-00000000ccef713d",
+              "materials": [
+                "49596978-52427749-90b8a87eff587f51",
+                "49596978-52427749-0e0a9a71ff0c8bff"
+              ]
+            }
+          ],
+          "catalog": [
+            {
+              "age": 72,
+              "key": "0c560f39-52427749-000000000cef7138",
+              "object": "ebcf3e27-52427749-000000000cef7138"
+            },
+            {
+              "age": 4,
+              "key": "0c560f39-52427749-000000004cef7283",
+              "object": "ebcf3e27-52427749-000000004cef7283"
+            },
+            {
+              "age": 16,
+              "key": "0c560f39-52427749-00000000ccef713d",
+              "object": "ebcf3e27-52427749-00000000ccef713d"
+            },
+            {
+              "age": null,
+              "key": "0c560f39-52427749-00000000fffffff0",
+              "object": "8c1580b5-52427749-0000000000000001"
+            }
+          ],
+          "external_meshes": [
+            "e519c933-1c0532fa-36c708f7ff886c12",
+            "e519c933-1c0532fa-b50a245aff8b6a7c",
+            "fc6eb1f7-1c0532fa-4e6ba0abff4c144e",
+            "fc6eb1f7-1c0532fa-ac4eda02ffd2398b"
+          ],
+          "resource_count": 21,
+          "schema_version": 1,
+          "textures": [
+            {
+              "ages": [
+                16
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-52427749-2ba5f6bdff014655",
+              "name": "##0x52427749!hair-52427749-0893283fff60ca87_txtr",
+              "width": 512
+            },
+            {
+              "ages": [
+                4,
+                72
+              ],
+              "format": "DXT3",
+              "height": 512,
+              "id": "1c4a276c-52427749-2f6d8966ffe926da",
+              "name": "##0x52427749!hair-52427749-d3d68ac5ffce33fa_txtr",
+              "width": 512
+            }
+          ]
+        },
+        "requirements": "Uses a standard base-game mesh. No custom mesh download is needed. Young Adult requires University or Legacy Collection.",
+        "template_credit": "Maxis / Electronic Arts: Ponytail (Male)",
+        "template_sha256": "715064e7a8f60eef9cb1ada891f71eabb79f8349986cfbca1352edc4f023f5ad",
+        "source_fingerprint": "12427749c4a2526ce63cb71fca48662fb68b1eeaa6552d80faedba2892de8bca",
+        "source_family": "b7778fe4-fdb8-4c7c-9988-566dd6e26237",
+        "meshes": [],
+        "structural_validation": "passed",
+        "gameplay_validation": "not tested",
+        "asset": "hair:standard-base-male-ponytail",
+        "input_base": "Volatile"
+      },
+      {
+        "id": "pooklet-mg-swirl",
+        "kind": "standard",
+        "label": "Swirl (Mansion & Garden)",
+        "game_content": "Mansion & Garden",
+        "gender": "Female",
+        "ages": [
+          "Young Adult",
+          "Adult",
+          "Elder"
+        ],
+        "meshes": [],
+        "requirements": "Requires Mansion & Garden or The Sims 2 Legacy Collection. Uses the built-in female Swirl mesh.",
+        "input_base": "Primer",
+        "template_credit": "Pooklet Mansion & Garden Swirl recolor template",
+        "asset": "hair:pooklet-mg-swirl",
+        "template_sha256": "330a974828e8053cba0a0c6b94d5d729243ddf1dfde7576f1660ba301df34d64"
+      }
+    ]
+  },
+  "conversion": {
+    "version": 1,
+    "execution": "browser-wasm",
+    "profiles": {
+      "am": {
+        "asset": "conversion:am",
+        "sha256": "fcaffa07db21aa1d659e348bbe7f627544160dd22593d1e64391f61d9fc10544",
+        "size": 14040932,
+        "template_sha256": "f709db0a1ae34b663805ce7c95da2f363dcb1d67029c197c4ef15098a4a5a108",
+        "input_dimensions": [
+          1024,
+          2048
+        ],
+        "output_dimensions": [
+          1024,
+          1024
+        ]
+      },
+      "af": {
+        "asset": "conversion:af",
+        "sha256": "7e9880c506b794a646a1ae8ca5ffda9ea5008bcf45e20593c971b881b8b308dd",
+        "size": 14104481,
+        "template_sha256": "e87f48a83350623abe97b1d8fe325153131305e40c43027df32a923e489e2958",
+        "input_dimensions": [
+          1024,
+          2048
+        ],
+        "output_dimensions": [
+          1024,
+          1024
+        ]
+      }
+    },
+    "input_format": "RGBA PNG",
+    "operations": [
+      "conversion_validate",
+      "conversion_begin",
+      "conversion_step",
+      "conversion_finish"
+    ]
+  },
+  "objects": {
+    "items": [
+      {
+        "id": "urn",
+        "label": "Ancient Transport Urn Sculpture",
+        "kind": "floor-decor",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.4386213421821594,
+          "height": 1.477109670639038,
+          "width": 0.5782248973846436
+        },
+        "asset": "object:urn"
+      },
+      {
+        "id": "fruit-bowl",
+        "label": "Bowl of Plastic Fruit",
+        "kind": "tabletop-decor",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "tabletop",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.5590618252754211,
+          "height": 0.4836044907569885,
+          "width": 0.45256108045578003
+        },
+        "asset": "object:fruit-bowl"
+      },
+      {
+        "id": "venus",
+        "label": "\"On A Pedestal\" by Yucan Byall",
+        "kind": "floor-decor",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.6074233651161194,
+          "height": 2.2731895446777344,
+          "width": 0.6074232459068298
+        },
+        "asset": "object:venus"
+      },
+      {
+        "id": "chimes",
+        "label": "\"Immobile Chimes\" Mobile in Steel",
+        "kind": "floor-decor",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 2,
+          "tiles": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.828860878944397,
+          "height": 1.9563109874725342,
+          "width": 1.7474877834320068
+        },
+        "asset": "object:chimes"
+      },
+      {
+        "id": "chi",
+        "label": "The My-Chi Sculpture Form",
+        "kind": "floor-decor",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 4,
+          "tiles": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 1.2835187911987305,
+          "height": 2.2831478118896484,
+          "width": 1.019152045249939
+        },
+        "asset": "object:chi"
+      },
+      {
+        "id": "dining-chair",
+        "label": "Tea Party in Teak",
+        "kind": "chair",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.5477943420410156,
+          "height": 1.0047639608383179,
+          "width": 0.4834161400794983
+        },
+        "asset": "object:dining-chair"
+      },
+      {
+        "id": "dining-table",
+        "label": "The Talking Table",
+        "kind": "table",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 2,
+          "tiles": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.8242828845977783,
+          "height": 0.7963592410087585,
+          "width": 1.8238651752471924
+        },
+        "asset": "object:dining-table"
+      },
+      {
+        "id": "table-lamp",
+        "label": "Pix-Arm Drafting Lamp",
+        "kind": "lamp",
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "floor",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "dimensions": {
+          "depth": 0.49876782298088074,
+          "height": 0.6179486513137817,
+          "width": 0.19976794719696045
+        },
+        "asset": "object:table-lamp"
+      }
+    ],
+    "sizing_version": 2,
+    "fit_to_template": 1,
+    "fixed_fitted_height": 1,
+    "reference": {
+      "version": 1,
+      "sizing_version": 2,
+      "units": "Sims 2 game units, one floor tile = 1 unit",
+      "reference_height": 1.8788737058639526,
+      "definition": "Canonical AM source body, floor aligned, plus a neutral proportional head. This is a scale reference, not a complete Sim.",
+      "bodies": {
+        "am": {
+          "asset": "object-reference-am",
+          "sha256": "07758688209950aa3f6410ca0222fffc1e94ba550757f26e4a8b98ccb4f020a0",
+          "floor_offset": 0.00022862920013722032,
+          "body_height": 1.6538736678048735,
+          "head": {
+            "radii": [
+              0.092,
+              0.13,
+              0.105
+            ],
+            "center": [
+              0,
+              1.7488736678048735,
+              -0.055
+            ]
+          },
+          "assembled_height": 1.8788736678048736
+        },
+        "af": {
+          "asset": "object-reference-af",
+          "sha256": "0c37a0a30b2940b1143a44c987e54d1bee26a750c4c462db0abf3d2cc9a27590",
+          "floor_offset": 2.6058188122324115e-05,
+          "body_height": 1.639527253132623,
+          "head": {
+            "radii": [
+              0.092,
+              0.13,
+              0.105
+            ],
+            "center": [
+              0,
+              1.734527253132623,
+              -0.055
+            ]
+          },
+          "assembled_height": 1.8645272531326231
+        }
+      },
+      "table": {
+        "asset": "object-reference-table",
+        "surface_height": 0.7999999523162842,
+        "source_label": "The Talking Table",
+        "source_package_sha256": "f06c3b8173009268fcceb821243056e5005512bc5f2bba924d7ccae4eac44c89",
+        "source_cres": {
+          "key": "e519c933-1c0532fa-c5835dc5ff77d573",
+          "source": "Base/TSData/Res/Sims3D/Objects05.package",
+          "sha256": "52f84b3b550eb0c947dd3ec5b4afcabfca58ae43fe7a97482702c093479e03f7"
+        },
+        "sha256": "f195be136196f78c64fa65268c6a0301ac5b5fbea0b6744217f7849be490b859"
+      }
+    },
+    "creation": "browser-wasm",
+    "workflows": [
+      "model"
+    ],
+    "model_formats": [
+      "glb",
+      "gltf-zip"
+    ],
+    "optimization": {
+      "worker_asset": "object-optimizer",
+      "version": 1,
+      "source_triangles": 1000000,
+      "source_vertices": 2000000,
+      "source_groups": 4096,
+      "default_target_triangles": 20000
+    }
+  },
+  "paintings": {
+    "version": 1,
+    "creation": "browser-wasm",
+    "items": [
+      {
+        "id": "bella",
+        "label": "Bella Squared",
+        "shape": "Square",
+        "aspect": 1.0056103811455925,
+        "dimensions": {
+          "width": 0.927323579788208,
+          "height": 0.9272743463516235,
+          "depth": 0.08090254664421082
+        },
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "wall",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "price": 1000,
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "sha256": "77c818df24bf0bbb4c786a23d0e8256aae517d34281449264f3701b1992b8f7b",
+        "format": "DXT1",
+        "asset": "painting:bella",
+        "recipe_asset": "painting-recipe:bella",
+        "thumbnail_asset": "painting-thumbnail:bella"
+      },
+      {
+        "id": "lady",
+        "label": "The Lady On Red",
+        "shape": "Portrait",
+        "aspect": 0.6377210423572328,
+        "dimensions": {
+          "width": 1.0141023397445679,
+          "height": 1.5123661756515503,
+          "depth": 0.10903948545455933
+        },
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "wall",
+          "tile_count": 1,
+          "tiles": [
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "price": 180,
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "sha256": "4b5a5841dd8fd54721d7e51134b59e9c8c17056b093c9401022356a4c52b68f5",
+        "format": "DXT1",
+        "asset": "painting:lady",
+        "recipe_asset": "painting-recipe:lady",
+        "thumbnail_asset": "painting-thumbnail:lady"
+      },
+      {
+        "id": "city",
+        "label": "\"SimCity at Night\"",
+        "shape": "Landscape",
+        "aspect": 1.9499998887379963,
+        "dimensions": {
+          "width": 1.5874999165534973,
+          "height": 0.875,
+          "depth": 0.06903156638145447
+        },
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "wall",
+          "tile_count": 2,
+          "tiles": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        "price": 425,
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "sha256": "008936b17a69c24204627a509ac8dc4bbef138b7a04150e7944498aa1d88665a",
+        "format": "DXT1",
+        "asset": "painting:city",
+        "recipe_asset": "painting-recipe:city",
+        "thumbnail_asset": "painting-thumbnail:city"
+      },
+      {
+        "id": "hills",
+        "label": "Rolling Hills by H. Sean",
+        "shape": "Large landscape",
+        "aspect": 1.951670309256528,
+        "dimensions": {
+          "width": 2.398506373167038,
+          "height": 1.341816782951355,
+          "depth": 0.08515909314155579
+        },
+        "placement": {
+          "known": true,
+          "routing": "unchanged template behavior",
+          "surface": "wall",
+          "tile_count": 3,
+          "tiles": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ]
+        },
+        "price": 400,
+        "requirements": "The Sims 2 Legacy Collection (EP9 behavior profile)",
+        "sha256": "a8bff82892277ee1a68538743585fb2f6e510a4fd5817e8826cb2939f926666c",
+        "format": "DXT3",
+        "asset": "painting:hills",
+        "recipe_asset": "painting-recipe:hills",
+        "thumbnail_asset": "painting-thumbnail:hills"
+      }
+    ],
+    "operations": [
+      "painting_inspect_image",
+      "painting_open",
+      "painting_compose",
+      "painting_prepare",
+      "painting_build",
+      "painting_validate"
+    ]
+  },
+  "sims": {
+    "version": 1,
+    "guided_version": 2,
+    "creation": "browser-wasm",
+    "experimental": true,
+    "downloads_enabled": false,
+    "gates": {
+      "single_package": "pending",
+      "persistent_head": "pending"
+    },
+    "items": [
+      {
+        "id": "am",
+        "label": "Adult Male",
+        "asset": "sim-rig:am",
+        "sha256": "15ec82ff9592c8189b5a1988683880428bb47a5cf541fad99cb9289553fe4fad"
+      },
+      {
+        "id": "af",
+        "label": "Adult Female",
+        "asset": "sim-rig:af",
+        "sha256": "db5413db87e726eadd349caa9d673281402cbb012b44176c9a013121cbda6951"
+      }
+    ],
+    "everyday_test": {
+      "version": 1,
+      "bodies": [
+        "am"
+      ],
+      "asset": "sim-everyday-test",
+      "head": "stock",
+      "gameplay": "not_tested"
+    },
+    "operations": [
+      "sim_align",
+      "sim_landmarks",
+      "sim_guided_fit",
+      "sim_inspect_model",
+      "sim_reference",
+      "sim_fit",
+      "sim_preview",
+      "sim_prepare",
+      "sim_build",
+      "sim_validate",
+      "sim_experimental_build"
+    ]
+  },
+  "limits": {
+    "build_timeout_ms": 600000,
+    "conversion": {
+      "files": 1,
+      "input_bytes": 33554432,
+      "output_bytes": 8388608
+    },
+    "hair": {
+      "builtin_colors": 43,
+      "custom_colors": 16,
+      "input_bytes": 134217728,
+      "package_bytes": 67108864,
+      "packages": 64,
+      "texture_slots": 16,
+      "zip_bytes": 536870912
+    },
+    "object": {
+      "input_bytes": 134217728,
+      "model_groups": 16,
+      "output_bytes": 134217728,
+      "package_bytes": 67108864,
+      "packages": 64,
+      "texture_dimension": 2048,
+      "vertices_per_group": 65535
+    },
+    "painting": {
+      "dimension": 8192,
+      "files": 1,
+      "formats": [
+        "png",
+        "jpeg",
+        "webp"
+      ],
+      "input_bytes": 33554432,
+      "output_bytes": 67108864,
+      "pixels": 32000000
+    },
+    "sim": {
+      "file_bytes": 67108864,
+      "files": 1,
+      "input_bytes": 134217728,
+      "output_bytes": 67108864
+    },
+    "storage_bytes": 2147483648,
+    "tattoo": {
+      "entries": 20,
+      "file_bytes": 8388608,
+      "files": 40,
+      "input_bytes": 134217728,
+      "output_bytes": 67108864
+    },
+    "wasm_heap_bytes": 1073741824
+  },
+  "ui": {
+    "sha256": "9410e69e94d556b780abe38b46bdcbf3e7f885ae42ef8394413bde22c7657aba",
+    "files": {
+      "app-wasm.js": {
+        "sha256": "33b382f4c602d91e9be9acebc77c2791cc4e4d0847b8e3c435f16c3edc1c27aa",
+        "size": 11864,
+        "mime": "text/javascript"
+      },
+      "body-preview.js": {
+        "sha256": "6c642c21942925fff432019cfb687923b261f1d76ebee91f5cd03dcb184036bc",
+        "size": 10011,
+        "mime": "text/javascript"
+      },
+      "body-preview.mjs": {
+        "sha256": "530a7749c5631f3bfeafefcc139d43274012f17275610539c927f1cae9828a10",
+        "size": 35,
+        "mime": "text/javascript"
+      },
+      "conversion-wasm.js": {
+        "sha256": "d711264e519402899f0992639c42ea276f5aebf35d670b8a327f5bac3607e2a2",
+        "size": 5517,
+        "mime": "text/javascript"
+      },
+      "deployment.js": {
+        "sha256": "6e7979f17ea19c5f49178aa97888b79e90c2149b3b1dac37c442723315d1efa8",
+        "size": 128,
+        "mime": "text/javascript"
+      },
+      "generated/contracts.d.ts": {
+        "sha256": "5dea88e0718e5e9c255f4f77afda619a40b9fb755cb9d114944ad4bde0c0a1a9",
+        "size": 4485,
+        "mime": "text/plain"
+      },
+      "generated/contracts.schema.json": {
+        "sha256": "366bedd9f672177a167b4f9eb578a01b3cbf119e806c3a9228bab4734ad974c0",
+        "size": 13783,
+        "mime": "application/json"
+      },
+      "generated/validators.d.mts": {
+        "sha256": "528f4ea46ac76709cc23417c900a9da57476db7d2b51fede1c13d61653e0f3bc",
+        "size": 460,
+        "mime": "text/plain"
+      },
+      "generated/validators.mjs": {
+        "sha256": "ea07a6a40d782836e2b9edbe5771b19329c9914a076b5c9a80d266e7a200e00a",
+        "size": 83567,
+        "mime": "text/javascript"
+      },
+      "hair-curves.js": {
+        "sha256": "c4198cddc9dfc0f3d2452a9f0846aa9000e973efcc0556ae2e18ab27ecb3f05e",
+        "size": 169,
+        "mime": "text/javascript"
+      },
+      "hair-wasm.js": {
+        "sha256": "025a0f41e4965266191c7b64ca0fbf32d1faceb72167d1a1ac48d6645ecd62c4",
+        "size": 18324,
+        "mime": "text/javascript"
+      },
+      "index-wasm.html": {
+        "sha256": "4897d7ed068af6b9c874716e6608eedd6b829a813b1cb4ab9dba6529d17ec7dc",
+        "size": 46006,
+        "mime": "text/html"
+      },
+      "lazy-bootstrap.js": {
+        "sha256": "a559a38061985142969bae2d42de15edc2f1722907e0f1fab338648def3b9a8b",
+        "size": 916,
+        "mime": "text/javascript"
+      },
+      "local-upscale/backend.js": {
+        "sha256": "2745a335a1fa4ed69d48c30c3ebccb4ff434885f90ed973b4a98ad0fb51bbb10",
+        "size": 166,
+        "mime": "text/javascript"
+      },
+      "local-upscale/client.js": {
+        "sha256": "cea1bb589bc58d8f4faa6fe262897e4df50f318c63858563716b1bfbf68c9365",
+        "size": 2276,
+        "mime": "text/javascript"
+      },
+      "local-upscale/models.js": {
+        "sha256": "f3dbbd223f03dfe89e26b8d15db1ffb389f31b8c7517d71b12902bc08418f493",
+        "size": 160,
+        "mime": "text/javascript"
+      },
+      "local-upscale/tiles.js": {
+        "sha256": "db9db6c192f2ca61dd9590e11f14675ed9f8c09fbba532d742cf7dc923a64ad4",
+        "size": 1562,
+        "mime": "text/javascript"
+      },
+      "local-upscale/worker.js": {
+        "sha256": "586c9101af2f4c737d3f3e596723c4a54519b7c006313950b76195ca5b8211c6",
+        "size": 78451,
+        "mime": "text/javascript"
+      },
+      "local-upscale/worker.mjs": {
+        "sha256": "586c9101af2f4c737d3f3e596723c4a54519b7c006313950b76195ca5b8211c6",
+        "size": 78451,
+        "mime": "text/javascript"
+      },
+      "object-preview.js": {
+        "sha256": "ffb784ab20442e473e82d6fb082f1da944e996cafc8fda589ac0ad10512e8e9c",
+        "size": 9169,
+        "mime": "text/javascript"
+      },
+      "object-preview.mjs": {
+        "sha256": "982f6ba87d3f67e3b7ee4c2954ab5528a848bdff9f10d970cfcfaa850e262cf4",
+        "size": 37,
+        "mime": "text/javascript"
+      },
+      "object-wasm.js": {
+        "sha256": "0e7fd4403726561b5ad9a5fe82461956900cb4f936b02f5005f829e90baaa7af",
+        "size": 20278,
+        "mime": "text/javascript"
+      },
+      "package-runtime/archives.js": {
+        "sha256": "fd86984304f595bc49472737b24ce690364f944895b49205f8f768406308b17c",
+        "size": 253,
+        "mime": "text/javascript"
+      },
+      "package-runtime/archives.mjs": {
+        "sha256": "cd69a9741545c513a23ea42994db674898ae9430610f81d86f4598b2764cc847",
+        "size": 31,
+        "mime": "text/javascript"
+      },
+      "package-runtime/assets.js": {
+        "sha256": "2ea17f88ff32b451d5cf3db66a0504ec5dc9c3990f7a419f3a620b30a62a69ca",
+        "size": 279,
+        "mime": "text/javascript"
+      },
+      "package-runtime/assets.mjs": {
+        "sha256": "58f0fa6050f959368f20e99d5b8354e1abbc28425af1ea68a7052243d55c786f",
+        "size": 29,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-4S2GP4D5.js": {
+        "sha256": "fac73023e4b3ac9cfc41a7d083fc5ba89b442df6054b7bb74a45df7f49c9fdc6",
+        "size": 13706,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-4TNKQTZ7.js": {
+        "sha256": "7bb5cad1d3db6e3ac425a6fb5bd9b469f3ea087ae3b3dc9aa1a6a1d9f3554d59",
+        "size": 1228,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-5VO4CSXY.js": {
+        "sha256": "ba22a889e322f9f2b87c2ab41b148e1e80a2e422a86ecac90021914601df1001",
+        "size": 157,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-6CNBBIAW.js": {
+        "sha256": "eb3025362d7e86dc400375dc6e84824c6cd5bd383d9d2593d4dc00ee47b749dc",
+        "size": 1603,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-6D3NE6FD.js": {
+        "sha256": "5d4c09477d6d01c2ec56c238e0a2a551cc71a670355f7d9d4ae3273da53a1f03",
+        "size": 338,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-ATLAXG5N.js": {
+        "sha256": "a84a605202814228656f26c7b43f5f5dec2dc15dfdc1f278de19f2434cfb9268",
+        "size": 1331,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-CHGUCK5R.js": {
+        "sha256": "4606d8910bd74b2555cb3c9ee801780d59d6d6102561ec0a2b776af7176b49d0",
+        "size": 2893,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-EZPW5OJS.js": {
+        "sha256": "d3738367ad53f5bf67ba2bd20f7046a64962ccd8ced54a343989f437b7ef35d9",
+        "size": 472,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-FMUN53RU.js": {
+        "sha256": "050d43214375ce403ab079bebe124c2c31d5d69678fbbfd23c6734898baa97a9",
+        "size": 627,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-FVFEOMFR.js": {
+        "sha256": "64d4cd531860d99dc90cc8162d929447f41b77317fad662a314e6476594d47b9",
+        "size": 171,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-FW3CI5VK.js": {
+        "sha256": "0b2af2a979c181a3617e3ec1a858dd504010474db54cbe6ffcc789ed1e0e077f",
+        "size": 8499,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-FZ6PF44G.js": {
+        "sha256": "5915dd99115e5835ce47ccce3b461a0fb396777665e427912d3cf96e92e93256",
+        "size": 114,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-GMWIPSBJ.js": {
+        "sha256": "dbf4c12b9d7172893b76bbcbd5fcdcf96ff02eb8ea111b615709f7ee46487110",
+        "size": 4384,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-GQABQQHG.js": {
+        "sha256": "cf43e9db0b44a7b664d879803f58ef938abba321517209cdc4fa0a3aa65c3b8e",
+        "size": 3903,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-HHZE2CJQ.js": {
+        "sha256": "8db251fe192f69cc7236738217b38f42ba07bca0ca78f1513a28f987c16adeac",
+        "size": 1738,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-HJR7NXAS.js": {
+        "sha256": "7d5db7674cd417aeea74e72ae835e48f0ad9c919b80c80634295d423da2f7ff0",
+        "size": 368,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-KC2QXYAK.js": {
+        "sha256": "fdc98da0aab251b71b24eece9e6289dc02fb6588ed288422a2a35a769435a6e4",
+        "size": 1114,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-M6IBJENM.js": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size": 0,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-MOHFFSC6.js": {
+        "sha256": "fbe68e361d192f765d9ce2140c8b9816596b7b2638b9f1037dbdb48bad6d546e",
+        "size": 711,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-MSQ25MWE.js": {
+        "sha256": "704e0ba845eb53ef38c2e6006a37d2c730cd982c17cc1ace04040b25d80c7cbf",
+        "size": 16605,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-NM6SVIVS.js": {
+        "sha256": "fcc9e16fa693a6c23102c0eec2c092f728ea85de000bf77951cfe0748a29ab8d",
+        "size": 2307,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-NPFFTYTB.js": {
+        "sha256": "4c036ca8a4baa093ab397f3bc26f275341944dac1f61b49a6b0a7301c5aa2c85",
+        "size": 850,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-NRHFGDLD.js": {
+        "sha256": "ff9e0dca4365b7b1581e7275f3c6dbcf1474ffb874d81a3375ecf7a835dbaa6f",
+        "size": 106,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-QUATDGKX.js": {
+        "sha256": "18480a3e5181685452044a1a0002462fcceb8ba41214f4c99440016bf62a7c13",
+        "size": 1863,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-QYIZDY4Q.js": {
+        "sha256": "10100c3bcbe57404e3f6367d400304a54047ee3ce0009d622920e6dd5964326d",
+        "size": 335,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-R6WLOSJ3.js": {
+        "sha256": "5301fb574c8b0d64b61d01a09eb30f07d3f2003872df9895ddd58d97c8100c46",
+        "size": 2120,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-RGAOL66P.js": {
+        "sha256": "aa537de345a3354e40b2fa142bfb19f49dc817c0186725b1d01ed809767d74dd",
+        "size": 1040,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-RSF57R2C.js": {
+        "sha256": "f8bf47ffb691a1a2518dbb27ba37a6e5c3ce4969d56383c4f9b77c46541b9a3b",
+        "size": 4375,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-SNELSPFA.js": {
+        "sha256": "5812128feab22568d33edee19c5223bde57b9de525a3a23cf70c57986b5129cc",
+        "size": 292,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-VHYXIJ7U.js": {
+        "sha256": "fa894c9e904dd30d82b7b6d21c53266f23eb31b7d429a6c2d2027398ec8fa7f0",
+        "size": 19825,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-WAJFN72Z.js": {
+        "sha256": "eecc0d5d68fd5fa1dac85b430c7069e51f68370c136361ffd018c85f952a325b",
+        "size": 3185,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-YCPJTZXD.js": {
+        "sha256": "cf8b95cfcd47acf0533755385a0a5bcd85d566a97dafc209be1ed042bc499d8a",
+        "size": 1008,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-YVYWA42I.js": {
+        "sha256": "d1ba103184ed543faf2bc6265806098a0b615ec91dc559bc44f8ffb0d15adfdf",
+        "size": 453,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-ZLKJ67PL.js": {
+        "sha256": "10a1b709b34a0638b038d36d40137a29067770e888056e0bf0116e0d213892e6",
+        "size": 1094,
+        "mime": "text/javascript"
+      },
+      "package-runtime/chunk-ZR2UFUQ7.js": {
+        "sha256": "53fe49b9bfda3981526f4782d5f061481ef7421f1ac94767e2b7c1c961a77f2e",
+        "size": 1679,
+        "mime": "text/javascript"
+      },
+      "package-runtime/client.js": {
+        "sha256": "8f016c8c4335f1c32c6eb93c3fc502c6f406a4d53ab87c85c21897dee2e95c7d",
+        "size": 1504,
+        "mime": "text/javascript"
+      },
+      "package-runtime/client.mjs": {
+        "sha256": "725d583c2ef7e7819865ee602accb33ce754237b57e7a7a0f614abc99411da2b",
+        "size": 29,
+        "mime": "text/javascript"
+      },
+      "package-runtime/conversion-adapter.js": {
+        "sha256": "ab8c1b49a41f328f09aa5aa139488dbcbb2e50d41afd1e879dc2d4b1b4aded64",
+        "size": 376,
+        "mime": "text/javascript"
+      },
+      "package-runtime/conversion-adapter.mjs": {
+        "sha256": "bceeeefb56ae1cb40199aa062533d962bee3a95ed6312902b4a32b6104b706a4",
+        "size": 41,
+        "mime": "text/javascript"
+      },
+      "package-runtime/downloads.js": {
+        "sha256": "a32a2663c18790a5b00653dc08b13f46b6c5e0b9a578c5e8275d4a5453797c29",
+        "size": 297,
+        "mime": "text/javascript"
+      },
+      "package-runtime/downloads.mjs": {
+        "sha256": "2f5036a4596c0bedddcede8a39734d0e31075031838bfea26b42b4e949dd7ee6",
+        "size": 32,
+        "mime": "text/javascript"
+      },
+      "package-runtime/errors.js": {
+        "sha256": "58c38b917ff98b2687a7d9720a328b90ac719f7dc95db21a1f59c32707c82b65",
+        "size": 90,
+        "mime": "text/javascript"
+      },
+      "package-runtime/errors.mjs": {
+        "sha256": "6d96f2605e7591e854f9828570631fd8aea23729baac4a8bd4c56c30a1cd4c76",
+        "size": 29,
+        "mime": "text/javascript"
+      },
+      "package-runtime/files.js": {
+        "sha256": "f36c3bd90c44fa2ec226cceed12925a99b598a204ddb273b8c958e76849d448b",
+        "size": 356,
+        "mime": "text/javascript"
+      },
+      "package-runtime/files.mjs": {
+        "sha256": "f6f53e0a68f5b18265e27b4bb57f979d581ce9c41015da40943399dec33b337e",
+        "size": 28,
+        "mime": "text/javascript"
+      },
+      "package-runtime/hash-worker.js": {
+        "sha256": "573d57683fbae4eb89a4d6236e548348e081bdf8450164aa5cf85c6ac36ea5ae",
+        "size": 2776,
+        "mime": "text/javascript"
+      },
+      "package-runtime/hash-worker.mjs": {
+        "sha256": "573d57683fbae4eb89a4d6236e548348e081bdf8450164aa5cf85c6ac36ea5ae",
+        "size": 2776,
+        "mime": "text/javascript"
+      },
+      "package-runtime/hashing.js": {
+        "sha256": "ee95da0a518db4934c3672b974b60f3e84e2d41da022138b76304725061d19f1",
+        "size": 86,
+        "mime": "text/javascript"
+      },
+      "package-runtime/hashing.mjs": {
+        "sha256": "c0b10ab755ff7c2b5dc1fd386607d8c37bfc4fcc17d6bca220b9f84f2c8d09dc",
+        "size": 30,
+        "mime": "text/javascript"
+      },
+      "package-runtime/lifecycle.js": {
+        "sha256": "fccea8be56ba71920700a508a749912aa2e2f50539b7f96eb775c6a32bd97ea4",
+        "size": 908,
+        "mime": "text/javascript"
+      },
+      "package-runtime/lifecycle.mjs": {
+        "sha256": "c9053bd9027872076ae2ec1fad7ce98a04c6c1a16e2fd2050c779270f1132797",
+        "size": 32,
+        "mime": "text/javascript"
+      },
+      "package-runtime/object-adapter.js": {
+        "sha256": "252e1beb8f47498fa9b4c15170a31408e28dc2077eb9de5d9d57076c299c37ab",
+        "size": 629,
+        "mime": "text/javascript"
+      },
+      "package-runtime/object-adapter.mjs": {
+        "sha256": "d1f0ce62d81d91036c7ced881fcd993c8af2c08b2d3acb570eb75e27ba9c0a9a",
+        "size": 37,
+        "mime": "text/javascript"
+      },
+      "package-runtime/painting-adapter.js": {
+        "sha256": "e4fb1728125ff68bdeece43da5ef7e76f1b0ab982d4a285888779ddea98812c2",
+        "size": 685,
+        "mime": "text/javascript"
+      },
+      "package-runtime/painting-adapter.mjs": {
+        "sha256": "c4d13e16578da01ff9d769d87c441d91ecc703f66942c351b5b361ebac16a0ef",
+        "size": 39,
+        "mime": "text/javascript"
+      },
+      "package-runtime/queue.js": {
+        "sha256": "1e1a30b2bd03962b9fcdab24a96e969c20c03b7aaf692d2bb7fed1522353fe1a",
+        "size": 351,
+        "mime": "text/javascript"
+      },
+      "package-runtime/queue.mjs": {
+        "sha256": "b1e1fc8c59777a9583f993273d1d2baecfb4a2b5433e2f0e5edb7f9fa6d03ebb",
+        "size": 28,
+        "mime": "text/javascript"
+      },
+      "package-runtime/saved-panel.js": {
+        "sha256": "1705b2e88f41c4c8f75cee66f3c3c4516348526660fdbb2ea1e55895c57d58dc",
+        "size": 290,
+        "mime": "text/javascript"
+      },
+      "package-runtime/saved-panel.mjs": {
+        "sha256": "bcd8df9526884068ae0d6f19c387d02d540eb14656b58ecb6b421c481167b623",
+        "size": 34,
+        "mime": "text/javascript"
+      },
+      "package-runtime/session.js": {
+        "sha256": "05790a7fbbdf5a402645c4a0aa86c3259a2f48e5ef5243e662f0c4f5af1c14c8",
+        "size": 371,
+        "mime": "text/javascript"
+      },
+      "package-runtime/session.mjs": {
+        "sha256": "56f0ac635c4d902e16bf41dc7b652d613fa83f5bfb2958c2c2e557628f098f87",
+        "size": 30,
+        "mime": "text/javascript"
+      },
+      "package-runtime/sha256.js": {
+        "sha256": "56612e0615b46374275322767a32c4cdfea407123e8882268bc82627f1a0a23d",
+        "size": 84,
+        "mime": "text/javascript"
+      },
+      "package-runtime/sha256.mjs": {
+        "sha256": "cc21e245440a423e800aa77f6164d9ec47ee3a5d24f2c63585ce8ac437ead7d0",
+        "size": 29,
+        "mime": "text/javascript"
+      },
+      "package-runtime/sim-adapter.js": {
+        "sha256": "50f04572f381a53791c38fc3b5e901839080ec6abaaeb12bad2678f94ab6a63b",
+        "size": 672,
+        "mime": "text/javascript"
+      },
+      "package-runtime/sim-adapter.mjs": {
+        "sha256": "cd92153e1d262ddc33220c7f718469ede09359620864a1cd21d8add671f7ee92",
+        "size": 34,
+        "mime": "text/javascript"
+      },
+      "package-runtime/storage-metadata.js": {
+        "sha256": "5e80b4b9692005004d054830567dc2cc2c56a3b2fd9526e9ca22ab549875dab7",
+        "size": 342,
+        "mime": "text/javascript"
+      },
+      "package-runtime/storage-metadata.mjs": {
+        "sha256": "bae23cba1328d75c5e6c7411e2d0fed1c4d5b5c36665e6a3d4d8c4cb800afe8b",
+        "size": 39,
+        "mime": "text/javascript"
+      },
+      "package-runtime/store.js": {
+        "sha256": "2b7470194e44d82e5730dda78ef4367205e4cb5f6937950116872a9cd2dd8ac8",
+        "size": 664,
+        "mime": "text/javascript"
+      },
+      "package-runtime/store.mjs": {
+        "sha256": "8afc6d0ea3a56716f9c214a966713272c07420ca81f6c95e2f969260182b7250",
+        "size": 28,
+        "mime": "text/javascript"
+      },
+      "package-runtime/streaming-sha256.js": {
+        "sha256": "7d8ab584b812b02c639ce9691440c9b83dd929b97958ff8a08951ea606bc5cf8",
+        "size": 2270,
+        "mime": "text/javascript"
+      },
+      "package-runtime/streaming-sha256.mjs": {
+        "sha256": "5e4606bab1d044bdf16321026ae20ee400f8411cced925d0c54ff8b997d71484",
+        "size": 39,
+        "mime": "text/javascript"
+      },
+      "package-runtime/types.js": {
+        "sha256": "fa995d1d96768a828466db51a9a1038dd009fe8b9ab3ce87524b8d0f386d6551",
+        "size": 107,
+        "mime": "text/javascript"
+      },
+      "package-runtime/types.mjs": {
+        "sha256": "1c7764ba79b08ea4de0d9435cff463fc4df1fe6c16d3e1a32a40e2c11508e147",
+        "size": 28,
+        "mime": "text/javascript"
+      },
+      "package-runtime/validation.js": {
+        "sha256": "fe3fdcc97b5496127cbf419d1470ea9123488b396b9b0235eaa24805fb15a385",
+        "size": 169,
+        "mime": "text/javascript"
+      },
+      "package-runtime/validation.mjs": {
+        "sha256": "c3541bb5a1f25a4b019bef16f7f44911fea9b05008ee8d8bed4e1d870f8c97a5",
+        "size": 33,
+        "mime": "text/javascript"
+      },
+      "package-runtime/worker.js": {
+        "sha256": "5225d1a2b9331471197a70af13389045e9fbff25f26d05dde20a9921c1f75354",
+        "size": 5463,
+        "mime": "text/javascript"
+      },
+      "package-runtime/worker.mjs": {
+        "sha256": "5225d1a2b9331471197a70af13389045e9fbff25f26d05dde20a9921c1f75354",
+        "size": 5463,
+        "mime": "text/javascript"
+      },
+      "package-runtime/zip.js": {
+        "sha256": "3e7f4de1cb71823bc78e4a94a9e54a29be3fa8678d92c8d6a88ccf49f4521fa5",
+        "size": 14511,
+        "mime": "text/javascript"
+      },
+      "package-runtime/zip.mjs": {
+        "sha256": "6b924afe10d9bcafb53bd25a82f39e4c06e0cd87e513ffdb98d2dc3890ac639d",
+        "size": 26,
+        "mime": "text/javascript"
+      },
+      "painting-preview.js": {
+        "sha256": "f968da2835b19025bfad3f0a1d09d11fc912ee8ebdf0e0b3f1ea6f8863418da6",
+        "size": 4797,
+        "mime": "text/javascript"
+      },
+      "painting-preview.mjs": {
+        "sha256": "5b401844dddff48be30eb3a8d5c2b8eccbe5ca28720d37301641f4ae9a9b670b",
+        "size": 39,
+        "mime": "text/javascript"
+      },
+      "painting-wasm.js": {
+        "sha256": "4a1f001ce0255335d13f00dbfcba1cba22eb30279ac883fd3282f93b16735e3a",
+        "size": 11061,
+        "mime": "text/javascript"
+      },
+      "preview-textures.js": {
+        "sha256": "c18917eefc79b63729aa342e9ee6224f66f04ff4d715e7ca0b3fb552167c08f7",
+        "size": 169,
+        "mime": "text/javascript"
+      },
+      "preview-textures.mjs": {
+        "sha256": "f624ecc2f09ce8a23f885b23596a778e50c560bfc82171c3aeb6354bad0e67bc",
+        "size": 39,
+        "mime": "text/javascript"
+      },
+      "scale-scene.js": {
+        "sha256": "ecf987742ce61a293f1717e1228b65236ef2a892d08ff262f265b92bd26a4932",
+        "size": 251,
+        "mime": "text/javascript"
+      },
+      "scale-scene.mjs": {
+        "sha256": "ed33b8d529d4c806fecc25bb85f2be23c5e6057c9833edf04a77816ededc7330",
+        "size": 34,
+        "mime": "text/javascript"
+      },
+      "shared/autosave.js": {
+        "sha256": "78aba9b7115e9c869a0728db059840943942f1cee195ae256ddafb55d12f0e45",
+        "size": 131,
+        "mime": "text/javascript"
+      },
+      "shared/destinations.js": {
+        "sha256": "2d62dd61df599506dd75bb7366b4f33bff0c55d11cc87f8a7070fc0e1b75b027",
+        "size": 164,
+        "mime": "text/javascript"
+      },
+      "shared/dom.js": {
+        "sha256": "b3ec6292a227c4a52123f311df55f7377d06af2f964a6c9cd27a4a314711ae15",
+        "size": 159,
+        "mime": "text/javascript"
+      },
+      "shared/navigation.js": {
+        "sha256": "2881f80d199614dc13e4ef0fa772c37b78761c7b7e6cd4c8ba55e7c8d1cc7357",
+        "size": 262,
+        "mime": "text/javascript"
+      },
+      "shared/scene-types.js": {
+        "sha256": "f999e97b73b0cfe9750fdffea2e43fbf159ff08c5eda34401bce905a422839ac",
+        "size": 128,
+        "mime": "text/javascript"
+      },
+      "sim-preview.js": {
+        "sha256": "2d3f1f8be07bab0b7b3767901aaa7bc5147b566fe5e341cc8e7bb2e620050373",
+        "size": 16202,
+        "mime": "text/javascript"
+      },
+      "sim-preview.mjs": {
+        "sha256": "7d1288f6cd42134caa70ea6d95167c069d6eab699ff288a9c0ce6b3db0379f0c",
+        "size": 34,
+        "mime": "text/javascript"
+      },
+      "sim-wasm.js": {
+        "sha256": "6628cdac283211f5946a3c611c2627e0aed6b3721f1f33dd1952496571d01acf",
+        "size": 17470,
+        "mime": "text/javascript"
+      },
+      "style.css": {
+        "sha256": "0becfcdee5b59331c31060fd28b164662ab01ce875b69e4b70f763ccebff0890",
+        "size": 30586,
+        "mime": "text/css"
+      },
+      "texture-compression.js": {
+        "sha256": "ab4d2213998300a0a321155654d8c535d6ff1bcff4f8db5f171c46a61ec4146a",
+        "size": 128,
+        "mime": "text/javascript"
+      },
+      "upscale-download.js": {
+        "sha256": "69e11fa398f9ff5dc13a698df67318db9714c186eacde4930aa2e5861acbfa63",
+        "size": 147,
+        "mime": "text/javascript"
+      },
+      "upscale-image.js": {
+        "sha256": "c4b41de55471ea7f8434eb96c37b5fbe3e4abc62f5800b7be7c30cab4bc1d7c3",
+        "size": 386,
+        "mime": "text/javascript"
+      },
+      "upscale.js": {
+        "sha256": "1b8c88298d0f0167e1c84c025195d0719ee339d865f81ff160954b6806e2bbba",
+        "size": 7471,
+        "mime": "text/javascript"
+      },
+      "vendor/OBJECT-OPTIMIZER-LICENSES.txt": {
+        "sha256": "a04873cccb75e2fbf817be598c72442ee8b04a470604a4b28f1f69dafb0d7770",
+        "size": 12170,
+        "mime": "text/plain"
+      },
+      "vendor/THREE-LICENSE.txt": {
+        "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+        "size": 1081,
+        "mime": "text/plain"
+      },
+      "vendor/local-upscale/LICENSE": {
+        "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+        "size": 1073,
+        "mime": "text/plain"
+      },
+      "vendor/local-upscale/ThirdPartyNotices.txt": {
+        "sha256": "e9e90971a8e75a9a8ac0c6412e29c1202d079998389915aa485f46c816c3b4cc",
+        "size": 326866,
+        "mime": "text/plain"
+      },
+      "vendor/local-upscale/ort-wasm-simd-threaded.jsep.mjs": {
+        "sha256": "d140eb641c99f92cfabd68894f5e40c41d9329bc46b864150f34ee938d4d5576",
+        "size": 44677,
+        "mime": "text/javascript"
+      },
+      "vendor/local-upscale/ort-wasm-simd-threaded.jsep.wasm": {
+        "sha256": "b45970d0632383a057c27ca5b660b216f8e00c17cf8db9f6207b5e4abc839368",
+        "size": 21872216,
+        "mime": "application/wasm"
+      },
+      "vendor/local-upscale/ort-wasm-simd-threaded.mjs": {
+        "sha256": "4d169e2f2195e6221749f4fe69c2361c883d731430fdc88037106b6fcb56f7c6",
+        "size": 20856,
+        "mime": "text/javascript"
+      },
+      "vendor/local-upscale/ort-wasm-simd-threaded.wasm": {
+        "sha256": "71aef04959c5c1b6de461b6538e2058e306610034a85aad2742d0c7fd4533fe4",
+        "size": 11210254,
+        "mime": "application/wasm"
+      },
+      "vendor/local-upscale/ort.wasm.min.mjs": {
+        "sha256": "6ef726f355b791129f7ddf3f62e7877a16b9b777abe87004b8ab306e6b9cf265",
+        "size": 48259,
+        "mime": "text/javascript"
+      },
+      "vendor/local-upscale/ort.webgpu.min.mjs": {
+        "sha256": "e131e81c9324807e1e6f9103e8f8e936112827dcc9993cde9407a333b1f07ae0",
+        "size": 357582,
+        "mime": "text/javascript"
+      },
+      "vendor/object-optimizer.js": {
+        "sha256": "c87ee037121c14153162ef5fecf76392a8b12355fac648c4dc2e5b64488ede44",
+        "size": 254328,
+        "mime": "text/javascript"
+      },
+      "vendor/package-archive.js": {
+        "sha256": "850137e3abe9573e733e73c720d9ca6e66b3feaca46a84f2f2b82994c85600ec",
+        "size": 14483,
+        "mime": "text/javascript"
+      },
+      "vendor/three-preview.js": {
+        "sha256": "ec34aba3f0477ca21a7b6854602cb1f66877207b45cd91fd0250a2b7324036a2",
+        "size": 629975,
+        "mime": "text/javascript"
+      },
+      "vendor/vendor-sources.json": {
+        "sha256": "7a145889f5d483441ae7055f405644335c66d4d754d831c2cc5bac11410544fe",
+        "size": 550,
+        "mime": "application/json"
+      }
+    },
+    "base": "static/releases/9410e69e94d556b780abe38b46bdcbf3e7f885ae42ef8394413bde22c7657aba/"
+  },
+  "build": {
+    "source_sha256": "cbb9e5c618dbb258d7f66ac0d8ef561b49168dacced7fc9c24b59626e0218aa2",
+    "uv_lock": "e50f2ec3d30f76369b9b23943db2457f6b64bd6a2b09ba5d3964c7b5d3d78251",
+    "commit": "63b1f61e291d541e8a45505b5b8ade5ff9d375ed",
+    "source_date_epoch": 0,
+    "rust": "rustc 1.89.0 (29483883e 2025-08-04)",
+    "node": "v22.18.0",
+    "python": "Python 3.11.14",
+    "wasm_bindgen": "wasm-bindgen 0.2.127",
+    "clang": "clang version 20.1.8-wasi-sdk (https://github.com/llvm/llvm-project 87f0227cb60147a26a1eeb4fb06e3b505e9c7261)",
+    "cargo_lock": "67f9e2ae6e7aa856d624c8c2e6b29b34fbab559973b7d03b5b53483295b93d2c",
+    "npm_lock": "2faca936be7b7562d5f628234ef52546ccadd7eb395b9816bf80cb2e0c43369d"
+  },
+  "deployment": {
+    "kind": "static",
+    "base_path": "/sims2-creator-tools/",
+    "root_supported": true
+  },
+  "release": "9d4fedca55cbb73cadffcb53a3fcb904bd76220f9ee72f6ca43901f21fe9aa9c"
+}

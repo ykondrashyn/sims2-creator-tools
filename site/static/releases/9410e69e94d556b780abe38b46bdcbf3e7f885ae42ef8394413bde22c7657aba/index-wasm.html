@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sims 2 Creator Tools</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to content</a>
+  <div class="app-shell">
+    <header class="page-header">
+      <a class="site-title" href="#/home" data-destination="home">Sims 2 Creator Tools</a>
+      <button id="tools-toggle" class="tools-toggle secondary" type="button" aria-expanded="false" aria-controls="tool-drawer" aria-haspopup="dialog">Tools · <span id="current-destination">Home</span><span aria-hidden="true"> ▾</span></button>
+    </header>
+
+    <div class="workspace-layout">
+    <aside id="sidebar-navigation"><nav id="tool-navigation" aria-label="Creator tools"></nav></aside>
+    <main id="workspace" tabindex="-1">
+    <p id="navigation-notice" class="inline-status" role="status" hidden></p>
+    <section id="navigation-feedback" class="panel" aria-labelledby="navigation-heading" hidden>
+      <h2 id="navigation-heading" tabindex="-1"></h2>
+      <p id="navigation-message" role="status"></p>
+      <button id="navigation-retry" type="button" class="secondary" hidden>Retry</button>
+    </section>
+    <section id="home-tool" class="tool-panel" aria-labelledby="home-heading">
+      <div class="welcome-hero">
+        <p class="welcome-eyebrow">Your next Sims 2 project</p>
+        <h1 id="home-heading">Create custom content for The Sims 2</h1>
+        <p>Make tattoos, recolor hair, turn models into decorations, or frame your own pictures. You can also convert body textures and upscale images. Everything is processed in your browser.</p>
+      </div>
+      <div id="home-cards"></div>
+      <details class="welcome-help">
+        <summary>Before you start</summary>
+        <p>Saved creator batches belong to this browser and site address. Work saved on the LAN site stays there. Clearing site data or browser eviction can remove saved work.</p>
+        <p>Upscaling images and results last only for this page session. Download the result before closing or reloading the page.</p>
+        <p>A tool downloads its engine and reference files when needed. Upscaling also downloads the selected AI model on first use. CPU processing is available without a supported GPU. WebGPU needs a compatible browser and GPU, plus HTTPS or localhost.</p>
+        <p>Check each template’s game requirements before installing a package. Some need an expansion or the Legacy Collection. Keep required custom meshes with their recolors.</p>
+        <p>Upscaling can change or invent details. A browser preview shows appearance, but does not establish compatibility in the game. Sim creator is experimental and currently exports only an Adult Male Everyday body for testing, without the custom head.</p>
+      </details>
+      <noscript><p>Enable JavaScript to use the browser tools.</p></noscript>
+    </section>
+
+    <section id="texture-tool" class="tool-panel" hidden>
+      <form id="converter-form" class="panel converter-panel">
+        <h2>Body texture converter</h2>
+        <p class="panel-intro">Choose a 1024 × 2048 RGBA PNG for the TS4 body.</p>
+        <fieldset class="preset-field">
+          <legend>Body</legend>
+          <div class="preset-options">
+            <label class="preset-option"><input type="radio" name="converter-preset" value="am" checked> Male</label>
+            <label class="preset-option"><input type="radio" name="converter-preset" value="af"> Female</label>
+          </div>
+        </fieldset>
+        <label class="file-field">Texture PNG<input id="converter-texture" type="file" accept="image/png" required></label>
+        <p id="conversion-file-name" class="build-note" hidden></p>
+        <p class="build-note">Converted in your browser. Your texture stays on this device.</p>
+        <div class="status-actions">
+          <button id="convert-button" type="submit" class="primary">Convert and download</button>
+          <button id="conversion-retry" type="button" class="primary" hidden>Retry</button>
+          <a id="conversion-download" class="download" hidden>Download PNG</a>
+          <button id="conversion-cancel" type="button" class="secondary" hidden>Cancel</button>
+          <button id="conversion-new" type="button" class="text-button">New conversion</button>
+        </div>
+        <progress id="conversion-progress" max="100" value="0" aria-label="Conversion progress" hidden></progress>
+        <p id="conversion-status" class="inline-status" role="status" hidden></p>
+      </form>
+      <div id="converter-saved"></div>
+      <section id="converted-preview-panel" class="panel" aria-label="Converted texture preview" hidden>
+        <h2>3D texture preview</h2>
+        <p id="converted-preview-caption" class="panel-intro"></p>
+        <p id="converted-preview-error" class="inline-status" role="status" hidden></p>
+        <div id="converted-body-preview"></div>
+      </section>
+    </section>
+
+    <form id="build-form" class="tool-panel" hidden>
+      <section class="panel">
+        <h2>Tattoos</h2>
+        <div class="field-grid">
+          <label>Name<input id="catalog-name" maxlength="120" required placeholder="Yakuza Tattoos"></label>
+          <label><span>Description <span class="optional">optional</span></span><textarea id="catalog-description" maxlength="1000" rows="2" placeholder="Adult and elder body overlays"></textarea></label>
+          <input id="bundle-slug" type="hidden">
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="section-heading">
+          <div class="heading-with-count">
+            <h2>Tattoos</h2>
+            <span id="tattoo-count">0 / 20</span>
+          </div>
+          <button type="button" id="add-tattoo" class="secondary">Add tattoo</button>
+        </div>
+        <div id="tattoo-list"></div>
+      </section>
+
+      <section class="panel" aria-label="Tattoo texture preview">
+        <h2>3D texture preview</h2>
+        <p class="panel-intro">Inspect placement, seams and overlapping tattoos on the male or female TS2 body.</p>
+        <button id="open-tattoo-preview" class="secondary" type="button">Show 3D preview</button>
+        <p id="tattoo-preview-error" class="inline-status" role="status" hidden></p>
+        <div id="tattoo-body-preview"></div>
+      </section>
+
+      <section class="build-panel">
+        <button id="build-button" type="submit" class="primary">Create package</button>
+        <p class="build-note">Created in your browser. Adult and Elder. Add a male texture, a female texture, or both.</p>
+        <div id="build-status" class="status" aria-live="polite" hidden>
+          <div class="status-row"><strong id="status-label">Preparing</strong><span id="status-percent">0%</span></div>
+          <div class="progress-track"><div id="progress-bar"></div></div>
+          <p id="status-message"></p>
+          <div class="status-actions">
+            <a id="download-link" class="download" hidden>Download .package</a>
+            <button id="retry-build" type="button" class="secondary" hidden>Retry</button>
+            <button id="cancel-build" type="button" class="text-button" hidden>Cancel</button>
+          </div>
+        </div>
+      </section>
+    </form>
+    <section id="hair-tool" class="tool-panel" hidden>
+      <form id="hair-form" novalidate>
+        <div class="hair-intro">
+          <h2>Hair recolors</h2>
+          <p>Choose a hairstyle, pick colors or add your own curves, and create packages in your browser. Your files stay on this device.</p>
+        </div>
+        <section class="panel" aria-labelledby="hair-source-heading">
+          <h3 id="hair-source-heading" class="hair-step">1. Choose a hairstyle</h3>
+          <div class="field-grid">
+            <label>Hairstyle source<select id="hair-mesh-source"><option value="standard">Standard in-game</option><option value="upload">Upload packages</option></select></label>
+            <label id="hair-standard-options">In-game hairstyle<select id="hair-template-select"><option value="">Choose a hairstyle</option></select></label>
+          </div>
+          <div id="hair-upload-options" hidden>
+            <div class="field-grid">
+              <label class="file-field">Mesh packages (required)<input id="hair-mesh-files" type="file" accept=".package" multiple aria-describedby="hair-upload-help" required></label>
+              <label class="file-field">Recolor packages (required)<input id="hair-recolor-files" type="file" accept=".package" multiple aria-describedby="hair-upload-help" required></label>
+            </div>
+            <p id="hair-upload-help" class="build-note">Both are required. Choose the mesh and at least one matching recolor .package. The recolor includes textures and transparency. Extract any ZIP first.</p>
+            <button id="hair-import-retry" type="button" class="secondary" hidden>Retry package inspection</button>
+            <label id="hair-upload-recolor-field" hidden>Recolor to use<select id="hair-upload-recolor"><option value="">Choose a recolor</option></select></label>
+          </div>
+          <p id="hair-source-status" class="inline-status" role="status" aria-live="polite">Loading hairstyles…</p>
+          <div id="hair-template-summary" class="hair-template" hidden>
+            <strong id="hair-template-label"></strong>
+            <p id="hair-template-detail"></p>
+            <details><summary>Installation requirements</summary><p id="hair-requirements"></p></details>
+          </div>
+        </section>
+
+        <section id="hair-colors-section" class="panel" aria-labelledby="hair-colors-heading" hidden>
+          <div class="section-heading"><h3 id="hair-colors-heading" class="hair-step">2. Choose colors</h3><span id="hair-selected-count"></span></div>
+          <div class="field-grid hair-palette-actions">
+            <label>Quick selection<select id="hair-selection">
+              <option value="">Choose a color set</option><option value="all">All colors</option><option value="natural">All natural colors</option>
+              <optgroup label="Natural families, one black, brown, blond and red">
+                <option value="1">Family 1: Dynamite, Depth Charge, Incendiary, Explosive</option>
+                <option value="2">Family 2: Shrapnel, Safety Fuse, Volatile, Pyrotechnic</option>
+                <option value="3">Family 3: Land Mine, Fission, Grenade, Comburent</option>
+                <option value="4">Family 4: Flash Powder, Brisance, Primer, Molotov</option>
+              </optgroup>
+              <option value="unnatural">All custom colors</option><option value="grey">Elder greys</option><option value="none">Clear selection</option>
+            </select></label>
+            <label>Show<select id="hair-filter"><option value="all">All colors</option><option value="selected">Selected colors</option><option value="natural">Natural</option><option value="unnatural">Custom</option><option value="grey">Elder greys</option></select></label>
+          </div>
+          <p class="build-note">Built-in palette: 43 fixed Pooklet presets. Add your own colors below.</p>
+          <div id="hair-palette" class="hair-palette"></div>
+          <p id="hair-filter-empty" class="build-note" hidden>No colors in this view.</p>
+          <p id="hair-family-note" class="build-note"></p>
+          <section id="hair-own-colors" hidden aria-labelledby="hair-own-heading">
+            <h4 id="hair-own-heading">Your colors, this job only</h4>
+            <div id="hair-own-palette" class="hair-palette"></div>
+          </section>
+          <details id="hair-curve-section" class="hair-curve-section">
+            <summary>Add your own color</summary>
+            <p class="build-note">Import a GIMP preset or draw a curve. All colors use the prepared Volatile base. Your curves stay in this browser until you delete the batch.</p>
+            <div class="field-grid">
+              <label>Add method<select id="hair-curve-mode"><option value="gimp">Import GIMP curve</option><option value="editor" selected>Create curve</option></select></label>
+              <label>Color name (required)<input id="hair-curve-name" maxlength="48" autocomplete="off" placeholder="My color" aria-required="true"></label>
+              <label>Game category<select id="hair-curve-bin"><option value="0">Custom</option><option value="1">Black</option><option value="2">Brown</option><option value="3">Blond</option><option value="4">Red</option></select></label>
+            </div>
+            <p class="build-note">Custom keeps its color for Elders. Natural categories use Mail Bomb grey for Elders and have independent hairstyle families.</p>
+            <div id="hair-curve-upload" hidden>
+              <label class="file-field">GIMP curve file<input id="hair-curve-file" type="file" aria-describedby="hair-curve-file-note"></label>
+              <p id="hair-curve-file-note" class="build-note"></p>
+            </div>
+            <label>Curve channel<select id="hair-curve-channel"><option value="value">Value (all RGB channels)</option><option value="red">Red</option><option value="green">Green</option><option value="blue">Blue</option></select></label>
+            <div class="hair-curve-workspace">
+              <figure><svg id="hair-curve-graph" viewBox="0 0 300 300" role="group" tabindex="0" aria-describedby="hair-curve-graph-help"></svg><figcaption id="hair-curve-graph-help">Input: left to right, 0–255. Output: bottom to top, 0–255. Transparency stays unchanged.</figcaption></figure>
+              <div id="hair-curve-point-controls">
+                <label>Control point<select id="hair-curve-point"></select></label>
+                <div class="field-grid"><label>Input<input id="hair-curve-input" type="number" min="0" max="255" step="1"></label><label>Output<input id="hair-curve-output" type="number" min="0" max="255" step="1"></label></div>
+                <div class="hair-curve-buttons"><button type="button" id="hair-curve-add-point" class="secondary">Add point</button><button type="button" id="hair-curve-delete-point" class="text-button">Delete point</button><button type="button" id="hair-curve-reset" class="text-button">Reset channel</button></div>
+                <p class="build-note">Click the graph to add a point. Drag or use arrow keys to move it. Hold Shift for larger steps.</p>
+              </div>
+            </div>
+            <p id="hair-curve-status" class="inline-status error" role="status" aria-live="polite"></p>
+            <div class="hair-curve-buttons"><button type="button" id="hair-curve-save" class="secondary">Add color</button><button type="button" id="hair-curve-cancel" class="text-button">Cancel</button></div>
+            <p class="build-note">After adding your color, use Preview colors to check the texture before creating packages.</p>
+          </details>
+        </section>
+
+        <section id="hair-export-section" class="panel" aria-labelledby="hair-export-heading" hidden>
+          <h3 id="hair-export-heading" class="hair-step">3. Preview and download</h3>
+          <div class="field-grid">
+            <label>Creator<input id="hair-creator" required maxlength="48" pattern="[A-Za-z0-9][A-Za-z0-9_\x2D]{0,47}" placeholder="Creator" autocomplete="off" aria-describedby="hair-name-help"></label>
+            <label>Hair name<input id="hair-name" required maxlength="48" pattern="[A-Za-z0-9][A-Za-z0-9_\x2D]{0,47}" placeholder="HairName" autocomplete="off" aria-describedby="hair-name-help"></label>
+          </div>
+          <p id="hair-name-help" class="build-note">Used in the filenames. Letters, numbers, underscores and hyphens.</p>
+          <details id="hair-editor" class="hair-editor">
+            <summary>Texture preview and adjustments <span id="hair-editor-count" class="optional"></span></summary>
+            <div class="field-grid">
+              <label id="hair-preview-slot-field">Texture<select id="hair-preview-slot" data-review-control></select></label>
+              <label id="hair-preview-color-field" hidden>Preview color<select id="hair-preview-color" data-review-control></select></label>
+            </div>
+            <p id="hair-preview-note" class="build-note"></p>
+            <div id="hair-base-previews" class="hair-base-previews"></div>
+            <p id="hair-base-note" class="build-note"></p>
+            <details id="hair-adjustments">
+              <summary>Adjust input base <span class="optional">Optional</span></summary>
+              <label>Input base<select id="hair-base"></select></label>
+              <div id="hair-levels" class="field-grid hair-levels">
+                <label>Black point<input id="hair-black" type="number" value="0" min="0" max="254" step="1"></label>
+                <label>White point<input id="hair-white" type="number" value="255" min="1" max="255" step="1"></label>
+                <label>Midtone gamma<input id="hair-gamma" type="number" value="1" min="0.1" max="5" step="0.05"></label>
+              </div>
+              <div class="hair-adjust-actions"><p class="build-note">Changes apply only to this texture. A known Pooklet base uses its supplied conversion curve.</p><button id="hair-base-reset" type="button" class="text-button">Reset this texture</button></div>
+            </details>
+          </details>
+          <div class="hair-download-summary">
+            <strong id="hair-zip-name"></strong><p id="hair-zip-detail" class="build-note"></p>
+            <details><summary>View package filenames</summary><ul id="hair-filenames"></ul></details>
+          </div>
+          <p id="hair-status" class="inline-status" role="status" aria-live="polite"></p>
+          <progress id="hair-progress" max="1" value="0" hidden aria-label="Package generation"></progress>
+          <div class="status-actions hair-actions">
+            <button id="hair-primary" type="submit" class="primary">Preview colors</button>
+            <button id="hair-cancel" type="button" class="text-button" hidden>Cancel build</button>
+            <button id="hair-new" type="button" class="text-button" hidden>Edit hairstyle or names</button>
+          </div>
+        </section>
+      </form>
+    </section>
+    <section id="object-tool" class="tool-panel" hidden>
+      <div class="section-heading"><h2>Object creator</h2><p>Turn your 3D model into a Sims 2 decoration. Use an existing object as its template, then download a ready-to-install package. Everything runs in your browser.</p></div>
+      <form id="object-form">
+        <section class="card">
+          <h3>1. Choose a template</h3>
+          <p class="build-note">The template supplies the object's behavior and placement rules. Your model supplies its appearance.</p>
+          <div class="object-fields">
+            <label>Template source<select id="object-source"><option value="standard">Standard in-game</option><option value="upload">Upload a template package</option></select></label>
+            <label id="object-standard-label">Template<select id="object-standard" aria-describedby="object-template-summary"></select></label>
+          </div>
+          <p id="object-template-note" class="build-note"></p>
+          <div id="object-upload" hidden><label>Template and dependency packages<input id="object-packages" type="file" accept=".package" multiple></label><p class="build-note">Select one supported floor or tabletop decoration package, plus any custom mesh or texture packages it needs.</p><button id="object-inspect" type="button" class="secondary">Check template</button></div>
+          <div id="object-template-info" class="object-template-info" role="region" aria-labelledby="object-template-title" aria-live="polite" aria-atomic="true" hidden>
+            <h4 id="object-template-title"></h4>
+            <p id="object-template-summary"></p>
+            <dl id="object-template-facts"></dl>
+            <p id="object-template-behavior" class="build-note"></p>
+          </div>
+          <p id="object-inspection" class="build-note" role="status"></p>
+        </section>
+        <section class="card" id="object-model-fields">
+          <h3>2. Import and preview your model</h3>
+            <label>3D model<input id="object-model" type="file" accept=".glb,.zip" required></label>
+            <p id="object-model-note" class="build-note">Choose a GLB, or a ZIP containing one glTF scene and its textures.</p>
+            <details class="object-model-help"><summary>Supported models</summary><p class="build-note">Use a static triangle model with UV coordinates and PNG/JPEG textures, up to 2048 pixels per side. Materials can be opaque or use cutout transparency. Bake complex materials and remove animations or rigging before exporting. Model files can be up to 64 MiB.</p></details>
+            <div class="object-optimization">
+              <div class="status-actions"><button id="object-optimize" type="button" class="secondary">Optimize model</button><button id="object-optimize-cancel" type="button" class="text-button" hidden>Cancel optimization</button><button id="object-use-original" type="button" class="text-button" hidden>Use original model</button><a id="object-optimized-download" hidden>Download optimized GLB</a></div>
+              <p class="build-note">Optional for dense models. Reduces geometry and merges equivalent materials while keeping the original file.</p>
+              <details><summary>Optimization settings</summary><div class="object-fields">
+                <label>Target triangles<input id="object-target-triangles" type="number" form="object-optimize-options" min="100" max="200000" step="100" value="20000" required></label>
+                <label>Detail protection<select id="object-detail-protection"><option value="0.002">High</option><option value="0.01" selected>Balanced</option><option value="0.03">Low, allows more reduction</option></select></label>
+              </div><p class="build-note">The target is approximate. Higher protection can leave more triangles to limit changes to the shape and texture mapping. Texture images are kept unchanged.</p></details>
+              <p id="object-optimization-status" class="build-note" role="status" aria-live="polite"></p>
+              <div id="object-optimization-result" hidden></div>
+            </div>
+            <div class="object-fields"><label>Height (reference Sim = 100%)<input id="object-height" type="number" min="10" max="300" value="100" step="0.01" required></label><label>Rotation (°)<input id="object-rotation" type="number" min="-180" max="180" value="0" step="1" required></label></div>
+            <div class="object-sizing-presets" role="group" aria-label="Height presets"><button id="object-fit" type="button" class="secondary" title="Fit once within the template's height and occupied floor area without stretching your model">Fit within template</button><button type="button" class="secondary" data-object-height="25">25%</button><button type="button" class="secondary" data-object-height="50">50%</button><button type="button" class="secondary" data-object-height="100">Sim-sized 100%</button><button type="button" class="secondary" data-object-height="150">Tall 150%</button></div>
+            <p class="build-note">New models start at the template's original height. Percentage presets use the reference Sim's height.</p>
+            <p id="object-dimensions" class="build-note" role="status"></p>
+            <div id="object-placement-warning" class="object-placement-warning" hidden><p id="object-placement-message"></p><label><input id="object-placement-ack" type="checkbox">I understand that placement and routing still follow the template.</label></div>
+            <details class="object-display-controls"><summary>Preview display</summary><div class="object-fields">
+              <label>Environment<select id="object-environment"><option value="room">Scale room</option><option value="studio">Studio</option></select></label>
+              <label>Reference mannequin<select id="object-mannequin"><option value="am">Adult male</option><option value="af">Adult female</option><option value="none">Hidden</option></select></label>
+              <label class="checkbox-label"><input id="object-footprint" type="checkbox" checked>Show template's occupied floor area</label>
+              <label class="checkbox-label"><input id="object-dimension-labels" type="checkbox" checked>Show dimensions and reference marker</label>
+            </div></details>
+            <button id="object-preview" type="button" class="secondary">Preview model</button>
+            <p id="object-preview-status" class="inline-status" role="status" aria-live="polite"></p>
+            <div id="object-preview-empty" class="object-preview-empty">Your model preview will appear here.</div>
+            <div id="object-viewer" hidden></div>
+            <p class="build-note">Preview shows appearance and scale. Game lighting, interactions and placement still need testing in the game.</p>
+        </section>
+        <section class="card">
+          <h3>3. Name and create your object</h3>
+          <div class="object-fields">
+            <label>Creator<input id="object-creator" maxlength="48" pattern="[A-Za-z0-9][A-Za-z0-9_-]*" required placeholder="Creator"></label>
+            <label>Filename name<input id="object-name" maxlength="48" pattern="[A-Za-z0-9][A-Za-z0-9_-]*" required placeholder="MyObject"></label>
+            <label>Catalog name<input id="object-title" maxlength="100" required placeholder="My new object"></label>
+            <label>Price<input id="object-price" type="number" min="0" max="65535" step="1" value="150" required></label>
+          </div>
+          <label>Description<textarea id="object-description" rows="3" maxlength="1000" placeholder="Original creator and model credits"></textarea></label>
+          <p class="build-note">Your package gets its own identity automatically and can be installed alongside the template object.</p>
+          <p id="object-filename" class="build-note"></p>
+          <p id="object-status" class="inline-status" role="status" aria-live="polite"></p>
+          <progress id="object-progress" max="1" value="0" hidden aria-label="Object generation"></progress>
+          <div class="status-actions"><button id="object-build" type="submit" class="primary">Create package</button><button id="object-cancel" type="button" class="text-button" hidden>Cancel build</button><button id="object-new" type="button" class="text-button">New batch</button><a id="object-download" class="primary" hidden>Download .package</a></div>
+        </section>
+      </form>
+      <form id="object-optimize-options" hidden></form>
+      <div id="object-saved"></div>
+    </section>
+
+    <section id="painting-tool" class="tool-panel" hidden>
+      <div class="painting-heading"><div><h2>Painting creator</h2><p class="panel-intro">Turn your image into a new painting for the game. Created and saved in this browser.</p></div><div id="painting-saved"></div></div>
+      <form id="painting-form">
+        <section class="panel">
+          <h3>1. Choose image</h3>
+          <label class="painting-upload">Image<input id="painting-image" type="file" accept="image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp"></label>
+          <p class="build-note">PNG, JPEG or WebP, up to 32 MiB and 32 megapixels.</p>
+          <p id="painting-image-status" class="inline-status" role="status"></p>
+        </section>
+        <section class="panel">
+          <h3>2. Frame and crop</h3>
+          <div id="painting-frames" class="painting-frames" role="group" aria-label="Choose a painting frame"></div>
+          <p id="painting-template-info" class="build-note"></p>
+          <div id="painting-editor" class="painting-edit-grid" hidden>
+            <div class="painting-crop-panel">
+              <div class="painting-view-heading"><h4>Your image</h4><button id="painting-reset-crop" type="button" class="text-button">Reset crop</button></div>
+              <div id="painting-crop-stage" class="painting-crop-stage" tabindex="0" role="group" aria-label="Image crop. Use arrow keys to move and plus or minus to zoom"><img id="painting-crop-image" alt="Position your image inside the painting" draggable="false"></div>
+              <div class="painting-crop-controls">
+                <label>Image fit<select id="painting-fit"><option value="fill">Fill frame</option><option value="contain">Show whole image</option></select></label>
+                <label id="painting-zoom-label">Zoom<input id="painting-zoom" type="range" min="1" max="8" step="0.01" value="1"></label>
+                <label id="painting-background-label" hidden>Canvas color<input id="painting-background" type="color" value="#ffffff"></label>
+              </div>
+              <p id="painting-crop-note" class="build-note">Drag to position your image. The frame keeps its original game size.</p>
+            </div>
+            <div class="painting-wall-panel">
+              <div class="painting-view-heading"><h4>On wall</h4><div class="status-actions"><button id="painting-front" class="text-button" type="button">Front view</button><button id="painting-reset-view" class="text-button" type="button">Reset view</button></div></div>
+              <div id="painting-viewer" class="painting-viewer"></div>
+              <p id="painting-preview-status" class="inline-status" role="status"></p>
+              <details class="painting-display"><summary>Preview display</summary><label>Reference Sim<select id="painting-mannequin"><option value="am">Male</option><option value="af">Female</option><option value="none">Hidden</option></select></label></details>
+            </div>
+          </div>
+        </section>
+        <section class="panel">
+          <h3>3. Name and download</h3>
+          <div class="field-grid">
+            <label>Creator<input id="painting-creator" required maxlength="48" pattern="[A-Za-z0-9][A-Za-z0-9_-]{0,47}" autocomplete="off" placeholder="Your creator name"></label>
+            <label>Painting name<input id="painting-title" required maxlength="100" placeholder="My painting"></label>
+            <label class="painting-description">Description <span class="optional">optional</span><textarea id="painting-description" maxlength="1000" rows="2" placeholder="Original creator and image credits"></textarea></label>
+            <label>Price (§)<input id="painting-price" type="number" min="0" max="65535" step="1" required></label>
+          </div>
+          <p id="painting-filename" class="build-note"></p>
+          <div class="status-actions"><button id="painting-build" type="submit" class="primary" disabled>Create and download</button><button id="painting-retry" type="button" class="primary" hidden>Retry</button><button id="painting-cancel" type="button" class="secondary" hidden>Cancel</button><a id="painting-download" class="download" hidden>Download .package</a><button id="painting-new" type="button" class="text-button">New painting</button></div>
+          <progress id="painting-progress" max="100" value="0" aria-label="Painting creation progress" hidden></progress>
+          <p id="painting-status" class="inline-status" role="status"></p>
+          <p id="painting-save-status" class="build-note" role="status"></p>
+          <p id="painting-installation" class="build-note" hidden>Place this .package in your Sims 2 Downloads folder. Enable custom content and restart the game. Find your painting as its own entry in Buy Mode → Decorations → Wall Hangings.</p>
+        </section>
+      </form>
+    </section>
+    <section id="sim-tool" class="tool-panel" hidden>
+      <form id="sim-form">
+        <section class="panel">
+          <div class="sim-heading"><h2>Sim creator <span class="optional">experimental</span></h2><div id="sim-saved"></div></div>
+          <p class="panel-intro">Fit a humanoid model to an adult Sim. Your work stays in this browser.</p>
+          <p class="build-note">Experimental export: Adult Male Everyday body, with the stock head and other outfits.</p>
+          <h3>1. Choose model</h3>
+          <div class="field-grid"><label>Game body<select id="sim-body"><option value="am">Adult Male</option><option value="af">Adult Female</option></select></label><label>Model<input id="sim-model" type="file" accept=".glb,.zip"></label></div>
+          <p id="sim-model-status" class="build-note" role="status"></p>
+          <details><summary>Supported models and help</summary><p>Choose a neutral A or T pose with arms and legs separated. Use a GLB or a ZIP containing one glTF scene and its local textures, up to 64 MiB. Export neutral geometry without animation, rigging or morph targets. Fitting adjusts body proportions to the game skeleton. The head keeps its shape and has no facial expressions.</p><p>In an A pose the arms point diagonally down. In a T pose they extend sideways. Joint markers belong inside the body, where the limbs bend. Left and right always mean the model's left and right.</p></details>
+          <div id="sim-legacy" hidden><p>This saved draft uses the previous fitting engine. Its original model and settings are kept.</p><button id="sim-copy" type="button" class="secondary">Start guided-fit copy</button></div>
+        </section>
+        <section class="panel" id="sim-fitting">
+          <h3>2. Fit model</h3>
+          <div class="sim-stage-tabs" role="group" aria-label="Fitting stages"><button type="button" data-sim-stage="align" aria-pressed="true">1 Align</button><button type="button" data-sim-stage="markers">2 Mark joints</button><button type="button" data-sim-stage="head">3 Separate head</button><button type="button" data-sim-stage="check">4 Check movement</button></div>
+          <div class="sim-processing"><p id="sim-status" class="inline-status" role="status"></p><progress id="sim-progress" hidden aria-label="Sim fitting progress"></progress><button id="sim-cancel" type="button" class="secondary" hidden>Cancel</button></div>
+          <div class="sim-fit-grid">
+            <div class="sim-scene-column">
+              <div class="sim-view-toolbar"><div role="group" aria-label="Camera view"><button type="button" data-sim-view="front">Front</button><button type="button" data-sim-view="side">Side</button><button type="button" data-sim-view="orbit" aria-pressed="true">Orbit</button></div><button id="sim-reset-view" type="button" class="text-button">Reset view</button></div>
+              <div id="sim-viewer" class="sim-viewer"></div>
+              <p id="sim-dimensions" class="build-note">Each floor square is one game tile.</p>
+              <p id="sim-stale" class="inline-status" hidden>Fitting settings changed. Apply fit to update the result.</p>
+              <div class="sim-history"><button id="sim-undo" type="button" class="text-button">Undo</button><button id="sim-redo" type="button" class="text-button">Redo</button><button id="sim-reset-stage" type="button" class="text-button">Reset stage</button></div>
+            </div>
+            <div class="sim-fit-controls">
+              <div data-sim-panel="align"><h4>Stand upright and face forward</h4><p>Match the reference orientation. Feet are placed on the floor automatically.</p><div class="sim-orientation"><button type="button" data-sim-rotate="0">Tilt 90°</button><button type="button" data-sim-rotate="1">Roll 90°</button><button type="button" data-sim-rotate="2">Turn 90°</button></div><label>Starting pose<select id="sim-pose"><option value="t">T pose</option><option value="a">A pose</option></select></label><details><summary>Fine alignment</summary><label>Tilt (°)<input id="sim-tilt" type="number" min="-360" max="360" value="0"></label><label>Roll (°)<input id="sim-roll" type="number" min="-360" max="360" value="0"></label><label>Turn (°)<input id="sim-rotation" type="number" min="-360" max="360" value="0"></label><button id="sim-align-update" type="button" class="secondary">Update alignment</button></details><button id="sim-confirm-align" type="button" class="primary">Alignment looks right</button></div>
+              <div data-sim-panel="markers" hidden><h4>Place the joint centers</h4><label>Area<select id="sim-marker-group"><option value="torso">Torso</option><option value="arms">Arms</option><option value="legs">Legs</option></select></label><label>Joint<select id="sim-marker"></select></label><p id="sim-marker-help" class="build-note"></p><label class="checkbox-row"><input id="sim-mirror" type="checkbox" checked> Mirror left and right</label><p class="build-note">Drag in Front and Side views. Arrow keys make small adjustments, Shift makes larger ones.</p><div class="sim-coordinate-fields"><label>Across<input id="sim-marker-x" type="number" step="any"></label><label>Depth<input id="sim-marker-y" type="number" step="any"></label><label>Height<input id="sim-marker-z" type="number" step="any"></label></div><button id="sim-confirm-markers" type="button" class="primary">Joint positions checked</button></div>
+              <div data-sim-panel="head" hidden><h4>Check the head boundary</h4><p><span class="sim-head-key">Gold: rigid head</span><br><span class="sim-body-key">Teal: moving body</span></p><label>Neck boundary<input id="sim-neck" type="range" min=".4" max="1.85" step=".005" value="1.55"></label><p class="build-note">Drag the gold line or select a separate part to change its assignment.</p><label id="sim-part-choice" hidden>Selected part<select id="sim-part-role"><option value="split">Split at neck</option><option value="head">Head only</option><option value="body">Body only</option></select></label><details><summary>All model parts</summary><div id="sim-parts" class="sim-parts"></div></details><button id="sim-confirm-head" type="button" class="primary">Head separation checked</button></div>
+              <div data-sim-panel="check" hidden><h4>Inspect the fitted model</h4><button id="sim-preview" type="button" class="primary">Apply fit</button><label>Compare<select id="sim-comparison"><option value="before">Before fitting</option><option value="after">After fitting</option></select></label><label>Movement<select id="sim-motion"><option value="none">Still</option><option value="head">Turn head</option><option value="arms">Bend arms</option><option value="knees">Bend knees</option></select></label><label>Body shape<select id="sim-morph"><option value="normal">Normal</option><option value="fat">Fat</option><option value="pregnant">Pregnancy</option></select></label><label class="checkbox-row"><input id="sim-issues" type="checkbox" checked> Highlight areas to inspect</label><p class="build-note">Check the neck, shoulders, elbows and knees. Movement is a deformation check, not a game test.</p><button id="sim-confirm-check" type="button" class="secondary">Finish fit review</button></div>
+              <div id="sim-feedback" role="status" aria-live="polite"></div>
+              <details class="sim-display"><summary>Preview display</summary><label>Environment<select id="sim-environment"><option value="room">Scale room</option><option value="studio">Studio</option></select></label><label>Scale mannequin<select id="sim-mannequin"><option value="am">Adult Male</option><option value="af">Adult Female</option><option value="none">Hidden</option></select></label><label class="checkbox-row"><input id="sim-reference" type="checkbox" checked> Show target skeleton</label></details>
+            </div>
+          </div>
+          <div class="status-actions"><button id="sim-new" type="button" class="text-button">New Sim</button></div>
+          <p id="sim-save-status" class="build-note" role="status"></p>
+        </section>
+        <details class="panel sim-naming" id="sim-naming"><summary>3. Name and save</summary><div class="field-grid"><label>Creator<input id="sim-creator" required pattern="[A-Za-z0-9][A-Za-z0-9 _\-]{0,47}" maxlength="48" placeholder="Your creator name"></label><label>Sim name<input id="sim-name" required pattern="[A-Za-z0-9][A-Za-z0-9 _\-]{0,47}" maxlength="48" placeholder="My Sim"></label></div><label>Description <span class="optional">optional</span><textarea id="sim-description" maxlength="2048" rows="2" placeholder="Original creator and model credits"></textarea></label><p id="sim-filename" class="build-note">Creator_SimName.package</p><label class="checkbox-row"><input id="sim-experimental" type="checkbox"> I understand this exports only the Adult Male Everyday body. The custom head is excluded.</label><div class="status-actions"><button id="sim-build" type="submit" class="primary" disabled>Create test package</button><button id="sim-retry-build" type="button" class="secondary" hidden>Retry test export</button><a id="sim-download" class="download" href="#" hidden>Download .package</a></div><progress id="sim-build-progress" max="100" hidden aria-label="Package creation"></progress><p id="sim-export-note" class="build-note">Use an isolated test profile. This is a deformation test, not a complete replacement Sim. Install in SavedSims.</p><details><summary>Saved work and future downloads</summary><p>Your work belongs to this browser and site address. Clearing site data or browser eviction can remove it. The planned output is one package for SavedSims, with custom Everyday clothing and a rigid head.</p></details></details>
+      </form>
+    </section>
+    <section id="upscale-tool" class="tool-panel" hidden>
+      <form id="upscale-form">
+        <section class="panel">
+          <div class="section-heading"><h2>Upscale image</h2><button id="upscale-new" type="button" class="secondary">New image</button></div>
+          <p class="panel-intro">Enlarge an image on your computer. Results stay here until you leave or reload the page.</p>
+          <div class="field-grid">
+            <label class="file-field">1. Choose image<input id="upscale-file" type="file" accept="image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp"><span class="build-note">PNG, JPEG or WebP, up to 32 MiB.</span></label>
+            <label>2. Choose upscaler<select id="upscale-model"><option value="local-compact">Real-ESRGAN Compact CPU</option></select><span id="upscale-model-note" class="build-note"></span></label>
+          </div>
+          <p id="upscale-availability" class="build-note" role="status" hidden></p>
+          <div class="upscale-settings">
+            <label id="upscale-alpha-field" class="checkbox-row" hidden><input id="upscale-alpha" type="checkbox" checked> Preserve original transparency</label>
+            <p id="upscale-size-warning" class="inline-status error" role="status" hidden></p>
+            <details><summary>Image quality and transparency</summary><p>Images are prepared losslessly in sRGB, without reducing their dimensions. Transparency is resized locally and combined with the model's colors. It is not reconstructed by AI.</p><p>Results are encoded losslessly as PNG.</p><a id="upscale-model-docs" href="https://github.com/xinntao/Real-ESRGAN" target="_blank" rel="noopener noreferrer">Model details</a></details>
+          </div>
+        </section>
+        <section class="panel">
+          <h3>3. Upscale and download</h3>
+          <p id="upscale-local-note" class="build-note">Your image stays in this browser. No token or payment is needed. Local processing has no time limit. Keep this page open, or use Cancel to stop. Closing or suspending the browser can interrupt the run. Download the result before leaving.</p>
+          <div class="status-actions"><button id="upscale-start" type="submit" class="primary" disabled>Upscale image</button><button id="upscale-cancel" type="button" class="secondary" hidden>Cancel</button><button id="upscale-retry" type="button" class="secondary" hidden>Retry</button></div>
+          <progress id="upscale-activity" aria-label="Upscaling activity" hidden></progress>
+          <p id="upscale-status" class="inline-status" role="status" aria-live="polite" hidden></p>
+          <div id="upscale-result" hidden><div class="status-actions"><a id="upscale-download" class="download" hidden>Download result</a></div><a id="upscale-raw-download" hidden>Download original model result</a></div>
+        </section>
+      </form>
+      <section id="upscale-compare" class="panel" hidden>
+        <div class="section-heading"><h3>Before and after</h3><button id="upscale-reset-view" type="button" class="secondary">Reset view</button></div>
+        <label class="upscale-zoom">Zoom <input id="upscale-zoom" type="range" min="100" max="400" step="10" value="100"><output id="upscale-zoom-value">100%</output></label>
+        <div class="upscale-comparison">
+          <figure><figcaption>Original <span id="upscale-before-meta"></span></figcaption><div id="upscale-before-stage" class="upscale-image-stage" tabindex="0" role="region" aria-label="Original image, scroll to pan"><img id="upscale-before" alt="Original image"></div></figure>
+          <figure><figcaption><strong id="upscale-after-model">Upscaled</strong> <span id="upscale-after-meta"></span></figcaption><div id="upscale-after-stage" class="upscale-image-stage" tabindex="0" role="region" aria-label="Upscaled image, scroll to pan"><p id="upscale-after-placeholder">Your result will appear here.</p><img id="upscale-after" alt="Upscaled image" hidden></div></figure>
+        </div>
+        <details id="upscale-result-details" hidden><summary>Result details</summary><p id="upscale-result-version" class="build-note"></p><p id="upscale-result-settings" class="build-note"></p></details>
+        <p id="upscale-preview-error" class="inline-status" role="status" hidden></p>
+      </section>
+    </section>
+    </main>
+    </div>
+  </div>
+  <dialog id="tool-drawer" class="tool-drawer" aria-labelledby="tools-heading">
+    <div class="drawer-heading"><h2 id="tools-heading">Tools</h2><button id="tools-close" type="button" class="secondary" aria-label="Close tools">Close</button></div>
+    <div id="drawer-navigation"></div>
+  </dialog>
+
+  <script type="module" src="/static/lazy-bootstrap.js"></script>
+
+</body>
+</html>

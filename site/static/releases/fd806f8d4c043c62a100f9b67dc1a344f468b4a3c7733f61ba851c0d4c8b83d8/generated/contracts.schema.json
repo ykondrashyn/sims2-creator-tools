@@ -1,0 +1,617 @@
+{
+  "conversion_begin": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+      "body": {
+        "type": "string"
+      },
+      "input": {
+        "type": "string"
+      },
+      "mapping": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "body",
+      "input",
+      "mapping"
+    ],
+    "title": "ConversionBegin",
+    "type": "object",
+    "$id": "conversion_begin"
+  },
+  "conversion_progress": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+      "done": {
+        "type": "boolean"
+      },
+      "processed": {
+        "format": "uint",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "progress": {
+        "format": "double",
+        "type": "number"
+      },
+      "total": {
+        "format": "uint",
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "done",
+      "processed",
+      "progress",
+      "total"
+    ],
+    "title": "ConversionProgress",
+    "type": "object",
+    "$id": "conversion_progress"
+  },
+  "conversion_step": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+      "pixels": {
+        "format": "uint32",
+        "maximum": 8192,
+        "minimum": 1,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "pixels"
+    ],
+    "title": "ConversionStep",
+    "type": "object",
+    "$id": "conversion_step"
+  },
+  "engine_request": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+      "Operation": {
+        "enum": [
+          "upscale_prepare_input",
+          "upscale_inspect_output",
+          "upscale_png",
+          "build_hair",
+          "build_tattoo",
+          "capabilities",
+          "conversion_begin",
+          "conversion_finish",
+          "conversion_step",
+          "conversion_validate",
+          "encode_texture",
+          "init",
+          "inspect_packages",
+          "inventory",
+          "normalize_curve",
+          "object_build",
+          "object_extract",
+          "object_inspect",
+          "object_layout",
+          "object_prepare",
+          "object_preview",
+          "object_profile",
+          "object_readme",
+          "open_hair",
+          "painting_build",
+          "painting_compose",
+          "painting_inspect_image",
+          "painting_open",
+          "painting_prepare",
+          "painting_validate",
+          "parse_curve",
+          "prepare_hair_job",
+          "prepare_tattoo_job",
+          "preview",
+          "process_pixels",
+          "readme",
+          "reset_inputs",
+          "sim_align",
+          "sim_build",
+          "sim_experimental_build",
+          "sim_fit",
+          "sim_guided_fit",
+          "sim_inspect_model",
+          "sim_inspect_scaffold",
+          "sim_landmarks",
+          "sim_preview",
+          "sim_prepare",
+          "sim_reference",
+          "sim_validate",
+          "validate_hair",
+          "validate_tattoo"
+        ],
+        "type": "string"
+      }
+    },
+    "properties": {
+      "op": {
+        "$ref": "#/definitions/Operation"
+      },
+      "params": {
+        "default": null
+      },
+      "version": {
+        "format": "uint32",
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "op",
+      "version"
+    ],
+    "title": "EngineRequest",
+    "type": "object",
+    "$id": "engine_request"
+  },
+  "input_asset": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+      "input": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "input"
+    ],
+    "title": "InputAsset",
+    "type": "object",
+    "$id": "input_asset"
+  },
+  "runtime_limits": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+      "ConversionLimits": {
+        "properties": {
+          "files": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "input_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "output_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "files",
+          "input_bytes",
+          "output_bytes"
+        ],
+        "type": "object"
+      },
+      "HairLimits": {
+        "properties": {
+          "builtin_colors": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "custom_colors": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "input_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "package_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "packages": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "texture_slots": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "zip_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "builtin_colors",
+          "custom_colors",
+          "input_bytes",
+          "package_bytes",
+          "packages",
+          "texture_slots",
+          "zip_bytes"
+        ],
+        "type": "object"
+      },
+      "ObjectLimits": {
+        "properties": {
+          "input_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "model_groups": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "output_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "package_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "packages": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "texture_dimension": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "vertices_per_group": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "input_bytes",
+          "model_groups",
+          "output_bytes",
+          "package_bytes",
+          "packages",
+          "texture_dimension",
+          "vertices_per_group"
+        ],
+        "type": "object"
+      },
+      "PaintingLimits": {
+        "properties": {
+          "dimension": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "files": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "formats": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "input_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "output_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "pixels": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "dimension",
+          "files",
+          "formats",
+          "input_bytes",
+          "output_bytes",
+          "pixels"
+        ],
+        "type": "object"
+      },
+      "SimLimits": {
+        "properties": {
+          "file_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "files": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "input_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "output_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "file_bytes",
+          "files",
+          "input_bytes",
+          "output_bytes"
+        ],
+        "type": "object"
+      },
+      "TattooLimits": {
+        "properties": {
+          "entries": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "file_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "files": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "input_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          },
+          "output_bytes": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "entries",
+          "file_bytes",
+          "files",
+          "input_bytes",
+          "output_bytes"
+        ],
+        "type": "object"
+      }
+    },
+    "properties": {
+      "build_timeout_ms": {
+        "format": "uint64",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "conversion": {
+        "$ref": "#/definitions/ConversionLimits"
+      },
+      "hair": {
+        "$ref": "#/definitions/HairLimits"
+      },
+      "object": {
+        "$ref": "#/definitions/ObjectLimits"
+      },
+      "painting": {
+        "$ref": "#/definitions/PaintingLimits"
+      },
+      "sim": {
+        "$ref": "#/definitions/SimLimits"
+      },
+      "storage_bytes": {
+        "format": "uint64",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "tattoo": {
+        "$ref": "#/definitions/TattooLimits"
+      },
+      "wasm_heap_bytes": {
+        "format": "uint64",
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "build_timeout_ms",
+      "conversion",
+      "hair",
+      "object",
+      "painting",
+      "sim",
+      "storage_bytes",
+      "tattoo",
+      "wasm_heap_bytes"
+    ],
+    "title": "RuntimeLimits",
+    "type": "object",
+    "$id": "runtime_limits"
+  },
+  "saved_record": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "additionalProperties": true,
+    "definitions": {
+      "JobKind": {
+        "description": "The saved envelope is validated without deserializing and reserializing its opaque feature snapshots. Asset versions, unknown fields and numbers survive.",
+        "enum": [
+          "conversion",
+          "tattoo",
+          "hair",
+          "object",
+          "painting",
+          "sim"
+        ],
+        "type": "string"
+      },
+      "StoredFile": {
+        "properties": {
+          "blob": {
+            "type": "string"
+          },
+          "filename": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "size": {
+            "format": "uint64",
+            "minimum": 0,
+            "type": "integer"
+          }
+        },
+        "required": [
+          "blob",
+          "filename",
+          "name",
+          "sha256",
+          "size"
+        ],
+        "type": "object"
+      }
+    },
+    "properties": {
+      "files": {
+        "default": [],
+        "items": {
+          "$ref": "#/definitions/StoredFile"
+        },
+        "type": "array"
+      },
+      "id": {
+        "type": "string"
+      },
+      "kind": {
+        "$ref": "#/definitions/JobKind"
+      },
+      "manifest": true,
+      "parameters": {
+        "default": null
+      },
+      "revision": {
+        "format": "uint32",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "schema_version": {
+        "format": "uint32",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "state": {
+        "type": "string"
+      },
+      "ui": {
+        "default": null
+      }
+    },
+    "required": [
+      "id",
+      "kind",
+      "manifest",
+      "revision",
+      "schema_version",
+      "state"
+    ],
+    "title": "SavedRecord",
+    "type": "object",
+    "$id": "saved_record"
+  },
+  "worker_response": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+      "EngineError": {
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "operation": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "operation"
+        ],
+        "type": "object"
+      }
+    },
+    "properties": {
+      "attempt": {
+        "type": "string"
+      },
+      "error": {
+        "anyOf": [
+          {
+            "$ref": "#/definitions/EngineError"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "id": {
+        "format": "uint32",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "job": {
+        "type": "string"
+      },
+      "result": true,
+      "revision": {
+        "format": "uint32",
+        "minimum": 0,
+        "type": "integer"
+      },
+      "version": {
+        "format": "uint32",
+        "minimum": 0,
+        "type": "integer"
+      }
+    },
+    "required": [
+      "attempt",
+      "id",
+      "job",
+      "revision",
+      "version"
+    ],
+    "title": "WorkerResponse",
+    "type": "object",
+    "$id": "worker_response"
+  }
+}

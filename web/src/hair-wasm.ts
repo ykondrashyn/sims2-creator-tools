@@ -1,3 +1,4 @@
+export let activateHair: () => Promise<void>;
 import { createAutosaveQueue } from "./shared/autosave.js";
 import { HairCurveEditor } from "./hair-curves.js";
 import type {
@@ -850,39 +851,43 @@ import { TextureCompression } from "./texture-compression.js";
   });
   curveEditor.builtinNames = [];
 
-  runtime
-    .then((r) => r.manifest())
-    .then((m: RuntimeManifest) => {
-      encoderManifest = m;
-      const value = m.hair;
-      installed = value;
-      palette = [...value.palette];
-      curveEditor.builtinNames = value.palette.map(
-        (c: { name: any }) => c.name,
-      );
-      const groups = new Map();
-      value.items
-        .filter((item: { kind: string }) => item.kind !== "custom")
-        .forEach(
-          (item: { game_content: any; gender: any; id: any; label: any }) => {
-            const title = `${item.game_content || "Standard in-game"}, ${item.gender}`;
-            if (!groups.has(title)) {
-              const group = document.createElement("optgroup");
-              group.label = title;
-              groups.set(title, group);
-            }
-            groups.get(title).append(option(item.id, item.label));
-          },
+  activateHair = () =>
+    runtime
+      .then((r) => r.manifest())
+      .then((m: RuntimeManifest) => {
+        encoderManifest = m;
+        const value = m.hair;
+        installed = value;
+        palette = [...value.palette];
+        curveEditor.builtinNames = value.palette.map(
+          (c: { name: any }) => c.name,
         );
-      $("hair-template-select").replaceChildren(
-        option("", "Choose a hairstyle"),
-        ...groups.values(),
-      );
-      palette.forEach((c) => selection.add(colorKey(c)));
-      setupSource();
-      message(sourcePrompt(), false, true);
-    })
-    .catch((error) => message(error.message, true, true));
+        const groups = new Map();
+        value.items
+          .filter((item: { kind: string }) => item.kind !== "custom")
+          .forEach(
+            (item: { game_content: any; gender: any; id: any; label: any }) => {
+              const title = `${item.game_content || "Standard in-game"}, ${item.gender}`;
+              if (!groups.has(title)) {
+                const group = document.createElement("optgroup");
+                group.label = title;
+                groups.set(title, group);
+              }
+              groups.get(title).append(option(item.id, item.label));
+            },
+          );
+        $("hair-template-select").replaceChildren(
+          option("", "Choose a hairstyle"),
+          ...groups.values(),
+        );
+        palette.forEach((c) => selection.add(colorKey(c)));
+        setupSource();
+        message(sourcePrompt(), false, true);
+      })
+      .catch((error: Error) => {
+        message(error.message, true, true);
+        throw error;
+      });
 
   runtime
     .then((r) => {

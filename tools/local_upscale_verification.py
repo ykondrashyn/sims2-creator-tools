@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from tools.navigation_verification import open_tool
+
 import argparse
 import hashlib
 import json
@@ -26,7 +28,7 @@ def verify(driver, url, out, backend="wasm", profile_id="full"):
     def element(key):
         return driver.find_element(By.ID, "upscale-" + key)
 
-    driver.find_element(By.CSS_SELECTOR, '[data-tab="upscale"]').click()
+    open_tool(check, "upscale")
     check.wait.until(lambda _: len(Select(element("model")).options) == 8)
     assert element("model").get_attribute("value") == "local-compact"
     Select(element("model")).select_by_value(model_id)
@@ -65,6 +67,9 @@ def verify(driver, url, out, backend="wasm", profile_id="full"):
         check.page(
             "document.getElementById('upscale-form').dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}));"
         )
+        if name == "small":
+            open_tool(check, "home")
+            open_tool(check, "upscale")
         check.wait.until(lambda _: ready())
         check.wait.until(lambda _: element("start").is_enabled())
         seconds = time.monotonic() - started
@@ -111,6 +116,9 @@ def verify(driver, url, out, backend="wasm", profile_id="full"):
     assert check.page("return window.localDeadlineCount;") == 0
     check.check("Local processing and result preparation have no ten-minute deadline")
     before = element("download").get_attribute("href")
+    open_tool(check, "home")
+    open_tool(check, "upscale")
+    assert element("download").get_attribute("href") == before
     Select(element("model")).select_by_value(
         "local-compact" if profile_id != "compact" else "local-nomos"
     )
@@ -185,7 +193,7 @@ def verify(driver, url, out, backend="wasm", profile_id="full"):
     assert check.module("package-runtime/store.js", "return (await r.listJobs()).length;") == 0
     check.check("No uploads, external requests, token or saved image records")
     driver.refresh()
-    driver.find_element(By.CSS_SELECTOR, '[data-tab="upscale"]').click()
+    open_tool(check, "upscale")
     check.wait.until(lambda _: len(Select(element("model")).options) == 8)
     assert not element("download").is_displayed()
     check.check("Reload clears session images and outputs")
@@ -218,7 +226,7 @@ def main():
                     )
                     if not available:
                         check = BrowserCheck(driver, url, out)
-                        driver.find_element(By.CSS_SELECTOR, '[data-tab="upscale"]').click()
+                        open_tool(check, "upscale")
                         check.wait.until(
                             lambda _: len(
                                 Select(driver.find_element(By.ID, "upscale-model")).options

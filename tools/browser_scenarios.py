@@ -29,7 +29,8 @@ def exercise(check):
         element.click()
 
     def tab(name):
-        d.find_element(By.CSS_SELECTOR, f'[data-tab="{name}"]').click()
+        from tools.navigation_verification import open_tool
+        open_tool(check, name)
 
     def text(name, value):
         wait.until(lambda _: el(name).is_displayed() and el(name).is_enabled())
@@ -69,6 +70,9 @@ def exercise(check):
         )
         wait.until(lambda _: el("convert-button").is_enabled())
         click("convert-button")
+        if body == "am":
+            tab("home")
+            tab("texture")
         if body == "af":
             wait.until(
                 lambda _: el("conversion-cancel").is_displayed()

@@ -1,3 +1,4 @@
+export let activateSim: () => Promise<void>;
 import { createAutosaveQueue } from "./shared/autosave.js";
 import type {
   Metadata,
@@ -678,6 +679,7 @@ import { TextureCompression } from "./texture-compression.js";
       manifest = await runtime.manifest();
       const { SimPreview } = await import("./sim-preview.js");
       viewer = new SimPreview($("viewer"), editMarker, selectMarker);
+      viewer.setVisible(!$("tool").hidden);
       await viewer.references(await runtime.simReferences(manifest));
       runtime.savedPanel($("saved"), "sim", (saved) =>
         open(saved).catch((e) => message(e.message)),
@@ -712,7 +714,10 @@ import { TextureCompression } from "./texture-compression.js";
     } catch (eCause) {
       const e = eCause instanceof Error ? eCause : new Error(String(eCause));
       initialized = false;
+      viewer?.dispose();
+      viewer = null;
       message(e.message);
+      throw e;
     }
   }
   $("model").addEventListener("change", () =>
@@ -938,9 +943,7 @@ import { TextureCompression } from "./texture-compression.js";
       .download(required(record, "record").id)
       .catch((cause: { message: any }) => message(cause.message));
   });
-  document
-    .querySelector<HTMLElement>('[data-tab="sim"]')!
-    .addEventListener("click", init);
+  activateSim = init;
   window.addEventListener("pagehide", (e) => {
     clearTimeout(timer);
     save().catch(() => {});

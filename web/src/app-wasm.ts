@@ -1,9 +1,7 @@
 import { createAutosaveQueue } from "./shared/autosave.js";
 import type { BodyPreview } from "./body-preview.js";
 import type { RuntimeManifest, SavedJob } from "./package-runtime/types.js";
-import { manifest as loadRuntimeManifest } from "./package-runtime/assets.js";
 import { required } from "./shared/dom.js";
-import { installTabs } from "./shared/tabs.js";
 import { TextureCompression } from "./texture-compression.js";
 
 const tattoos: any[] = [];
@@ -18,8 +16,6 @@ const retryButton = document.querySelector<HTMLButtonElement>("#retry-build")!;
 const cancelButton =
   document.querySelector<HTMLButtonElement>("#cancel-build")!;
 const statusMessage = document.querySelector<HTMLElement>("#status-message")!;
-const conversionStatus =
-  document.querySelector<HTMLElement>("#conversion-status")!;
 let tattooViewer: BodyPreview | null = null;
 let tattooViewerLoading: Promise<void> | null = null;
 let convertedViewer: BodyPreview | null = null;
@@ -131,46 +127,20 @@ window.addEventListener("pagehide", (event) => {
   convertedViewer?.dispose();
 });
 
-loadRuntimeManifest()
-  .then((manifest: RuntimeManifest) => {
-    for (const [catalog, name] of [
-      ["sims", "sim"],
-      ["paintings", "painting"],
-      ["objects", "object"],
-    ] as const) {
-      if (manifest?.[catalog]?.items?.length) {
-        document.querySelector<HTMLElement>(`[data-tab="${name}"]`)!.hidden =
-          false;
-      }
-    }
-  })
-  .catch(() => {});
-
-let upscaleLoading: Promise<void> | null = null;
-installTabs(
-  required(
-    document.querySelector<HTMLElement>('[role="tablist"]'),
-    "creator tabs",
-  ),
-  (tab) => {
-    if (
-      tab.getAttribute("aria-controls") === "upscale-tool" &&
-      !upscaleLoading
-    ) {
-      upscaleLoading = import("./upscale.js")
-        .then(({ attachUpscale }) => attachUpscale())
-        .catch(() => {
-          const status = document.getElementById("upscale-status")!;
-          status.hidden = false;
-          status.textContent =
-            "The upscaling interface could not load. Reload the page to retry.";
-          upscaleLoading = null;
-        });
-    }
-    if (tab.getAttribute("aria-controls") === "build-form")
-      void openTattooPreview();
-  },
-);
+let conversionReady: Promise<void> | null = null;
+export async function activateAppTool(tool: "texture" | "package") {
+  if (tool === "package") {
+    await openTattooPreview();
+    return;
+  }
+  conversionReady ||= import("./conversion-wasm.js")
+    .then((m) => m.attachConversion(showConvertedPreview))
+    .catch((error: unknown) => {
+      conversionReady = null;
+      throw error;
+    });
+  await conversionReady;
+}
 
 function slugify(value: string) {
   return value
@@ -672,13 +642,6 @@ localRuntime
   })
   .catch((e) => {
     tattooSaveStatus.textContent = e.message;
-  });
-
-import("./conversion-wasm.js")
-  .then((m) => m.attachConversion(showConvertedPreview))
-  .catch((e) => {
-    conversionStatus.hidden = false;
-    conversionStatus.textContent = e.message;
   });
 
 addTattoo();

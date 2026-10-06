@@ -15,8 +15,6 @@ import time
 import urllib.request
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 
 from tools.project import ROOT
@@ -173,37 +171,9 @@ class BrowserCheck:
         print(name, flush=True)
 
     def synthetic(self):
-        tabs = self.d.find_elements(By.CSS_SELECTOR, '[role="tab"]')
-        assert len(tabs) == 7
-        self.wait.until(lambda _: self.d.find_element(By.ID, "conversion-new").is_enabled())
-        tabs = [tab for tab in tabs if tab.is_displayed() and tab.is_enabled()]
-        tabs[0].click()
-        tabs[0].send_keys(Keys.ARROW_RIGHT)
-        assert self.d.switch_to.active_element == tabs[1]
-        assert tabs[0].get_attribute("aria-selected") == "true"
-        assert tabs[0].get_attribute("tabindex") == "0"
-        assert tabs[1].get_attribute("tabindex") == "-1"
-        tabs[1].send_keys(Keys.TAB)
-        active_panel = self.d.find_element(By.ID, tabs[0].get_attribute("aria-controls"))
-        assert self.d.switch_to.active_element == active_panel
-        active_panel.send_keys(Keys.SHIFT, Keys.TAB)
-        assert self.d.switch_to.active_element == tabs[0]
-        tabs[0].send_keys(Keys.ARROW_RIGHT)
-        tabs[1].send_keys(Keys.ENTER)
-        assert tabs[1].get_attribute("aria-selected") == "true"
-        tabs[1].send_keys(Keys.END)
-        assert self.d.switch_to.active_element == tabs[-1]
-        tabs[-1].send_keys(Keys.SPACE)
-        self.wait.until(lambda _: tabs[-1].get_attribute("aria-selected") == "true")
-        tabs[-1].send_keys(Keys.HOME)
-        assert self.d.switch_to.active_element == tabs[0]
-        tabs[0].send_keys(Keys.ENTER)
-        for tab in tabs:
-            panel = self.d.find_element(By.ID, tab.get_attribute("aria-controls"))
-            assert panel.get_attribute("aria-labelledby") == tab.get_attribute("id")
-        self.check(
-            "Seven panels are labelled and available tabs support manual keyboard activation"
-        )
+        from tools.navigation_verification import verify
+
+        verify(self)
         metrics = self.module(
             "package-runtime/hashing.js",
             """let ticks=0; const timer=setInterval(()=>ticks++,1); const started=performance.now();

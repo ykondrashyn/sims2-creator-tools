@@ -8,6 +8,8 @@ import type {
 import { prefixedControls, required } from "./shared/dom.js";
 import type { Layout } from "./shared/scene-types.js";
 import { TextureCompression } from "./texture-compression.js";
+export let activateObject: () => Promise<void>;
+
 /* Object inputs are sent only to the local WASM worker. */
 (() => {
   const $ = prefixedControls("object-");
@@ -797,114 +799,109 @@ import { TextureCompression } from "./texture-compression.js";
   }
   for (const id of [...valueIds, ...checkIds, "packages", "model"])
     $(id).addEventListener("input", () => inputChanged(id));
-  document
-    .querySelector<HTMLElement>('[data-tab="object"]')!
-    .addEventListener("click", () =>
-      action(async () => {
-        if (initialized) return;
-        const r = await api();
-        manifest = await r.manifest();
-        if (!manifest.objects?.items?.length)
+  activateObject = async () => {
+    if (initialized) return;
+    const r = await api();
+    manifest = await r.manifest();
+    if (!manifest.objects?.items?.length)
+      throw new Error(
+        "Object templates are not installed in this engine release.",
+      );
+    initialized = true;
+    items();
+    fitTemplateHeight();
+    r.events.addEventListener("job", (e) => {
+      if (e.detail.id === record?.id)
+        show(e.detail).catch((cause) => message(cause.message));
+    });
+    r.events.addEventListener("deleted", (e) => {
+      if (e.detail !== record?.id) return;
+      record = null;
+      inspection = null;
+      clearOptimization();
+      invalidatePreview();
+      const link = $("download");
+      if (link.href.startsWith("blob:")) URL.revokeObjectURL(link.href);
+      link.removeAttribute("href");
+      link.hidden = true;
+      controls();
+      message("Saved batch deleted.");
+    });
+    r.savedPanel($("saved"), "object", async (job: SavedJob) => {
+      if (busy) throw new Error("Wait for the current object operation.");
+      if (
+        job.parameters?.mode !== "model" ||
+        job.parameters?.sizing_version !== 2
+      )
+        throw new Error(
+          "This batch uses the previous sizing system. Its saved files and engine are kept. Download completed packages from Saved batches, or start a new batch to use height controls.",
+        );
+      clearTimeout(timer);
+      await saving;
+      if (!job.snapshotHash && job.parameters.fit_to_template === true) {
+        if (
+          !Number.isFinite(job.parameters.target_height) ||
+          job.parameters.target_height <= 0
+        )
           throw new Error(
-            "Object templates are not installed in this engine release.",
+            "This saved batch has no valid fitted height. Its inputs are kept. Start a new batch to fit the model again.",
           );
-        initialized = true;
-        items();
-        fitTemplateHeight();
-        r.events.addEventListener("job", (e) => {
-          if (e.detail.id === record?.id)
-            show(e.detail).catch((cause) => message(cause.message));
+        job = await fixedHeightEngine(job);
+        job = await r.saveDraft({
+          ...job,
+          revision: job.revision + 1,
+          parameters: {
+            ...job.parameters,
+            fit_to_template: false,
+            height_from_fit: true,
+          },
+          ui: { ...job.ui, height_mode: "fitted" },
         });
-        r.events.addEventListener("deleted", (e) => {
-          if (e.detail !== record?.id) return;
-          record = null;
-          inspection = null;
-          clearOptimization();
-          invalidatePreview();
-          const link = $("download");
-          if (link.href.startsWith("blob:")) URL.revokeObjectURL(link.href);
-          link.removeAttribute("href");
-          link.hidden = true;
-          controls();
-          message("Saved batch deleted.");
-        });
-        r.savedPanel($("saved"), "object", async (job: SavedJob) => {
-          if (busy) throw new Error("Wait for the current object operation.");
-          if (
-            job.parameters?.mode !== "model" ||
-            job.parameters?.sizing_version !== 2
-          )
-            throw new Error(
-              "This batch uses the previous sizing system. Its saved files and engine are kept. Download completed packages from Saved batches, or start a new batch to use height controls.",
-            );
-          clearTimeout(timer);
-          await saving;
-          if (!job.snapshotHash && job.parameters.fit_to_template === true) {
-            if (
-              !Number.isFinite(job.parameters.target_height) ||
-              job.parameters.target_height <= 0
-            )
-              throw new Error(
-                "This saved batch has no valid fitted height. Its inputs are kept. Start a new batch to fit the model again.",
-              );
-            job = await fixedHeightEngine(job);
-            job = await r.saveDraft({
-              ...job,
-              revision: job.revision + 1,
-              parameters: {
-                ...job.parameters,
-                fit_to_template: false,
-                height_from_fit: true,
-              },
-              ui: { ...job.ui, height_mode: "fitted" },
-            });
-          }
-          manifest = job.manifest;
-          priceEdited = true;
-          heightEdited = job.ui.height_mode !== "template";
-          heightFromFit =
-            job.parameters.height_from_fit === true ||
-            job.parameters.fit_to_template === true;
-          exactHeight = job.parameters.target_height;
-          $("form").reset();
-          $("optimize-options").reset();
-          compression.restore(
-            job.parameters.texture_encoder,
-            job.parameters.refpack_compression,
-          );
-          for (const id of valueIds)
-            if (id !== "standard") $(id).value = job.ui[id] ?? $(id).value;
-          $("height").value = (
-            (job.parameters.target_height /
-              job.manifest.objects.reference.reference_height) *
-            100
-          ).toFixed(2);
-          for (const id of checkIds) $(id).checked = job.ui[id] ?? true;
-          items();
-          $("standard").value = job.ui.standard;
-          $("packages").value = "";
-          $("model").value = "";
-          inspection = null;
-          invalidatePreview();
-          await show(job);
-          inspection = await r.openObject(job);
-          if (!job.snapshotHash && !heightEdited && fitTemplateHeight()) {
-            await draft({ save: true });
-            job = required(record, "batch");
-          }
-          templateInfo();
-          if (hasModel()) {
-            showLayout(await r.objectLayout(job));
-            $("placement-ack").checked =
-              job.parameters.placement_ack ===
-              required(layout, "layout").signature;
-          }
-          await showOptimization();
-          $("inspection").textContent =
-            `Template ready: ${inspection.label}. ${inspection.requirements}`;
-        });
-      }),
-    );
+      }
+      manifest = job.manifest;
+      priceEdited = true;
+      heightEdited = job.ui.height_mode !== "template";
+      heightFromFit =
+        job.parameters.height_from_fit === true ||
+        job.parameters.fit_to_template === true;
+      exactHeight = job.parameters.target_height;
+      $("form").reset();
+      $("optimize-options").reset();
+      compression.restore(
+        job.parameters.texture_encoder,
+        job.parameters.refpack_compression,
+      );
+      for (const id of valueIds)
+        if (id !== "standard") $(id).value = job.ui[id] ?? $(id).value;
+      $("height").value = (
+        (job.parameters.target_height /
+          job.manifest.objects.reference.reference_height) *
+        100
+      ).toFixed(2);
+      for (const id of checkIds) $(id).checked = job.ui[id] ?? true;
+      items();
+      $("standard").value = job.ui.standard;
+      $("packages").value = "";
+      $("model").value = "";
+      inspection = null;
+      invalidatePreview();
+      await show(job);
+      inspection = await r.openObject(job);
+      if (!job.snapshotHash && !heightEdited && fitTemplateHeight()) {
+        await draft({ save: true });
+        job = required(record, "batch");
+      }
+      templateInfo();
+      if (hasModel()) {
+        showLayout(await r.objectLayout(job));
+        $("placement-ack").checked =
+          job.parameters.placement_ack === required(layout, "layout").signature;
+      }
+      await showOptimization();
+      $("inspection").textContent =
+        `Template ready: ${inspection.label}. ${inspection.requirements}`;
+    });
+  };
   for (const b of document.querySelectorAll<HTMLButtonElement>(
     "[data-object-height]",
   ))

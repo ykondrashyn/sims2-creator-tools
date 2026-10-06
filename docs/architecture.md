@@ -1,5 +1,16 @@
 # Static architecture
 
+The shell opens Home without loading a processing engine, inference model or 3D
+reference. A typed destination registry drives grouped navigation, Home cards and
+hash routes. Ordinary links use the same activation path as browser history.
+Successful initialization is retained and concurrent requests join one promise.
+Failed initialization can retry. Navigation hides mounted panels and emits their
+visibility state without cancelling workers or replacing controller state.
+
+Below 1200 pixels, the same navigation moves into a native modal dialog. The
+desktop sidebar is 220 pixels wide. Neither navigation mode changes saved-job
+serialization or worker contracts.
+
 Seven lazy-loaded TypeScript controllers share a Rust/WASM package and image
 engine. Module workers handle processing and hashing. The local upscaler uses a
 separate ONNX Runtime worker with CPU and WebGPU backends and the same pinned FP32

@@ -1,3 +1,4 @@
+export let activatePainting: () => Promise<void>;
 import { createAutosaveQueue } from "./shared/autosave.js";
 import {
   errorMessage,
@@ -380,6 +381,7 @@ import { TextureCompression } from "./texture-compression.js";
     try {
       await api();
       manifest = await runtime.manifest();
+      await frames(manifest);
       runtime.savedPanel($("saved"), "painting", open);
       runtime.events.addEventListener("job", ({ detail: j }) => {
         if (j.id !== record?.id) return;
@@ -414,11 +416,11 @@ import { TextureCompression } from "./texture-compression.js";
       runtime.events.addEventListener("deleted", ({ detail: id }) => {
         if (record?.id === id) newPainting().catch((e) => msg(errorMessage(e)));
       });
-      await frames(manifest);
       choose(manifest.paintings.items[0]);
     } catch (e) {
       initialized = false;
       msg(errorMessage(e));
+      throw e;
     }
   }
   $("image").addEventListener("change", async () => {
@@ -565,8 +567,6 @@ import { TextureCompression } from "./texture-compression.js";
   $("new").addEventListener("click", () =>
     newPainting().catch((e) => msg(errorMessage(e))),
   );
-  document
-    .querySelector<HTMLElement>('[data-tab="painting"]')!
-    .addEventListener("click", init);
+  activatePainting = init;
   window.addEventListener("pagehide", () => viewer?.dispose());
 })();

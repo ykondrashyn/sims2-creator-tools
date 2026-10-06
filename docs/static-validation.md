@@ -1,5 +1,22 @@
 # Static edition validation
 
+## Navigation and welcome page checks
+
+Run `tools.static_browser_check --suite synthetic` at both root and project
+paths to check Home, grouped navigation, direct links, browser history, focus,
+responsive drawer behavior and retained drafts. Home must fetch no processing
+engine, model weights or reference assets. Unit checks exercise joined imports,
+retry after failure and rejection of stale navigation results.
+
+The creator suite checks real downloads and saved-batch recovery. Its body
+conversion check now visits Home during processing. CPU and GPU suites also
+leave the upscaler during a run, return to its result and verify the retained
+download. Browser captures and machine-readable reports are written to the
+selected artifact output directory. These checks do not establish gameplay
+compatibility.
+
+The dated results below describe earlier releases.
+
 Validation was performed on 26 September 2026 with freshly compiled native and
 WASM artifacts. The seven-tool site was served by Python's static HTTP server,
 without FastAPI, at both the root and `/sims2-creator-tools/`.

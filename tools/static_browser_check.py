@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from tools.navigation_verification import open_tool
+
 import argparse
 from contextlib import contextmanager
 from functools import partial
@@ -62,7 +64,7 @@ def run_suite(name, suite, url, folder):
                 )
                 if not available:
                     check = BrowserCheck(driver, url, folder)
-                    driver.find_element(By.CSS_SELECTOR, '[data-tab="upscale"]').click()
+                    open_tool(check, "upscale")
                     check.wait.until(
                         lambda _: len(Select(driver.find_element(By.ID, "upscale-model")).options)
                         == 8

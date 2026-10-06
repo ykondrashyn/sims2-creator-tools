@@ -616,26 +616,18 @@ test("object label measurements precede position writes and are cached during or
   assert.equal(events.filter((e) => e.startsWith("read:")).length, 2);
 });
 
-test("creator tab visibility events follow the final panel hidden state", () => {
+test("creator navigation visibility follows the final panel hidden state", () => {
   const h = harness(),
-    { installTabs } = h.load("shared/tabs.ts");
-  const panels = [new Element(), new Element()];
-  const tabs = panels.map((panel, i) => {
-    const tab = new Element();
-    tab.setAttribute("aria-controls", String(i));
-    return tab;
-  });
-  h.document.getElementById = (id) => panels[Number(id)];
+    { setPanelVisibility } = h.load("shared/navigation.ts");
+  const panel = new Element();
   const observed = [];
-  panels.forEach((panel, i) =>
-    panel.addEventListener("creatorvisibilitychange", (event) => {
-      observed.push([i, event.detail.visible, panel.hidden]);
-    }),
+  panel.addEventListener("creatorvisibilitychange", (event) =>
+    observed.push([event.detail.visible, panel.hidden]),
   );
-  installTabs({ querySelectorAll: () => tabs });
-  tabs[1].dispatchEvent(new Event("click"));
+  setPanelVisibility(panel, false);
+  setPanelVisibility(panel, true);
   assert.deepEqual(observed, [
-    [0, false, true],
-    [1, true, false],
+    [false, true],
+    [true, false],
   ]);
 });

@@ -4,15 +4,22 @@ A static, browser-only toolkit for The Sims 2, published at
 [ykondrashyn.github.io/sims2-creator-tools](https://ykondrashyn.github.io/sims2-creator-tools/).
 No account, token, server API or external inference service is used.
 
-The seven tabs are:
+Home introduces the tools and their limits. The grouped navigation stays visible
+on desktop and opens through the **Tools** button on smaller screens.
 
-1. Convert body texture, TS4 to TS2 AM/AF textures.
-2. Tattoo creator, layered AM/AF overlay packages.
-3. Hair recolors, the fixed Pooklet palette and named custom curves.
-4. Object creator, imported models using game objects as behavior templates.
-5. Painting creator, images in curated game frames.
-6. Sim creator, guided fitting and the existing experimental Everyday-body export.
-7. Upscale image, four local models with CPU or explicit WebGPU, including native 2× and 4× output.
+| Group | Tools |
+| --- | --- |
+| Sim appearance | Tattoos, Hair recolors, Sim creator (experimental) |
+| Objects & décor | Objects, Paintings |
+| Image tools | Body texture converter (TS4 → TS2), Image upscaler |
+
+Tools have direct links: `#/tattoos`, `#/hair`, `#/sim`, `#/objects`,
+`#/paintings`, `#/convert` and `#/upscale`. Opening the site without a tool link
+shows Home. Switching tools or returning Home keeps current inputs and results
+and does not stop active processing. Browser Back and Forward switch tools too.
+Sim creator retains its restricted Adult Male Everyday-body test export, without
+the custom head. The upscaler offers four local models with explicit CPU/WebGPU
+choices and native 2× or 4× output.
 
 Files are processed in browser workers. Saved creator batches live in IndexedDB
 until deleted, subject to browser eviction or clearing. Upscaling images and

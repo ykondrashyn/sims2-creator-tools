@@ -65,18 +65,51 @@ def run_suite(name, suite, url, folder):
                     driver.find_element(By.CSS_SELECTOR, '[data-tab="upscale"]').click()
                     check.wait.until(
                         lambda _: len(Select(driver.find_element(By.ID, "upscale-model")).options)
-                        == 2
+                        == 8
                     )
-                    Select(driver.find_element(By.ID, "upscale-model")).select_by_value(
-                        "local-real-esrgan-webgpu"
+                    driver.find_element(By.ID, "upscale-file").send_keys(
+                        str(ROOT / "tools/local-upscale/fixtures/compact/small.png")
                     )
                     check.wait.until(
-                        lambda _: driver.find_element(By.ID, "upscale-availability").text
-                        not in ("", "Checking WebGPU availability…")
+                        lambda _: "Image ready" in driver.find_element(By.ID, "upscale-status").text
                     )
-                    assert not driver.find_element(By.ID, "upscale-start").is_enabled()
-                    return {"available": False, "unavailable_ui": "passed"}
-            return upscale(driver, url, folder, "webgpu" if suite == "gpu" else "wasm")
+                    profiles = json.loads((ROOT / "tools/local-upscale/models.json").read_text())
+                    for profile in profiles:
+                        Select(driver.find_element(By.ID, "upscale-model")).select_by_value(
+                            profile["selection_id"] + "-webgpu"
+                        )
+                        check.wait.until(
+                            lambda _: driver.find_element(By.ID, "upscale-availability").text
+                            not in ("", "Checking WebGPU availability…")
+                        )
+                        assert not driver.find_element(By.ID, "upscale-start").is_enabled()
+                    manifest = check.module(
+                        "package-runtime/assets.js", "return await r.manifest();"
+                    )
+                    blocked = {manifest["assets"][p["asset"]]["url"] for p in profiles}
+                    blocked.update(
+                        manifest["assets"]["local-upscale-webgpu-" + k]["url"]
+                        for k in ("runtime", "glue", "wasm")
+                    )
+                    assert not any(
+                        any(r["url"].endswith(path) for path in blocked) for r in check.requests
+                    )
+                    return {
+                        "available": False,
+                        "unavailable_ui": "passed for all four models",
+                        "no_inference_assets_downloaded": True,
+                    }
+            results = {}
+            for i, model in enumerate(("compact", "animevideo", "nomos", "full")):
+                if i:
+                    # Each probe owns its BiDi request listener and clean storage.
+                    driver.quit()
+                    driver = browser(name, downloads)
+                results[model] = upscale(
+                    driver, url, folder, "webgpu" if suite == "gpu" else "wasm", model
+                )
+                (folder / "models-report.json").write_text(json.dumps(results, indent=2) + "\n")
+            return results
         check = BrowserCheck(driver, url, folder)
         if suite == "creators":
             from tools.browser_scenarios import exercise

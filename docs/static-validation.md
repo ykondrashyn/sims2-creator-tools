@@ -36,3 +36,76 @@ validated on disk. This is distinct from a failed download.
 These measurements are correctness checks, not a controlled performance benchmark.
 No new gameplay testing was performed. Full Sim exports remain gated. Only the
 previously supported AM Everyday body experiment is available.
+
+
+## Four-model update, 6 October 2026
+
+TypeScript, ESLint, formatting and all 97 frontend tests passed.
+
+The new Compact, AnimeVideo v3 and Nomos SPAN exports passed eight deterministic
+cases each: random pixels, flat color, gradients, sharp edges, tile seams, small,
+odd and one-pixel dimensions. Repeated exports reproduced their pinned ONNX hashes.
+SPAN's frozen evaluation convolutions matched the original network exactly.
+Compact and AnimeVideo use an equivalent PRelu lowering because the pinned WebGPU
+runtime lacks that operator. All native ONNX float errors remained below 0.0001.
+
+All eight model/backend selections were exercised. Chromium hardware WebGPU used
+the Apple Metal adapter with fallback false and CPU fallback disabled. Chromium
+and Firefox CPU results and hardware GPU results stayed within one RGB byte of
+the model-specific native PNG references. The three new models also passed 24
+CPU/GPU comparisons with identical alpha channels. The original Full model's hash
+and processing policy are unchanged. Firefox in this configuration has no WebGPU
+adapter, and all four GPU choices correctly remain unavailable without fetching
+inference assets.
+
+Tests covered actual downloads, original-input cross-model repeat runs, immutable
+captions, selection before image upload, duplicate submissions, cancellation,
+Retry, deterministic PNG bytes, session clearing and narrow layouts. Worker tests
+cover device loss, initialization failure and no fallback. Image preparation and
+PNG/alpha restoration matched native/WASM bytes across 30 combinations at 2x and
+4x. No image or result was saved to browser storage or uploaded. Captured network
+traffic consisted only of same-origin static reads.
+
+The in-app browser separately completed Compact CPU and Nomos WebGPU, including
+regular Download PNG clicks and filesystem validation of their 128x96 and 64x48
+RGBA files. Both matched native RGB within one byte. Its automated download-event
+helper still timed out, but normal link clicks saved valid files. Model switching
+kept the previous result caption and download until replacement succeeded.
+
+Both Chromium and Firefox exercised all six existing creators against the new
+static runtime, including exact AM/AF conversion pixels, mixed tattoos, object
+size and RefPack controls, paintings, Rose's five-texture bundle, completed saved
+batch recovery and the existing restricted Sim experiment. No new gameplay tests
+were performed and export restrictions remain unchanged.
+
+### Timing and memory observations
+
+Illustrative Chromium measurements on the same host, using a 32x24 input.
+Times exclude model fetch and hash verification. These are first-session samples,
+not controlled cold-cache or large-image benchmarks. OS and GPU driver caches
+were not purged.
+
+| Model | CPU session init | CPU first tile | GPU session init | GPU first tile |
+| --- | --- | --- | --- | --- |
+| Compact | 0.09 s | 0.08 s | 0.25 s | 0.04 s |
+| AnimeVideo v3 | 0.09 s | 0.04 s | 0.23 s | 0.03 s |
+| Nomos SPAN | 0.08 s | 0.03 s | 0.21 s | 0.02 s |
+| Full | 0.27 s | 1.10 s | 0.53 s | 0.10 s |
+
+On the 133x37 two-tile fixture, the second tile took CPU/GPU 0.18/0.01 s for
+Compact, 0.10/0.01 s for AnimeVideo, 0.06/0.01 s for Nomos, and 2.77/0.15 s for
+Full. Tiles differ in size, so this is not a direct cold-versus-warm speed ratio.
+The measurements do not establish a universal GPU speedup.
+
+ONNX sizes are about 4.9, 2.5, 1.7 and 67.1 MB respectively. Verified per-buffer
+requirements are documented in `tools/local-upscale/README.md`. The model assets
+remain within the existing cache policy and inference is tiled. Browser-total and
+GPU peak memory were not instrumented. Buffer limits are not peak-memory readings.
+
+Numerical parity is distinct from subjective image quality. Diagnostic previews
+were checked for orientation and usable transparency. No ranking on photographs,
+illustrations or game textures is claimed by these synthetic tests.
+
+Reproduce with `tools/local-upscale/export_models.py`, `npm test`,
+`tools.static_browser_check` (cpu, gpu, creators and synthetic suites), and
+`package_creation/tests/upscale_wasm_parity.mjs` with explicit fresh artifact paths.

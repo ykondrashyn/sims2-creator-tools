@@ -16,7 +16,7 @@ export function checkDimensions(width: number, height: number) {
     width * height > MAX_INPUT_PIXELS
   )
     throw new Error(
-      "Built-in Real-ESRGAN accepts up to 4 megapixels and 2048 pixels per side for its 4× output.",
+      "Local upscaling accepts up to 4 megapixels and 2048 pixels per side.",
     );
 }
 
@@ -27,7 +27,13 @@ export function reflect(position: number, length: number): number {
   return wrapped < length ? wrapped : period - wrapped;
 }
 
-export function* tiles(width: number, height: number, size = TILE) {
+export function* tiles(
+  width: number,
+  height: number,
+  size = TILE,
+  overlap = OVERLAP,
+  prepad = PREPAD,
+) {
   checkDimensions(width, height);
   if (!Number.isInteger(size) || size < 1 || size > TILE)
     throw new Error("Invalid tile size.");
@@ -38,10 +44,10 @@ export function* tiles(width: number, height: number, size = TILE) {
         y,
         width: Math.min(size, width - x),
         height: Math.min(size, height - y),
-        left: Math.max(0, x - OVERLAP),
-        top: Math.max(0, y - OVERLAP),
-        right: Math.min(width + PREPAD, x + size + OVERLAP),
-        bottom: Math.min(height + PREPAD, y + size + OVERLAP),
+        left: Math.max(0, x - overlap),
+        top: Math.max(0, y - overlap),
+        right: Math.min(width + prepad, x + size + overlap),
+        bottom: Math.min(height + prepad, y + size + overlap),
       };
     }
   }
@@ -86,19 +92,20 @@ export function writeTile(
   width: number,
   tile: Tile,
   data: Float32Array,
+  scale = SCALE,
 ) {
-  const outWidth = (tile.right - tile.left) * SCALE;
-  const plane = outWidth * (tile.bottom - tile.top) * SCALE;
+  const outWidth = (tile.right - tile.left) * scale;
+  const plane = outWidth * (tile.bottom - tile.top) * scale;
   if (data.length !== plane * 3)
     throw new Error("The local model returned an unexpected image size.");
-  for (let y = 0; y < tile.height * SCALE; y++)
-    for (let x = 0; x < tile.width * SCALE; x++) {
+  for (let y = 0; y < tile.height * scale; y++)
+    for (let x = 0; x < tile.width * scale; x++) {
       const from =
-        (y + (tile.y - tile.top) * SCALE) * outWidth +
+        (y + (tile.y - tile.top) * scale) * outWidth +
         x +
-        (tile.x - tile.left) * SCALE;
+        (tile.x - tile.left) * scale;
       const to =
-        ((tile.y * SCALE + y) * width * SCALE + tile.x * SCALE + x) * 3;
+        ((tile.y * scale + y) * width * scale + tile.x * scale + x) * 3;
       for (let c = 0; c < 3; c++)
         target[to + c] = toByte(data[c * plane + from]);
     }

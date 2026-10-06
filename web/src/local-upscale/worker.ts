@@ -1,15 +1,12 @@
 import { decode, encode } from "fast-png";
-import {
-  checkDimensions,
-  SCALE,
-  tiles,
-  tileInput,
-  writeTile,
-} from "./tiles.js";
+import { checkDimensions, tiles, tileInput, writeTile } from "./tiles.js";
 import type * as Ort from "onnxruntime-web";
 import { backendAssets, gpuAdapter, type LocalBackend } from "./backend.js";
 
+import { modelProfile } from "./models.js";
+
 interface Work {
+  modelId: string;
   attempt: string;
   source: ArrayBuffer;
   model: ArrayBuffer;
@@ -36,9 +33,14 @@ self.onmessage = (event: MessageEvent<Work>) => {
     const startedAt = performance.now();
     const metrics: Record<string, number> = {};
     try {
+      const profile = modelProfile(event.data.modelId);
+      const SCALE = profile.scale;
       const backend = event.data.backend;
       backendAssets(backend);
-      const adapter = backend === "webgpu" ? await gpuAdapter() : undefined;
+      const adapter =
+        backend === "webgpu"
+          ? await gpuAdapter(undefined, profile.gpu_buffer_bytes)
+          : undefined;
       const input = new Uint8Array(event.data.source);
       // This is the Rust-prepared RGB PNG, never an arbitrary decoder input.
       if (
@@ -62,7 +64,7 @@ self.onmessage = (event: MessageEvent<Work>) => {
         decoded.depth !== 8
       )
         throw new Error("Invalid prepared image dimensions or channels.");
-      send({ progress: "Loading the built-in Real-ESRGAN model…" });
+      send({ progress: `Loading ${profile.name}…` });
       const ort: typeof Ort = await import(
         /* @vite-ignore */ event.data.runtime
       );
@@ -94,7 +96,9 @@ self.onmessage = (event: MessageEvent<Work>) => {
       }
       // Neither images nor tokens are fetched or stored by this worker.
       const output = new Uint8Array(width * height * SCALE * SCALE * 3);
-      const regions = [...tiles(width, height)];
+      const regions = [
+        ...tiles(width, height, profile.tile, profile.overlap, profile.prepad),
+      ];
       let completed = 0;
       for (const tile of regions) {
         const w = tile.right - tile.left,
@@ -117,7 +121,13 @@ self.onmessage = (event: MessageEvent<Work>) => {
               [1, 3, h * SCALE, w * SCALE].join(",")
           )
             throw new Error("Unexpected local model output.");
-          writeTile(output, width, tile, result.upscaled.data as Float32Array);
+          writeTile(
+            output,
+            width,
+            tile,
+            result.upscaled.data as Float32Array,
+            SCALE,
+          );
         } finally {
           tensor.dispose();
           if (result)
@@ -144,6 +154,10 @@ self.onmessage = (event: MessageEvent<Work>) => {
       if (png.byteLength > 128 * 1024 ** 2)
         throw new Error("The output exceeds 128 MiB.");
       const bytes = new Uint8Array(png).buffer;
+      metrics.model_bytes = event.data.model.byteLength;
+      metrics.decoded_input_bytes = decoded.data.byteLength;
+      metrics.rgb_output_bytes = output.byteLength;
+      metrics.required_gpu_buffer_bytes = profile.gpu_buffer_bytes;
       metrics.tiles = regions.length;
       metrics.total_ms = performance.now() - startedAt;
       send({ result: bytes, backend, metrics }, [bytes]);
@@ -152,7 +166,7 @@ self.onmessage = (event: MessageEvent<Work>) => {
       send({
         error:
           event.data.backend === "webgpu"
-            ? `WebGPU upscaling failed. Retry or choose Real-ESRGAN (built-in) for CPU processing. ${message}`
+            ? `WebGPU upscaling failed. Retry or choose a CPU upscaler. ${message}`
             : message,
       });
     } finally {

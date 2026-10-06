@@ -36,6 +36,12 @@ for (const mode of ["image", "inference"])
           ]),
         ),
       };
+      const { modelProfile } = await source("local-upscale/models.ts");
+      const full = modelProfile("full");
+      Object.assign(manifest.assets["local-upscale-model"], {
+        sha256: full.sha256,
+        size: full.size,
+      });
       globalThis.fetch = (url) => {
         if (stage === "assets" && url.endsWith("manifest.json"))
           return Promise.resolve(new Response(JSON.stringify(manifest)));
@@ -87,3 +93,41 @@ for (const mode of ["image", "inference"])
       }
     });
   }
+
+const { MODEL_PROFILES } = await source("local-upscale/models.ts");
+for (const profile of MODEL_PROFILES)
+  test(`${profile.id} rejects a mismatched model before downloading inference assets`, async () => {
+    const savedFetch = globalThis.fetch;
+    const requests = [];
+    globalThis.fetch = async (url) => {
+      requests.push(url);
+      assert.ok(url.endsWith("manifest.json"));
+      return new Response(
+        JSON.stringify({
+          schema_version: 1,
+          protocol_version: 1,
+          assets: {
+            [profile.asset]: { sha256: "0".repeat(64), size: profile.size },
+          },
+        }),
+      );
+    };
+    try {
+      const client = await source("local-upscale/client.ts");
+      await assert.rejects(
+        client.upscaleLocally(
+          new Blob(["private input"]),
+          new AbortController().signal,
+          () => {},
+          "wasm",
+          profile,
+        ),
+        /does not match this release/,
+      );
+      assert.equal(requests.length, 1);
+      const store = await source("package-runtime/store.ts");
+      assert.equal(await store.lease(), undefined);
+    } finally {
+      globalThis.fetch = savedFetch;
+    }
+  });

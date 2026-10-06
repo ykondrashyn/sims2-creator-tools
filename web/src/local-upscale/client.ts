@@ -2,6 +2,8 @@ import { asset, manifest } from "../package-runtime/assets.js";
 import { acquire, heartbeat, release, id } from "../package-runtime/store.js";
 import { backendAssets, gpuAdapter, type LocalBackend } from "./backend.js";
 
+import { modelProfile, type ModelProfile } from "./models.js";
+
 export interface LocalProgress {
   message: string;
   completed?: number;
@@ -14,6 +16,7 @@ export async function upscaleLocally(
   signal: AbortSignal,
   progress: (value: LocalProgress) => void,
   backend: LocalBackend = "wasm",
+  profile: Readonly<ModelProfile> = modelProfile("full"),
 ): Promise<{
   png: Blob;
   version: string;
@@ -48,13 +51,23 @@ export async function upscaleLocally(
     return value;
   };
   try {
-    if (backend === "webgpu") await wait(gpuAdapter());
+    if (backend === "webgpu")
+      await wait(gpuAdapter(undefined, profile.gpu_buffer_bytes));
     signal.throwIfAborted();
     progress({
       message: "Loading local model assets…",
     });
     const m = await wait(manifest());
-    const names = ["local-upscale-worker", ...assets, "local-upscale-model"];
+    const expected = m.assets[profile.asset];
+    if (
+      !expected ||
+      expected.sha256 !== profile.sha256 ||
+      expected.size !== profile.size
+    )
+      throw new Error(
+        "The selected model does not match this release. Reload the page.",
+      );
+    const names = ["local-upscale-worker", ...assets, profile.asset];
     const [code, _runtime, _glue, wasm, model] = await wait(
       Promise.all(names.map((name) => asset(m, name))),
     );
@@ -100,6 +113,7 @@ export async function upscaleLocally(
       {
         attempt: lease,
         backend,
+        modelId: profile.id,
         source: imageBytes,
         model: modelBytes,
         wasm: wasmBytes,
@@ -115,7 +129,7 @@ export async function upscaleLocally(
     return {
       ...result,
       backend,
-      version: m.assets["local-upscale-model"].sha256,
+      version: m.assets[profile.asset].sha256,
     };
   } finally {
     worker?.terminate();

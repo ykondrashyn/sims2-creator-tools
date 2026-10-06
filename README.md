@@ -12,7 +12,7 @@ The seven tabs are:
 4. Object creator, imported models using game objects as behavior templates.
 5. Painting creator, images in curated game frames.
 6. Sim creator, guided fitting and the existing experimental Everyday-body export.
-7. Upscale image, full RealESRGAN_x4plus locally with CPU or explicit WebGPU.
+7. Upscale image, four local models with CPU or explicit WebGPU, including native 2× and 4× output.
 
 Files are processed in browser workers. Saved creator batches live in IndexedDB
 until deleted, subject to browser eviction or clearing. Upscaling images and

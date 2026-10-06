@@ -14,7 +14,7 @@ python3 -m tools.static_release verify
 
 This always compiles the checked-out native and WASM engine and frontend. There is
 no skip-compile publication path. Use the pinned environment in development.md.
-The model export is hash-checked in `tools/local-upscale/model.json`.
+Model exports are hash-checked in `tools/local-upscale/models.json`.
 
 Commit source and the validated `site/` together. `site-integrity.json` records all
 published files. The verifier rejects changed source, missing or changed files,

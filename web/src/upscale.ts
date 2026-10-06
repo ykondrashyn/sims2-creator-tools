@@ -1,13 +1,9 @@
 import { processImage, type ImageInfo } from "./upscale-image.js";
-import { gpuAdapter, type LocalBackend } from "./local-upscale/backend.js";
+import { gpuAdapter } from "./local-upscale/backend.js";
 import { outputExtension, outputFilename } from "./upscale-download.js";
 
-interface LocalModel {
-  readonly id: string;
-  readonly name: string;
-  readonly backend: LocalBackend;
-  readonly description: string;
-}
+import { MODELS, type LocalModel } from "./local-upscale/models.js";
+
 interface RunSnapshot {
   readonly revision: number;
   readonly model: Readonly<LocalModel>;
@@ -23,23 +19,6 @@ interface UpscaleResult {
   readonly png: Blob | null;
   readonly info: ImageInfo;
 }
-const MODELS: LocalModel[] = [
-  {
-    id: "local-real-esrgan",
-    name: "Real-ESRGAN CPU",
-    backend: "wasm",
-    description:
-      "Runs the full FP32 model on your CPU with 4× PNG output. Downloads the model on first use. Large images can take several minutes.",
-  },
-  {
-    id: "local-real-esrgan-webgpu",
-    name: "Real-ESRGAN WebGPU",
-    backend: "webgpu",
-    description:
-      "Runs the same full FP32 model on your GPU with 4× PNG output. Requires a supported GPU and browser. No automatic CPU fallback.",
-  },
-];
-
 export function attachUpscale() {
   const node = <T extends HTMLElement>(name: string) =>
     document.getElementById("upscale-" + name) as T;
@@ -64,7 +43,7 @@ export function attachUpscale() {
   let active: AbortController | null = null;
   let localRetry: ((signal: AbortSignal) => Promise<void>) | null = null;
   let gpuReason = "Checking WebGPU availability…";
-  let gpuCheck: Promise<void> | undefined;
+  const gpuChecks = new Map<string, Promise<string>>();
   const urls = new Map<string, string>();
   const selected = () => MODELS.find((item) => item.id === model.value)!;
   function current(signal: AbortSignal, expectedRevision = revision) {
@@ -88,9 +67,8 @@ export function attachUpscale() {
     let message = "";
     if (originalInfo) {
       const { width, height } = originalInfo;
-      if (width * height > 4_000_000 || width * 4 > 8192 || height * 4 > 8192)
-        message =
-          "Choose an image of at most 4 megapixels and 2048 pixels per side. The model produces a 4× result without reducing the source size.";
+      if (width * height > 4_000_000 || width > 2048 || height > 2048)
+        message = `Choose an image of at most 4 megapixels and 2048 pixels per side. This model produces a ${selected().profile.scale}× result without reducing the source size.`;
     }
     node("size-warning").textContent = message;
     node("size-warning").hidden = !message;
@@ -115,22 +93,32 @@ export function attachUpscale() {
     retry.textContent = "Retry";
   }
   function changeModel() {
-    node("model-note").textContent = selected().description;
+    const choice = selected();
+    const profile = choice.profile;
+    node("model-note").textContent =
+      `${profile.description} ${profile.scale}× PNG output. Model download: ${(profile.size / 1_000_000).toFixed(1)} MB on first use.`;
+    node<HTMLAnchorElement>("model-docs").href = profile.docs;
     const availability = node("availability");
     const update = () => {
       availability.hidden = selected().backend !== "webgpu" || !gpuReason;
       availability.textContent = gpuReason;
       busy(!!active);
     };
-    if (selected().backend === "webgpu" && !gpuCheck)
-      gpuCheck = gpuAdapter()
-        .then(() => {
-          gpuReason = "";
-        })
-        .catch((error: Error) => {
-          gpuReason = error.message;
-        })
-        .then(update);
+    if (choice.backend === "webgpu") {
+      gpuReason = "Checking WebGPU availability…";
+      let check = gpuChecks.get(profile.id);
+      if (!check) {
+        check = gpuAdapter(undefined, profile.gpu_buffer_bytes)
+          .then(() => "")
+          .catch((error: Error) => error.message);
+        gpuChecks.set(profile.id, check);
+      }
+      void check.then((reason) => {
+        if (selected().id !== choice.id) return;
+        gpuReason = reason;
+        update();
+      });
+    }
     update();
   }
   function showResult(result: UpscaleResult) {
@@ -169,7 +157,7 @@ export function attachUpscale() {
     node("result-version").textContent =
       `Local model SHA-256: ${result.localVersion || "unavailable"}`;
     node("result-settings").textContent =
-      `4× · Backend: ${snapshot.model.backend === "webgpu" ? "WebGPU" : "CPU WASM"}, FP32` +
+      `${snapshot.model.profile.scale}× · Backend: ${snapshot.model.backend === "webgpu" ? "WebGPU" : "CPU WASM"}, FP32` +
       (result.localMetrics
         ? ` · Initialization: ${(result.localMetrics.initialization_ms / 1000).toFixed(2)} s · First tile: ${(result.localMetrics.first_tile_ms / 1000).toFixed(2)} s · Remaining tiles: ${((result.localMetrics.warm_tiles_ms || 0) / 1000).toFixed(2)} s`
         : "");
@@ -362,6 +350,7 @@ export function attachUpscale() {
             } else activity.removeAttribute("value");
           },
           snapshot.model.backend,
+          snapshot.model.profile,
         );
         current(signal, snapshot.revision);
         raw = result.png;

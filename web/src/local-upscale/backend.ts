@@ -17,14 +17,15 @@ interface GpuHost {
   };
 }
 export const GPU_UNAVAILABLE =
-  "WebGPU is unavailable in this browser. Use a supported browser or choose Real-ESRGAN (built-in) for CPU processing.";
+  "WebGPU is unavailable in this browser. Use a supported browser or choose a CPU upscaler.";
 
 export async function gpuAdapter(
   host: GpuHost = globalThis as unknown as GpuHost,
+  requiredBufferBytes = 256 * 1024 ** 2,
 ): Promise<UpscaleAdapter> {
   if (!host.isSecureContext)
     throw new Error(
-      "WebGPU requires localhost on the computer hosting this site, or trusted HTTPS. Ordinary LAN HTTP cannot use WebGPU. Choose Real-ESRGAN (built-in) for CPU processing.",
+      "WebGPU requires localhost on the computer hosting this site, or trusted HTTPS. Ordinary LAN HTTP cannot use WebGPU. Choose a CPU upscaler.",
     );
   if (!host.navigator.gpu) throw new Error(GPU_UNAVAILABLE);
   const adapter = await host.navigator.gpu.requestAdapter({
@@ -32,16 +33,15 @@ export async function gpuAdapter(
   });
   if (!adapter || adapter.isFallbackAdapter || adapter.info?.isFallbackAdapter)
     throw new Error(
-      "No hardware WebGPU adapter is available. Enable browser graphics acceleration or choose Real-ESRGAN (built-in) for CPU processing.",
+      "No hardware WebGPU adapter is available. Enable browser graphics acceleration or choose a CPU upscaler.",
     );
-  // A largest 256² tile produces a 1024² intermediate with 64 FP32 channels.
-  // Keep the existing tile/overlap policy instead of reducing image quality.
+  // Requirements are pinned per exported graph and its tile policy.
   if (
-    adapter.limits.maxStorageBufferBindingSize < 256 * 1024 ** 2 ||
-    adapter.limits.maxBufferSize < 256 * 1024 ** 2
+    adapter.limits.maxStorageBufferBindingSize < requiredBufferBytes ||
+    adapter.limits.maxBufferSize < requiredBufferBytes
   )
     throw new Error(
-      "This GPU cannot hold the model's tile buffers. Choose Real-ESRGAN (built-in) for CPU processing.",
+      "This GPU cannot hold the model's tile buffers. Choose a CPU upscaler.",
     );
   return adapter;
 }
